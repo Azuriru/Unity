@@ -30,8 +30,12 @@ class Pokemon {
         return `${Math.round((this.stats.levels[this.level - 1][atk_type] * atk_modifier) + lvl_modifier * (this.level - 1) + addend)}`;
     }
 
-    getCooldown(cd, cdr) {
-        return `${cd * (1 - cdr)}s`;
+    getCooldown(cd, cdr, isUnite) {
+        if (isUnite) {
+            return `${Math.floor(cd % 3600 / 60)}m ${Math.floor(cd % 60)}s`;
+        } else {
+            return `${Number(cd * (1 - cdr)).toFixed()}s`;
+        }
     }
 
     getMove(move_name) {
@@ -40,19 +44,20 @@ class Pokemon {
         if (!move) return `No move by the name of \`${move_name}\` was found for ${this.capitalize(this.name)}`;
 
         const { aliases: [ skillcode ], name, level, cd, type, desc, fields } = move;
+        let title = name;
 
         if (this.level === 1) {
             this.level = level;
         };
 
         if (skillcode === 'u') {
-            name = `Unite Move: ${name}`;
+            title = `Unite Move: ${name}`;
         }
 
         const { cdr } = this.stats.levels[this.level];
 
         const embed = new MessageEmbed();
-        embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill_icons/${this.name}/${skillcode}.png`);
+        embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill_icons/${this.name}/${skillcode}.png`);
         embed.setDescription(desc);
         embed.setFields(
             [
@@ -63,6 +68,11 @@ class Pokemon {
                                 {
                                     name: title,
                                     value,
+                                    inline: true
+                                },
+                                {
+                                    name: '\u200B',
+                                    value: '\u200B',
                                     inline: true
                                 },
                                 {
@@ -82,7 +92,12 @@ class Pokemon {
                 }),
                 {
                     name: 'Cooldown',
-                    value: this.getCooldown(cd, cdr),
+                    value: this.getCooldown(cd, cdr, skillcode === 'u'),
+                    inline: true
+                },
+                {
+                    name: '\u200B',
+                    value: '\u200B',
                     inline: true
                 },
                 {
