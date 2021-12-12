@@ -1,0 +1,78 @@
+{
+    "TWINKLE": {
+        "TOKEN": "Discord bot token",
+        "ENV": "production",
+		"PRELOAD": {
+			"GUILDS": [
+				"246075715714416641"
+			]
+		},
+        "SOURCE": {
+            "TYPE": "github",
+            "PATH": "Dorumin/Twinkle",
+            "URL": "https://github.com/Dorumin/Twinkle"
+        },
+        "LOGGER": {
+            "CHANNEL": "637133740593905665",
+            "CATEGORIES": false
+        },
+        "OPERATORS": [
+            "148231501413089280",
+            "155545848812535808",
+            "195712766214930432"
+        ],
+        "COMMANDER": {
+            "MENTION": true,
+            "INLINE_ERRORS": true,
+            "PREFIXES": [
+                "!",
+                ">"
+            ]
+        },
+        "LINKER": {
+            "WIKIS": {
+                "default": "dev"
+            },
+            "USERNAME": "Wikia username",
+            "PASSWORD": "Wikia password"
+        },
+        "QUOTER": {
+            "MAX": 3
+        },
+        "DB": {
+            "TYPE": "dropbox",
+            "DELAY": 10000,
+            "TOKEN": "Dropbox token"
+        },
+        "JOIN_LEAVE": {
+            "CHANNEL": "246075715714416641",
+            "JOIN_MESSAGE": "Hello <@$USERID> and welcome to the Fandom Developers server! You can read useful information about the server in <#246663167537709058>",
+            "LEAVE_MESSAGE": "client.emit(Events.GUILD_LEAVE, $USERID); // $USERNAME#$USERDISCRIM"
+        },
+        "AUTOMOD": {
+            "LOGGING": "Default log channel ID",
+            "FILTERS": [
+                "MassMention",
+                "Zalgo",
+                "Invites",
+                "BadWords"
+            ],
+            "ZALGO": {
+                "MIN": 8
+            },
+            "INVITES": {
+                "WHITELIST": [
+                    "563020189604773888"
+                ]
+            },
+            "BAD_WORDS": {
+                "PATTERNS": [
+                    "test1",
+                    ["\\btest2\\b", "i"]
+                ],
+                "POST_CCNORM_PATTERNS": [
+                ]
+            }
+        }
+    }
+}

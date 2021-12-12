@@ -1,0 +1,20 @@
+# Node stuff
+node_modules/
+
+# Settings
+config.json
+
+# Log streams
+log/
+
+# Workspace settings
+.vscode/
+
+# We use Yarn
+package-lock.json
+
+# Mac things
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
