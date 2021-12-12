@@ -15,13 +15,7 @@ class Pokemon {
     }
 
     getEvolution(level) {
-        let evo = Object.keys(this.evolutions).reverse().find(lv => lv <= level);
-
-        if (!evo) {
-            evo = Object.keys(this.evolutions)[0];
-        }
-
-        return this.evolutions[evo];
+        return this.evolutions[Object.keys(this.evolutions).reverse().find(lv => lv <= level)];
     }
 
     getValue({ atk_type, atk_modifier, lvl_modifier, addend }) {
@@ -33,7 +27,7 @@ class Pokemon {
             }
         }
 
-        return `${(this.stats.levels[this.level][atk_type] * atk_modifier) + lvl_modifier * (this.level - 1) + addend}`;
+        return `${Math.round((this.stats.levels[this.level - 1][atk_type] * atk_modifier) + lvl_modifier * (this.level - 1) + addend)}`;
     }
 
     getCooldown(cd, cdr) {
@@ -43,17 +37,22 @@ class Pokemon {
     getMove(move_name) {
         const move = this.moves.find(({ aliases }) => aliases.includes(move_name));
 
-        if (!move) return `No move by the name of ${move_name} found`;
+        if (!move) return `No move by the name of \`${move_name}\` was found for ${this.capitalize(this.name)}`;
 
         const { aliases: [ skillcode ], name, level, cd, type, desc, fields } = move;
 
-        if (this.level === 1) this.level = level;
+        if (this.level === 1) {
+            this.level = level;
+        };
+
+        if (skillcode === 'u') {
+            name = `Unite Move: ${name}`;
+        }
 
         const { cdr } = this.stats.levels[this.level];
 
         const embed = new MessageEmbed();
-
-        embed.setAuthor(name, `https://github.com/Azuriru/Unity/raw/master/assets/skill_icons/${this.name}/${skillcode}.png`);
+        embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill_icons/${this.name}/${skillcode}.png`);
         embed.setDescription(desc);
         embed.setFields(
             [
@@ -93,9 +92,9 @@ class Pokemon {
                 }
             ]
         );
-        embed.setImage(`https://github.com/Azuriru/Unity/raw/master/assets/skills/${this.name}/${skillcode}.png`);
-        embed.setFooter(`${this.capitalize(this.name)} • Level ${this.level}`, `https://github.com/Azuriru/Unity/raw/master/assets/avatar/${this.getEvolution(this.leve)}.png`)
-        embed.setTimestamp()
+        embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skills/${this.name}/${skillcode}.png`);
+        embed.setFooter(`${this.capitalize(this.name)} • Level ${this.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${this.getEvolution(this.level)}.png`);
+        embed.setTimestamp();
 
         return { embeds: [ embed ] };
     }

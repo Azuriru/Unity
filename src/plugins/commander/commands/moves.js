@@ -37,9 +37,11 @@ class MovesCommand extends Command {
 	async call(message, content) {
         const [ pokemon_name, move_name, level ] = content.split(' ');
 
-        const pokemon = new Pokemon(pokemon_name, level);
-        const move = pokemon.getMove(move_name);
+        if (!pokemon_name) return message.channel.send(`You need to specify a Pokemon.`);
+        if (!move_name) return message.channel.send(`You need to specify a move name.`);
 
+        const pokemon = new Pokemon(pokemon_name, level);
+        const move = pokemon.getMove(move_name.toLowerCase());
 
         message.channel.send(move);
 	}
