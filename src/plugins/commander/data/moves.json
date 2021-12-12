@@ -410,27 +410,7 @@
     ],
     "blissey": [
         {
-            "aliases": ["s01", "pound"],
-            "name": "Pound",
-            "level": 1,
-            "cd": 6,
-            "type": "melee",
-            "desc": "Blissey pounds in a designated direction, damaging and slowing enemies hit.",
-            "fields": [
-                {
-                    "title": "Damage",
-                    "value": "47% SpA + 28 x (Level - 1) + 520",
-                    "calc_variables": {
-                        "atk_modifier": 0.47,
-                        "lvl_modifier": 28,
-                        "addend": 520
-                    },
-                    "type": "inline"
-                }
-            ]
-        },
-        {
-            "aliases": ["s02", "healpulse"],
+            "aliases": ["s01", "healpulse"],
             "name": "Heal Pulse",
             "level": 1,
             "cd": 10,
@@ -444,6 +424,26 @@
                         "atk_modifier": 0.40,
                         "lvl_modifier": 0,
                         "addend": 60
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "pound"],
+            "name": "Pound",
+            "level": 1,
+            "cd": 6,
+            "type": "melee",
+            "desc": "Blissey pounds in a designated direction, damaging and slowing enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "47% SpA + 28 x (Level - 1) + 520",
+                    "calc_variables": {
+                        "atk_modifier": 0.47,
+                        "lvl_modifier": 28,
+                        "addend": 520
                     },
                     "type": "inline"
                 }
