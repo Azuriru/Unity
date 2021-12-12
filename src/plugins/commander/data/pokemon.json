@@ -171,8 +171,8 @@
     },
     "blastoise": {
         "evolutions": {
-            "4": "squirtle",
-            "8": "wartortle",
+            "1": "squirtle",
+            "5": "wartortle",
             "9": "blastoise"
         },
         "stats": {
@@ -342,7 +342,10 @@
         }
     },
     "blissey": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "chansey",
+            "4": "blissey"
+        },
         "stats": {
             "combat": 2,
             "resistance": 7,
@@ -510,7 +513,11 @@
         }
     },
     "charizard": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "charmandar",
+            "5": "charmeleon",
+            "9": "charizard"
+        },
         "stats": {
             "combat": 7,
             "resistance": 6,
@@ -678,7 +685,11 @@
         }
     },
     "cinderace": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "scorbunny",
+            "5": "raboot",
+            "7": "cinderace"
+        },
         "stats": {
             "combat": 8,
             "resistance": 3,
@@ -846,7 +857,9 @@
         }
     },
     "cramorant": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "cramorant"
+        },
         "stats": {
             "combat": 8,
             "resistance": 6,
@@ -1014,7 +1027,10 @@
         }
     },
     "crustle": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "dwebble",
+            "4": "crustle"
+        },
         "stats": {
             "combat": 3,
             "resistance": 8,
@@ -1182,7 +1198,11 @@
         }
     },
     "decidueye": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "rowlet",
+            "5": "dartrix",
+            "7": "decidueye"
+        },
         "stats": {
             "combat": 7,
             "resistance": 3,
@@ -1350,7 +1370,10 @@
         }
     },
     "eldegoss": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "gossifleur",
+            "3": "eldegoss"
+        },
         "stats": {
             "combat": 3,
             "resistance": 4,
@@ -1518,7 +1541,11 @@
         }
     },
     "garchomp": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "gible",
+            "5": "gabite",
+            "9": "garchomp"
+        },
         "stats": {
             "combat": 7,
             "resistance": 7,
@@ -1686,7 +1713,11 @@
         }
     },
     "gardevoir": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "ralts",
+            "5": "kirlia",
+            "9": "gardevoir"
+        },
         "stats": {
             "combat": 9,
             "resistance": 3,
@@ -1854,7 +1885,11 @@
         }
     },
     "gengar": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "gastly",
+            "5": "haunter",
+            "9": "gengar"
+        },
         "stats": {
             "combat": 7,
             "resistance": 4,
@@ -2022,7 +2057,10 @@
         }
     },
     "greedent": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "skwovet",
+            "5": "greedent"
+        },
         "stats": {
             "combat": 3,
             "resistance": 10,
@@ -2190,7 +2228,11 @@
         }
     },
     "greninja": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "froakie",
+            "5": "frogadier",
+            "7": "greninja"
+        },
         "stats": {
             "combat": 8,
             "resistance": 4,
@@ -2358,7 +2400,9 @@
         }
     },
     "lucario": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "lucario"
+        },
         "stats": {
             "combat": 6,
             "resistance": 5,
@@ -2526,7 +2570,11 @@
         }
     },
     "machamp": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "machop",
+            "5": "machoke",
+            "9": "machamp"
+        },
         "stats": {
             "combat": 8,
             "resistance": 5,
@@ -2694,7 +2742,11 @@
         }
     },
     "mamoswine": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "swinub",
+            "5": "piloswine",
+            "9": "mamoswine"
+        },
         "stats": {
             "combat": 5,
             "resistance": 8,
@@ -2862,7 +2914,9 @@
         }
     },
     "mr.mime": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "mr.mime"
+        },
         "stats": {
             "combat": 3,
             "resistance": 8,
@@ -3030,7 +3084,10 @@
         }
     },
     "ninetales": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "vulpix",
+            "4": "ninetales"
+        },
         "stats": {
             "combat": 8,
             "resistance": 3,
@@ -3198,7 +3255,9 @@
         }
     },
     "pikachu": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "pikachu"
+        },
         "stats": {
             "combat": 9,
             "resistance": 3,
@@ -3366,7 +3425,10 @@
         }
     },
     "slowbro": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "slowpoke",
+            "4": "slowbro"
+        },
         "stats": {
             "combat": 3,
             "resistance": 8,
@@ -3534,7 +3596,9 @@
         }
     },
     "snorlax": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "snorlax"
+        },
         "stats": {
             "combat": 3,
             "resistance": 10,
@@ -3702,7 +3766,10 @@
         }
     },
     "sylveon": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "eevee",
+            "4": "sylveon"
+        },
         "stats": {
             "combat": 7,
             "resistance": 3,
@@ -3870,7 +3937,11 @@
         }
     },
     "talonflame": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "fletchling",
+            "5": "fletchinder",
+            "7": "talonflame"
+        },
         "stats": {
             "combat": 5,
             "resistance": 3,
@@ -4038,7 +4109,11 @@
         }
     },
     "tsareena": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "bounsweet",
+            "4": "steenee",
+            "6": "tsareena"
+        },
         "stats": {
             "combat": 7,
             "resistance": 6,
@@ -4206,7 +4281,11 @@
         }
     },
     "venusaur": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "bulbasaur",
+            "5": "ivysaur",
+            "9": "venusaur"
+        },
         "stats": {
             "combat": 9,
             "resistance": 4,
@@ -4374,7 +4453,10 @@
         }
     },
     "wigglytuff": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "jigglybuff",
+            "4": "wigglytuff"
+        },
         "stats": {
             "combat": 2,
             "resistance": 5,
@@ -4542,7 +4624,9 @@
         }
     },
     "zeraora": {
-        "evolutions": {},
+        "evolutions": {
+            "1": "zeraora"
+        },
         "stats": {
             "combat": 7,
             "resistance": 3,
