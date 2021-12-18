@@ -1,0 +1,89 @@
+{
+    "absol": [
+        {
+            "name": "Super Luck",
+            "desc": "Increases Critical-Hit rate by 15%."
+        }
+    ],
+    "blastoise": [
+        {
+            "name": "Torrent",
+            "desc": "Increases Attack and Sp. Attack by 20% while at half HP or less."
+        }
+    ],
+    "blissey": [
+        {
+            "name": "Natural Cure",
+            "desc": "Every 6 seconds Blissey will automatically cleanse themselves. Natural Cure will activate even if Blissey has no active debuffs."
+        }
+    ],
+    "charizard": [
+        {
+            "name": "Blaze",
+            "desc": "Increases critical hit rate by 20% while at half HP or less."
+        }
+    ],
+    "cinderace": [
+        {
+            "name": "Blaze",
+            "desc": "When at half HP or less, critical-hit rate is increased by 10% and basic attack speed is increased by 20% for a short time. When hitting an enemy with a basic attack, a cinder is placed on that enemy for 5s. Boosted Attacks and moves apply 2 cinders. When the target receives it's 5th cinder, they will all be consumed to deal additional damage to the enemy."
+        }
+    ],
+    "cramorant": [
+        {
+            "name": "Gulp Missile",
+            "desc": "When Cramorant has prey in its mouth, it will counterattack upon taking damage from an enemy.  Alternatively, Cramorant can shoot the prey at his enemy as a boosted basic attack. The prey bounces to 1 nearby enemy.\n\nAt high HP, caught prey will be Arrokuda, which deals damage to the enemy.  At low HP, the prey will be Pikachu which deals damage to the enemy and slows them."
+        }
+    ],
+    "crustle": [
+        {
+            "name": "Sturdy",
+            "desc": "Gains 5 + (Level - 1) Defense and Sp. Defense for every 7% of Crustle's missing HP. Stacks 10 times."
+        }
+    ],
+    "decidueye": [
+        {
+            "name": "Long Reach",
+            "desc": "Deals 20% increased damage to distant enemies."
+        }
+    ],
+    "eldegoss": [
+        {
+            "name": "Cotton Down",
+            "desc": "When receiving a certain amount of damage, recover HP, deal revenge damage, and decrease the enemies movement speed for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Revenge",
+                    "value": "35% SpA + 0 x (Level - 1) + 150",
+                    "calc_variables": {
+                        "atk_modifier": 35,
+                        "lvl_modifier": 0,
+                        "addend": 150
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Healing - Revenge",
+                    "value": "65% SpA + 0 x (Level - 1) + 165",
+                    "calc_variables": {
+                        "atk_modifier": 65,
+                        "lvl_modifier": 0,
+                        "addend": 165
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "sylveon": [
+        {
+            "name": "Adaptability",
+            "desc": "Every time Eevee deals or receives damage, increase Sp. Attack by 5% for 1.5s, stacking up to 4 times.",
+            "evolution": "eevee"
+        },
+        {
+            "name": "Pixilate",
+            "desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times."
+        }
+    ]
+}

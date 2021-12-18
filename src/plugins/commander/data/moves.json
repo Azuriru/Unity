@@ -579,5 +579,157 @@
                 }
             ]
         }
+    ],
+    "charizard": [
+        {
+            "aliases": ["s01", "flameburst"],
+            "name": "Flame Burst",
+            "level": 1,
+            "cd": 6,
+            "type": "ranged",
+            "desc": "Charizard attacks with a bursting flame forward, exploding on the first enemy hit, dealing damage and burning enemies in a small radius. Charizard gains a small movement speed bonus when hitting an enemy. The burn lasts 4s and reduces enemy Attack by 5%.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "105% Atk + 4 x (Level - 1) + 70",
+                    "calc_variables": {
+                        "atk_modifier": 1.04,
+                        "lvl_modifier": 4,
+                        "addend": 70
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Burn (5 ticks)",
+                    "value": "20% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 0.20,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "firespin"],
+            "name": "Fire Spin",
+            "level": 1,
+            "cd": 10,
+            "type": "area",
+            "desc": "Charizard shoots a burst of fire forward, exploding on the first enemy hit or after traveling max distance, dealing damage over time and slowing enemies within the radius.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "100% Atk + 5 x (Level - 1) + 150",
+                    "calc_variables": {
+                        "atk_modifier": 1.00,
+                        "lvl_modifier": 5,
+                        "addend": 150
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Area (10 ticks)",
+                    "value": "20% Atk + 1 x (Level - 1) + 30",
+                    "calc_variables": {
+                        "atk_modifier": 0.20,
+                        "lvl_modifier": 1,
+                        "addend": 30
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "flamethrower"],
+            "name": "Flamethrower",
+            "level": 5,
+            "cd": 5.5,
+            "type": "ranged",
+            "desc": "Attacks with a blast of fire, damaging and burning enemies in a line. Charizard gains a small movement speed bonus if they hit. The burn lasts 4s and reduces enemy Attack by 5%.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "150% Atk + 6 x (Level - 1) + 160",
+                    "calc_variables": {
+                        "atk_modifier": 1.50,
+                        "lvl_modifier": 6,
+                        "addend": 160
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Burn (5 ticks)",
+                    "value": "20% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 0.20,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Deals increased damage",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "176% Atk + 8 x (Level - 1) + 190",
+                    "calc_variables": {
+                        "atk_modifier": 1.76,
+                        "lvl_modifier": 8,
+                        "addend": 190
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Burn (5 ticks)",
+                    "value": "25% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 0.25,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "firepunch"],
+            "name": "Fire Punch",
+            "level": 5,
+            "cd": 6,
+            "type": "melee",
+            "desc": "Charizard punches forward, damaging and shoving enemies in their path. The first enemy hit is burned. The burn lasts 4s and reduces enemy Attack by 5%.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "224% Atk + 10 x (Level - 1) + 240",
+                    "calc_variables": {
+                        "atk_modifier": 2.24,
+                        "lvl_modifier": 10,
+                        "addend": 240
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Burn (5 ticks)",
+                    "value": "20% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 0.2,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Cooldown reduces every time Charizard hits with a basic attack.",
+                    "type": "data"
+                }
+            ]
+        }
     ]
 }

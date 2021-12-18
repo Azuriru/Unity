@@ -1,0 +1,37 @@
+{
+    "absol": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing damage to enemies and lowering their Defense by 15% for 2s when it hits. If this boosted attack hits only a single target, it deals increased damage.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": "100"
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "51% Atk + 5 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 51,
+                        "lvl_modifier": 5,
+                        "addend": 100
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Single Target Bonus",
+                    "value": "37.5% Atk + 1 x (Level - 1) + 20",
+                    "calc_variables": {
+                        "atk_modifier": 37.5,
+                        "lvl_modifier": 1,
+                        "addend": 20
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ]
+}
