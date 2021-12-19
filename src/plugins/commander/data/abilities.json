@@ -75,6 +75,12 @@
             ]
         }
     ],
+    "garchomp": [
+        {
+            "name": "Rough Skin",
+            "desc": "When Garchomp takes a hit from a physical attack by a melee Pokémon, a portion of that damage is also dealt to the attacker. 2s cooldown and this damage is subject to defense reduction."
+        }
+    ],
     "sylveon": [
         {
             "name": "Adaptability",

@@ -1,6 +1,6 @@
 const data = require('../data/pokemon.json');
 const abilities = require('../data/abilities.json');
-const basic_abilities = require('../data/abilities.json');
+const basic_abilities = require('../data/basic-abilities.json');
 const moves = require('../data/moves.json');
 const { MessageEmbed } = require('discord.js');
 
@@ -53,7 +53,7 @@ class Pokemon {
 
                 embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill_icons/${this.name}/${evolution ? `ability-${evolution}` : 'ability'}.png`);
                 embed.setDescription(desc);
-                embed.setFields(
+                fields && embed.setFields(
                     fields.flatMap(({ title, value, calc_variables, type }) => {
                         switch(type) {
                             case 'inline':
@@ -86,6 +86,8 @@ class Pokemon {
                 );
                 embed.setFooter(`${this.capitalize(this.name)}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${evolution ? `${evolution}` : this.name}.png`);
                 embed.setTimestamp();
+
+                return embed;
             })
         };
     }
@@ -95,9 +97,9 @@ class Pokemon {
             embeds: this.basic_abilities.map(({ desc, fields, evolution }) => {
                 const embed = new MessageEmbed();
 
-                embed.setAuthor('Basic Ability', `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/basic_ability.png`);
+                embed.setAuthor('Basic Ability', `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/basic-attack.png`);
                 embed.setDescription(desc);
-                embed.setFields(
+                fields && embed.setFields(
                     fields.flatMap(({ title, value, calc_variables, variables, type }) => {
                         switch(type) {
                             case 'inline':
@@ -117,7 +119,7 @@ class Pokemon {
                                         value: this.getValue(calc_variables),
                                         inline: true
                                     }
-                                ]
+                                ];
                             case 'inline-percentage':
                                 return [
                                     {
@@ -135,19 +137,21 @@ class Pokemon {
                                         value: this.getValue(variables, true),
                                         inline: true
                                     }
-                                ]
+                                ];
                             case 'data':
                                 return [
                                     {
                                         name: title,
                                         value
                                     }
-                                ]
+                                ];
                         }
                     })
                 );
                 embed.setFooter(`${this.capitalize(this.name)}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${evolution ? `${evolution}` : this.name}.png`);
                 embed.setTimestamp();
+
+                return embed;
             })
         };
     }
@@ -171,7 +175,7 @@ class Pokemon {
         const { cdr } = this.stats.levels[this.level];
 
         const embed = new MessageEmbed();
-        embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill_icons/${this.name}/${skillcode}.png`);
+        embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/${this.name}/${skillcode}.png`);
         embed.setDescription(desc);
         embed.setFields(
             [
@@ -194,14 +198,14 @@ class Pokemon {
                                     value: this.getValue(calc_variables),
                                     inline: true
                                 }
-                            ]
+                            ];
                         case 'data':
                             return [
                                 {
                                     name: title,
                                     value
                                 }
-                            ]
+                            ];
                     }
                 }),
                 {
