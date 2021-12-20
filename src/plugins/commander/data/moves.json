@@ -1504,7 +1504,7 @@
                     "title": "Level 11",
                     "value": "Increases basic attack damage by 2% of enemies remaining HP.\n\nThis damage only applies once per attack, not on each of the 3 boosted quills.",
                     "type": "data"
-                },
+                }
             ]
         },
         {
@@ -1599,7 +1599,7 @@
                     "title": "Level 13",
                     "value": "Defense reduction of enemies is increased to 80%.",
                     "type": "data"
-                },
+                }
             ]
         },
         {
