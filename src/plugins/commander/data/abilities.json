@@ -117,6 +117,18 @@
             "desc": "Increases movement speed by 10% when out of combat for 7s."
         }
     ],
+    "greedent": [
+        {
+            "name": "Cheek Pouch",
+            "desc": "When Greedent eats a berry, recover HP after receiving the effects of the berry. At the same time, Greedent stashes an Oran berry in its tail. Being hit by a single attack or combination of attacks will cause an Oran berry to drop from Greedent's tail. Berries stay on the ground for 10s.\n\nIf any ally or enemy eats an Oran Berry, they heal for 45 + 2% max HP (unless the enemy is Greedent). Greedent enemies that eat an Oran Berry heal for 45 + 5 x (Level -1) + 2% max HP"
+        }
+    ],
+    "greninja": [
+        {
+            "name": "Torrent",
+            "desc": "While HP is at 50% or less, Attack is increased by 5% and movement speed is increased by 12%."
+        }
+    ],
     "sylveon": [
         {
             "name": "Adaptability",

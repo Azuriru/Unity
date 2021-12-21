@@ -356,5 +356,55 @@
                 }
             ]
         }
+    ],
+    "greedent": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage when it hits and causing one berry to drop from Greedent's tail.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "75% Atk + 4 x (Level - 1) + 80",
+                    "calc_variables": {
+                        "atk_modifier": 0.75,
+                        "lvl_modifier": 4,
+                        "addend": 80
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "greninja": [
+        {
+            "desc": "At range, Greninja's basic attacks reduce the cooldown of Surf, Water Shuriken, or Bubble by 0.5 seconds and boosted attacks apply a slow. In melee, Greninja's basic attacks instead deal bonus damage equal to 5% missing HP (calculated as basic attack damage and subject to basic attack effects). Boosted melee attacks also dash through the primary target and increases the missing HP damage to 10%.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "120% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.20,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
     ]
 }
