@@ -210,6 +210,40 @@
             ]
         }
     ],
+    "dragonite": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, blasting water in front of Dratini, dealing increased damage, reducing the cooldown of Dratini's moves by 1s, and recover 5% max HP when this hits.",
+            "evolution": "dratini"
+        },
+        {
+            "desc": "The boosted attack alternates between water and electric with every use of a boosted attack. If the water attack hits, it triggers the same effects as Dratini's boosted attack. If the electric attack hits, it leaves enemies unable to act for a short time and reduces the cooldown of Dragonair's moves by 1s when this hits.",
+            "evolution": "dragonair"
+        },
+        {
+            "desc": "The boosted attack alternates between water, electric, and fire with every use of a boosted attack. If the water or electric attack hits, it triggers the same effects as Dragonair's boosted attack. If the fire attack hits, it deals additional damage equal to 10% of the enemy's remaining HP (capped at 1200 dmg) and reduces the cooldown of Dragonite's moves by 1s when this hits.",
+            "evolution": "dragonite",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "135% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.35,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
     "eldegoss": [
         {
             "desc": "Becomes a boosted attack with every third attack, attaching a bit of cotton fluff to the enemy. The user's basic attacks against an enemy with cotton fluff on it deal increased damage and decreases the enemies movement speed for a short time.",
@@ -219,7 +253,7 @@
                     "value": "100% Atk",
                     "variables": {
                         "atk_type": "attack",
-                        "atk_modifier": 100
+                        "atk_modifier": 1
                     },
                     "type": "inline-percentage"
                 },
@@ -265,6 +299,58 @@
                         "atk_modifier": 1.10,
                         "lvl_modifier": 0,
                         "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "gardevoir": [
+        {
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to enemies in the area of effect and decreases their Sp. Defense by 10% for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "44% SpA + 10 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 0.44,
+                        "lvl_modifier": 10,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "gengar": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, teleporting to an enemy (even through walls) and dealing increased damage.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "84% SpA + 5 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 0.84,
+                        "lvl_modifier": 5,
+                        "addend": 100
                     },
                     "type": "inline"
                 }

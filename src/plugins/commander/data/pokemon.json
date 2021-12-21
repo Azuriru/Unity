@@ -1372,7 +1372,7 @@
     "eldegoss": {
         "evolutions": {
             "1": "gossifleur",
-            "3": "eldegoss"
+            "4": "eldegoss"
         },
         "stats": {
             "combat": 3,

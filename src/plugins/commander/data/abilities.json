@@ -47,6 +47,18 @@
             "desc": "Deals 20% increased damage to distant enemies."
         }
     ],
+    "dragonite": [
+        {
+            "name": "Marvel Scale",
+            "desc": "Increases Defense by 100 when afflicted by a status condition (Dratini and Dragonair only).",
+            "evolution": "dratini"
+        },
+        {
+            "name": "Multiscale",
+            "desc": "When damaged by an enemy player, gain a buff that reduces damage taken by 20% for 2.5 seconds. This ability has a 15 second cooldown.",
+            "evolution": "dragonite"
+        }
+    ],
     "eldegoss": [
         {
             "name": "Cotton Down",
@@ -56,7 +68,7 @@
                     "title": "Damage - Revenge",
                     "value": "35% SpA + 0 x (Level - 1) + 150",
                     "calc_variables": {
-                        "atk_modifier": 35,
+                        "atk_modifier": 0.35,
                         "lvl_modifier": 0,
                         "addend": 150
                     },
@@ -66,7 +78,7 @@
                     "title": "Healing - Revenge",
                     "value": "65% SpA + 0 x (Level - 1) + 165",
                     "calc_variables": {
-                        "atk_modifier": 65,
+                        "atk_modifier": 0.65,
                         "lvl_modifier": 0,
                         "addend": 165
                     },
@@ -81,6 +93,30 @@
             "desc": "When Garchomp takes a hit from a physical attack by a melee Pokémon, a portion of that damage is also dealt to the attacker. 2s cooldown and this damage is subject to defense reduction."
         }
     ],
+    "gardevoir": [
+        {
+            "name": "Synchronize",
+            "desc": "When an enemy inflicts decreased movement speed or a damage-over-time effect on Gardevoir, movement speed reduction or damage is inflicted back to the attacker, respectively. This ability has a 9s cooldown after it's triggered.",
+            "fields": [
+                {
+                    "title": "Damage - Reflected",
+                    "value": "50% SpA + 0 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0.5,
+                        "lvl_modifier": 0,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "gengar": [
+        {
+            "name": "Levitate",
+            "desc": "Increases movement speed by 10% when out of combat for 7s."
+        }
+    ],
     "sylveon": [
         {
             "name": "Adaptability",
@@ -89,7 +125,8 @@
         },
         {
             "name": "Pixilate",
-            "desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times."
+            "desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times.",
+            "evolution": "sylveon"
         }
     ]
 }
