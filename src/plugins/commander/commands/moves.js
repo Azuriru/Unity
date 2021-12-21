@@ -81,7 +81,7 @@ class MovesCommand extends Command {
         embed.setDescription(desc);
         embed.setFields(
             [
-                fields ? fields.flatMap(({ title, value, calc_variables, type }) => {
+                ...fields ? fields.flatMap(({ title, value, calc_variables, type }) => {
                     switch(type) {
                         case 'inline':
                             return [
