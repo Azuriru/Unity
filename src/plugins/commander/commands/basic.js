@@ -54,79 +54,61 @@ class BasicCommand extends Command {
             embed.setAuthor('Basic Ability', `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/basic-attack.png`);
             embed.setDescription(desc);
             fields && embed.setFields(
-                mobile
-                    ? fields.flatMap(({ title, value, calc_variables, variables, type }) => {
-                        switch(type) {
-                            case 'inline':
-                                return {
+                fields.flatMap(({ title, value, calc_variables, variables, type }) => {
+                    switch(type) {
+                        case 'inline':
+                            return [
+                                {
                                     name: title,
-                                    value: `
-                                        **Formula:** ${value}
-                                        **Value:** ${pokemon.getValue(calc_variables)}
-                                    `
-                                };
-                            case 'inline-percentage':
-                                return {
+                                    value: mobile
+                                        ? `
+                                            **Formula:** ${value}
+                                            **Value:** ${pokemon.getValue(calc_variables)}
+                                        `
+                                        : value,
+                                    inline: !mobile
+                                },
+                                !mobile && {
+                                    name: '\u200B',
+                                    value: '\u200B',
+                                    inline: true
+                                },
+                                !mobile && {
+                                    name: 'Value',
+                                    value: pokemon.getValue(calc_variables),
+                                    inline: true
+                                }
+                            ];
+                        case 'inline-percentage':
+                            return [
+                                {
                                     name: title,
-                                    value: `
-                                        **Formula:** ${value}
-                                        **Value:** ${pokemon.getValue(variables, true)}
-                                    `
-                                };
-                            case 'data':
-                                return {
-                                    name: title,
-                                    value
-                                };
-                        }
-                    })
-                    : fields.flatMap(({ title, value, calc_variables, variables, type }) => {
-                        switch(type) {
-                            case 'inline':
-                                return [
-                                    {
-                                        name: title,
-                                        value,
-                                        inline: true
-                                    },
-                                    {
-                                        name: '\u200B',
-                                        value: '\u200B',
-                                        inline: true
-                                    },
-                                    {
-                                        name: 'Value',
-                                        value: pokemon.getValue(calc_variables),
-                                        inline: true
-                                    }
-                                ];
-                            case 'inline-percentage':
-                                return [
-                                    {
-                                        name: title,
-                                        value,
-                                        inline: true
-                                    },
-                                    {
-                                        name: '\u200B',
-                                        value: '\u200B',
-                                        inline: true
-                                    },
-                                    {
-                                        name: 'Value',
-                                        value: pokemon.getValue(variables, true),
-                                        inline: true
-                                    }
-                                ];
-                            case 'data':
-                                return [
-                                    {
-                                        name: title,
-                                        value
-                                    }
-                                ];
-                        }
-                    })
+                                    value: mobile
+                                        ? `
+                                            **Formula:** ${value}
+                                            **Value:** ${pokemon.getValue(variables, true)}
+                                        `
+                                        : value,
+                                    inline: !mobile
+                                },
+                                !mobile && {
+                                    name: '\u200B',
+                                    value: '\u200B',
+                                    inline: true
+                                },
+                                !mobile && {
+                                    name: 'Value',
+                                    value: pokemon.getValue(variables, true),
+                                    inline: true
+                                }
+                            ];
+                        case 'data':
+                            return {
+                                name: title,
+                                value
+                            }
+                    }
+                }).filter(Boolean)
             );
             embed.setFooter(`${pokemon.capitalize(pokemon.name)}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${evolution ? `${evolution}` : pokemon.name}.png`);
             embed.setTimestamp();

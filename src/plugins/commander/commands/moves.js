@@ -80,81 +80,55 @@ class MovesCommand extends Command {
         embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/${pokemon.name}/${skillcode}.png`);
         embed.setDescription(desc);
         embed.setFields(
-            mobile
-                ? [
-                    ...fields.flatMap(({ title, value, calc_variables, type }) => {
-                        switch(type) {
-                            case 'inline':
-                                return {
+            [
+                ...fields.flatMap(({ title, value, calc_variables, type }) => {
+                    switch(type) {
+                        case 'inline':
+                            return [
+                                {
                                     name: title,
-                                    value: `
-                                        **Formula:** ${value}
-                                        **Value: **${pokemon.getValue(calc_variables)}
-                                    `,
+                                    value: mobile
+                                        ? `
+                                            **Formula:** ${value}
+                                            **Value: **${pokemon.getValue(calc_variables)}
+                                        `
+                                        : value,
+                                    inline: !mobile
+                                },
+                                !mobile && {
+                                    name: '\u200B',
+                                    value: '\u200B',
                                     inline: true
-                                };
-                            case 'data':
-                                return {
-                                    name: title,
-                                    value
-                                };
-                        }
-                    }),
-                    {
-                        name: 'Cooldown',
-                        value: pokemon.getCooldown(cd, cdr, skillcode === 'u')
-                    },
-                    {
-                        name: 'Type',
-                        value: pokemon.capitalize(type)
+                                },
+                                !mobile && {
+                                    name: 'Value',
+                                    value: pokemon.getValue(calc_variables),
+                                    inline: true
+                                }
+                            ];
+                        case 'data':
+                            return {
+                                name: title,
+                                value
+                            };
                     }
-                ]
-                : [
-                    ...fields.flatMap(({ title, value, calc_variables, type }) => {
-                        switch(type) {
-                            case 'inline':
-                                return [
-                                    {
-                                        name: title,
-                                        value,
-                                        inline: true
-                                    },
-                                    {
-                                        name: '\u200B',
-                                        value: '\u200B',
-                                        inline: true
-                                    },
-                                    {
-                                        name: 'Value',
-                                        value: pokemon.getValue(calc_variables),
-                                        inline: true
-                                    }
-                                ];
-                            case 'data':
-                                return [
-                                    {
-                                        name: title,
-                                        value
-                                    }
-                                ];
-                        }
-                    }),
-                    {
-                        name: 'Cooldown',
-                        value: pokemon.getCooldown(cd, cdr, skillcode === 'u'),
-                        inline: true
-                    },
-                    {
-                        name: '\u200B',
-                        value: '\u200B',
-                        inline: true
-                    },
-                    {
-                        name: 'Type',
-                        value: pokemon.capitalize(type),
-                        inline: true
-                    }
-                ]
+                }).filter(Boolean),
+                {
+                    name: 'Cooldown',
+                    value: pokemon.getCooldown(cd, cdr, skillcode === 'u'),
+                    inline: true
+                },
+                !mobile && {
+                    name: '\u200B',
+                    value: '\u200B',
+                    inline: true
+                },
+                {
+                    name: 'Type',
+                    value: pokemon.capitalize(type),
+                    inline: true
+                }
+            ]
         );
         embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skills/${pokemon.name}/${skillcode}.png`);
         embed.setFooter(`${pokemon.capitalize(pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
