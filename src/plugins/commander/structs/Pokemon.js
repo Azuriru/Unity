@@ -4,7 +4,6 @@ class Pokemon {
     constructor(name, level = 1) {
         this.name = name;
         this.level = level;
-        this.abilities = abilities[this.name];
         Object.assign(this, data[name]);
     }
 

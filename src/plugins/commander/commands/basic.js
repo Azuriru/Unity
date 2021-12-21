@@ -44,7 +44,11 @@ class BasicCommand extends Command {
         if (names.indexOf(pokemon_name) === -1) return message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
 
         const pokemon = new Pokemon(pokemon_name, level);
-        const embeds = basic_abilities[pokemon_name].map(({ desc, fields, evolution }) => {
+        const pokemon_basic_abilities = basic_abilities[pokemon_name];
+
+        if (!pokemon_basic_abilities) return message.channel.send(`Basic abilities for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+
+        const embeds = pokemon_basic_abilities.map(({ desc, fields, evolution }) => {
             const embed = new MessageEmbed();
 
             embed.setAuthor('Basic Ability', `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/basic-attack.png`);

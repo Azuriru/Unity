@@ -55,7 +55,11 @@ class MovesCommand extends Command {
         if (names.indexOf(pokemon_name) === -1) return message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
 
         const pokemon = new Pokemon(pokemon_name, level);
-        const move = moves[pokemon_name].find(({ aliases }) => aliases.includes(move_name.toLowerCase()));
+        const pokemon_moves = moves[pokemon_name];
+
+        if (!pokemon_moves) return message.channel.send(`Moves for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+
+        const move = pokemon_moves.find(({ aliases }) => aliases.includes(move_name.toLowerCase()));
 
         if (!move) return message.channel.send(`No move by the name of \`${move_name}\` was found for ${pokemon.capitalize(pokemon.name)}`);
 

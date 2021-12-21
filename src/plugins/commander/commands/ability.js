@@ -42,7 +42,11 @@ class AbilityCommand extends Command {
         if (names.indexOf(pokemon_name) === -1) return message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
 
         const pokemon = new Pokemon(pokemon_name, level);
-        const embeds = abilities[pokemon_name].map(({ name, desc, fields, evolution }) => {
+        const pokemon_abilities = abilities[pokemon_name];
+
+        if (!pokemon_abilities) return message.channel.send(`Abilities for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+
+        const embeds = pokemon_abilities.map(({ name, desc, fields, evolution }) => {
             const embed = new MessageEmbed();
 
             embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/${pokemon.name}/${evolution ? `ability-${evolution}` : 'ability'}.png`);
