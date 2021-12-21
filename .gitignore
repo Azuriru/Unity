@@ -8,7 +8,7 @@ config.json
 log/
 
 # Workspace settings
-.vscode/
+# .vscode/
 
 # We use Yarn
 package-lock.json

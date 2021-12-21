@@ -110,7 +110,7 @@ class BasicCommand extends Command {
                     }
                 }).filter(Boolean)
             );
-            embed.setFooter(`${pokemon.capitalize(pokemon.name)}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${evolution ? `${evolution}` : pokemon.name}.png`);
+            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
             embed.setTimestamp();
 
             return embed;

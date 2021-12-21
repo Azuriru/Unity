@@ -131,7 +131,7 @@ class MovesCommand extends Command {
             ]
         );
         embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skills/${pokemon.name}/${skillcode}.png`);
-        embed.setFooter(`${pokemon.capitalize(pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
+        embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
         embed.setTimestamp();
 
         message.channel.send({ embeds: [ embed ] });
