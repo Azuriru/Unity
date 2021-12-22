@@ -12,7 +12,7 @@ class RandomizeCommand extends Command {
 
 	constructor(bot) {
 		super(bot);
-		this.aliases = ['random', 'randomize'];
+		this.aliases = ['randomize', 'random'];
         // this.schema = new SlashCommandBuilder();
 
         const fmt = this.bot.fmt;
@@ -39,6 +39,20 @@ class RandomizeCommand extends Command {
 	}
 
 	async call(message, content) {
+        let target;
+        if (message.member) {
+            target = message.member
+        }
+
+        const user = target
+            ? target.nickname || target.user.username
+            : message.author.username;
+        const avatar = (target ? target.user : message.author).avatarURL({
+            format: 'png',
+            dynamic: true,
+            size: 32
+        });
+
         const args = this.parseArgs(content.toLowerCase());
         let list = pokemons;
         let generateNumber = 1;
@@ -70,31 +84,14 @@ class RandomizeCommand extends Command {
             list = list.filter(mon => random !== mon);
         }
 
-        const embed = new MessageEmbed();
-
-        embed.setTitle('Randomizer');
-        embed.setDescription(`
+        const embed = new MessageEmbed()
+            .setTitle('Randomizer')
+            .setDescription(`
             We randomly generated:
             ${result.map(mon => mon.charAt(0).toUpperCase() + mon.slice(1)).join('\n')}
-        `);
-
-        let target;
-        if (message.member) {
-            target = message.member
-        }
-
-        const name = target
-            ? target.nickname || target.user.username
-            : message.author.username;
-        const avatar = (target ? target.user : message.author).avatarURL({
-            format: 'png',
-            dynamic: true,
-            size: 32
-        });
-
-        embed.setFooter(`Requested by ${name}`, avatar);
-
-        embed.setTimestamp();
+        `)
+            .setFooter(`Requested by ${name}`, avatar)
+            .setTimestamp();
 
         await message.channel.send({
             embeds: [

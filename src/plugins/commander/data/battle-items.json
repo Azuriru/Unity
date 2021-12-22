@@ -1,0 +1,50 @@
+{
+    "ejectbutton": {
+        "name": "Eject Button",
+        "description": "Quickly move in a designated direction.",
+        "cooldown": 70,
+        "unlock_level": 11
+    },
+    "fluffytail": {
+        "name": "Fluffy Tail",
+        "description": "Apply a debuff to a wild Pokemon for 3 seconds. The debuff disables the affected Pokemon’s attacks and triggers an additional hit when the user deals direct damage to the target. The additional hit deals 100% Atk + 60% SpA + 10*(Level-1) + 100 and has a 0.5 second cooldown.",
+        "cooldown": 25,
+        "unlock_level": 10
+    },
+    "fullheal": {
+        "name": "Full Heal",
+        "description": "Remove all status conditions and become immune to hindrances for a short time. (2.5s duration)",
+        "cooldown": 40,
+        "unlock_level": 14
+    },
+    "goalgetter": {
+        "name": "Goal Getter",
+        "description": "Doubles goal scoring speed for a short time. (10s duration)",
+        "cooldown": 90,
+        "unlock_level": 17
+    },
+    "potion": {
+        "name": "Potion",
+        "description": "Restores some of your HP. (20% max HP + 160)",
+        "cooldown": 30,
+        "unlock_level": 3
+    },
+    "slowsmoke": {
+        "name": "Slow Smoke",
+        "description": "Create a ring of smoke around you, greatly slowing enemies within. (1s duration)",
+        "cooldown": 40,
+        "unlock_level": 13
+    },
+    "xattack": {
+        "name": "X Attack",
+        "description": "Raises your Attack and Sp. Attack for a short time. (7s duration – 20% increased Attack/Sp. Attack)",
+        "cooldown": 40,
+        "unlock_level": 7
+    },
+    "xspeed": {
+        "name": "X Speed",
+        "description": "Raises your movement speed by 30% and become immune to move speed reduction for 6s.",
+        "cooldown": 50,
+        "unlock_level": 8
+    }
+}

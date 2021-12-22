@@ -57,44 +57,47 @@ class AbilityCommand extends Command {
         }
 
         const embeds = pokemon_abilities.map(({ name, desc, fields, evolution }) => {
-            const embed = new MessageEmbed();
+            const embed = new MessageEmbed()
+                .setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/${pokemon.name}/${evolution && evolution !== pokemon.name ? `ability-${evolution}` : 'ability'}.png`)
+                .setDescription(desc);
 
-            embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/${pokemon.name}/${evolution && evolution !== pokemon.name ? `ability-${evolution}` : 'ability'}.png`);
-            embed.setDescription(desc);
-            fields && embed.setFields(
-                fields.flatMap(({ title, value, calc_variables, type }) => {
-                    switch(type) {
-                        case 'inline':
-                            return [
-                                {
+            if (fields) {
+                embed.setFields(
+                    fields.flatMap(({ title, value, calc_variables, type }) => {
+                        switch(type) {
+                            case 'inline':
+                                return [
+                                    {
+                                        name: title,
+                                        value: mobile
+                                            ? `
+                                                **Formula:** ${value}
+                                                **Value**:** ${pokemon.getValue(calc_variables)}
+                                            `
+                                            : value,
+                                        inline: !mobile
+                                    },
+                                    !mobile && {
+                                        name: '\u200B',
+                                        value: '\u200B',
+                                        inline: true
+                                    },
+                                    !mobile && {
+                                        name: 'Value',
+                                        value: pokemon.getValue(calc_variables),
+                                        inline: true
+                                    }
+                                ];
+                            case 'data':
+                                return {
                                     name: title,
-                                    value: mobile
-                                        ? `
-                                            **Formula:** ${value}
-                                            **Value**:** ${pokemon.getValue(calc_variables)}
-                                        `
-                                        : value,
-                                    inline: !mobile
-                                },
-                                !mobile && {
-                                    name: '\u200B',
-                                    value: '\u200B',
-                                    inline: true
-                                },
-                                !mobile && {
-                                    name: 'Value',
-                                    value: pokemon.getValue(calc_variables),
-                                    inline: true
-                                }
-                            ];
-                        case 'data':
-                            return {
-                                name: title,
-                                value
-                            };
-                    }
-                }).filter(Boolean)
-            );
+                                    value
+                                };
+                        }
+                    }).filter(Boolean)
+                );
+            }
+
             embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
             embed.setTimestamp();
 
