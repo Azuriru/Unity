@@ -134,7 +134,11 @@ class MovesCommand extends Command {
         embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
         embed.setTimestamp();
 
-        message.channel.send({ embeds: [ embed ] });
+        await message.channel.send({
+            embeds: [
+                embed
+            ]
+        });
 	}
 }
 

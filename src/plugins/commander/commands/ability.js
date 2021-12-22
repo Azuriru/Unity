@@ -91,7 +91,9 @@ class AbilityCommand extends Command {
             return embed;
         });
 
-        message.channel.send({ embeds });
+        await message.channel.send({
+            embeds
+        });
 	}
 }
 

@@ -1369,6 +1369,173 @@
             "damage": "Physical"
         }
     },
+    "dragonite": {
+        "evolutions": {
+            "1": "dratini",
+            "5": "dragonair",
+            "8": "dragonite"
+        },
+        "stats": {
+            "levels": [
+                {
+                    "hp": 3050,
+                    "attack": 145,
+                    "defense": 78,
+                    "sp_attack": 20,
+                    "sp_defense": 60,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3117,
+                    "attack": 150,
+                    "defense": 83,
+                    "sp_attack": 21,
+                    "sp_defense": 64,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3198,
+                    "attack": 156,
+                    "defense": 89,
+                    "sp_attack": 23,
+                    "sp_defense": 68,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3295,
+                    "attack": 163,
+                    "defense": 96,
+                    "sp_attack": 25,
+                    "sp_defense": 73,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3647,
+                    "attack": 189,
+                    "defense": 121,
+                    "sp_attack": 32,
+                    "sp_defense": 92,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 3787,
+                    "attack": 199,
+                    "defense": 131,
+                    "sp_attack": 35,
+                    "sp_defense": 100,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 3955,
+                    "attack": 212,
+                    "defense": 143,
+                    "sp_attack": 38,
+                    "sp_defense": 109,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 4627,
+                    "attack": 262,
+                    "defense": 191,
+                    "sp_attack": 52,
+                    "sp_defense": 146,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 4869,
+                    "attack": 280,
+                    "defense": 208,
+                    "sp_attack": 57,
+                    "sp_defense": 159,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 5159,
+                    "attack": 302,
+                    "defense": 229,
+                    "sp_attack": 63,
+                    "sp_defense": 175,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 5507,
+                    "attack": 328,
+                    "defense": 254,
+                    "sp_attack": 70,
+                    "sp_defense": 194,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 5925,
+                    "attack": 359,
+                    "defense": 284,
+                    "sp_attack": 78,
+                    "sp_defense": 217,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 6426,
+                    "attack": 396,
+                    "defense": 320,
+                    "sp_attack": 88,
+                    "sp_defense": 244,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 15
+                },
+                {
+                    "hp": 7028,
+                    "attack": 441,
+                    "defense": 363,
+                    "sp_attack": 100,
+                    "sp_defense": 277,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 15
+                },
+                {
+                    "hp": 7750,
+                    "attack": 495,
+                    "defense": 415,
+                    "sp_attack": 115,
+                    "sp_defense": 316,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 15
+                }
+            ]
+        },
+        "tags": {
+            "range": "Ranged",
+            "difficulty": "Novice",
+            "role": "All-Rounder",
+            "damage": "Physical"
+        }
+    },
     "eldegoss": {
         "evolutions": {
             "1": "gossifleur",

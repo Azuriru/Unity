@@ -11,8 +11,8 @@ class RestartCommand extends OPCommand {
         this.shortdesc = `Restarts the bot.`;
         this.desc = `
             Restarts the bot.
-            The bot will send another message once the restart has finished.
             You need to be a bot operator to use this command.`;
+            // The bot will send another message once the restart has finished.
         this.usages = [
             '!restart'
         ];
