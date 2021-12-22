@@ -50,18 +50,35 @@ class MovesCommand extends Command {
 
         const [ pokemon_name, move_name, level ] = content.toLowerCase().split(' ');
 
-        if (!pokemon_name) return message.channel.send(`You need to specify a Pokemon.`);
-        if (!move_name) return message.channel.send(`You need to specify a move name.`);
-        if (names.indexOf(pokemon_name) === -1) return message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
+        if (!pokemon_name) {
+            await message.channel.send(`You need to specify a Pokemon.`);
+            return;
+        }
+
+        if (!move_name) {
+            await message.channel.send(`You need to specify a move name.`);
+            return;
+        }
+
+        if (names.indexOf(pokemon_name) === -1) {
+            await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
+            return;
+        }
 
         const pokemon = new Pokemon(pokemon_name, level);
         const pokemon_moves = moves[pokemon_name];
 
-        if (!pokemon_moves) return message.channel.send(`Moves for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+        if (!pokemon_moves) {
+            await message.channel.send(`Moves for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+            return;
+        }
 
         const move = pokemon_moves.find(({ aliases }) => aliases.includes(move_name.toLowerCase()));
 
-        if (!move) return message.channel.send(`No move by the name of \`${move_name}\` was found for ${pokemon.capitalize(pokemon.name)}`);
+        if (!move) {
+            await message.channel.send(`No move by the name of \`${move_name}\` was found for ${pokemon.capitalize(pokemon.name)}`);
+            return;
+        }
 
         const { aliases: [ skillcode ], name, level: lvl, cd, type, desc, fields } = move;
         let title = name;

@@ -39,14 +39,23 @@ class BasicCommand extends Command {
 
         const [ pokemon_name, level ] = content.toLowerCase().split(' ');
 
-        if (!pokemon_name) return message.channel.send(`You need to specify a Pokemon.`);
+        if (!pokemon_name) {
+            await message.channel.send(`You need to specify a Pokemon.`);
+            return;
+        };
 
-        if (names.indexOf(pokemon_name) === -1) return message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
+        if (names.indexOf(pokemon_name) === -1) {
+            await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
+            return;
+        }
 
         const pokemon = new Pokemon(pokemon_name, level);
         const pokemon_basic_abilities = basic_abilities[pokemon_name];
 
-        if (!pokemon_basic_abilities) return message.channel.send(`Basic abilities for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+        if (!pokemon_basic_abilities) {
+            await message.channel.send(`Basic abilities for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
+            return;
+        }
 
         const embeds = pokemon_basic_abilities.map(({ desc, fields, evolution }) => {
             const embed = new MessageEmbed();

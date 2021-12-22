@@ -61,7 +61,7 @@ class RandomizeCommand extends Command {
         }
 
         if (generateNumber > pokemons.length) {
-            message.channel.send(`You are requesting to generate more than the amount I have. Just run it twice if you don't mind duplicates`);
+            await message.channel.send(`You are requesting to generate more than the amount I have. Just run it twice if you don't mind duplicates`);
         }
 
         while (generateNumber--) {
