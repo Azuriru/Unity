@@ -82,8 +82,8 @@ class ReactionManager {
         while (true) {
             if (this.finished) break;
 
-            const reactions = await this.message.awaitReactions(
-                (reaction, user) => {
+            const reactions = await this.message.awaitReactions({
+                filter: (reaction, user) => {
                     if (user.id === this.bot.client.user.id) {
                         return false;
                     }
@@ -98,11 +98,9 @@ class ReactionManager {
 
                     return true;
                 },
-                {
-                    max: 1,
-                    time: this.timeoutActivity
-                }
-            );
+                time: this.timeoutActivity,
+                max: 1
+            });
 
             if (this.finished) break;
 
