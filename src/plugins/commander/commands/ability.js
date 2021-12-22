@@ -59,7 +59,7 @@ class AbilityCommand extends Command {
         const embeds = pokemon_abilities.map(({ name, desc, fields, evolution }) => {
             const embed = new MessageEmbed();
 
-            embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/${pokemon.name}/${evolution && evolution !== pokemon.name ? `ability-${evolution}` : 'ability'}.png`);
+            embed.setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/${pokemon.name}/${evolution && evolution !== pokemon.name ? `ability-${evolution}` : 'ability'}.png`);
             embed.setDescription(desc);
             fields && embed.setFields(
                 fields.flatMap(({ title, value, calc_variables, type }) => {
@@ -95,7 +95,7 @@ class AbilityCommand extends Command {
                     }
                 }).filter(Boolean)
             );
-            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
+            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
             embed.setTimestamp();
 
             return embed;

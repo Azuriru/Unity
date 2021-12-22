@@ -94,7 +94,7 @@ class MovesCommand extends Command {
         const { cdr } = pokemon.stats.levels[pokemon.level];
 
         const embed = new MessageEmbed();
-        embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skill-icons/${pokemon.name}/${skillcode}.png`);
+        embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/${pokemon.name}/${skillcode}.png`);
         embed.setDescription(desc);
         embed.setFields(
             [
@@ -147,8 +147,8 @@ class MovesCommand extends Command {
                 }
             ]
         );
-        embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/skills/${pokemon.name}/${skillcode}.png`);
-        embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
+        embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/previews/${pokemon.name}/${skillcode}.png`);
+        embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
         embed.setTimestamp();
 
         await message.channel.send({
