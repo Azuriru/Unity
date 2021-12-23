@@ -98,7 +98,7 @@ class MovesCommand extends Command {
         embed.setDescription(desc);
         embed.setFields(
             [
-                ...fields ? fields.flatMap(({ title, value, calc_variables, type }) => {
+                ...fields.flatMap(({ title, value, calc_variables, type }) => {
                     switch(type) {
                         case 'inline':
                             return [
@@ -129,7 +129,7 @@ class MovesCommand extends Command {
                                 value
                             };
                     }
-                }).filter(Boolean) : [],
+                }),
                 {
                     name: 'Cooldown',
                     value: pokemon.getCooldown(cd, cdr, skillcode === 'u'),
@@ -145,7 +145,7 @@ class MovesCommand extends Command {
                     value: pokemon.capitalize(type),
                     inline: true
                 }
-            ]
+            ].filter(Boolean)
         );
         embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/previews/${pokemon.name}/${skillcode}.png`);
         embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
