@@ -90,7 +90,7 @@ class RandomizeCommand extends Command {
             We randomly generated:
             ${result.map(mon => mon.charAt(0).toUpperCase() + mon.slice(1)).join('\n')}
         `)
-            .setFooter(`Requested by ${name}`, avatar)
+            .setFooter(`Requested by ${user}`, avatar)
             .setTimestamp();
 
         await message.channel.send({
