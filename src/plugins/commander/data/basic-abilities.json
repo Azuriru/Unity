@@ -540,7 +540,7 @@
                         "addend": 230
                     },
                     "type": "inline"
-                },
+                }
             ]
         }
     ],
@@ -695,7 +695,7 @@
                     "calc_variables": {
                         "atk_modifier": 1.30,
                         "lvl_modifier": 0,
-                        "addend":
+                        "addend": 0
                     },
                     "type": "inline"
                 }
