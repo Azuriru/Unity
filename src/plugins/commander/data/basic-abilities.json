@@ -176,11 +176,11 @@
                 },
                 {
                     "title": "Damage - Boosted",
-                    "value": "58% Atk + 8 x (Level - 1) + 150",
+                    "value": "96% Atk + 7 x (Level - 1) + 150",
                     "calc_variables": {
-                        "atk_modifier": 0.58,
-                        "lvl_modifier": 8,
-                        "addend": 150
+                        "atk_modifier": 0.96,
+                        "lvl_modifier": 6,
+                        "addend": 130
                     },
                     "type": "inline"
                 }

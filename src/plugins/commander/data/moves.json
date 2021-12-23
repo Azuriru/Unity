@@ -94,7 +94,17 @@
             "desc": "Absol dashes to a location, and dashes to an enemy with its next basic attack. If Absol hits the back of the target, this ability's cooldown is reduced. If it fails to hit the back, damage is halved.",
             "fields": [
                 {
-                    "title": "Damage - From The Back",
+                    "title": "Damage",
+                    "value": "110% Atk + 9 x (Level - 1) + 220",
+                    "calc_variables": {
+                        "atk_modifier": 1.10,
+                        "lvl_modifier": 9,
+                        "addend": 220
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Backstab",
                     "value": "198% Atk + 19 x (Level - 1) + 396",
                     "calc_variables": {
                         "atk_modifier": 1.98,
@@ -155,6 +165,16 @@
                         "atk_modifier": 1.05,
                         "lvl_modifier": 6,
                         "addend": 165
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Counter",
+                    "value": "156% Atk + 10 x (Level - 1) + 250",
+                    "calc_variables": {
+                        "atk_modifier": 1.56,
+                        "lvl_modifier": 10,
+                        "addend": 250
                     },
                     "type": "inline"
                 },
@@ -997,7 +1017,7 @@
             "aliases": ["s22", "feint"],
             "name": "Feint",
             "level": 8,
-            "cd": 13,
+            "cd": 11,
             "type": "buff",
             "desc": "Cinderace dodges, increasing movement speed for 2s and becoming briefly invincible for .5s.",
             "fields": [
@@ -1437,11 +1457,11 @@
             "fields": [
                 {
                     "title": "Damage",
-                    "value": "108% Atk + 6 x (Level - 1) + 200",
+                    "value": "124% Atk + 7 x (Level - 1) + 230",
                     "calc_variables": {
-                        "atk_modifier": 1.08,
-                        "lvl_modifier": 6,
-                        "addend": 200
+                        "atk_modifier": 1.24,
+                        "lvl_modifier": 7,
+                        "addend": 230
                     },
                     "type": "inline"
                 }
@@ -1511,7 +1531,7 @@
             "aliases": ["s12", "spiritshackle"],
             "name": "Spirit Shackle",
             "level": 7,
-            "cd": 9,
+            "cd": 6.5,
             "type": "ranged",
             "desc": "Charges power before firing a large arrow in the designated direction. Damage dealt increases the longer power is charged (with 6 breakpoints), but movement speed is decreased by 25% while charging. If this move hits after power is charged to the maximum, it can stitch enemies to the ground. The affected enemy has their movement speed is decreased by 80% for a short time while in the area, and receives damage upon leaving the area.",
             "fields": [
@@ -1556,17 +1576,17 @@
             "aliases": ["s21", "leafstorm"],
             "name": "Leaf Storm",
             "level": 8,
-            "cd": 8,
+            "cd": 6,
             "type": "ranged",
             "desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 30% for a short time. At point-blank range, it also shoves enemies hit.",
             "fields": [
                 {
                     "title": "Damage",
-                    "value": "94% Atk + 3 x (Level - 1) + 140",
+                    "value": "108% Atk + 6 x (Level - 1) + 170",
                     "calc_variables": {
-                        "atk_modifier": 0.94,
-                        "lvl_modifier": 3,
-                        "addend": 140
+                        "atk_modifier": 1.08,
+                        "lvl_modifier": 6,
+                        "addend": 170
                     },
                     "type": "inline"
                 },
@@ -1911,11 +1931,11 @@
             "fields": [
                 {
                     "title": "Damage - First Hit",
-                    "value": "125% SpA + 7 x (Level - 1) + 280",
+                    "value": "106% SpA + 6 x (Level - 1) + 240",
                     "calc_variables": {
-                        "atk_modifier": 1.25,
-                        "lvl_modifier": 7,
-                        "addend": 280
+                        "atk_modifier": 1.06,
+                        "lvl_modifier": 6,
+                        "addend": 240
                     },
                     "type": "inline"
                 },
@@ -1960,17 +1980,17 @@
             "aliases": ["s22", "cottonspore"],
             "name": "Cotton Spore",
             "level": 6,
-            "cd": 7.5,
+            "cd": 6,
             "type": "area",
             "desc": "Eldegoss channels, gathering spores while increasing its movement speed. At the end of the channel the spores are released, damaging and throwing nearby enemies into the air, then slowing them when they land.",
             "fields": [
                 {
                     "title": "Damage",
-                    "value": "138% SpA + 7 x (Level - 1) + 310",
+                    "value": "148% SpA + 14 x (Level - 1) + 350",
                     "calc_variables": {
-                        "atk_modifier": 1.38,
-                        "lvl_modifier": 7,
-                        "addend": 310
+                        "atk_modifier": 1.48,
+                        "lvl_modifier": 14,
+                        "addend": 350
                     },
                     "type": "inline"
                 },
