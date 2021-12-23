@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 require('events').captureRejections = true;
+require('./src/server');
+
 const path = require('path');
 const Unity = require('./src/Unity.js');
 const client = new Unity();
