@@ -129,6 +129,90 @@
             "desc": "While HP is at 50% or less, Attack is increased by 5% and movement speed is increased by 12%."
         }
     ],
+    "lucario": [
+        {
+            "name": "Steadfast",
+            "desc": "When dropping below 50% HP, gain a shield and increased movement speed for 5s (60s cooldown).",
+            "fields": [
+                {
+                    "title": "Shield",
+                    "value": "250% Atk + 50 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 2.5,
+                        "lvl_modifier": 50,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "machamp": [
+        {
+            "name": "Guts",
+            "desc": "Increases Attack by 10% for 5s when afflicted by a status condition."
+        }
+    ],
+    "mamoswine": [
+        {
+            "name": "Thick Fat",
+            "desc": "When Mamoswine deals damage, Defense and Sp. Def are increased for 3s, stacking up to 3 times. When Mamoswine uses Ice Shard, Icicle Crash or Ice Fang, the next basic attack is boosted. If any of these moves creates a freezing area of effect inside an ally goal zone, the goal-scoring speed of enemies is decreased.",
+            "fields": [
+                {
+                    "title": "Defense & Sp. Defense",
+                    "value": "0% Atk + 6 x (Level - 1) + 20",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 6,
+                        "addend": 20
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "mr.mime": [
+        {
+            "name": "Filter",
+            "desc": "Upon casting an ability, Mr. Mime takes 10% less damage for 2 seconds."
+        }
+    ],
+    "ninetales": [
+        {
+            "name": "Snow Warning",
+            "desc": "Causes snow to fall on an enemy, dealing damage to it and decreasing their movement speed for a short time. Boosted attacks and moves (except Aurora Veil) sling snow, and hitting the same target with snow multiple times will freeze it for a short time. This ability has an 8s cooldown.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "60% SpA + 0 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 0.6,
+                        "lvl_modifier": 0,
+                        "addend": 100
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "pikachu": [
+        {
+            "name": "Static",
+            "desc": "Paralyzes (slow) all enemies nearby for a short time when receiving damage. This ability goes on a 30s cooldown after it's triggered."
+        }
+    ],
+    "slowbro": [
+        {
+            "name": "Oblivious",
+            "desc": "Slowbro stores up lost HP for a short time. When hitting an enemy with a move, restore some HP using the stored-up health, and also decrease the enemy's Sp.Def for a short time."
+        }
+    ],
+    "snorlax": [
+        {
+            "name": "Gluttony",
+            "desc": "Increases the effects gained from eating berries. 25% increased movement speed when near berries and doubles the amount healed from the Sitrus berry (yellow berry)."
+        }
+    ],
     "sylveon": [
         {
             "name": "Adaptability",
@@ -139,6 +223,24 @@
             "name": "Pixilate",
             "desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times.",
             "evolution": "sylveon"
+        }
+    ],
+    "talonflame": [
+        {
+            "name": "Gale Wings",
+            "desc": "While above 85% HP, movement speed is increased by 10%."
+        }
+    ],
+    "tsareena": [
+        {
+            "name": "Oblivious",
+            "desc": "When a hindrance is inflicted on Bounsweet, Steenee; decrease the duration of the effect.",
+            "evolution": "bounsweet"
+        },
+        {
+            "name": "Queenly Majesty",
+            "desc": "When a hindrance is inflicted on Tsareena; decrease the duration of the effect. Using a boosted attack or move grants 1 stack of Queenly Majesty to Tsareena. After gaining 3 stacks, the Queenly Majesty buff is applied to Tsareena for a short time, which allows one of Tsareena's moves to be reused (these uses do not share the same cooldown as the base moves), dealing increased damage and applying an additional effect based on the move used.",
+            "evolution": "tsareena"
         }
     ]
 }

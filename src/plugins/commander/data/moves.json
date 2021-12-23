@@ -3035,5 +3035,2249 @@
                 }
             ]
         }
+    ],
+    "lucario": [
+        {
+            "aliases": ["s01", "quickattack"],
+            "name": "Quick Attack",
+            "level": 1,
+            "cd": 6,
+            "type": "dash",
+            "desc": "Lucario dashes forward, damaging all enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "221% Atk + 11 x (Level - 1) + 240",
+                    "calc_variables": {
+                        "atk_modifier": 2.21,
+                        "lvl_modifier": 11,
+                        "addend": 240
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "meteormash"],
+            "name": "Meteor Mash",
+            "level": 1,
+            "cd": 7,
+            "type": "melee",
+            "desc": "Lucario punches with the force of a meteor, damaging and knocking enemies back.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "200% Atk + 10 x (Level - 1) + 210",
+                    "calc_variables": {
+                        "atk_modifier": 2,
+                        "lvl_modifier": 10,
+                        "addend": 210
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "extremespeed"],
+            "name": "Extreme Speed",
+            "level": 5,
+            "cd": 9,
+            "type": "dash",
+            "desc": "Lucario dashes forward, damaging all enemies hit and healing Lucario for each enemy hit. The first enemy hit will reset the cooldown of Extreme Speed. This effect cannot occur on the same target more than once every 10 seconds. Attacking immediately after the dash will perform a unique attack in an area dealing 75% Atk and can critically hit.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "225% Atk + 6 x (Level - 1) + 280",
+                    "calc_variables": {
+                        "atk_modifier": 2.25,
+                        "lvl_modifier": 6,
+                        "addend": 280
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Healing",
+                    "value": "45% Atk + 1 x (Level - 1) + 56",
+                    "calc_variables": {
+                        "atk_modifier": 0.45,
+                        "lvl_modifier": 1,
+                        "addend": 56
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increases Lucario's damage by 15% for a short time.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "power-uppunch"],
+            "name": "Power-Up Punch",
+            "level": 5,
+            "cd": 7,
+            "type": "melee",
+            "description": "Lucario begins charging power, slowing themself and reducing damage taken by 30% while preparing to unleash a devastating punch. Upon release, Lucario lunges – damaging the first enemy hit. Power-Up Punch does bonus damage based on the enemy's missing health (capping at 1000), and will cause Lucario's next attack to be boosted. The cooldown for Power-Up Punch is reduced whenever Lucario lands a move.",
+            "fields": [
+                {
+                    "title": "Damage - Uncharged",
+                    "value": "209.15% Atk + 3 x (Level - 1) + 88",
+                    "calc_variables": {
+                        "atk_modifier": 2.09,
+                        "lvl_modifier": 3,
+                        "addend": 88
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Fully Charged",
+                    "value": "381.8% Atk + 5 x (Level - 1) + 161",
+                    "calc_variables": {
+                        "atk_modifier": 3.81,
+                        "lvl_modifier": 5,
+                        "addend": 161
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Execute",
+                    "value": "10% of Enemy Missing HP (caps at 1000 dmg).",
+                    "type": "data"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Lucario is unstoppable while charging the punch.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "bonerush"],
+            "name": "Bone Rush",
+            "level": 7,
+            "cd": 10,
+            "type": "dash",
+            "description": "Lucario rapidly strikes with a bone, damaging enemies hit up to 6 times. Enemies in long range will be hit 3 times and at close range they will be hit 6 times. Lucario then throws the bone after the final strike, shoving enemies and causing the bone to land a short distance away. Lucario can activate Bone Rush again to teleport to the bone, damaging enemies in a small area around it. Landing one of Bone Rush's initial strikes will reset the cooldown timer for extreme speed on that target.",
+            "fields": [
+                {
+                    "title": "Damage - per Hit (4-7 Hits)",
+                    "value": "41% Atk + 1 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0.41,
+                        "lvl_modifier": 1,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Teleporting to the bone will reset the cooldown of Extreme Speed or Power-Up Punch.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "closecombat"],
+            "name": "Close Combat",
+            "level": 7,
+            "cd": 9,
+            "type": "melee",
+            "description": "Lucario rapidly punches, damaging enemies in the area in front of them 11 times over the duration.",
+            "fields": [
+                {
+                    "title": "Damage - per Hit (11 Hits)",
+                    "value": "59% Atk + 2 x (Level - 1) + 76",
+                    "calc_variables": {
+                        "atk_modifier": 0.59,
+                        "lvl_modifier": 2,
+                        "addend": 76
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Damage is increased.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage - per Hit (11 Hits)",
+                    "value": "62% Atk + 2 x (Level - 1) + 80",
+                    "calc_variables": {
+                        "atk_modifier": 0.62,
+                        "lvl_modifier": 2,
+                        "addend": 80
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "auracannon"],
+            "name": "Aura Cannon",
+            "level": 9,
+            "cd": 134,
+            "type": "ranged",
+            "desc": "Aura Cannon does not have a limit to the number of times it can hit one target, rather it deals damage to enemies in its area while it travels, gaining speed. At close range, a still enemy can be hit up to 4 times and when the cannon is at max speed, a still enemy will only be struck twice. Damage of the next Power-Up Punch is increased by roughly 20%, and enemies hit by the cannon have their internal cooldown for Extreme Speed reset.",
+            "fields": [
+                {
+                    "title": "Damage - Per Tick",
+                    "value": "174% Atk + 4 x (Level - 1) + 210",
+                    "calc_variables": {
+                        "atk_modifier": 1.74,
+                        "lvl_modifier": 4,
+                        "addend": 210
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "machamp": [
+        {
+            "aliases": ["s01", "karatechop"],
+            "name": "Karate Chop",
+            "level": 1,
+            "cd": 6,
+            "type": "melee",
+            "desc": "Machamp attacks in a straight line dealing damage to enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "205% Atk + 15 x (Level - 1) + 270",
+                    "calc_variables": {
+                        "atk_modifier": 2.05,
+                        "lvl_modifier": 15,
+                        "addend": 270
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "bulkup"],
+            "name": "Bulk Up",
+            "level": 1,
+            "cd": 9,
+            "type": "buff",
+            "desc": "Machamp buffs themselves for 3 seconds increasing attack by 15%. Machamp is unstoppable for the duration and gains a small amount of attack speed and movement speed. Machamp’s next basic attack is boosted."
+        },
+        {
+            "aliases": ["s11", "dynamicpunch"],
+            "name": "Dynamic Punch",
+            "level": 5,
+            "cd": 8,
+            "type": "hindrance",
+            "description": "Machamp jumps to target location, briefly stunning enemies hit, slowing them, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% and gains bonus movement speed for 6 seconds when using Dynamic Punch.",
+            "fields": [
+                {
+                    "title": "Damage - Per Tick (4 Ticks)",
+                    "value": "37% Atk + 2 x (Level - 1) + 70",
+                    "calc_variables": {
+                        "atk_modifier": 0.37,
+                        "lvl_modifier": 2,
+                        "addend": 70
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Further increases Atk (from 15% to 20%) and movement speed.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "submission"],
+            "name": "Submission",
+            "level": 5,
+            "cd": 11,
+            "type": "buff",
+            "description": "Machamp becomes unstoppable and gains significant movement speed for 5 seconds or until the next basic attack. Machamp’s next basic attack during submission is enhanced hitting twice and slamming the target down behind Machamp. If this attack hits Machamp also gains increased critical hit rate and attack speed for 3 seconds.",
+            "fields": [
+                {
+                    "title": "Damage - 2x",
+                    "value": "91% Atk + 4 x (Level - 1) + 170",
+                    "calc_variables": {
+                        "atk_modifier": 0.91,
+                        "lvl_modifier": 4,
+                        "addend": 170
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Further increases critical hit rate and attack speed bonuses.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "closecombat"],
+            "name": "Close Combat",
+            "level": 7,
+            "cd": 6,
+            "type": "melee",
+            "description": "Machamp unleashes a barrage of blows in a targeted direction, hitting multiple times and finishing with a single large strike. Machamp is unstoppable for the duration and can move while using close combat.",
+            "fields": [
+                {
+                    "title": "Damage - Per Hit (4 Hits)",
+                    "value": "59% Atk + 2 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0.59,
+                        "lvl_modifier": 2,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Final Hit",
+                    "value": "177% Atk + 6 x (Level - 1) + 150",
+                    "calc_variables": {
+                        "atk_modifier": 1.77,
+                        "lvl_modifier": 6,
+                        "addend": 150
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Deals additional damage if the target is affected by a status condition.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "crosschop"],
+            "name": "Cross Chop",
+            "level": 7,
+            "cd": 6,
+            "type": "melee",
+            "description": "Machamp dashes forward dealing damage to enemies hit. Cross chop has an increased critical hit rate and can critically strike.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "98% Atk + 13 x (Level - 1) + 290",
+                    "calc_variables": {
+                        "atk_modifier": 0.98,
+                        "lvl_modifier": 13,
+                        "addend": 290
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Machamp’s basic attacks increases Atk by 2 and stacking up to 40 times.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "barrageblow"],
+            "name": "Barrage Blow",
+            "level": 9,
+            "cd": 134,
+            "type": "buff",
+            "desc": "Increases Machamp's movement speed, Attack by 30%, Defense by 200, and Sp. Defense by 200 for a short time. If used again, unleash a combo attack, dealing damage to enemies in the area of effect and shoving them. The final blow deals double the damage of the previous hits.",
+            "fields": [
+                {
+                    "title": "Damage - 6 Hits",
+                    "value": "100% Atk + 2 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 1,
+                        "lvl_modifier": 2,
+                        "addend": 100
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "mamoswine": [
+        {
+            "aliases": ["s01", "iceshard"],
+            "name": "Ice Shard",
+            "level": 1,
+            "cd": 7,
+            "type": "area",
+            "desc": "Hurls 3 chunks of ice at the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. If an enemy is hit by all three chunks, they're left frozen for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Per Shard (3 Shards)",
+                    "value": "62% Atk + 4 x (Level - 1) + 140",
+                    "calc_variables": {
+                        "atk_modifier": 0.62,
+                        "lvl_modifier": 4,
+                        "addend": 140
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "tackle"],
+            "name": "Tackle",
+            "level": 1,
+            "cd": 8,
+            "type": "dash",
+            "desc": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and throws them in the air.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "101% Atk + 7 x (Level - 1) + 230",
+                    "calc_variables": {
+                        "atk_modifier": 1.01,
+                        "lvl_modifier": 7,
+                        "addend": 230
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "iciclecrash"],
+            "name": "Icicle Crash",
+            "level": 5,
+            "cd": 10,
+            "type": "hindrance",
+            "description": "Drops icicles on the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. The final icicle shatters after a set amount of time or when hit by Mamoswine's other moves or boosted attacks, dealing damage to enemies in the area of effect and leaving them frozen. If the icicle is shattered by Tackle or High Horsepower, the ground is covered in ice, which increases the movement speed of allies that run over it. The next basic attack is boosted.",
+            "fields": [
+                {
+                    "title": "Damage - Small Icicles (3x)",
+                    "value": "40% Atk + 3 x (Level - 1) + 120",
+                    "calc_variables": {
+                        "atk_modifier": 0.4,
+                        "lvl_modifier": 3,
+                        "addend": 120
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damge - Large Icicle",
+                    "value": "60% Atk + 5 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 0.6,
+                        "lvl_modifier": 5,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Shatter",
+                    "value": "80% Atk + 6 x (Level - 1) + 240",
+                    "calc_variables": {
+                        "atk_modifier": 0.8,
+                        "lvl_modifier": 6,
+                        "addend": 240
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "The final icicle leaves enemies hit unable to act for a short time.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "icefang"],
+            "name": "Ice Fang",
+            "level": 5,
+            "cd": 8,
+            "type": "hindrance",
+            "description": "Uses cold-infused fangs to throw the opposing Pokémon closest to the user, dealing damage and leaving them frozen for a short time. The user can then designate a direction to slam the thrown Pokémon forward or backward, dealing damage to enemies in the area of effect and leaving them frozen for a short time. The next basic attack is boosted.",
+            "fields": [
+                {
+                    "title": "Damage - First Hit",
+                    "value": "60% Atk + 4 x (Level - 1) + 170",
+                    "calc_variables": {
+                        "atk_modifier": 0.6,
+                        "lvl_modifier": 4,
+                        "addend": 170
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Second Hit",
+                    "value": "180% Atk + 12 x (Level - 1) + 510",
+                    "calc_variables": {
+                        "atk_modifier": 1.8,
+                        "lvl_modifier": 12,
+                        "addend": 510
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increases the area of effect in which enemies are left frozen after the slam attack.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "highhorsepower"],
+            "name": "High Horsepower",
+            "level": 7,
+            "cd": 8,
+            "type": "dash",
+            "description": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and shove them. Mamoswine then stomps their feet, dealing damage to enemies in the area of effect and leaves them unable to act for a short time. This stomping deals increased damage to frozen enemies.",
+            "fields": [
+                {
+                    "title": "Damage - Charge",
+                    "value": "61% Atk + 4 x (Level - 1) + 170",
+                    "calc_variables": {
+                        "atk_modifier": 0.61,
+                        "lvl_modifier": 4,
+                        "addend": 170
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Stomp",
+                    "value": "122% Atk + 8 x (Level - 1) + 340",
+                    "calc_variables": {
+                        "atk_modifier": 1.22,
+                        "lvl_modifier": 8,
+                        "addend": 340
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Frozen Stomp Bonus",
+                    "value": "91.5% Atk + 6 x (Level - 1) + 255",
+                    "calc_variables": {
+                        "atk_modifier": 0.91,
+                        "lvl_modifier": 6,
+                        "addend": 255
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Increases the reckless rush's speed and the length of time enemies are left unable to act.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "earthquake"],
+            "name": "Earthquake",
+            "level": 7,
+            "cd": 7,
+            "type": "dash",
+            "description": "Mamoswine leaps up in the designated direction and lands forcefully, dealing damage to enemies in the area of effect and pulling them toward Mamoswine.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "151% Atk + 10 x (Level - 1) + 420",
+                    "calc_variables": {
+                        "atk_modifier": 1.51,
+                        "lvl_modifier": 10,
+                        "addend": 420
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Decreases the movement speed of enemies for a short time when this move hits and increases the move's pulling power.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "mammothmash"],
+            "name": "Mammoth Mash",
+            "level": 9,
+            "cd": 134,
+            "type": "area",
+            "desc": "Mamoswine jumps to the designated location and becomes immune to hindrances - then repeatedly stomps the ground, dealing damage to enemies in the area of effect and decreases their movement speed for a short time with each stomp. The final stomp throws enemies in the air.",
+            "fields": [
+                {
+                    "title": "Damage - First Stomp",
+                    "value": "153% Atk + 9 x (Level - 1) + 420",
+                    "calc_variables": {
+                        "atk_modifier": 1.53,
+                        "lvl_modifier": 9,
+                        "addend": 420
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Mini Stomps (2 Stomps)",
+                    "value": "102% Atk + 6 x (Level - 1) + 280",
+                    "calc_variables": {
+                        "atk_modifier": 1.02,
+                        "lvl_modifier": 6,
+                        "addend": 280
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Final Stomp",
+                    "value": "204% Atk + 12 x (Level - 1) + 560",
+                    "calc_variables": {
+                        "atk_modifier": 2.04,
+                        "lvl_modifier": 12,
+                        "addend": 560
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "mr.mime": [
+        {
+            "aliases": ["s01", "fakeout"],
+            "name": "Fake Out",
+            "level": 1,
+            "cd": 7,
+            "type": "melee",
+            "desc": "Mr. Mime claps, damaging and knocking enemies back in a cone.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "194% SpA + 25 x (Level - 1) + 470",
+                    "calc_variables": {
+                        "atk_modifier": 1.94,
+                        "lvl_modifier": 24,
+                        "addend": 470
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "lightscreen"],
+            "name": "Light Screen",
+            "level": 1,
+            "cd": 8,
+            "type": "hindrance",
+            "desc": "Mr. Mime creates a wall that prevents enemies from passing."
+        },
+        {
+            "aliases": ["s11", "confusion"],
+            "name": "Confusion",
+            "level": 4,
+            "cd": 6,
+            "type": "ranged",
+            "description": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned. Enemies debuffed by Guard Swap take bonus damage and are stunned, but are not knocked back.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "170.4% SpA + 20 x (Level - 1) + 460",
+                    "calc_variables": {
+                        "atk_modifier": 1.7,
+                        "lvl_modifier": 20,
+                        "addend": 460
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Wall Hit",
+                    "value": "204.48% SpA + 23 x (Level - 1) + 552",
+                    "calc_variables": {
+                        "atk_modifier": 2.04,
+                        "lvl_modifier": 23,
+                        "addend": 552
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "213% SpA + 23 x (Level - 1) + 510",
+                    "calc_variables": {
+                        "atk_modifier": 2.13,
+                        "lvl_modifier": 23,
+                        "addend": 510
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "psychic"],
+            "name": "Psychic",
+            "level": 4,
+            "cd": 6,
+            "type": "area",
+            "description": "After a short channel, Mr. Mime creates a pulse of energy that damages enemies around themself and any target affected by Guard Swap, with a smaller pulse around any created Barriers or Light Screens. Enemies hit by more than 1 pulse are stunned.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "152% SpA + 16 x (Level - 1) + 370",
+                    "calc_variables": {
+                        "atk_modifier": 1.52,
+                        "lvl_modifier": 16,
+                        "addend": 370
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Also briefly slows.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "barrier"],
+            "name": "Barrier",
+            "level": 6,
+            "cd": 8,
+            "type": "hindrance",
+            "description": "Mr. Mime creates a wall that prevents enemies from passing. Holds 2 uses in reserve and cannot be used more than once every 2s. When upgrading Barrier, reserved Barriers will be restored to the maximum.",
+            "fields": [
+                {
+                    "title": "Level 13",
+                    "value": "Stores 3 charges in reserve instead.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "guardswap"],
+            "name": "Guard Swap",
+            "level": 6,
+            "cd": 4,
+            "type": "debuff",
+            "description": "Mr. Mime fires a beam, swapping base Defense and Sp. Defense with another Pokémon for 6s when it hits. Swapping with an enemy slows and damages them over time while increasing Mr. Mime's movement speed. Swapping with an ally increases the movement speed of that ally and Mr. Mime.",
+            "fields": [
+                {
+                    "title": "Damage - 7 Ticks",
+                    "value": "19% SpA + 2 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0.19,
+                        "lvl_modifier": 2,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Heals Mr. Mime, plus an ally if tethered to them.",
+                    "type": "data"
+                },
+                {
+                    "title": "Healing",
+                    "value": "12% SpA + 2 x (Level - 1) + 60",
+                    "calc_variables": {
+                        "atk_modifier": 0.12,
+                        "lvl_modifier": 2,
+                        "addend": 60
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "showtime"],
+            "name": "Showtime",
+            "level": 9,
+            "cd": 100,
+            "type": "area",
+            "desc": "Mr. Mime leaps forward and begins a performance, stunning enemies and dealing damage in a large area around him 4 times. The final hit does double damage.",
+            "fields": [
+                {
+                    "title": "Damage - First 3 Hits",
+                    "value": "88% SpA + 5 x (Level - 1) + 240",
+                    "calc_variables": {
+                        "atk_modifier": 0.88,
+                        "lvl_modifier": 5,
+                        "addend": 240
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Final Hit",
+                    "value": "176% SpA + 10 x (Level - 1) + 480",
+                    "calc_variables": {
+                        "atk_modifier": 1.76,
+                        "lvl_modifier": 10,
+                        "addend": 480
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "ninetales": [
+        {
+            "aliases": ["s01", "powdersnow"],
+            "name": "Powder Snow",
+            "level": 1,
+            "cd": 5,
+            "type": "area",
+            "desc": "Ninetales attacks with a chilly gust of powdery snow, slowing and damaging enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "78% SpA + 13 x (Level - 1) + 240",
+                    "calc_variables": {
+                        "atk_modifier": 0.78,
+                        "lvl_modifier": 13,
+                        "addend": 240
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "icywind"],
+            "name": "Icy Wind",
+            "level": 1,
+            "cd": 8,
+            "type": "ranged",
+            "desc": "Ninetales attacks with a gust of freezing air, damaging and slowing enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage - 2 Ticks",
+                    "value": "61% SpA + 7 x (Level - 1) + 240",
+                    "calc_variables": {
+                        "atk_modifier": 0.61,
+                        "lvl_modifier": 7,
+                        "addend": 240
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "avalanche"],
+            "name": "Avalanche",
+            "level": 4,
+            "cd": 7,
+            "type": "area",
+            "description": "Ninetales attacks with a gust of chilly ice toward the designated direction. The ice damages enemies and forms a wall that can't be walked through. After a short time this wall melts and collapses, further damaging enemies in a radius around the wall.",
+            "fields": [
+                {
+                    "title": "Damage - Wind or Wall",
+                    "value": "36% SpA + 8 x (Level - 1) + 190",
+                    "calc_variables": {
+                        "atk_modifier": 0.36,
+                        "lvl_modifier": 8,
+                        "addend": 190
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Also decreases the movement speed of enemies for a short time when this move hits.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "dazzlinggleam"],
+            "name": "Dazzling Gleam",
+            "level": 4,
+            "cd": 7,
+            "type": "hindrance",
+            "description": "Ninetales attacks with a powerful cone of blinding light, stunning and damaging enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "60% SpA + 10 x (Level - 1) + 320",
+                    "calc_variables": {
+                        "atk_modifier": 0.6,
+                        "lvl_modifier": 10,
+                        "addend": 320
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increased damage dealt and stun duration.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "61% SpA + 10 x (Level - 1) + 380",
+                    "calc_variables": {
+                        "atk_modifier": 0.61,
+                        "lvl_modifier": 10,
+                        "addend": 380
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "blizzard"],
+            "name": "Blizzard",
+            "level": 6,
+            "cd": 9,
+            "type": "ranged",
+            "desc": "Ninetales summons a howling blizzard in 2 blasts in front of them. The first blast penetrates walls. The second blast always deals double the damage of the first. If the second blast hits a wall, create an area at the impact for 3s; dealing damage every .5s.",
+            "fields": [
+                {
+                    "title": "Damage - Initial Blast",
+                    "value": "39% SpA + 4 x (Level - 1) + 250",
+                    "calc_variables": {
+                        "atk_modifier": 0.39,
+                        "lvl_modifier": 4,
+                        "addend": 250
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Area (6 Ticks)",
+                    "value": "19.5% SpA + 2 x (Level - 1) + 125",
+                    "calc_variables": {
+                        "atk_modifier": 0.195,
+                        "lvl_modifier": 2,
+                        "addend": 125
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Increased Damage",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage - Initial Blast",
+                    "value": "42.8% SpA + 4 x (Level - 1) + 280",
+                    "calc_variables": {
+                        "atk_modifier": 0.428,
+                        "lvl_modifier": 4,
+                        "addend": 280
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Area (6 Ticks)",
+                    "value": "21.4% SpA + 2 x (Level - 1) + 140",
+                    "calc_variables": {
+                        "atk_modifier": 0.214,
+                        "lvl_modifier": 2,
+                        "addend": 140
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "auroraveil"],
+            "name": "Aurora Veil",
+            "level": 6,
+            "cd": 13,
+            "type": "buff",
+            "description": "Ninetales creates an aurora centered on its position for 5s, reducing damage received by Ninetales and allies within the aurora by 30%. While Ninetales is inside the aurora, movement speed is increased by 20% and all basic attacks are boosted.",
+            "fields": [
+                {
+                    "title": "Level 13",
+                    "value": "Damage reduced by 35% and cooldown reduced by 2s.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "snowglobe"],
+            "name": "Snow Globe",
+            "level": 9,
+            "cd": 134,
+            "type": "area",
+            "desc": "Attack with a chilly blast of snow and ice, dealing damage to enemies in the area of effect around Ninetales when it hits. Deals increased damage to enemies that are frozen.",
+            "fields": [
+                {
+                    "title": "Damage - Frozen Enemies",
+                    "value": "224% SpA + 32 x (Level - 1) + 1520",
+                    "calc_variables": {
+                        "atk_modifier": 2.24,
+                        "lvl_modifier": 32,
+                        "addend": 1520
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Unfrozen Enemies",
+                    "value": "156.79% SpA + 30 x (Level - 1) + 1064",
+                    "calc_variables": {
+                        "atk_modifier": 1.5679,
+                        "lvl_modifier": 30,
+                        "addend": 1064
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "pikachu": [
+        {
+            "aliases": ["s01", "thundershock"],
+            "name": "Thunder Shock",
+            "level": 1,
+            "cd": 5,
+            "type": "sure-hit",
+            "desc": "Pikachu releases electricity to a designated area, damaging enemies in the radius. Also paralyzes (slows) enemies for a short time.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "75% SpA + 21 x (Level - 1) + 390",
+                    "calc_variables": {
+                        "atk_modifier": 0.75,
+                        "lvl_modifier": 21,
+                        "addend": 390
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "electroweb"],
+            "name": "Electro Web",
+            "level": 1,
+            "cd": 9,
+            "type": "hindrance",
+            "desc": "Pikachu attacks and captures enemies using an electric net, rooting them.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "36% SpA + 11 x (Level - 1) + 350",
+                    "calc_variables": {
+                        "atk_modifier": 0.36,
+                        "lvl_modifier": 11,
+                        "addend": 350
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "electroball"],
+            "name": "Electro Ball",
+            "level": 4,
+            "cd": 5,
+            "type": "sure-hit",
+            "desc": "Pikachu hurls an electric orb at an enemy, paralyzing (slowing) and damaging them and nearby enemies. Damage increases as the enemies' remaining HP decreases. Damage caps at 1200.",
+            "fields": [
+                {
+                    "title": "Damage - Area",
+                    "value": "66% SpA + 25 x (Level - 1) + 530",
+                    "calc_variables": {
+                        "atk_modifier": 0.66,
+                        "lvl_modifier": 25,
+                        "addend": 530
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Execute",
+                    "value": "4% of enemy missing HP.",
+                    "type": "data"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage - Area",
+                    "value": "77% SpA + 29 x (Level - 1) + 640",
+                    "calc_variables": {
+                        "atk_modifier": 0.77,
+                        "lvl_modifier": 29,
+                        "addend": 640
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Execute",
+                    "value": "5% of enemy missing HP",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "thunder"],
+            "name": "Thunder",
+            "level": 4,
+            "cd": 8,
+            "type": "area",
+            "description": "Pikachu drops wicked thunderbolts at a designated area, damaging enemies in the radius.",
+            "fields": [
+                {
+                    "title": "Damage - Area (5 Strikes)",
+                    "value": "20% SpA + 5 x (Level - 1) + 210",
+                    "calc_variables": {
+                        "atk_modifier": 0.2,
+                        "lvl_modifier": 5,
+                        "addend": 210
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increases the number of times this move strikes to 7.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "volttackle"],
+            "name": "Volt Tackle",
+            "level": 6,
+            "cd": 10,
+            "type": "hindrance",
+            "description": "Pikachu electrifies themself and charges ahead becoming unstoppable, throwing and damaging enemies hit.",
+            "fields": [
+                {
+                    "title": "Damage - 5 Hits",
+                    "value": "14% SpA + 3 x (Level - 1) + 140",
+                    "calc_variables": {
+                        "atk_modifier": 0.14,
+                        "lvl_modifier": 3,
+                        "addend": 140
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Cooldown reduced by 2s.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "thunderbolt"],
+            "name": "Thunderbolt",
+            "level": 6,
+            "cd": 8,
+            "type": "hindrance",
+            "description": "Pikachu attacks with a strong electric blast at a designated area, stunning and damaging enemies in the area.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "50% SpA + 12 x (Level - 1) + 500",
+                    "calc_variables": {
+                        "atk_modifier": 0.5,
+                        "lvl_modifier": 12,
+                        "addend": 500
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "61% SpA + 12 x (Level - 1) + 609",
+                    "calc_variables": {
+                        "atk_modifier": 0.61,
+                        "lvl_modifier": 12,
+                        "addend": 609
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "thunderstorm"],
+            "name": "Thunderstorm",
+            "level": 9,
+            "cd": 89,
+            "type": "area",
+            "desc": "Four bolts of lightning strike 4 times over 3 seconds. The first strike hits all enemies in the radius, and the next three strikes hit a random enemy within radius.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "49% SpA + 10 x (Level - 1) + 490",
+                    "calc_variables": {
+                        "atk_modifier": 0.49,
+                        "lvl_modifier": 10,
+                        "addend": 490
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "slowbro": [
+        {
+            "aliases": ["s01", "watergun"],
+            "name": "Water Gun",
+            "level": 1,
+            "cd": 5,
+            "type": "ranged",
+            "desc": "Slowbro fires a stream of water, damaging and slowing enemies hit. This move can be channeled to increase its range and damage.",
+            "fields": [
+                {
+                    "title": "Damage - Uncharged",
+                    "value": "132% SpA + 11 x (Level - 1) + 210",
+                    "calc_variables": {
+                        "atk_modifier": 1.32,
+                        "lvl_modifier": 11,
+                        "addend": 210
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Low Charge",
+                    "value": "176% SpA + 15 x (Level - 1) + 280",
+                    "calc_variables": {
+                        "atk_modifier": 1.76,
+                        "lvl_modifier": 15,
+                        "addend": 280
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Mid Charge",
+                    "value": "220% SpA + 19 x (Level - 1) + 350",
+                    "calc_variables": {
+                        "atk_modifier": 2.20,
+                        "lvl_modifier": 190,
+                        "addend": 350
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - High Charge",
+                    "value": "264% SpA + 23 x (Level - 1) + 420",
+                    "calc_variables": {
+                        "atk_modifier": 2.64,
+                        "lvl_modifier": 23,
+                        "addend": 420
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "slackoff"],
+            "name": "Slack Off",
+            "level": 1,
+            "cd": 11,
+            "type": "recovery",
+            "desc": "Slowbro gains a heal over time, healing 1.5% max HP per tick (6 ticks) and begins channeling a nap. While Slowbro remains channelling its nap, this healing is doubled."
+        },
+        {
+            "aliases": ["s12", "scald"],
+            "name": "Scald",
+            "level": 4,
+            "cd": 5,
+            "type": "ranged",
+            "description": "Slowbro fires a stream of boiling water, damaging enemies hit; creating a cloud of stream at the location of the first enemy hit, which slows and applies burn to all enemies inside. This burn reduces Attack by 30%.",
+            "fields": [
+                {
+                    "title": "Damage - Per Hit (3 Hits)",
+                    "value": "81% SpA + 6 x (Level - 1) + 130",
+                    "calc_variables": {
+                        "atk_modifier": 0.81,
+                        "lvl_modifier": 6,
+                        "addend": 130
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Burn (5 Ticks)",
+                    "value": "16% SpA + 1 x (Level - 1) + 26",
+                    "calc_variables": {
+                        "atk_modifier": 0.16,
+                        "lvl_modifier": 1,
+                        "addend": 26
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increases the size of the steam cloud.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "surf"],
+            "name": "Surf",
+            "level": 4,
+            "cd": 9,
+            "type": "hindrance",
+            "description": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air briefly. Two more waves follow after the first, damaging and slowing enemies.",
+            "fields": [
+                {
+                    "title": "Damage - Per Wave (3 Waves)",
+                    "value": "103% SpA + 6 x (Level - 1) + 210",
+                    "calc_variables": {
+                        "atk_modifier": 1.03,
+                        "lvl_modifier": 6,
+                        "addend": 210
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "The second and third waves will now also throw enemies in the air, and the second wave will knock them back.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "amnesia"],
+            "name": "Amnesia",
+            "level": 6,
+            "cd": 9,
+            "type": "recovery",
+            "description": "Slowbro briefly becomes unstoppable, gaining +300 Defense for 4s, healing 22.5% of Slowbro's Oblivious health (blue HP) 3 times, and gains 10% bonus damage on the next Surf or Scald used.",
+            "fields": [
+                {
+                    "title": "Level 13",
+                    "value": "Also increases Slowbro's Sp. Defense by 150.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "telekinesis"],
+            "name": "Telekinesis",
+            "level": 6,
+            "cd": 11,
+            "type": "hindrance",
+            "description": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2s, restoring 15% of Slowbro's Oblivious health (blue HP). Slowbro can reactivate the ability to pull the enemy to them, but otherwise cannot act for the duration.",
+            "fields": [
+                {
+                    "title": "Level 13",
+                    "value": "Increases the range and speed of the beam.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "slowbeam"],
+            "name": "Slowbeam",
+            "level": 9,
+            "cd": 134,
+            "type": "hindrance",
+            "desc": "Stare at an enemy and attack continually, dealing damage and rooting them. Grants a shield (40% max HP + 600 HP) and makes the user immune to hindrances while using this move.",
+            "fields": [
+                {
+                    "title": "Damage - 6 Ticks",
+                    "value": "80% SpA + 3 x (Level - 1) + 170",
+                    "calc_variables": {
+                        "atk_modifier": 0.8,
+                        "lvl_modifier": 3,
+                        "addend": 170
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "snorlax": [
+        {
+            "aliases": ["s01", "tackle"],
+            "name": "Tackle",
+            "level": 1,
+            "cd": 6,
+            "type": "dash",
+            "desc": "Snorlax dashes a short distance forward, dealing damage and stunning the first target hit. Snorlax’s next basic attack is boosted.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "211% Atk + 23 x (Level - 1) + 420",
+                    "calc_variables": {
+                        "atk_modifier": 2.11,
+                        "lvl_modifier": 23,
+                        "addend": 420
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "rest"],
+            "name": "Rest",
+            "level": 1,
+            "cd": 10,
+            "type": "recovery",
+            "desc": "Snorlax falls asleep for a short duration, healing 3 times for 8% Max HP. While asleep other Pokémon cannot pass through Snorlax’s hitbox."
+        },
+        {
+            "aliases": ["s11", "heavyslam"],
+            "name": "Heavy Slam",
+            "level": 5,
+            "cd": 7,
+            "type": "dash",
+            "description": "Snorlax jumps to target location, dealing damage and throwing enemies within the landing radius into the air briefly.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "200% Atk + 15 x (Level - 1) + 400",
+                    "calc_variables": {
+                        "atk_modifier": 2,
+                        "lvl_modifier": 15,
+                        "addend": 400
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Deals increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "262% Atk + 21 x (Level - 1) + 520",
+                    "calc_variables": {
+                        "atk_modifier": 2.62,
+                        "lvl_modifier": 21,
+                        "addend": 520
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s", "flail"],
+            "name": "Flail",
+            "level": 5,
+            "cd": 6.5,
+            "type": "buff",
+            "description": "Snorlax buffs themselves for 5 seconds causing basic attacks to deal increased damage. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed when Flail is activated.",
+            "fields": [
+                {
+                    "title": "Basic Attack - Above 80% HP",
+                    "value": "45% Atk",
+                    "type": "data"
+                },
+                {
+                    "title": "Boosted Attack - Above 80% HP",
+                    "value": "67.5% Atk",
+                    "type": "data"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Deals increased damage. In addition, if Snorlax is below 40% HP, Snorlax's basic attacks will also gain 30% lifesteal.",
+                    "type": "data"
+                },
+                {
+                    "title": "Basic Attack - Above 80% HP",
+                    "value": "81% Atk",
+                    "type": "data"
+                },
+                {
+                    "title": "Boosted Attack - Above 80% HP",
+                    "value": "121.5% Atk",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "block"],
+            "name": "Block",
+            "level": 7,
+            "cd": 11,
+            "type": "hindrance",
+            "description": "Snorlax creates and holds a wall in a targeted direction for 4 seconds and gains a shield. The shield lasts 3.75 sec even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned. Snorlax cannot attack or use abilities while Blocking but can move slowly.",
+            "fields": [
+                {
+                    "title": "Shield",
+                    "value": "10% max HP + 900",
+                    "type": "data"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "While Blocking Snorlax’s Def and SpDef are increased by 25%.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "yawn"],
+            "name": "Yawn",
+            "level": 7,
+            "cd": 12,
+            "type": "hindrance",
+            "description": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 2 seconds.",
+            "fields": [
+                {
+                    "title": "Level 13",
+                    "value": "Targets are also slowed for 3s upon waking up.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "powernap"],
+            "name": "Power Nap",
+            "level": 9,
+            "cd": 128,
+            "type": "recovery",
+            "desc": "Go to sleep and begin snoring, dealing damage to enemies in the area of effect and throws them in the air. While sleeping, become immune to hindrances, deal damage over time to nearby enemies, slow enemies hit for 1s, and continually restore 7% of max HP, 9 times. This move can be recasted to flip over, dealing an extra instance of the DoT damage.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "132% Atk + 8 x (Level - 1) + 360",
+                    "calc_variables": {
+                        "atk_modifier": 1.32,
+                        "lvl_modifier": 8,
+                        "addend": 360
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Over Time (3 Ticks)",
+                    "value": "66% Atk + 4 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 0.66,
+                        "lvl_modifier": 4,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "sylveon": [
+        {
+            "aliases": ["s01", "swift"],
+            "name": "Swift",
+            "level": 1,
+            "cd": 7,
+            "type": "ranged",
+            "desc": "Shoots star-shaped rays at enemies, dealing damage to them.",
+            "fields": [
+                {
+                    "title": "Damage - Per Star (4 Stars)",
+                    "value": "32% SpA + 6 x (Level - 1) + 190",
+                    "calc_variables": {
+                        "atk_modifier": 0.32,
+                        "lvl_modifier": 6,
+                        "addend": 190
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "babydolleyes"],
+            "name": "Baby Doll Eyes",
+            "level": 1,
+            "cd": 5,
+            "type": "ranged",
+            "desc": "Stare at an enemy with baby-doll eyes, dealing damage and decreasing their Attack and movement speed for a short time when this move hits.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "63% SpA + 18 x (Level - 1) + 340",
+                    "calc_variables": {
+                        "atk_modifier": 0.63,
+                        "lvl_modifier": 18,
+                        "addend": 340
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "mysticalfire"],
+            "name": "Mystical Fire",
+            "level": 4,
+            "cd": 7,
+            "type": "dash",
+            "description": "Create four small flames while leaping in the designated direction. The flames shoot toward enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move and after the first flame hits, subsequent flames on the same target deal 25% damage.",
+            "fields": [
+                {
+                    "title": "Damage - First Hit",
+                    "value": "70% SpA + 11 x (Level - 1) + 420",
+                    "calc_variables": {
+                        "atk_modifier": 0.7,
+                        "lvl_modifier": 11,
+                        "addend": 420
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 10",
+                    "value": "Increases the number of flames by one.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "hypervoice"],
+            "name": "Hyper Voice",
+            "level": 4,
+            "cd": 5,
+            "type": "area",
+            "description": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% (stacking up to 4 times at 80%) after dealing damage to an enemy.",
+            "fields": [
+                {
+                    "title": "Damage - Near (6 Waves)",
+                    "value": "32% SpA + 5 x (Level - 1) + 110",
+                    "calc_variables": {
+                        "atk_modifier": 0.32,
+                        "lvl_modifier": 5,
+                        "addend": 110
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Far (6 Waves)",
+                    "value": "54% SpA + 8 x (Level - 1) + 184",
+                    "calc_variables": {
+                        "atk_modifier": 0.54,
+                        "lvl_modifier": 8,
+                        "addend": 184
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 10",
+                    "value": "Increases the number of sound waves by one.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "drainingkiss"],
+            "name": "Draining Kiss",
+            "level": 6,
+            "cd": 10,
+            "type": "sure-hit",
+            "description": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore  HP. When it hits the enemy, deal damage and decrease their movement speed for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal.",
+            "fields": [
+                {
+                    "title": "Damge - 3 Hits",
+                    "value": "26% SpA + 4 x (Level - 1) + 160",
+                    "calc_variables": {
+                        "atk_modifier": 0.26,
+                        "lvl_modifier": 4,
+                        "addend": 160
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Healing - 3 Times",
+                    "value": "15% SpA + 0 x (Level - 1) + 120",
+                    "calc_variables": {
+                        "atk_modifier": 0.15,
+                        "lvl_modifier": 0,
+                        "addend": 120
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 12",
+                    "value": "Increases the amount of HP this move restores.",
+                    "type": "data"
+                },
+                {
+                    "title": "Healing - 3 Times",
+                    "value": "22.5% SpA + 0 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 0.22,
+                        "lvl_modifier": 0,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "calmmind"],
+            "name": "Calm Mind",
+            "level": 6,
+            "cd": 10,
+            "type": "buff",
+            "description": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for a short time.",
+            "fields": [
+                {
+                    "title": "Level 12",
+                    "value": "Up to 3s after using this move, if Sylveon is hit by an Enemy's move, the damage is completely nullified and Sylveon is granted a shield.",
+                    "type": "data"
+                },
+                {
+                    "title": "Shield",
+                    "value": "90% SpA + 0 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 0.9,
+                        "lvl_modifier": 0,
+                        "addend": 100
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "fairyfrolic"],
+            "name": "Fairy Frolic",
+            "level": 9,
+            "cd": 139,
+            "type": "buff",
+            "desc": "Jump into the air and become briefly invincible. The moment Sylveon lands, deal damage to enemies in the area of effect and restore Sylveon's HP. For 10s afterward, 50% of damage dealt by Sylveon is converted into HP.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "104% SpA + 13 x (Level - 1) + 620",
+                    "calc_variables": {
+                        "atk_modifier": 1.04,
+                        "lvl_modifier": 13,
+                        "addend": 620
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "talonflame": [
+        {
+            "aliases": ["s01", "peck"],
+            "name": "Peck",
+            "level": 1,
+            "cd": 5,
+            "type": "melee",
+            "desc": "Talonflame flies toward a target Pokémon and attacks it three times.",
+            "fields": [
+                {
+                    "title": "Damage - 3 Hits",
+                    "value": "38% Atk + 2 x (Level - 1) + 70",
+                    "calc_variables": {
+                        "atk_modifier": 0.38,
+                        "lvl_modifier": 2,
+                        "addend": 70
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "acrobatics"],
+            "name": "Acrobatics",
+            "level": 1,
+            "cd": 8,
+            "type": "dash",
+            "desc": "Talonflame flies toward a targeted area, attacking all Pokémon in the area up to three times. Talonflame can choose a direction to dash after the move ends.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "75% Atk + 6 x (Level - 1) + 200",
+                    "calc_variables": {
+                        "atk_modifier": 0.75,
+                        "lvl_modifier": 6,
+                        "addend": 200
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "flamecharge"],
+            "name": "Flame Charge",
+            "level": 5,
+            "cd": 6.5,
+            "type": "dash",
+            "description": "Talonflame dashes forward, damaging enemies in its path. Talonflame gains a speed boost after the dash.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "106% Atk + 14 x (Level - 1) + 340",
+                    "calc_variables": {
+                        "atk_modifier": 1.06,
+                        "lvl_modifier": 14,
+                        "addend": 340
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "For a short time after this move hits, Talonflame's abilities and basic attacks partially ignore the enemies defense for the next 3s (capped at 0) and enemies hit are slowed by 30% for 5 seconds.",
+                    "type": "data"
+                },
+                {
+                    "title": "Defense Reduction",
+                    "value": "0% Atk + 3 x (Level - 1) + 60",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 3,
+                        "addend": 60
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "aerialace"],
+            "name": "Aerial Ace",
+            "level": 5,
+            "cd": 5,
+            "type": "dash",
+            "description": "Talonflame dashes through a targeted enemy, damaging it. Talonflame's next basic attack is boosted.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "95% Atk + 14 x (Level - 1) + 350",
+                    "calc_variables": {
+                        "atk_modifier": 0.95,
+                        "lvl_modifier": 14,
+                        "addend": 350
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "103% Atk + 16 x (Level - 1) + 370",
+                    "calc_variables": {
+                        "atk_modifier": 1.03,
+                        "lvl_modifier": 16,
+                        "addend": 370
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "fly"],
+            "name": "Fly",
+            "level": 7,
+            "cd": 9,
+            "type": "dash",
+            "description": "Talonflame flies up into the sky, becoming untargetable. After 3 seconds, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "255% Atk + 24 x (Level - 1) + 1050",
+                    "calc_variables": {
+                        "atk_modifier": 2.55,
+                        "lvl_modifier": 24,
+                        "addend": 1050
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Enemies hit are also knocked up.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "bravebird"],
+            "name": "Brave Bird",
+            "level": 7,
+            "cd": 10,
+            "type": "dash",
+            "description": "Talonflame dives at the targeted area, taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted basic attack on an enemy hit by Brave Bird within 4 seconds, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "230% Atk + 21 x (Level - 1) + 940",
+                    "calc_variables": {
+                        "atk_modifier": 2.3,
+                        "lvl_modifier": 21,
+                        "addend": 940
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Talonflame takes 15% less damage for 5 seconds when this move hits.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "flamesweep"],
+            "name": "Flame Sweep",
+            "level": 9,
+            "cd": 89,
+            "type": "dash",
+            "desc": "Talonflame charges forward, damaging and shoving all enemies in its path. Flame Sweep deals damage up to 2 times.",
+            "fields": [
+                {
+                    "title": "Damage - 2 Hits",
+                    "value": "146% Atk + 12 x (Level - 1) + 600",
+                    "calc_variables": {
+                        "atk_modifier": 1.46,
+                        "lvl_modifier": 12,
+                        "addend": 600
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "tsareena": [
+        {
+            "aliases": ["s01", "razorleaf"],
+            "name": "Razor Leaf",
+            "level": 1,
+            "cd": 5,
+            "type": "area",
+            "desc": "Pelts leaves in the designated direction, dealing damage to enemies hit. The critical-hit rate of this move is higher than that of basic attacks.",
+            "fields": [
+                {
+                    "title": "Damage - 3 Hits",
+                    "value": "62% Atk + 7 x (Level - 1) + 120",
+                    "calc_variables": {
+                        "atk_modifier": 0.62,
+                        "lvl_modifier": 7,
+                        "addend": 120
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "rapidspin"],
+            "name": "Rapid Spin",
+            "level": 1,
+            "cd": 7.5,
+            "type": "dash",
+            "desc": "Tsareena spins in the designated direction, dealing damage to any enemy hit. When this move hits, increase Tsareena's movement speed for a short time.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "113% Atk + 8 x (Level - 1) + 260",
+                    "calc_variables": {
+                        "atk_modifier": 1.13,
+                        "lvl_modifier": 8,
+                        "addend": 260
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "tripleaxel"],
+            "name": "Triple Axel",
+            "level": 5,
+            "cd": 7,
+            "type": "dash",
+            "desc": "Tsareena spin-kicks 3 times in the designated direction, dealing damage to enemies. Landed hits add a Triple Axel Buff stack. The stacks last for 5 seconds and decay together. During the duration of the buff, basic attack speed is increased depending upon the number of stacks (caps at 3 stacks). In addition, all damage dealt by basic attacks or Triple Axel during the buff is increased by 5% per stack (caps at 6 stacks).\n\nQueenly Majesty Effect: Restores HP each time a kick hits.",
+            "fields": [
+                {
+                    "title": "Damage - Per Hit",
+                    "value": "71.3% Atk + 4 x (Level - 1) + 96",
+                    "calc_variables": {
+                        "atk_modifier": 0.713,
+                        "lvl_modifier": 4,
+                        "addend": 96
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Per Hit (Queenly Majesty Buff)",
+                    "value": "114.09% Atk + 7 x (Level - 1) + 153",
+                    "calc_variables": {
+                        "atk_modifier": 1.1309,
+                        "lvl_modifier": 7,
+                        "addend": 153
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Heal - Queenly Majesty Buff",
+                    "value": "30% Atk + 2 x (Level - 1) + 30",
+                    "calc_variables": {
+                        "atk_modifier": 0.3,
+                        "lvl_modifier": 2,
+                        "addend": 30
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 10",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage - Per Hit",
+                    "value": "82% Atk + 5 x (Level - 1) + 110",
+                    "calc_variables": {
+                        "atk_modifier": 0.82,
+                        "lvl_modifier": 5,
+                        "addend": 110
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Per Hit (Queenly Majesty Buff",
+                    "value": "131.2% Atk + 8 x (Level - 1) + 176",
+                    "calc_variables": {
+                        "atk_modifier": 1.312,
+                        "lvl_modifier": 8,
+                        "addend": 176
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12", "stomp"],
+            "name": "Stomp",
+            "level": 5,
+            "cd": 5.5,
+            "type": "area",
+            "desc": "Tsareena jumps up high and attacks enemies their feet. When this move hits, deal damage to enemies and leave them unable to act for a short time.\n\nQueenly Majesty Effect: Queenly Majesty Effect: Restores HP when this move hits.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "185.22% Atk + 10 x (Level - 1) + 243",
+                    "calc_variables": {
+                        "atk_modifier": 1.8522,
+                        "lvl_modifier": 10,
+                        "addend": 243
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Queenly Majesty Buff",
+                    "value": "296.35% Atk + 17 x (Level - 1) + 390",
+                    "calc_variables": {
+                        "atk_modifier": 2.9335,
+                        "lvl_modifier": 17,
+                        "addend": 390
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Heal - Queenly Majesty Buff",
+                    "value": "37.5% Atk + 2 x (Level - 1) + 75",
+                    "calc_variables": {
+                        "atk_modifier": 37.5,
+                        "lvl_modifier": 2,
+                        "addend": 75
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 10",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "213% Atk + 12 x (Level - 1) + 280",
+                    "calc_variables": {
+                        "atk_modifier": 2.13,
+                        "lvl_modifier": 12,
+                        "addend": 280
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Queenly Majesty Buff",
+                    "value": "340.8% Atk + 19 x (Level - 1) + 448",
+                    "calc_variables": {
+                        "atk_modifier": 3.408,
+                        "lvl_modifier": 19,
+                        "addend": 448
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "tropkick"],
+            "name": "Trop Kick",
+            "level": 6,
+            "cd": 10,
+            "type": "dash",
+            "desc": "Perform a flying kick in the designated direction, dealing damage to enemies hit and decrease their Attack for a short time. Enemies that make contact with the flying kick's wake receive damage and have their movement speed decreased for a short time.\n\nQueenly Majesty Effect: Grants Tsareena a shield when this move is used.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "75.65% Atk + 3 x (Level - 1) + 113",
+                    "calc_variables": {
+                        "atk_modifier": 0.7565,
+                        "lvl_modifier": 3,
+                        "addend": 113
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Over Time (7 Ticks)",
+                    "value": "7.57% Atk + 1 x (Level - 1) + 11",
+                    "calc_variables": {
+                        "atk_modifier": 0.0757,
+                        "lvl_modifier": 1,
+                        "addend": 11
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Queenly Majest Buff",
+                    "value": "121.1% Atk + 4 x (Level - 1) + 181",
+                    "calc_variables": {
+                        "atk_modifier": 1.211,
+                        "lvl_modifier": 4,
+                        "addend": 181
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Over Time (7 Ticks - Queenly Majesty Buff)",
+                    "value": "12.1% Atk + 1 x (Level - 1) + 18",
+                    "calc_variables": {
+                        "atk_modifier": 0.121,
+                        "lvl_modifier": 1,
+                        "addend": 18
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Shield - Queenly Majesty Buff",
+                    "value": "225% Atk + 15 x (Level - 1) + 450",
+                    "calc_variables": {
+                        "atk_modifier": 2.25,
+                        "lvl_modifier": 15,
+                        "addend": 450
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 12",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "87% Atk + 3 x (Level - 1) + 130",
+                    "calc_variables": {
+                        "atk_modifier": 0.87,
+                        "lvl_modifier": 3,
+                        "addend": 130
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Over Time (7 Ticks)",
+                    "value": "8.7% Atk + 1 x (Level - 1) + 13",
+                    "calc_variables": {
+                        "atk_modifier": 0.087,
+                        "lvl_modifier": 1,
+                        "addend": 13
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Queenly Majesty Buff",
+                    "value": "139.2% Atk + 5 x (Level - 1) + 208",
+                    "calc_variables": {
+                        "atk_modifier": 1.392,
+                        "lvl_modifier": 5,
+                        "addend": 208
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Over Time (7 Ticks - Queenly Majesty Buff)",
+                    "value": "13.9% Atk + 1 x (Level - 1) + 21",
+                    "calc_variables": {
+                        "atk_modifier": 0.139,
+                        "lvl_modifier": 1,
+                        "addend": 21
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "grassyglide"],
+            "name": "Grassy Glide",
+            "level": 6,
+            "cd": 6.5,
+            "type": "dash",
+            "desc": "Tsareena slides in the designated direction, dealing damage to enemies hit and decreases their movement speed for a short time. This is followed by an attack in the opposite direction, dealing damage and shoving enemies hit.\n\nQueenly Majesty Effect: Grants Tsareena a shield when this move is used.",
+            "fields": [
+                {
+                    "title": "Damage - 2 Hits",
+                    "value": "67% Atk + 3 x (Level - 1) + 87",
+                    "calc_variables": {
+                        "atk_modifier": 0.67,
+                        "lvl_modifier": 3,
+                        "addend": 87
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Queenly Majesty Buff",
+                    "value": "107.2% Atk + 5 x (Level - 1) + 139",
+                    "calc_variables": {
+                        "atk_modifier": 1.072,
+                        "lvl_modifier": 5,
+                        "addend": 139
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Shield - Queenly Majesty Buff",
+                    "value": "225% Atk + 15 x (Level - 1) + 450",
+                    "calc_variables": {
+                        "atk_modifier": 2.25,
+                        "lvl_modifier": 15,
+                        "addend": 450
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 12",
+                    "value": "Increased damage.",
+                    "type": "data"
+                },
+                {
+                    "title": "Damage",
+                    "value": "77% Atk + 4 x (Level - 1) + 100",
+                    "calc_variables": {
+                        "atk_modifier": 0.77,
+                        "lvl_modifier": 4,
+                        "addend": 100
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Queenly Majesty Buff",
+                    "value": "123.2% Atk + 6 x (Level - 1) + 160",
+                    "calc_variables": {
+                        "atk_modifier": 1.232,
+                        "lvl_modifier": 6,
+                        "addend": 160
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "queenascendant"],
+            "name": "Queen Ascendant",
+            "level": 9,
+            "cd": 112,
+            "type": "sure-hit",
+            "desc": "Tsareena leaps toward an enemy from the opposing team and kicks it high into the air before showering it with a series of kicks while airborne, dealing damage to them. The moment Tsareena lands on the ground, recover HP. While airborne, the enemy that is being kicked and Tsareena are not affected by other moves.",
+            "fields": [
+                {
+                    "title": "Damage - 9 Hits",
+                    "value": "49% Atk + 1 x (Level - 1) + 70",
+                    "calc_variables": {
+                        "atk_modifier": 0.49,
+                        "lvl_modifier": 1,
+                        "addend": 70
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Final Hit",
+                    "value": "196% Atk + 4 x (Level - 1) + 280",
+                    "calc_variables": {
+                        "atk_modifier": 1.96,
+                        "lvl_modifier": 4,
+                        "addend": 280
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
     ]
 }

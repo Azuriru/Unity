@@ -406,5 +406,300 @@
                 }
             ]
         }
+    ],
+    "lucario": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, striking twice. The first attack is a normal basic attack and the second is an additional attack that can critically hit, has increased attack range, and throws enemies into the air.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted (Second Hit)",
+                    "value": "30% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 0.3,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "machamp": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage when it hits. This boosted attack also decreases the movement speed of enemies for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "150% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.5,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "mamoswine": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing damage and freezing enemies for a short time when it hits. Mamoswine's basic attacks deal increased damage for a short time to enemies recently frozen with one of Mamoswine's moves.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "57% Atk + 8 x (Level - 1) + 150",
+                    "calc_variables": {
+                        "atk_modifier": 0.57,
+                        "lvl_modifier": 8,
+                        "addend": 150
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Frozen Bonus",
+                    "value": "19% Atk + 3 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0.19,
+                        "lvl_modifier": 3,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "mr.mime": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage and throwing enemies when it hits.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "50% SpA + 16 x (Level - 1) + 290",
+                    "calc_variables": {
+                        "atk_modifier": 0.5,
+                        "lvl_modifier": 16,
+                        "addend": 290
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "ninetales": [
+        {
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to nearby enemies and decreases their movement speed for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "56% SpA + 14 x (Level - 1) + 260",
+                    "calc_variables": {
+                        "atk_modifier": 0.56,
+                        "lvl_modifier": 14,
+                        "addend": 230
+                    },
+                    "type": "inline"
+                },
+            ]
+        }
+    ],
+    "pikachu": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. This boosted attack also paralyzes enemies for a short time when it hits.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "38% SpA + 10 x (Level - 1) + 200",
+                    "calc_variables": {
+                        "atk_modifier": 0.38,
+                        "lvl_modifier": 10,
+                        "addend": 200
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "slowbro": [
+        {
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, deal damage to nearby enemies and decrease their movement speed.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "110% SpA + 9 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 1.1,
+                        "lvl_modifier": 9,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "snorlax": [
+        {
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to nearby enemies and decreases their movement speed for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "86% Atk + 9 x (Level - 1) + 170",
+                    "calc_variables": {
+                        "atk_modifier": 0.86,
+                        "lvl_modifier": 9,
+                        "addend": 170
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "sylveon": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage.",
+            "evolution": "eevee"
+        },
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. In addition, increase movement speed when this boosted attack hits.",
+            "evolution": "sylveon",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "35% SpA + 10 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 0.35,
+                        "lvl_modifier": 10,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "talonflame": [
+        {
+            "desc": "Becomes a boosted attack every third attack, creating a fiery whirlwind that deals damage to enemies in the area of effect. This boosted attack remains readied even after leaving combat.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "125% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.25,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "tsareena": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, lunging at an enemy, dealing damage and lowering their Defense for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "130% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.30,
+                        "lvl_modifier": 0,
+                        "addend":
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
     ]
 }
