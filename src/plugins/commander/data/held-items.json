@@ -1,0 +1,737 @@
+[
+    {
+        "aliases": [
+            "aeoscookie",
+            "cookie"
+        ],
+        "name": "Aeos Cookie",
+        "bonus": [
+            "HP +240"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 8,
+                "start": 0,
+                "skip": 0,
+                "increment": 8,
+                "initial_diff": 0
+            }
+        ],
+        "description": "When you score a goal, your maximum HP is raised for the rest of the match by 100/150/200. (This bonus caps at 6 stacks)",
+        "passive": {
+            "stat": "Max HP",
+            "levels": [
+                "100",
+                "150",
+                "200"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "assaultvest",
+            "vest",
+            "av"
+        ],
+        "name": "Assault Vest",
+        "bonus": [
+            "HP +270",
+            "Sp. Defense +42"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 18,
+                "start": 0,
+                "skip": 1,
+                "increment": 18,
+                "initial_diff": 0
+            },
+            {
+                "label": "Sp. Defense",
+                "percent": false,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 2.8
+            }
+        ],
+        "description": "Gain a shield against Sp. Attack damage while out of combat for 9%/12%/15% max HP. (7s after leaving combat)",
+        "passive": {
+            "stat": "Max HP",
+            "levels": [
+                "9%",
+                "12%",
+                "15%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "attackweight",
+            "atk.weight",
+            "atkweight",
+            "weight",
+            "aw"
+        ],
+        "name": "Attack Weight",
+        "bonus": [
+            "Attack +18"
+        ],
+        "stats": [
+            {
+                "label": "Attack",
+                "percent": false,
+                "float": 1,
+                "initial": 0.6,
+                "start": 0,
+                "skip": 0,
+                "increment": 0.6,
+                "initial_diff": 0
+            }
+        ],
+        "description": "When you score a goal, your Attack is raised by 6/9/12 for the rest of the match. (This bonus caps at 6 stacks)",
+        "passive": {
+            "stat": "Attack",
+            "levels": [
+                "6",
+                "9",
+                "12"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "buddybarrier",
+            "buddy",
+            "bb"
+        ],
+        "name": "Buddy Barrier",
+        "bonus": [
+            "HP +600"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 20,
+                "start": 0,
+                "skip": 0,
+                "increment": 20,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Grant a shield to you and a nearby ally Pokémon with the lowest HP for 20%/30%/40% max HP when using your Unite Move. (5s duration - 30s cooldown)",
+        "passive": {
+            "stat": "Max HP",
+            "levels": [
+                "20%",
+                "30%",
+                "40%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "choicespecs",
+            "specs"
+        ],
+        "name": "Choice Specs",
+        "bonus": [
+            "Sp. Attack +39"
+        ],
+        "stats": [
+            {
+                "label": "Sp. Attack",
+                "percent": false,
+                "float": 0,
+                "initial": 10,
+                "start": 0,
+                "skip": 0,
+                "increment": 1,
+                "initial_diff": 9
+            }
+        ],
+        "description": "When dealing damage with a move, deal (40/50/60 + 30%/35%/40% Sp. Attack) as additional damage. This additional damage only applies to 1 target (8s cd).",
+        "passive": {
+            "stat": "Sp. Attack",
+            "levels": [
+                "30%",
+                "35%",
+                "40%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "energyamplifier",
+            "energyamp",
+            "amp"
+        ],
+        "name": "Energy Amplifier",
+        "bonus": [
+            "Energy Gather Rate +6%",
+            "Cooldown Reduction +4.5%"
+        ],
+        "stats": [
+            {
+                "label": "Energy Gather Rate",
+                "percent": true,
+                "float": 1,
+                "initial": 0.4,
+                "start": 0,
+                "skip": 1,
+                "increment": 0.4,
+                "initial_diff": 0
+            },
+            {
+                "label": "Cooldown Reduction",
+                "percent": true,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 0.3,
+                "initial_diff": 0
+            }
+        ],
+        "description": "After using your Unite move, deal increased damage by 7%/14%/21% for a short time. (4s duration - 14s cooldown)",
+        "passive": {
+            "stat": "Damage",
+            "levels": [
+                "7%",
+                "14%",
+                "21%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "expshare",
+            "exp"
+        ],
+        "name": "Exp Share",
+        "bonus": [
+            "HP +240",
+            "Speed +150"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 16,
+                "start": 0,
+                "skip": 1,
+                "increment": 16,
+                "initial_diff": 0
+            },
+            {
+                "label": "Speed",
+                "percent": false,
+                "float": 0,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 10,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Increases the Pokémon's Passive Exp. Point gain by 2/3/4 per second while it has the fewest Exp. Points on its team. In addition, when a nearby teammate defeats a wild Pokémon that teammate gains slightly more Exp. Points.",
+        "passive": {
+            "stat": "EXP/s",
+            "levels": [
+                "2",
+                "3",
+                "4"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "floatstone",
+            "float"
+        ],
+        "name": "Float Stone",
+        "bonus": [
+            "Attack +24",
+            "Speed +120"
+        ],
+        "stats": [
+            {
+                "label": "Attack",
+                "percent": false,
+                "float": 1,
+                "initial": 1.6,
+                "start": 0,
+                "skip": 1,
+                "increment": 1.6,
+                "initial_diff": 0
+            },
+            {
+                "label": "Speed",
+                "percent": false,
+                "float": 0,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 8,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Increases movement speed while out of combat by 10%/15%/20%. (7s after leaving combat)",
+        "passive": {
+            "stat": "Speed",
+            "levels": [
+                "10%",
+                "15%",
+                "20%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "focusband",
+            "focus"
+        ],
+        "name": "Focus Band",
+        "bonus": [
+            "Sp. Defense +30",
+            "Defense +30"
+        ],
+        "stats": [
+            {
+                "label": "Defense",
+                "percent": false,
+                "float": 0,
+                "initial": 2,
+                "start": 0,
+                "skip": 1,
+                "increment": 2,
+                "initial_diff": 0
+            },
+            {
+                "label": "Sp. Defense",
+                "percent": false,
+                "float": 0,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 2,
+                "initial_diff": 0
+            }
+        ],
+        "description": "While below 25% HP, recover HP each second for 3s by 8%/11%/14% of your missing HP. (100/90/80s cooldown)",
+        "passive": {
+            "stat": "HP Lost",
+            "levels": [
+                "8%",
+                "11%",
+                "14%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "leftovers",
+            "lefties"
+        ],
+        "name": "Leftovers",
+        "bonus": [
+            "HP +240",
+            "HP Recovery +9"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 16,
+                "start": 0,
+                "skip": 1,
+                "increment": 16,
+                "initial_diff": 0
+            },
+            {
+                "label": "HP Recovery",
+                "percent": false,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 0.6,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Recovers health over time while out of combat by 1%/1.5%/2% HP/s. (7s after leaving combat)",
+        "passive": {
+            "stat": "Max HP/s",
+            "levels": [
+                "1%",
+                "1.50%",
+                "2%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "muscleband",
+            "muscle",
+            "mb"
+        ],
+        "name": "Muscle Band",
+        "bonus": [
+            "Attack +15",
+            "Attack Speed +7.5%"
+        ],
+        "stats": [
+            {
+                "label": "Attack",
+                "percent": false,
+                "float": 0,
+                "initial": 1,
+                "start": 0,
+                "skip": 1,
+                "increment": 1,
+                "initial_diff": 0
+            },
+            {
+                "label": "Attack Speed",
+                "percent": true,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 0.5,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Deal additional damage with basic attacks by 1%/2%/3% of the targets remaining HP.",
+        "passive": {
+            "stat": "Remaining HP",
+            "levels": [
+                "1%",
+                "2%",
+                "3%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "razorclaw",
+            "razor",
+            "claw",
+            "rc"
+        ],
+        "name": "Razor Claw",
+        "bonus": [
+            "Attack +15",
+            "Critical-Hit Rate +2.1%"
+        ],
+        "stats": [
+            {
+                "label": "Attack",
+                "percent": false,
+                "float": 0,
+                "initial": 1,
+                "start": 0,
+                "skip": 1,
+                "increment": 1,
+                "initial_diff": 0
+            },
+            {
+                "label": "Critical-Hit Rate",
+                "percent": true,
+                "float": 1,
+                "initial": 0.6,
+                "start": 1,
+                "skip": 1,
+                "increment": 0.1,
+                "initial_diff": 0.6
+            }
+        ],
+        "description": "After the Pokémon uses a move, it’s next basic attack deals (10/15/20 + 40%/45%/50% Attack) additional damage. While this item is held by a melee Pokémon, this basic attack also slows enemies for 2 seconds (2s cooldown).",
+        "passive": {
+            "stat": "Attack",
+            "levels": [
+                "40%",
+                "45%",
+                "50%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "rockyhelmet",
+            "rockyhelm",
+            "helm"
+        ],
+        "name": "Rocky Helmet",
+        "bonus": [
+            "HP +240",
+            "Defense +42"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 18,
+                "start": 0,
+                "skip": 1,
+                "increment": 18,
+                "initial_diff": 0
+            },
+            {
+                "label": "Defense",
+                "percent": false,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 2.8,
+                "initial_diff": 0
+            }
+        ],
+        "description": "After absorbing enough damage, deal percent damage based on your max HP (3%/4%/5%) to nearby opponents. (2s cooldown - 10% HP damage trigger in a single attack)",
+        "passive": {
+            "stat": "Max HP",
+            "levels": [
+                "3%",
+                "4%",
+                "5%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "scopelens",
+            "scope",
+            "sl"
+        ],
+        "name": "Scope Lens",
+        "bonus": [
+            "Critical-Hit Rate +6%",
+            "Critical-Hit Damage +12%"
+        ],
+        "stats": [
+            {
+                "label": "Critical-Hit Rate",
+                "percent": true,
+                "float": 1,
+                "initial": 0.4,
+                "start": 0,
+                "skip": 1,
+                "increment": 0.4,
+                "initial_diff": 0
+            },
+            {
+                "label": "Critical-Hit Damage",
+                "percent": true,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 0.8
+            }
+        ],
+        "description": "Deals additional damage equal to 45%/60%/75% of the Pokémon's Attack stat when dealing a critical hit with a basic attack. (1s cooldown)",
+        "passive": {
+            "stat": "Of Attack Stat",
+            "levels": [
+                "45%",
+                "60%",
+                "75%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "scoreshield",
+            "shield",
+            "ss"
+        ],
+        "name": "Score Shield",
+        "bonus": [
+            "HP +450"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 15,
+                "start": 0,
+                "skip": 0,
+                "increment": 15,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Shields you while you attempt to score a goal. Shield value is equal to 5%/7.5%/10% max HP. Scoring cannot be interrupted while the shield remains active. (6s cooldown)",
+        "passive": {
+            "stat": "Max HP",
+            "levels": [
+                "5%",
+                "7.50%",
+                "10%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "shellbell",
+            "bell"
+        ],
+        "name": "Shell Bell",
+        "bonus": [
+            "Sp. Attack +24",
+            "CD Reduction +4.5%"
+        ],
+        "stats": [
+            {
+                "label": "Sp. Attack",
+                "percent": false,
+                "float": 1,
+                "initial": 1.6,
+                "start": 0,
+                "skip": 1,
+                "increment": 1.6,
+                "initial_diff": 0
+            },
+            {
+                "label": "CD Reduction",
+                "percent": true,
+                "float": 1,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 0.3,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Recover (45/60/75 + 35%/40%/45% Sp. Attack) HP when successfully landing a move. (10s Cooldown)",
+        "passive": {
+            "stat": "HP",
+            "levels": [
+                "45",
+                "60",
+                "75"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "specialattackspecs",
+            "sp.attackspecs",
+            "spattackspecs",
+            "sp.atkspecs",
+            "spatkspecs"
+        ],
+        "name": "Special Attack Specs",
+        "bonus": [
+            "Sp. Attack +24"
+        ],
+        "stats": [
+            {
+                "label": "Sp. Attack",
+                "percent": false,
+                "float": 1,
+                "initial": 0.8,
+                "start": 0,
+                "skip": 0,
+                "increment": 0.8,
+                "initial_diff": 0
+            }
+        ],
+        "description": "When you score a goal, your Sp. Attack is raised by 8/12/16 for the rest of the match. (This bonus caps at 6 stacks)",
+        "passive": {
+            "stat": "Sp. Attack",
+            "levels": [
+                "8",
+                "12",
+                "16"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "weaknesspolicy",
+            "weakness",
+            "wp"
+        ],
+        "name": "Weakness Policy",
+        "bonus": [
+            "HP +210",
+            "Attack +15"
+        ],
+        "stats": [
+            {
+                "label": "HP",
+                "percent": false,
+                "float": 0,
+                "initial": 70,
+                "start": 0,
+                "skip": 1,
+                "increment": 10,
+                "initial_diff": 60
+            },
+            {
+                "label": "Attack",
+                "percent": false,
+                "float": 0,
+                "initial": 0,
+                "start": 1,
+                "skip": 1,
+                "increment": 1,
+                "initial_diff": 0
+            }
+        ],
+        "description": "Upon taking damage, apply a 2/2.5/3% Attack buff for up to 4s. Stacks up to 4 times and the duration can be refreshed before it expires.",
+        "passive": {
+            "stat": "Attack",
+            "levels": [
+                "2%",
+                "2.5%",
+                "3%"
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "wiseglasses",
+            "glasses"
+        ],
+        "name": "Wise Glasses",
+        "bonus": [
+            "Sp. Attack +39"
+        ],
+        "stats": [
+            {
+                "label": "Sp. Attack",
+                "percent": false,
+                "float": 0,
+                "initial": 10,
+                "start": 0,
+                "skip": 0,
+                "increment": 1,
+                "initial_diff": 9
+            }
+        ],
+        "description": "Further increase Sp. Attack by 3%/5%/7%.",
+        "passive": {
+            "stat": "Sp. Attack",
+            "levels": [
+                "3%",
+                "5%",
+                "7%"
+            ]
+        }
+    }
+]

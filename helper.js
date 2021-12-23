@@ -46,3 +46,35 @@ fetch('https://unite-db.com/stats.json')
         window.pokemon[name].stats.levels = newLvls;
     })
     .then(() => navigator.clipboard.write(JSON.stringify(pokemon, null, 4)));
+
+// Held Items
+json.map(({
+    name,
+    bonus1,
+    bonus2,
+    stats,
+    description1: description,
+    description3: stat,
+    level1,
+    level10,
+    level20,
+}) => {
+    return {
+        alias: [name.toLowerCase().replace(/ /g, '')],
+        name,
+        bonus: [
+            bonus1,
+            bonus2
+        ].filter(Boolean),
+        stats,
+        description,
+        passive: {
+            stat,
+            levels: [
+                level1,
+                level10,
+                level20
+            ]
+        }
+    }
+});

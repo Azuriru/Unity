@@ -73,7 +73,7 @@ class MovesCommand extends Command {
             return;
         }
 
-        const move = pokemon_moves.find(({ aliases }) => aliases.includes(move_name.toLowerCase()));
+        const move = pokemon_moves.find(({ aliases }) => aliases.includes(move_name));
 
         if (!move) {
             await message.channel.send(`No move by the name of \`${move_name}\` was found for ${pokemon.capitalize(pokemon.name)}`);
