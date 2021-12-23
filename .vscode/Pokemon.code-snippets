@@ -104,11 +104,11 @@
 		"description": "Empty field with only one percentage",
 		"body": [
 			"{",
-				"\t\"title\": \"Damage - $1\",",
-				"\t\"value\": \"$2\",",
+				"\t\"title\": \"Damage - Basic$1\",",
+				"\t\"value\": \"100% Atk$2\",",
 				"\t\"variables\": {",
-					"\t\t\"atk_type\": \"$3\",",
-					"\t\t\"atk_modifier\": $0",
+					"\t\t\"atk_type\": \"attack$3\",",
+					"\t\t\"atk_modifier\": 1$0",
 				"\t},",
 				"\t\"type\": \"inline-percentage\"",
 			"},"
