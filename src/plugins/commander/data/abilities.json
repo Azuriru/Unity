@@ -242,5 +242,23 @@
             "desc": "When a hindrance is inflicted on Tsareena; decrease the duration of the effect. Using a boosted attack or move grants 1 stack of Queenly Majesty to Tsareena. After gaining 3 stacks, the Queenly Majesty buff is applied to Tsareena for a short time, which allows one of Tsareena's moves to be reused (these uses do not share the same cooldown as the base moves), dealing increased damage and applying an additional effect based on the move used.",
             "evolution": "tsareena"
         }
+    ],
+    "venusaur": [
+        {
+            "name": "Overgrow",
+            "desc": "When HP is 30% or less, increase all damage dealt by 20%."
+        }
+    ],
+    "wigglytuff": [
+        {
+            "name": "Cute Charm",
+            "desc": "When hit by an enemy attack at close range, make that enemy infatuated for a short time. Infatuated enemies become enthralled and approach Wigglytuff against their will. This ability goes on a 9s cooldown when triggered."
+        }
+    ],
+    "zeraora": [
+        {
+            "name": "Volt Absorb",
+            "desc": "Converts 8% of the damage Zeraora was dealt as Atk, up to 200 Atk. Resets after not taking damage for 4 seconds."
+        }
     ]
 }

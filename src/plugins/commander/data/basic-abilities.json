@@ -701,5 +701,82 @@
                 }
             ]
         }
+    ],
+    "venusaur": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. This boosted attack also pulls enemies inward between the vines.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "54% SpA + 10 x (Level - 1) + 180",
+                    "calc_variables": {
+                        "atk_modifier": 0.54,
+                        "lvl_modifier": 10,
+                        "addend": 180
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "wigglytuff": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing damage to enemies and spinning them around when it hits.",
+            "fields": [
+                {
+                    "title": "Damage - Auto",
+                    "value": "100% Atk as SpA",
+                    "variables": {
+                        "atk_type": "sp_attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "44% SpA + 18 x (Level - 1) + 340",
+                    "calc_variables": {
+                        "atk_modifier": 0.44,
+                        "lvl_modifier": 18,
+                        "addend": 340
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "zeraora": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage and paralyzing the enemy while restoring 10% of Zeraora's missing HP.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "110% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.10,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
     ]
 }
