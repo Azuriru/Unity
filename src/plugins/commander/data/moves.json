@@ -3138,7 +3138,7 @@
             "level": 5,
             "cd": 7,
             "type": "melee",
-            "description": "Lucario begins charging power, slowing themself and reducing damage taken by 30% while preparing to unleash a devastating punch. Upon release, Lucario lunges – damaging the first enemy hit. Power-Up Punch does bonus damage based on the enemy's missing health (capping at 1000), and will cause Lucario's next attack to be boosted. The cooldown for Power-Up Punch is reduced whenever Lucario lands a move.",
+            "desc": "Lucario begins charging power, slowing themself and reducing damage taken by 30% while preparing to unleash a devastating punch. Upon release, Lucario lunges – damaging the first enemy hit. Power-Up Punch does bonus damage based on the enemy's missing health (capping at 1000), and will cause Lucario's next attack to be boosted. The cooldown for Power-Up Punch is reduced whenever Lucario lands a move.",
             "fields": [
                 {
                     "title": "Damage - Uncharged",
@@ -3178,7 +3178,7 @@
             "level": 7,
             "cd": 10,
             "type": "dash",
-            "description": "Lucario rapidly strikes with a bone, damaging enemies hit up to 6 times. Enemies in long range will be hit 3 times and at close range they will be hit 6 times. Lucario then throws the bone after the final strike, shoving enemies and causing the bone to land a short distance away. Lucario can activate Bone Rush again to teleport to the bone, damaging enemies in a small area around it. Landing one of Bone Rush's initial strikes will reset the cooldown timer for extreme speed on that target.",
+            "desc": "Lucario rapidly strikes with a bone, damaging enemies hit up to 6 times. Enemies in long range will be hit 3 times and at close range they will be hit 6 times. Lucario then throws the bone after the final strike, shoving enemies and causing the bone to land a short distance away. Lucario can activate Bone Rush again to teleport to the bone, damaging enemies in a small area around it. Landing one of Bone Rush's initial strikes will reset the cooldown timer for extreme speed on that target.",
             "fields": [
                 {
                     "title": "Damage - per Hit (4-7 Hits)",
@@ -3203,7 +3203,7 @@
             "level": 7,
             "cd": 9,
             "type": "melee",
-            "description": "Lucario rapidly punches, damaging enemies in the area in front of them 11 times over the duration.",
+            "desc": "Lucario rapidly punches, damaging enemies in the area in front of them 11 times over the duration.",
             "fields": [
                 {
                     "title": "Damage - per Hit (11 Hits)",
@@ -3288,7 +3288,7 @@
             "level": 5,
             "cd": 8,
             "type": "hindrance",
-            "description": "Machamp jumps to target location, briefly stunning enemies hit, slowing them, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% and gains bonus movement speed for 6 seconds when using Dynamic Punch.",
+            "desc": "Machamp jumps to target location, briefly stunning enemies hit, slowing them, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% and gains bonus movement speed for 6 seconds when using Dynamic Punch.",
             "fields": [
                 {
                     "title": "Damage - Per Tick (4 Ticks)",
@@ -3313,7 +3313,7 @@
             "level": 5,
             "cd": 11,
             "type": "buff",
-            "description": "Machamp becomes unstoppable and gains significant movement speed for 5 seconds or until the next basic attack. Machamp’s next basic attack during submission is enhanced hitting twice and slamming the target down behind Machamp. If this attack hits Machamp also gains increased critical hit rate and attack speed for 3 seconds.",
+            "desc": "Machamp becomes unstoppable and gains significant movement speed for 5 seconds or until the next basic attack. Machamp’s next basic attack during submission is enhanced hitting twice and slamming the target down behind Machamp. If this attack hits Machamp also gains increased critical hit rate and attack speed for 3 seconds.",
             "fields": [
                 {
                     "title": "Damage - 2x",
@@ -3338,7 +3338,7 @@
             "level": 7,
             "cd": 6,
             "type": "melee",
-            "description": "Machamp unleashes a barrage of blows in a targeted direction, hitting multiple times and finishing with a single large strike. Machamp is unstoppable for the duration and can move while using close combat.",
+            "desc": "Machamp unleashes a barrage of blows in a targeted direction, hitting multiple times and finishing with a single large strike. Machamp is unstoppable for the duration and can move while using close combat.",
             "fields": [
                 {
                     "title": "Damage - Per Hit (4 Hits)",
@@ -3373,7 +3373,7 @@
             "level": 7,
             "cd": 6,
             "type": "melee",
-            "description": "Machamp dashes forward dealing damage to enemies hit. Cross chop has an increased critical hit rate and can critically strike.",
+            "desc": "Machamp dashes forward dealing damage to enemies hit. Cross chop has an increased critical hit rate and can critically strike.",
             "fields": [
                 {
                     "title": "Damage",
@@ -3460,7 +3460,7 @@
             "level": 5,
             "cd": 10,
             "type": "hindrance",
-            "description": "Drops icicles on the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. The final icicle shatters after a set amount of time or when hit by Mamoswine's other moves or boosted attacks, dealing damage to enemies in the area of effect and leaving them frozen. If the icicle is shattered by Tackle or High Horsepower, the ground is covered in ice, which increases the movement speed of allies that run over it. The next basic attack is boosted.",
+            "desc": "Drops icicles on the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. The final icicle shatters after a set amount of time or when hit by Mamoswine's other moves or boosted attacks, dealing damage to enemies in the area of effect and leaving them frozen. If the icicle is shattered by Tackle or High Horsepower, the ground is covered in ice, which increases the movement speed of allies that run over it. The next basic attack is boosted.",
             "fields": [
                 {
                     "title": "Damage - Small Icicles (3x)",
@@ -3505,7 +3505,7 @@
             "level": 5,
             "cd": 8,
             "type": "hindrance",
-            "description": "Uses cold-infused fangs to throw the opposing Pokémon closest to the user, dealing damage and leaving them frozen for a short time. The user can then designate a direction to slam the thrown Pokémon forward or backward, dealing damage to enemies in the area of effect and leaving them frozen for a short time. The next basic attack is boosted.",
+            "desc": "Uses cold-infused fangs to throw the opposing Pokémon closest to the user, dealing damage and leaving them frozen for a short time. The user can then designate a direction to slam the thrown Pokémon forward or backward, dealing damage to enemies in the area of effect and leaving them frozen for a short time. The next basic attack is boosted.",
             "fields": [
                 {
                     "title": "Damage - First Hit",
@@ -3540,7 +3540,7 @@
             "level": 7,
             "cd": 8,
             "type": "dash",
-            "description": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and shove them. Mamoswine then stomps their feet, dealing damage to enemies in the area of effect and leaves them unable to act for a short time. This stomping deals increased damage to frozen enemies.",
+            "desc": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and shove them. Mamoswine then stomps their feet, dealing damage to enemies in the area of effect and leaves them unable to act for a short time. This stomping deals increased damage to frozen enemies.",
             "fields": [
                 {
                     "title": "Damage - Charge",
@@ -3585,7 +3585,7 @@
             "level": 7,
             "cd": 7,
             "type": "dash",
-            "description": "Mamoswine leaps up in the designated direction and lands forcefully, dealing damage to enemies in the area of effect and pulling them toward Mamoswine.",
+            "desc": "Mamoswine leaps up in the designated direction and lands forcefully, dealing damage to enemies in the area of effect and pulling them toward Mamoswine.",
             "fields": [
                 {
                     "title": "Damage",
@@ -3680,7 +3680,7 @@
             "level": 4,
             "cd": 6,
             "type": "ranged",
-            "description": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned. Enemies debuffed by Guard Swap take bonus damage and are stunned, but are not knocked back.",
+            "desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned. Enemies debuffed by Guard Swap take bonus damage and are stunned, but are not knocked back.",
             "fields": [
                 {
                     "title": "Damage",
@@ -3725,7 +3725,7 @@
             "level": 4,
             "cd": 6,
             "type": "area",
-            "description": "After a short channel, Mr. Mime creates a pulse of energy that damages enemies around themself and any target affected by Guard Swap, with a smaller pulse around any created Barriers or Light Screens. Enemies hit by more than 1 pulse are stunned.",
+            "desc": "After a short channel, Mr. Mime creates a pulse of energy that damages enemies around themself and any target affected by Guard Swap, with a smaller pulse around any created Barriers or Light Screens. Enemies hit by more than 1 pulse are stunned.",
             "fields": [
                 {
                     "title": "Damage",
@@ -3750,7 +3750,7 @@
             "level": 6,
             "cd": 8,
             "type": "hindrance",
-            "description": "Mr. Mime creates a wall that prevents enemies from passing. Holds 2 uses in reserve and cannot be used more than once every 2s. When upgrading Barrier, reserved Barriers will be restored to the maximum.",
+            "desc": "Mr. Mime creates a wall that prevents enemies from passing. Holds 2 uses in reserve and cannot be used more than once every 2s. When upgrading Barrier, reserved Barriers will be restored to the maximum.",
             "fields": [
                 {
                     "title": "Level 13",
@@ -3765,7 +3765,7 @@
             "level": 6,
             "cd": 4,
             "type": "debuff",
-            "description": "Mr. Mime fires a beam, swapping base Defense and Sp. Defense with another Pokémon for 6s when it hits. Swapping with an enemy slows and damages them over time while increasing Mr. Mime's movement speed. Swapping with an ally increases the movement speed of that ally and Mr. Mime.",
+            "desc": "Mr. Mime fires a beam, swapping base Defense and Sp. Defense with another Pokémon for 6s when it hits. Swapping with an enemy slows and damages them over time while increasing Mr. Mime's movement speed. Swapping with an ally increases the movement speed of that ally and Mr. Mime.",
             "fields": [
                 {
                     "title": "Damage - 7 Ticks",
@@ -3872,7 +3872,7 @@
             "level": 4,
             "cd": 7,
             "type": "area",
-            "description": "Ninetales attacks with a gust of chilly ice toward the designated direction. The ice damages enemies and forms a wall that can't be walked through. After a short time this wall melts and collapses, further damaging enemies in a radius around the wall.",
+            "desc": "Ninetales attacks with a gust of chilly ice toward the designated direction. The ice damages enemies and forms a wall that can't be walked through. After a short time this wall melts and collapses, further damaging enemies in a radius around the wall.",
             "fields": [
                 {
                     "title": "Damage - Wind or Wall",
@@ -3897,7 +3897,7 @@
             "level": 4,
             "cd": 7,
             "type": "hindrance",
-            "description": "Ninetales attacks with a powerful cone of blinding light, stunning and damaging enemies hit.",
+            "desc": "Ninetales attacks with a powerful cone of blinding light, stunning and damaging enemies hit.",
             "fields": [
                 {
                     "title": "Damage",
@@ -3987,7 +3987,7 @@
             "level": 6,
             "cd": 13,
             "type": "buff",
-            "description": "Ninetales creates an aurora centered on its position for 5s, reducing damage received by Ninetales and allies within the aurora by 30%. While Ninetales is inside the aurora, movement speed is increased by 20% and all basic attacks are boosted.",
+            "desc": "Ninetales creates an aurora centered on its position for 5s, reducing damage received by Ninetales and allies within the aurora by 30%. While Ninetales is inside the aurora, movement speed is increased by 20% and all basic attacks are boosted.",
             "fields": [
                 {
                     "title": "Level 13",
@@ -4119,7 +4119,7 @@
             "level": 4,
             "cd": 8,
             "type": "area",
-            "description": "Pikachu drops wicked thunderbolts at a designated area, damaging enemies in the radius.",
+            "desc": "Pikachu drops wicked thunderbolts at a designated area, damaging enemies in the radius.",
             "fields": [
                 {
                     "title": "Damage - Area (5 Strikes)",
@@ -4144,7 +4144,7 @@
             "level": 6,
             "cd": 10,
             "type": "hindrance",
-            "description": "Pikachu electrifies themself and charges ahead becoming unstoppable, throwing and damaging enemies hit.",
+            "desc": "Pikachu electrifies themself and charges ahead becoming unstoppable, throwing and damaging enemies hit.",
             "fields": [
                 {
                     "title": "Damage - 5 Hits",
@@ -4169,7 +4169,7 @@
             "level": 6,
             "cd": 8,
             "type": "hindrance",
-            "description": "Pikachu attacks with a strong electric blast at a designated area, stunning and damaging enemies in the area.",
+            "desc": "Pikachu attacks with a strong electric blast at a designated area, stunning and damaging enemies in the area.",
             "fields": [
                 {
                     "title": "Damage",
@@ -4284,7 +4284,7 @@
             "level": 4,
             "cd": 5,
             "type": "ranged",
-            "description": "Slowbro fires a stream of boiling water, damaging enemies hit; creating a cloud of stream at the location of the first enemy hit, which slows and applies burn to all enemies inside. This burn reduces Attack by 30%.",
+            "desc": "Slowbro fires a stream of boiling water, damaging enemies hit; creating a cloud of stream at the location of the first enemy hit, which slows and applies burn to all enemies inside. This burn reduces Attack by 30%.",
             "fields": [
                 {
                     "title": "Damage - Per Hit (3 Hits)",
@@ -4319,7 +4319,7 @@
             "level": 4,
             "cd": 9,
             "type": "hindrance",
-            "description": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air briefly. Two more waves follow after the first, damaging and slowing enemies.",
+            "desc": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air briefly. Two more waves follow after the first, damaging and slowing enemies.",
             "fields": [
                 {
                     "title": "Damage - Per Wave (3 Waves)",
@@ -4344,7 +4344,7 @@
             "level": 6,
             "cd": 9,
             "type": "recovery",
-            "description": "Slowbro briefly becomes unstoppable, gaining +300 Defense for 4s, healing 22.5% of Slowbro's Oblivious health (blue HP) 3 times, and gains 10% bonus damage on the next Surf or Scald used.",
+            "desc": "Slowbro briefly becomes unstoppable, gaining +300 Defense for 4s, healing 22.5% of Slowbro's Oblivious health (blue HP) 3 times, and gains 10% bonus damage on the next Surf or Scald used.",
             "fields": [
                 {
                     "title": "Level 13",
@@ -4359,7 +4359,7 @@
             "level": 6,
             "cd": 11,
             "type": "hindrance",
-            "description": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2s, restoring 15% of Slowbro's Oblivious health (blue HP). Slowbro can reactivate the ability to pull the enemy to them, but otherwise cannot act for the duration.",
+            "desc": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2s, restoring 15% of Slowbro's Oblivious health (blue HP). Slowbro can reactivate the ability to pull the enemy to them, but otherwise cannot act for the duration.",
             "fields": [
                 {
                     "title": "Level 13",
@@ -4424,7 +4424,7 @@
             "level": 5,
             "cd": 7,
             "type": "dash",
-            "description": "Snorlax jumps to target location, dealing damage and throwing enemies within the landing radius into the air briefly.",
+            "desc": "Snorlax jumps to target location, dealing damage and throwing enemies within the landing radius into the air briefly.",
             "fields": [
                 {
                     "title": "Damage",
@@ -4459,7 +4459,7 @@
             "level": 5,
             "cd": 6.5,
             "type": "buff",
-            "description": "Snorlax buffs themselves for 5 seconds causing basic attacks to deal increased damage. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed when Flail is activated.",
+            "desc": "Snorlax buffs themselves for 5 seconds causing basic attacks to deal increased damage. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed when Flail is activated.",
             "fields": [
                 {
                     "title": "Basic Attack - Above 80% HP",
@@ -4494,7 +4494,7 @@
             "level": 7,
             "cd": 11,
             "type": "hindrance",
-            "description": "Snorlax creates and holds a wall in a targeted direction for 4 seconds and gains a shield. The shield lasts 3.75 sec even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned. Snorlax cannot attack or use abilities while Blocking but can move slowly.",
+            "desc": "Snorlax creates and holds a wall in a targeted direction for 4 seconds and gains a shield. The shield lasts 3.75 sec even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned. Snorlax cannot attack or use abilities while Blocking but can move slowly.",
             "fields": [
                 {
                     "title": "Shield",
@@ -4514,7 +4514,7 @@
             "level": 7,
             "cd": 12,
             "type": "hindrance",
-            "description": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 2 seconds.",
+            "desc": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 2 seconds.",
             "fields": [
                 {
                     "title": "Level 13",
@@ -4601,7 +4601,7 @@
             "level": 4,
             "cd": 7,
             "type": "dash",
-            "description": "Create four small flames while leaping in the designated direction. The flames shoot toward enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move and after the first flame hits, subsequent flames on the same target deal 25% damage.",
+            "desc": "Create four small flames while leaping in the designated direction. The flames shoot toward enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move and after the first flame hits, subsequent flames on the same target deal 25% damage.",
             "fields": [
                 {
                     "title": "Damage - First Hit",
@@ -4626,7 +4626,7 @@
             "level": 4,
             "cd": 5,
             "type": "area",
-            "description": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% (stacking up to 4 times at 80%) after dealing damage to an enemy.",
+            "desc": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% (stacking up to 4 times at 80%) after dealing damage to an enemy.",
             "fields": [
                 {
                     "title": "Damage - Near (6 Waves)",
@@ -4661,7 +4661,7 @@
             "level": 6,
             "cd": 10,
             "type": "sure-hit",
-            "description": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore  HP. When it hits the enemy, deal damage and decrease their movement speed for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal.",
+            "desc": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore  HP. When it hits the enemy, deal damage and decrease their movement speed for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal.",
             "fields": [
                 {
                     "title": "Damge - 3 Hits",
@@ -4706,7 +4706,7 @@
             "level": 6,
             "cd": 10,
             "type": "buff",
-            "description": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for a short time.",
+            "desc": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for a short time.",
             "fields": [
                 {
                     "title": "Level 12",
@@ -4793,7 +4793,7 @@
             "level": 5,
             "cd": 6.5,
             "type": "dash",
-            "description": "Talonflame dashes forward, damaging enemies in its path. Talonflame gains a speed boost after the dash.",
+            "desc": "Talonflame dashes forward, damaging enemies in its path. Talonflame gains a speed boost after the dash.",
             "fields": [
                 {
                     "title": "Damage",
@@ -4828,7 +4828,7 @@
             "level": 5,
             "cd": 5,
             "type": "dash",
-            "description": "Talonflame dashes through a targeted enemy, damaging it. Talonflame's next basic attack is boosted.",
+            "desc": "Talonflame dashes through a targeted enemy, damaging it. Talonflame's next basic attack is boosted.",
             "fields": [
                 {
                     "title": "Damage",
@@ -4863,7 +4863,7 @@
             "level": 7,
             "cd": 9,
             "type": "dash",
-            "description": "Talonflame flies up into the sky, becoming untargetable. After 3 seconds, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early.",
+            "desc": "Talonflame flies up into the sky, becoming untargetable. After 3 seconds, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early.",
             "fields": [
                 {
                     "title": "Damage",
@@ -4888,7 +4888,7 @@
             "level": 7,
             "cd": 10,
             "type": "dash",
-            "description": "Talonflame dives at the targeted area, taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted basic attack on an enemy hit by Brave Bird within 4 seconds, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
+            "desc": "Talonflame dives at the targeted area, taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted basic attack on an enemy hit by Brave Bird within 4 seconds, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
             "fields": [
                 {
                     "title": "Damage",
@@ -5347,7 +5347,7 @@
             "level": 5,
             "cd": 6,
             "type": "debuff",
-            "description": "Venusaur hurls toxic sludge to the designated location, damaging and poisoning all enemies in the radius when it lands. The sludge lingers, damaging enemies over time in the radius, slowing them, and reducing their Sp. Def (by 30% after each damaging tick and only stacks once) for a short time.",
+            "desc": "Venusaur hurls toxic sludge to the designated location, damaging and poisoning all enemies in the radius when it lands. The sludge lingers, damaging enemies over time in the radius, slowing them, and reducing their Sp. Def (by 30% after each damaging tick and only stacks once) for a short time.",
             "fields": [
                 {
                     "title": "Damage",
@@ -5427,7 +5427,7 @@
             "level": 7,
             "cd": 9,
             "type": "area",
-            "description": "Venusaur fires a beam of light in the designated direction, damaging enemies over time. It is divided into four distinct hits, with ten damaging ticks randomly divided among these four hits. Total damage cannot exceed 2250.",
+            "desc": "Venusaur fires a beam of light in the designated direction, damaging enemies over time. It is divided into four distinct hits, with ten damaging ticks randomly divided among these four hits. Total damage cannot exceed 2250.",
             "fields": [
                 {
                     "title": "Damage - 5 Ticks",
@@ -5457,7 +5457,7 @@
             "level": 7,
             "cd": 9,
             "type": "area",
-            "description": "Venusaur scatters petals around themself for 5s, increasing movement speed and damaging enemies over time in the radius. This movement speed increase slowly decays during the duration of this move. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more).",
+            "desc": "Venusaur scatters petals around themself for 5s, increasing movement speed and damaging enemies over time in the radius. This movement speed increase slowly decays during the duration of this move. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more).",
             "fields": [
                 {
                     "title": "Damage - Aura (16 Ticks)",
@@ -5542,7 +5542,7 @@
             "level": 4,
             "cd": 10,
             "type": "hindrance",
-            "description": "Wigglytuff gains a shield and rolls forward, damaging and throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam.",
+            "desc": "Wigglytuff gains a shield and rolls forward, damaging and throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam.",
             "fields": [
                 {
                     "title": "Damage - Per Hit",
@@ -5567,7 +5567,7 @@
             "level": 4,
             "cd": 10,
             "type": "area",
-            "description": "Wigglytuff begins singing, slowing enemies around them. Enemies that stay inside the song's effect for too long will be put to sleep, and have their defense and special defense reduced for a short time.",
+            "desc": "Wigglytuff begins singing, slowing enemies around them. Enemies that stay inside the song's effect for too long will be put to sleep, and have their defense and special defense reduced for a short time.",
             "fields": [
                 {
                     "title": "Level 12",
@@ -5582,7 +5582,7 @@
             "level": 6,
             "cd": 5,
             "type": "melee",
-            "description": "Wigglytuff unleashes a barrage of slaps, damaging and slowing enemies in a cone 3-5 times.",
+            "desc": "Wigglytuff unleashes a barrage of slaps, damaging and slowing enemies in a cone 3-5 times.",
             "fields": [
                 {
                     "title": "Damage - Per Slap",
@@ -5607,7 +5607,7 @@
             "level": 6,
             "cd": 4.5,
             "type": "area",
-            "description": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone followed by a large amount of damage.",
+            "desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone followed by a large amount of damage.",
             "fields": [
                 {
                     "title": "Damage - First Hit",
@@ -5692,7 +5692,7 @@
             "level": 6,
             "cd": 8,
             "type": "dash",
-            "description": "Zeraora charges forward, damaging enemies in their path and increasing their basic attack speed for a short time. Activating this ability again before it expires will teleport Zeraora to their original location.",
+            "desc": "Zeraora charges forward, damaging enemies in their path and increasing their basic attack speed for a short time. Activating this ability again before it expires will teleport Zeraora to their original location.",
             "fields": [
                 {
                     "title": "Damage",
@@ -5727,7 +5727,7 @@
             "level": 6,
             "cd": 10,
             "type": "dash",
-            "description": "Zeraora leaps in a selected direction, damaging enemies in their path. If a basic attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing damage. Holds 3 uses in reserve.",
+            "desc": "Zeraora leaps in a selected direction, damaging enemies in their path. If a basic attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing damage. Holds 3 uses in reserve.",
             "fields": [
                 {
                     "title": "Damage - Jump",
@@ -5762,7 +5762,7 @@
             "level": 8,
             "cd": 12,
             "type": "area",
-            "description": "Zeraora emits an electric aura, damaging all enemies within the aura and granting a shield to Zeraora when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora when the move ends, damaging and stunning them.",
+            "desc": "Zeraora emits an electric aura, damaging all enemies within the aura and granting a shield to Zeraora when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora when the move ends, damaging and stunning them.",
             "fields": [
                 {
                     "title": "Damage - Per Tick (6 Ticks)",
