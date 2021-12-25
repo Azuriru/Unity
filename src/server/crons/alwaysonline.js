@@ -1,9 +1,7 @@
-
 const got = require('got');
-const config = require('../util/config');
-const { CronJob } = require('cron');
+const config = require('../../util/config');
 
-const alwaysonline = {
+module.exports = {
     cron: '0 30 0 1,16 * *',
     type: 'alwaysonline',
     getIds: async function(appname, token) {
@@ -63,34 +61,5 @@ const alwaysonline = {
                 currentToken
             );
         } catch(e) {}
-    },
-    init: function() {
-        // TODO: Check if the curent server should be up, or if it restarted before switching and came back after the schedule time
-        // or something weird like that
-    },
+    }
 }
-
-const cron = Object.assign(
-    // Has such a shitty footprint that I have to comment what each numbered param means
-    new CronJob(
-        // Cronjob syntax for scheduler
-        alwaysonline.cron || '0 0 0 0 0 0',
-        // Function to call
-        alwaysonline.task,
-        // On complete, we don't need it
-        null,
-        // Start scheduler immediately, we do need it, used for disables
-        true,
-        // Timezone, we use UTC
-        null,
-        // Context for function call, we want module.exports as the this value
-        alwaysonline,
-        // Run task immediately, we don't need it
-        null,
-        // UTC offset, I don't know why this separate from the timezone one
-        0
-    ),
-    alwaysonline
-);
-
-module.exports = cron;
