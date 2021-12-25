@@ -1,5 +1,3 @@
-const got = require('got');
-const config = require('../util/config');
 const { CronJob } = require('cron');
 const alwaysOnline = require('./crons/alwaysonline');
 const ping = require('./crons/ping');
@@ -40,5 +38,3 @@ module.exports = jobs.map(job => {
         console.log('Error launching cron', job);
     }
 });
-
-module.exports = cron;
