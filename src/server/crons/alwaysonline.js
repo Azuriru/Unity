@@ -6,20 +6,20 @@ module.exports = {
     type: 'alwaysonline',
     getIds: async function(appname, token) {
         const first = await got(`https://api.heroku.com/teams/apps/${appname}`, {
-            json: true,
             headers: {
                 Authorization: 'Bearer ' + token,
                 Accept: 'application/vnd.heroku+json; version=3'
             }
-        });
-        const second = await got(`https://api.heroku.com/apps/${first.body.id}/formation`, {
-            json: true,
+        }).json();
+
+        const second = await got(`https://api.heroku.com/apps/${first.id}/formation`, {
             headers: {
                 Authorization: 'Bearer ' + token,
                 Accept: 'application/vnd.heroku+json; version=3'
             }
-        });
-        return [second.body[0].app.id, second.body[0].id];
+        }).json();
+
+        return [second[0].app.id, second[0].id];
     },
     scale: async function(ids, num, token) {
         return await got.patch(`https://api.heroku.com/apps/${ids[0]}/formation/${ids[1]}`, {
