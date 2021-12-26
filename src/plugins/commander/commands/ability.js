@@ -1,8 +1,10 @@
 const Command = require('../structs/Command.js');
 const Pokemon = require('../structs/Pokemon.js');
 const { MessageEmbed } = require('discord.js');
+const { SERVICE_URL: url } = require('../../util/config');
 const names = require('../data/pokemons.json');
 const abilities = require('../data/abilities.json');
+
 
 class AbilityCommand extends Command {
 	constructor(bot) {
@@ -58,7 +60,7 @@ class AbilityCommand extends Command {
 
         const embeds = pokemon_abilities.map(({ name, desc, fields, evolution }) => {
             const embed = new MessageEmbed()
-                .setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/${pokemon.name}/${evolution && evolution !== pokemon.name ? `ability-${evolution}` : 'ability'}.png`)
+                .setAuthor(name, `${url}/pokemon/skills/icons/${pokemon.name}/${evolution && evolution !== pokemon.name ? `ability-${evolution}` : 'ability'}.png`)
                 .setDescription(desc);
 
             if (fields) {

@@ -2,6 +2,7 @@ const Command = require('../structs/Command.js');
 const FormatterPlugin = require('../../fmt');
 const Pokemon = require('../structs/Pokemon.js');
 const { MessageEmbed } = require('discord.js');
+const { SERVICE_URL: url } = require('../../util/config');
 const names = require('../data/pokemons.json');
 const moves = require('../data/moves.json');
 
@@ -104,7 +105,7 @@ class MovesCommand extends Command {
         const { cdr } = pokemon.stats.levels[pokemon.level - 1];
 
         const embed = new MessageEmbed();
-        embed.setAuthor(title, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/${pokemon.name}/${skillcode}.png`);
+        embed.setAuthor(title, `${url}/pokemon/skills/icons/${pokemon.name}/${skillcode}.png`);
         embed.setDescription(desc);
         embed.setFields(
             [
@@ -157,8 +158,8 @@ class MovesCommand extends Command {
                 }
             ].filter(Boolean)
         );
-        embed.setImage(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/previews/${pokemon.name}/${skillcode}.png`);
-        embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
+        embed.setImage(`${url}/pokemon/skills/previews/${pokemon.name}/${skillcode}.png`);
+        embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `${url}/pokemon/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
         embed.setTimestamp();
 
         await message.channel.send({

@@ -1,6 +1,7 @@
 const Command = require('../structs/Command.js');
 const { HeldItem } = require('../structs/Item.js');
 const { MessageEmbed } = require('discord.js');
+const { SERVICE_URL: url } = require('../../util/config');
 const items = require('../data/held-items.json');
 
 class HeldItemsCommand extends Command {
@@ -86,9 +87,9 @@ class HeldItemsCommand extends Command {
         const tier = held_item.getCurrentTier();
 
         const embed = new MessageEmbed()
-            .setAuthor(`${name}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/held-items/tiers/${held_item.aliases[0]}-${['a', 'b', 'c'][tier]}.png`)
+            .setAuthor(`${name}`, `${url}/held-items/tiers/${held_item.aliases[0]}-${['a', 'b', 'c'][tier]}.png`)
             .setDescription(description)
-            .setThumbnail(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/held-items/sprites/${held_item.aliases[0]}.png`)
+            .setThumbnail(`${url}/held-items/sprites/${held_item.aliases[0]}.png`)
             .setFields([
                 {
                     name: 'Passive',

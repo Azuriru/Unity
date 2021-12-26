@@ -1,6 +1,7 @@
 const Command = require('../structs/Command.js');
 const { BattleItem } = require('../structs/Item.js');
 const { MessageEmbed } = require('discord.js');
+const { SERVICE_URL: url } = require('../../util/config');
 const items = require('../data/battle-items.json');
 
 class BattleItemCommand extends Command {
@@ -65,7 +66,7 @@ class BattleItemCommand extends Command {
         await message.channel.send({
             embeds: [
                 new MessageEmbed()
-                    .setAuthor(name, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/battle-items/icons/${battle_item_name}.png`)
+                    .setAuthor(name, `${url}/battle-items/rounded/${battle_item_name}.png`)
                     .setThumbnail(`https://raw.githubusercontent.com/Azuriru/Unity/master/assets/battle-items/icons/${battle_item_name}.png`)
                     .setDescription(`
                         ${description}
