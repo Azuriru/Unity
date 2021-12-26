@@ -76,7 +76,7 @@ class MovesCommand extends Command {
             return;
         }
 
-        const pokemon = new Pokemon(pokemon_name, level);
+        const pokemon = new Pokemon(pokemon_name, Number(level));
         const pokemon_moves = moves[pokemon_name];
 
         if (!pokemon_moves) {
@@ -96,6 +96,7 @@ class MovesCommand extends Command {
 
         if (!level) {
             pokemon.level = lvl;
+            console.log('no level');
         };
 
         if (skillcode === 'u') {
