@@ -6,7 +6,7 @@ const items = require('../data/battle-items.json');
 class BattleItemCommand extends Command {
 	constructor(bot) {
 		super(bot);
-		this.aliases = ['battle-item', 'battleitem', 'bitem'];
+		this.aliases = ['battle-item', 'battleitem', 'bitem', 'bi'];
         // this.schema = new SlashCommandBuilder();
 		this.shortdesc = 'Provides useful information about a battle item.';
 		this.desc = `

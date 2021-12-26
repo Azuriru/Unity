@@ -44,6 +44,16 @@ class BasicCommand extends Command {
             return;
         };
 
+        if (level < 1) {
+            await message.channel.send(`Pokémon level cannot be lower than 1.`);
+            return;
+        }
+
+        if (level > 15) {
+            await message.channel.send(`Pokémon level cannot be higher than 15.`);
+            return;
+        }
+
         if (names.indexOf(pokemon_name) === -1) {
             await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
             return;

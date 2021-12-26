@@ -6,8 +6,7 @@ const items = require('../data/held-items.json');
 class HeldItemsCommand extends Command {
 	constructor(bot) {
 		super(bot);
-        const fmt = this.bot.fmt;
-		this.aliases = ['held-item', 'helditem', 'he'];
+		this.aliases = ['held-item', 'helditem', 'hitem', 'hi'];
         // this.schema = new SlashCommandBuilder();
 		this.shortdesc = 'Provides useful information about a held item.';
 		this.desc = `
@@ -18,12 +17,14 @@ class HeldItemsCommand extends Command {
 		this.usages = [
 			'!held-item [ITEM] [LEVEL]',
             '!helditem [ITEM] [LEVEL]',
-            '!he [ITEM] [LEVEL]'
+            '!hitem [ITEM] [LEVEL]',
+            '!hi [ITEM] [LEVEL]'
 		];
         this.examples = [
             '!held-item Buddy Barrier',
             '!helditem assaultvest 30',
-            '!he ScopeLens 10'
+            '!hitem score shield 25',
+            '!hi ScopeLens 10'
         ]
 	}
 
@@ -46,7 +47,19 @@ class HeldItemsCommand extends Command {
         let level = 20;
 
         if (!isNaN(args[args.length - 1])) {
-            level = Number(args.pop());
+            const newLevel = Number(args.pop());
+
+            if (newLevel > 30) {
+                await message.channel.send('Held item cannot exceed level 30');
+                return;
+            }
+
+            if (newLevel < 1) {
+                await message.channel.send('Held item cannot be below level 1');
+                return;
+            }
+
+            level = newLevel;
         }
 
         const held_item_name = args.join('');
