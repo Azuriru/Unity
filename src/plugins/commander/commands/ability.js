@@ -50,7 +50,7 @@ class AbilityCommand extends Command {
             return;
         }
 
-        const pokemon = new Pokemon(pokemon_name, Number(level));
+        const pokemon = new Pokemon(pokemon_name, level && Number(level));
         const pokemon_abilities = abilities[pokemon_name];
 
         if (!pokemon_abilities) {
