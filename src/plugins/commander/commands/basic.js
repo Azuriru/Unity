@@ -1,6 +1,7 @@
 const Command = require('../structs/Command.js');
 const Pokemon = require('../structs/Pokemon.js');
 const { MessageEmbed } = require('discord.js');
+const { SERVICE_URL: url } = require('../../../util/config');
 const names = require('../data/pokemons.json');
 const basic_abilities = require('../data/basic-abilities.json');
 
@@ -70,7 +71,7 @@ class BasicCommand extends Command {
         const embeds = pokemon_basic_abilities.map(({ desc, fields, evolution }) => {
             const embed = new MessageEmbed();
 
-            embed.setAuthor('Basic Ability', `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/skills/icons/basic-attack.png`);
+            embed.setAuthor('Basic Ability', `${url}/pokemon/skills/icons/basic-attack.png`);
             embed.setDescription(desc);
             fields && embed.setFields(
                 fields.flatMap(({ title, value, calc_variables, variables, type }) => {
@@ -129,7 +130,7 @@ class BasicCommand extends Command {
                     }
                 }).filter(Boolean)
             );
-            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `https://raw.githubusercontent.com/Azuriru/Unity/master/assets/pokemon/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
+            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `${url}/pokemon/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
             embed.setTimestamp();
 
             return embed;

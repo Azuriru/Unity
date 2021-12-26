@@ -2,7 +2,7 @@ const Command = require('../structs/Command.js');
 const FormatterPlugin = require('../../fmt');
 const Pokemon = require('../structs/Pokemon.js');
 const { MessageEmbed } = require('discord.js');
-const { SERVICE_URL: url } = require('../../util/config');
+const { SERVICE_URL: url } = require('../../../util/config');
 const names = require('../data/pokemons.json');
 const moves = require('../data/moves.json');
 

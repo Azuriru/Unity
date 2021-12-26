@@ -1,7 +1,7 @@
 const Command = require('../structs/Command.js');
 const Pokemon = require('../structs/Pokemon.js');
 const { MessageEmbed } = require('discord.js');
-const { SERVICE_URL: url } = require('../../util/config');
+const { SERVICE_URL: url } = require('../../../util/config');
 const names = require('../data/pokemons.json');
 const abilities = require('../data/abilities.json');
 

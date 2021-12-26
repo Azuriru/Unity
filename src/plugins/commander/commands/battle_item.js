@@ -1,7 +1,7 @@
 const Command = require('../structs/Command.js');
 const { BattleItem } = require('../structs/Item.js');
 const { MessageEmbed } = require('discord.js');
-const { SERVICE_URL: url } = require('../../util/config');
+const { SERVICE_URL: url } = require('../../../util/config');
 const items = require('../data/battle-items.json');
 
 class BattleItemCommand extends Command {
