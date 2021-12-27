@@ -105,63 +105,63 @@ class MovesCommand extends Command {
 
         const { cdr } = pokemon.stats.levels[pokemon.level - 1];
 
-        const embed = new MessageEmbed();
-        embed.setAuthor(title, `${url}/pokemon/skills/icons/${pokemon.name}/${skillcode}.png`);
-        embed.setDescription(desc);
-        embed.setFields(
-            [
-                ...fields.flatMap(({ title, value, calc_variables, type }) => {
-                    switch(type) {
-                        case 'inline':
-                            return [
-                                {
+        const embed = new MessageEmbed()
+            .setAuthor(title, `${url}/pokemon/skills/icons/${pokemon.name}/${skillcode}.png`)
+            .setDescription(desc)
+            .setFields(
+                [
+                    ...fields.flatMap(({ title, value, calc_variables, type }) => {
+                        switch(type) {
+                            case 'inline':
+                                return [
+                                    {
+                                        name: title,
+                                        value: mobile
+                                            ? `
+                                                **Formula:** ${value}
+                                                **Value: **${pokemon.getValue(calc_variables)}
+                                            `
+                                            : value,
+                                        inline: !mobile
+                                    },
+                                    !mobile && {
+                                        name: '\u200B',
+                                        value: '\u200B',
+                                        inline: true
+                                    },
+                                    !mobile && {
+                                        name: 'Value',
+                                        value: pokemon.getValue(calc_variables),
+                                        inline: true
+                                    }
+                                ];
+                            case 'data':
+                                return {
                                     name: title,
-                                    value: mobile
-                                        ? `
-                                            **Formula:** ${value}
-                                            **Value: **${pokemon.getValue(calc_variables)}
-                                        `
-                                        : value,
-                                    inline: !mobile
-                                },
-                                !mobile && {
-                                    name: '\u200B',
-                                    value: '\u200B',
-                                    inline: true
-                                },
-                                !mobile && {
-                                    name: 'Value',
-                                    value: pokemon.getValue(calc_variables),
-                                    inline: true
-                                }
-                            ];
-                        case 'data':
-                            return {
-                                name: title,
-                                value
-                            };
+                                    value
+                                };
+                        }
+                    }),
+                    {
+                        name: 'Cooldown',
+                        value: pokemon.getCooldown(cd, cdr, skillcode === 'u'),
+                        inline: true
+                    },
+                    !mobile && {
+                        name: '\u200B',
+                        value: '\u200B',
+                        inline: true
+                    },
+                    {
+                        name: 'Type',
+                        value: this.getType(type),
+                        inline: true
                     }
-                }),
-                {
-                    name: 'Cooldown',
-                    value: pokemon.getCooldown(cd, cdr, skillcode === 'u'),
-                    inline: true
-                },
-                !mobile && {
-                    name: '\u200B',
-                    value: '\u200B',
-                    inline: true
-                },
-                {
-                    name: 'Type',
-                    value: pokemon.capitalize(type),
-                    inline: true
-                }
-            ].filter(Boolean)
-        );
-        embed.setImage(`${url}/pokemon/skills/previews/${pokemon.name}/${skillcode}.png`);
-        embed.setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `${url}/pokemon/avatar/${pokemon.getEvolution(pokemon.level)}.png`);
-        embed.setTimestamp();
+                ].filter(Boolean)
+            )
+            .setImage(`${url}/pokemon/skills/previews/${pokemon.name}/${skillcode}.png`)
+            .setFooter(`${pokemon.capitalize(pokemon.getEvolution(pokemon.level) || pokemon.name)} • Level ${pokemon.level}`, `${url}/pokemon/avatar/${pokemon.getEvolution(pokemon.level)}.png`)
+            .setTimestamp();
 
         await message.channel.send({
             embeds: [
@@ -169,6 +169,29 @@ class MovesCommand extends Command {
             ]
         });
 	}
+
+    getType(type) {
+        switch(type) {
+            case 'area':
+                return `<:area:925017057576255508> Area`;
+            case 'buff':
+                return `<:buff:925017057681084428> Buff`;
+            case 'dash':
+                return `<:dash:925017057395879987> Dash`;
+            case 'debuff':
+                return `<:debuff:925017057983078480> Debuff`;
+            case 'hindrance':
+                return `<:hindrance:925017057894989874> Hindrance`;
+            case 'melee':
+                return `<:melee:925017057995653150> Melee`;
+            case 'ranged':
+                return `<:ranged:925017057744015410> Ranged`;
+            case 'recovery':
+                return `<:recovery:925017057886625822> Recovery`;
+            case 'sure-hit':
+                return `<:surehit:925017058004070430> Sure-Hit`;
+        }
+    }
 }
 
 module.exports = MovesCommand;

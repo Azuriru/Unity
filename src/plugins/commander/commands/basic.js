@@ -69,10 +69,10 @@ class BasicCommand extends Command {
         }
 
         const embeds = pokemon_basic_abilities.map(({ desc, fields, evolution }) => {
-            const embed = new MessageEmbed();
+            const embed = new MessageEmbed()
+                .setAuthor('Basic Ability', `${url}/pokemon/skills/icons/basic-attack.png`)
+                .setDescription(desc);
 
-            embed.setAuthor('Basic Ability', `${url}/pokemon/skills/icons/basic-attack.png`);
-            embed.setDescription(desc);
             fields && embed.setFields(
                 fields.flatMap(({ title, value, calc_variables, variables, type }) => {
                     switch(type) {

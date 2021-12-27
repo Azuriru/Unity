@@ -63,7 +63,6 @@ class BattleItemCommand extends Command {
 
         const { name, description, unlock_level } = battle_item;
 
-        console.log(`${url}/battle-items/rounded/${battle_item_name}.png`);
         await message.channel.send({
             embeds: [
                 new MessageEmbed()
