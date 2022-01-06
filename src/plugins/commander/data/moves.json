@@ -3144,7 +3144,7 @@
                     "title": "Damage - Uncharged",
                     "value": "209.15% Atk + 3 x (Level - 1) + 88",
                     "calc_variables": {
-                        "atk_modifier": 2.09,
+                        "atk_modifier": 2.0915,
                         "lvl_modifier": 3,
                         "addend": 88
                     },
@@ -3686,7 +3686,7 @@
                     "title": "Damage",
                     "value": "170.4% SpA + 20 x (Level - 1) + 460",
                     "calc_variables": {
-                        "atk_modifier": 1.7,
+                        "atk_modifier": 1.704,
                         "lvl_modifier": 20,
                         "addend": 460
                     },
@@ -3696,7 +3696,7 @@
                     "title": "Damage - Wall Hit",
                     "value": "204.48% SpA + 23 x (Level - 1) + 552",
                     "calc_variables": {
-                        "atk_modifier": 2.04,
+                        "atk_modifier": 2.0448,
                         "lvl_modifier": 23,
                         "addend": 552
                     },
@@ -3714,6 +3714,16 @@
                         "atk_modifier": 2.13,
                         "lvl_modifier": 23,
                         "addend": 510
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Wall Hit",
+                    "value": "255.6% SpA + 27 x (Level - 1) + 612",
+                    "calc_variables": {
+                        "atk_modifier": 2.556,
+                        "lvl_modifier": 27,
+                        "addend": 612
                     },
                     "type": "inline"
                 }
@@ -4454,7 +4464,7 @@
             ]
         },
         {
-            "aliases": ["s", "flail"],
+            "aliases": ["s12", "flail"],
             "name": "Flail",
             "level": 5,
             "cd": 6.5,

@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { Client, Intents } = require('discord.js');
 const config = require('./util/config.js');
+const { isPartial } = require('./util/partials.js');
 
 class Unity {
     constructor()  {
@@ -43,6 +44,43 @@ class Unity {
 
         this.client.on('ready', this.wrapListener(this.onReady, this));
         this.client.on('error', this.wrapListener(this.onError, this));
+    }
+
+    listen(event, handler, context) {
+        if (!context) throw new Error(`Must pass a context to the ${event} listener`);
+
+        const callback = this.wrapListener(handler, context);
+
+        this.client.on(event, (...args) => {
+            const anyPartial = args.some(isPartial);
+            if (anyPartial) {
+                console.error('Found partials');
+                console.error(args);
+                return;
+            }
+
+            callback(...args);
+        });
+    }
+
+    onlyDev(instance) {
+        if (!this.dev) {
+            return false;
+        }
+
+        if (instance instanceof Guild) {
+            return this.config.DEV?.GUILD !== instance.id;
+        }
+
+        if (instance instanceof Message) {
+            if (instance.guild) {
+                return this.config.DEV?.GUILD !== instance.guild.id;
+            } else {
+                return !this.operators.includes(instance.author?.id);
+            }
+        }
+
+        return false;
     }
 
     loadPlugin(Plugin) {

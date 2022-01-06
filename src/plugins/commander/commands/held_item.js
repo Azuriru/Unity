@@ -16,10 +16,10 @@ class HeldItemsCommand extends Command {
             If no level is provided, it defaults to 20.
         `;
 		this.usages = [
-			'!held-item [ITEM] [LEVEL]',
-            '!helditem [ITEM] [LEVEL]',
-            '!hitem [ITEM] [LEVEL]',
-            '!hi [ITEM] [LEVEL]'
+			'!held-item [item] [level]',
+            '!helditem [item] [level]',
+            '!hitem [item] [level]',
+            '!hi [item] [level]'
 		];
         this.examples = [
             '!held-item Buddy Barrier',

@@ -96,7 +96,6 @@ class MovesCommand extends Command {
 
         if (!level) {
             pokemon.level = lvl;
-            console.log('no level');
         };
 
         if (skillcode === 'u') {

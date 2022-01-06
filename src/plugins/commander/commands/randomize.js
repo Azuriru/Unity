@@ -87,7 +87,7 @@ class RandomizeCommand extends Command {
         const embed = new MessageEmbed()
             .setTitle('Randomizer')
             .setDescription(`
-            We randomly generated:
+            We randomly generated:\n
             ${result.map(mon => mon.charAt(0).toUpperCase() + mon.slice(1)).join('\n')}
         `)
             .setFooter(`Requested by ${user}`, avatar)

@@ -19,10 +19,10 @@ class AbilityCommand extends Command {
             Default embed may be ugly looking for mobile. Add -m infront of the message to signify a mobile embed.
         `;
 		this.usages = [
-			'!ability [POKEMON]',
-			'!passive [POKEMON]',
-			'!ability -m [POKEMON]',
-			'!passive -m [POKEMON]'
+			'!ability [pokemon]',
+			'!passive [pokemon]',
+			'!ability -m [pokemon]',
+			'!passive -m [pokemon]'
 		];
         this.examples = [
             '!ability absol',

@@ -15,9 +15,9 @@ class BattleItemCommand extends Command {
             Case insensitive.
         `;
 		this.usages = [
-			'!battle-item [ITEM]',
-            '!battleitem [ITEM]',
-            '!bitem [ITEM]'
+			'!battle-item [item]',
+            '!battleitem [item]',
+            '!bitem [item]'
 		];
         this.examples = [
 			'!battle-item fullheal',

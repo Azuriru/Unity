@@ -19,10 +19,10 @@ class BasicCommand extends Command {
             Default embed may be ugly looking for mobile. Add -m infront of the message to signify a mobile embed.
         `;
 		this.usages = [
-			'!basic [POKEMON] [LEVEL]',
-			'!boosted [POKEMON] [LEVEL]',
-            '!basic -m [POKEMON] [LEVEL]',
-            '!boosted -m [POKEMON] [LEVEL]'
+			'!basic [pokemon] [level]',
+			'!boosted [pokemon] [level]',
+            '!basic -m [pokemon] [level]',
+            '!boosted -m [pokemon] [level]'
 		];
         this.examples = [
             '!basic absol 4',
