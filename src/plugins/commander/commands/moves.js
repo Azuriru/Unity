@@ -109,7 +109,7 @@ class MovesCommand extends Command {
             .setDescription(desc)
             .setFields(
                 [
-                    ...fields.flatMap(({ title, value, calc_variables, type }) => {
+                    ...fields && fields.flatMap(({ title, value, calc_variables, type }) => {
                         switch(type) {
                             case 'inline':
                                 return [
