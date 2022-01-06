@@ -109,7 +109,7 @@ class MovesCommand extends Command {
             .setDescription(desc)
             .setFields(
                 [
-                    ...fields && fields.flatMap(({ title, value, calc_variables, type }) => {
+                    ...fields ? fields.flatMap(({ title, value, calc_variables, type }) => {
                         switch(type) {
                             case 'inline':
                                 return [
@@ -140,7 +140,7 @@ class MovesCommand extends Command {
                                     value
                                 };
                         }
-                    }),
+                    }) : [],
                     {
                         name: 'Cooldown',
                         value: pokemon.getCooldown(cd, cdr, skillcode === 'u'),
