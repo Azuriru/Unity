@@ -4868,7 +4868,7 @@
             ]
         },
         {
-            "aliases": ["s11", "fly"],
+            "aliases": ["s21", "fly"],
             "name": "Fly",
             "level": 7,
             "cd": 9,
@@ -5612,7 +5612,7 @@
             ]
         },
         {
-            "aliases": ["22s", "dazzlinggleam"],
+            "aliases": ["s22", "dazzlinggleam"],
             "name": "Dazzling Gleam",
             "level": 6,
             "cd": 4.5,
