@@ -6,6 +6,10 @@ const { SERVICE_URL: url } = require('../../../util/config');
 const names = require('../data/pokemons.json');
 const moves = require('../data/moves.json');
 
+const pokemon_names = Object.keys(names);
+const pokemon_aliases = Object.values(names).flat();
+const pokemons = [...pokemon_names, ...pokemon_aliases];
+
 class MovesCommand extends Command {
     static get deps() {
         return [
@@ -42,22 +46,68 @@ class MovesCommand extends Command {
         ]
 	}
 
+    capitalize(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
 	async call(message, content) {
         let mobile = false;
-        if (content.toLowerCase().slice(0, 3) === '-m ') {
+        content = content.toLowerCase();
+        if (content.slice(0, 3) === '-m ') {
             content = content.slice(3);
             mobile = true;
         }
 
-        const [ pokemon_name, move_name, level ] = content.toLowerCase().split(' ');
-
-        if (!pokemon_name) {
+        if (!content) {
             await message.channel.send(`You need to specify a Pokemon.`);
             return;
         }
 
-        if (!move_name) {
+        let pokemon_alias;
+        for (const pokemon of pokemons) {
+            if (content.startsWith(`${pokemon}`)) {
+                pokemon_alias = pokemon;
+                break;
+            }
+        }
+
+        const pokemon_name = pokemon_names === pokemon_alias || pokemon_names.find(name => names[name].includes(pokemon_alias));
+
+        if (!pokemon_name) {
+            await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
+            return;
+        }
+
+        const pokemon_moves = moves[pokemon_name];
+
+        if (!pokemon_moves) {
+            await message.channel.send(`Moves for ${this.capitalize(pokemon_name)} has not been implemented yet. Check back later.`);
+            return;
+        }
+
+        content = content.slice(pokemon_alias.length + 1);
+
+        if (!content) {
             await message.channel.send(`You need to specify a move name.`);
+            return;
+        }
+
+        let level = content.split(' ').slice(-1)[0];
+
+        if (Number(level)) {
+            content = content.slice(0, -level.length - 1);
+        } else {
+            level = undefined;
+        }
+
+        const move = pokemon_moves.find(({ name, aliases }) => {
+            if (content.startsWith(name.toLowerCase())) return true;
+
+            if (aliases.find(alias => content.startsWith(alias))) return true;
+        });
+
+        if (!move) {
+            await message.channel.send(`No moves matching \`${content}\` was found for ${this.capitalize(pokemon_name)}`);
             return;
         }
 
@@ -71,26 +121,7 @@ class MovesCommand extends Command {
             return;
         }
 
-        if (names.indexOf(pokemon_name) === -1) {
-            await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
-            return;
-        }
-
         const pokemon = new Pokemon(pokemon_name, level && Number(level));
-        const pokemon_moves = moves[pokemon_name];
-
-        if (!pokemon_moves) {
-            await message.channel.send(`Moves for ${pokemon.capitalize(pokemon.name)} has not been implemented yet. Check back later.`);
-            return;
-        }
-
-        const move = pokemon_moves.find(({ aliases }) => aliases.includes(move_name));
-
-        if (!move) {
-            await message.channel.send(`No move by the name of \`${move_name}\` was found for ${pokemon.capitalize(pokemon.name)}`);
-            return;
-        }
-
         const { aliases: [ skillcode ], name, level: lvl, cd, type, desc, fields } = move;
         let title = name;
 
