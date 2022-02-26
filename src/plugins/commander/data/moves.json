@@ -1,179 +1,4 @@
 {
-    "aegislash": [
-        {
-            "aliases": ["s01"],
-            "name": "Shadow Sneak",
-            "level": 1,
-            "cd": 5,
-            "type": "dash",
-            "desc": "Cast a shadow in the designated direction, dealing damage to enemies hit. After the shadow hits an enemy or travels its maximum distance, Aegislash warps to the shadow’s location, dealing damage to nearby enemies and increase boost count by 1.",
-            "fields": [
-                {
-                    "title": "Damage - 2 Hits",
-                    "value": "122% Atk + 11 x (Level - 1) + 200",
-                    "calc_variables": {
-                        "atk_modifier": 1.22,
-                        "lvl_modifier": 11,
-                        "addend": 200
-                    },
-                    "type": "inline"
-                }
-            ]
-        },
-        {
-            "aliases": ["s02", "irond"],
-            "name": "Iron Defense",
-            "level": 1,
-            "cd": 6,
-            "type": "buff",
-            "desc": "Envelops Aegislash in a powerful protective force for 3s or after blocking one attack. If this move blocks an attack, increase boost count by 1."
-        },
-        {
-            "aliases": ["s11"],
-            "name": "Sacred Sword",
-            "level": 5,
-            "cd": 7,
-            "type": "area",
-            "description": "Aegislash thrusts its blade into the ground, creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For a short time after this slash hits, damage dealt by Aegislas ignores 45% of the enemies Defense.",
-            "fields": [
-                {
-                    "title": "Damage - Triangle Attack",
-                    "value": "87% Atk + 3 x (Level - 1) + 110",
-                    "calc_variables": {
-                        "atk_modifier": 0.87,
-                        "lvl_modifier": 3,
-                        "addend": 110
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Damage - Dash Attack",
-                    "value": "174% Atk + 6 x (Level - 1) + 220",
-                    "calc_variables": {
-                        "atk_modifier": 1.74,
-                        "lvl_modifier": 6,
-                        "addend": 220
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Level 11",
-                    "value": "Increase Attack by 50 for a short time after hitting enemies with the triangle attack.",
-                    "type": "data"
-                }
-            ]
-        },
-        {
-            "aliases": ["s12"],
-            "name": "Shadow Claw",
-            "level": 5,
-            "cd": 5,
-            "type": "dash",
-            "description": "Aegislash slashes with its blade twice in the designated direction, dealing damage to enemies hit. Follow up with a final rising slash that deals damage to enemies hit and throw them. Boost count increases by 1 when at least one of the three slashes hits.",
-            "fields": [
-                {
-                    "title": "Damage - First 2 Hits",
-                    "value": "63% Atk + 3 x (Level - 1) + 70",
-                    "calc_variables": {
-                        "atk_modifier": 0.63,
-                        "lvl_modifier": 3,
-                        "addend": 70
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Damage - Third Hit",
-                    "value": "126% Atk + 6 x (Level - 1) + 140",
-                    "calc_variables": {
-                        "atk_modifier": 1.26,
-                        "lvl_modifier": 6,
-                        "addend": 140
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Level 11",
-                    "value": "Increases Critical-Hit Rate by 20% for a short time.",
-                    "type": "data"
-                }
-            ]
-        },
-        {
-            "aliases": ["s21"],
-            "name": "Wide Guard",
-            "level": 7,
-            "cd": 10,
-            "type": "buff",
-            "description": "Focus in place for a short time to create a great shield on Aegislash. When this shield appears, boost count increases by 1, granting a shield to Aegislash and shoves enemies in front. While this shield is active, enemy player attacks increase boost count by 1 for each different enemy player (capping at 4). When this move ends, shove enemies in front of Aegislash once again.",
-            "fields": [
-                {
-                    "title": "Shield",
-                    "value": "200% Atk + 0 x (Level - 1) + 400",
-                    "calc_variables": {
-                        "atk_modifier": 2,
-                        "lvl_modifier": 0,
-                        "addend": 400
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Level 13",
-                    "value": "Cooldown Reduced.",
-                    "type": "data"
-                }
-            ]
-        },
-        {
-            "aliases": ["s22"],
-            "name": "Iron Head",
-            "level": 7,
-            "cd": 7,
-            "type": "buff",
-            "description": "Dash in the designated direction, dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for a short time afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack, it disappears and boost count is increased by 1.",
-            "fields": [
-                {
-                    "title": "Damage",
-                    "value": "118% Atk + 5 x (Level - 1) + 130",
-                    "calc_variables": {
-                        "atk_modifier": 1.18,
-                        "lvl_modifier": 5,
-                        "addend": 130
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Level 13",
-                    "value": "If an attack is blocked with this move, Aegislash gains +10% Attack for a short time.",
-                    "type": "data"
-                }
-            ]
-        },
-        {
-            "aliases": ["u", "unite"],
-            "name": "Coup de Grace",
-            "level": 9,
-            "cd": 100,
-            "type": "area",
-            "desc": "Unleash a ground-splitting slash in the designated direction, dealing damage to enemies hit. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 1.\n\nAgainst Wild Pokemon: The additional damage from remaining HP is capped at 1200.",
-            "fields": [
-                {
-                    "title": "Damage",
-                    "value": "282% Atk + 13 x (Level - 1) + 640",
-                    "calc_variables": {
-                        "atk_modifier": 2.82,
-                        "lvl_modifier": 13,
-                        "addend": 640
-                    },
-                    "type": "inline"
-                },
-                {
-                    "title": "Damage - Execute",
-                    "value": "12% missing HP as damage.",
-                    "type": "data"
-                }
-            ]
-        }
-    ],
     "absol": [
         {
             "aliases": ["s01"],
@@ -387,6 +212,181 @@
                         "addend": 59
                     },
                     "type": "inline"
+                }
+            ]
+        }
+    ],
+    "aegislash": [
+        {
+            "aliases": ["s01"],
+            "name": "Shadow Sneak",
+            "level": 1,
+            "cd": 5,
+            "type": "dash",
+            "desc": "Cast a shadow in the designated direction, dealing damage to enemies hit. After the shadow hits an enemy or travels its maximum distance, Aegislash warps to the shadow’s location, dealing damage to nearby enemies and increase boost count by 1.",
+            "fields": [
+                {
+                    "title": "Damage - 2 Hits",
+                    "value": "122% Atk + 11 x (Level - 1) + 200",
+                    "calc_variables": {
+                        "atk_modifier": 1.22,
+                        "lvl_modifier": 11,
+                        "addend": 200
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02", "irond"],
+            "name": "Iron Defense",
+            "level": 1,
+            "cd": 6,
+            "type": "buff",
+            "desc": "Envelops Aegislash in a powerful protective force for 3s or after blocking one attack. If this move blocks an attack, increase boost count by 1."
+        },
+        {
+            "aliases": ["s11"],
+            "name": "Sacred Sword",
+            "level": 5,
+            "cd": 7,
+            "type": "area",
+            "desc": "Aegislash thrusts its blade into the ground, creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For a short time after this slash hits, damage dealt by Aegislas ignores 45% of the enemies Defense.",
+            "fields": [
+                {
+                    "title": "Damage - Triangle Attack",
+                    "value": "87% Atk + 3 x (Level - 1) + 110",
+                    "calc_variables": {
+                        "atk_modifier": 0.87,
+                        "lvl_modifier": 3,
+                        "addend": 110
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Dash Attack",
+                    "value": "174% Atk + 6 x (Level - 1) + 220",
+                    "calc_variables": {
+                        "atk_modifier": 1.74,
+                        "lvl_modifier": 6,
+                        "addend": 220
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increase Attack by 50 for a short time after hitting enemies with the triangle attack.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12"],
+            "name": "Shadow Claw",
+            "level": 5,
+            "cd": 5,
+            "type": "dash",
+            "desc": "Aegislash slashes with its blade twice in the designated direction, dealing damage to enemies hit. Follow up with a final rising slash that deals damage to enemies hit and throw them. Boost count increases by 1 when at least one of the three slashes hits.",
+            "fields": [
+                {
+                    "title": "Damage - First 2 Hits",
+                    "value": "63% Atk + 3 x (Level - 1) + 70",
+                    "calc_variables": {
+                        "atk_modifier": 0.63,
+                        "lvl_modifier": 3,
+                        "addend": 70
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Third Hit",
+                    "value": "126% Atk + 6 x (Level - 1) + 140",
+                    "calc_variables": {
+                        "atk_modifier": 1.26,
+                        "lvl_modifier": 6,
+                        "addend": 140
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 11",
+                    "value": "Increases Critical-Hit Rate by 20% for a short time.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21"],
+            "name": "Wide Guard",
+            "level": 7,
+            "cd": 10,
+            "type": "buff",
+            "desc": "Focus in place for a short time to create a great shield on Aegislash. When this shield appears, boost count increases by 1, granting a shield to Aegislash and shoves enemies in front. While this shield is active, enemy player attacks increase boost count by 1 for each different enemy player (capping at 4). When this move ends, shove enemies in front of Aegislash once again.",
+            "fields": [
+                {
+                    "title": "Shield",
+                    "value": "200% Atk + 0 x (Level - 1) + 400",
+                    "calc_variables": {
+                        "atk_modifier": 2,
+                        "lvl_modifier": 0,
+                        "addend": 400
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "Cooldown Reduced.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22"],
+            "name": "Iron Head",
+            "level": 7,
+            "cd": 7,
+            "type": "buff",
+            "desc": "Dash in the designated direction, dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for a short time afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack, it disappears and boost count is increased by 1.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "118% Atk + 5 x (Level - 1) + 130",
+                    "calc_variables": {
+                        "atk_modifier": 1.18,
+                        "lvl_modifier": 5,
+                        "addend": 130
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 13",
+                    "value": "If an attack is blocked with this move, Aegislash gains +10% Attack for a short time.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite"],
+            "name": "Coup de Grace",
+            "level": 9,
+            "cd": 100,
+            "type": "area",
+            "desc": "Unleash a ground-splitting slash in the designated direction, dealing damage to enemies hit. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 1.\n\nAgainst Wild Pokemon: The additional damage from remaining HP is capped at 1200.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "282% Atk + 13 x (Level - 1) + 640",
+                    "calc_variables": {
+                        "atk_modifier": 2.82,
+                        "lvl_modifier": 13,
+                        "addend": 640
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Execute",
+                    "value": "12% missing HP as damage.",
+                    "type": "data"
                 }
             ]
         }
@@ -5170,7 +5170,7 @@
             "level": 5,
             "cd": 7,
             "type": "hindrance",
-            "description": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for .5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act for .6s. The lower Trevenant's HP, the longer the enemy will be left unable to act. Every time this move is used, it consumes 10% of Trevenant's current HP.",
+            "desc": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for .5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act for .6s. The lower Trevenant's HP, the longer the enemy will be left unable to act. Every time this move is used, it consumes 10% of Trevenant's current HP.",
             "fields": [
                 {
                     "title": "Damage - First Hit",
@@ -5205,7 +5205,7 @@
             "level": 5,
             "cd": 6,
             "type": "hindrance",
-            "description": "Trevenant creates a cursed zone in exchange for 4% max HP per second for 6 seconds, dealing damage over time to enemies in the area of effect every .5s for 6s and decreasing their movement speed. The lower Trevenant's HP is, the greater the decrease in movement speed. While using this move, Trevenant builds up curse power every time it deals or receives damage. Releasing this built-up power will deal additional damage to enemies in the area of effect. If the curse power is at maximum when it’s released, the cooldowns of Branch Poke, Horn Leech, and Pain Split are reset.",
+            "desc": "Trevenant creates a cursed zone in exchange for 4% max HP per second for 6 seconds, dealing damage over time to enemies in the area of effect every .5s for 6s and decreasing their movement speed. The lower Trevenant's HP is, the greater the decrease in movement speed. While using this move, Trevenant builds up curse power every time it deals or receives damage. Releasing this built-up power will deal additional damage to enemies in the area of effect. If the curse power is at maximum when it’s released, the cooldowns of Branch Poke, Horn Leech, and Pain Split are reset.",
             "fields": [
                 {
                     "title": "Damage - 12 Ticks",
@@ -5240,7 +5240,7 @@
             "level": 7,
             "cd": 8,
             "type": "dash",
-            "description": "Charge forward becoming unstoppable, dealing damage to enemies and stunning them while dashing in the designated duration. At the end of the charge, enemies that were shoved are dealt additional damage and then thrown. Colliding with an enemy while charging recovers Trevenant's HP 3 times, and the lower Trevenant's remaining HP the more HP that is recovered. After this move hits an enemy, Trevenant's next three basic attacks deal more damage and reduce this move’s cooldown by .5s (for each enemy hit) when they hit.",
+            "desc": "Charge forward becoming unstoppable, dealing damage to enemies and stunning them while dashing in the designated duration. At the end of the charge, enemies that were shoved are dealt additional damage and then thrown. Colliding with an enemy while charging recovers Trevenant's HP 3 times, and the lower Trevenant's remaining HP the more HP that is recovered. After this move hits an enemy, Trevenant's next three basic attacks deal more damage and reduce this move’s cooldown by .5s (for each enemy hit) when they hit.",
             "fields": [
                 {
                     "title": "Heal - Per Tick",
@@ -5280,7 +5280,7 @@
             "level": 7,
             "cd": 10,
             "type": "sure-hit",
-            "description": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a portion of the damage Trevenant receives is redirected to the linked enemy. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. Additionally, if Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP equal to the damage dealt every .5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed for a short time.",
+            "desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a portion of the damage Trevenant receives is redirected to the linked enemy. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. Additionally, if Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP equal to the damage dealt every .5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed for a short time.",
             "fields": [
                 {
                     "title": "Damage - Reflect (Per Tick)",
