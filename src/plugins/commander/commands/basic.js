@@ -5,6 +5,10 @@ const { SERVICE_URL: url } = require('../../../util/config');
 const names = require('../data/pokemons.json');
 const basic_abilities = require('../data/basic-abilities.json');
 
+const pokemon_names = Object.keys(names);
+const pokemon_aliases = Object.values(names).flat();
+const pokemons = [...pokemon_names, ...pokemon_aliases];
+
 class BasicCommand extends Command {
 	constructor(bot) {
 		super(bot);
@@ -33,17 +37,33 @@ class BasicCommand extends Command {
 
 	async call(message, content) {
         let mobile = false;
-        if (content.toLowerCase().slice(0, 3) === '-m ') {
+        content = content.toLowerCase();
+        if (content.slice(0, 3) === '-m ') {
             content = content.slice(3);
             mobile = true;
         }
 
-        const [ pokemon_name, level ] = content.toLowerCase().split(' ');
-
-        if (!pokemon_name) {
+        if (!content) {
             await message.channel.send(`You need to specify a Pokemon.`);
             return;
-        };
+        }
+
+        let pokemon_alias;
+        for (const pokemon of pokemons) {
+            if (content.startsWith(`${pokemon}`)) {
+                pokemon_alias = pokemon;
+                break;
+            }
+        }
+
+        const pokemon_name = pokemon_names.find(name => name === pokemon_alias) || pokemon_names.find(name => names[name].includes(pokemon_alias));
+
+        if (!pokemon_name) {
+            await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
+            return;
+        }
+
+        const level = content.slice(pokemon_alias.length + 1) || undefined;
 
         if (level < 1) {
             await message.channel.send(`Pokémon level cannot be lower than 1.`);
@@ -52,11 +72,6 @@ class BasicCommand extends Command {
 
         if (level > 15) {
             await message.channel.send(`Pokémon level cannot be higher than 15.`);
-            return;
-        }
-
-        if (names.indexOf(pokemon_name) === -1) {
-            await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
             return;
         }
 
@@ -130,7 +145,7 @@ class BasicCommand extends Command {
                     }
                 }).filter(Boolean)
             );
-            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))}`, `${url}/pokemon/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
+            embed.setFooter(`${pokemon.capitalize(evolution || pokemon.getEvolution(pokemon.level))} • Level ${pokemon.level}`, `${url}/pokemon/avatar/${evolution || pokemon.getEvolution(pokemon.level)}.png`);
             embed.setTimestamp();
 
             return embed;

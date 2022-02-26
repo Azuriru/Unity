@@ -71,7 +71,7 @@ class MovesCommand extends Command {
             }
         }
 
-        const pokemon_name = pokemon_names === pokemon_alias || pokemon_names.find(name => names[name].includes(pokemon_alias));
+        const pokemon_name = pokemon_names.find(name => name === pokemon_alias) || pokemon_names.find(name => names[name].includes(pokemon_alias));
 
         if (!pokemon_name) {
             await message.channel.send(`No Pokemon by the name of ${pokemon_name} found.`);
