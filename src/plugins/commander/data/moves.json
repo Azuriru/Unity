@@ -4289,7 +4289,7 @@
             "desc": "Slowbro gains a heal over time, healing 1.5% max HP per tick (6 ticks) and begins channeling a nap. While Slowbro remains channelling its nap, this healing is doubled."
         },
         {
-            "aliases": ["s12", "scald"],
+            "aliases": ["s11", "scald"],
             "name": "Scald",
             "level": 4,
             "cd": 5,
