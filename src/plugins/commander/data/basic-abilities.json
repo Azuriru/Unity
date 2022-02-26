@@ -34,6 +34,47 @@
             ]
         }
     ],
+    "aegislash": [
+        {
+            "desc": "Slash at enemies in front of Aegislash, dealing damage to them. If the boost count is one or more, basic attacks become a boosted attack. When in Blade Stance: pierce through enemies, dealing damage. When in Shield Stance: ram enemies, dealing damage and leaving them unable to act for a short time, restore HP, and reduce the cooldown of Sacred Sword and Shadow Claw by 1s when this attack hits. Every boosted attack consumes one boost count. Up to 4 boosted boosted attacks can be stored.",
+            "fields": [
+                {
+                    "title": "Damage - Basic, Boosted (Shield Stance)",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Healing (Shield Stance)",
+                    "value": "125% Atk + 10 x (Level - 1) + 60",
+                    "calc_variables": {
+                        "atk_modifier": 1.25,
+                        "lvl_modifier": 10,
+                        "addend": 60
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Boosted (Sword Stance)",
+                    "value": "125% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.25,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Additional (Sword Stance)",
+                    "value": "Deals an additional 6% of the enemies Max HP as damage (capping at 1200).",
+                    "type": "data"
+                }
+            ]
+        }
+    ],
     "blastoise": [
         {
             "desc": "Becomes a boosted attack with every third attack, dealing 3 instances of damage, slowing enemies hit, and reducing Blastoise’s move cooldowns by 1 second each.\n\nWhen evolving into Blastoise, basic attacks instead strike twice for 50% Atk.",
@@ -669,6 +710,31 @@
                     "value": "125% Atk + 0 x (Level - 1) + 0",
                     "calc_variables": {
                         "atk_modifier": 1.25,
+                        "lvl_modifier": 0,
+                        "addend": 0
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "trevenant": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage to enemies and restores 5% max HP when this boosted attack hits. Both normal and boosted attacks reduce the cooldown of Trevenant's moves by 0.5s.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "130% Atk + 0 x (Level - 1) + 0",
+                    "calc_variables": {
+                        "atk_modifier": 1.3,
                         "lvl_modifier": 0,
                         "addend": 0
                     },

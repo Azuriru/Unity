@@ -169,6 +169,178 @@
             "damage": "Physical"
         }
     },
+    "aegislash": {
+        "evolutions": {
+            "1": "honedge",
+            "5": "doublade",
+            "7": "aegislash"
+        },
+        "stats": {
+            "combat": 7,
+            "resistance": 4,
+            "mobility": 8,
+            "scoring": 5,
+            "support": 1,
+            "levels": [
+                {
+                    "hp": 3050,
+                    "attack": 145,
+                    "defense": 78,
+                    "sp_attack": 20,
+                    "sp_defense": 60,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3117,
+                    "attack": 150,
+                    "defense": 83,
+                    "sp_attack": 21,
+                    "sp_defense": 64,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3198,
+                    "attack": 156,
+                    "defense": 89,
+                    "sp_attack": 23,
+                    "sp_defense": 68,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3295,
+                    "attack": 163,
+                    "defense": 96,
+                    "sp_attack": 25,
+                    "sp_defense": 73,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3647,
+                    "attack": 189,
+                    "defense": 121,
+                    "sp_attack": 32,
+                    "sp_defense": 92,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 3787,
+                    "attack": 199,
+                    "defense": 131,
+                    "sp_attack": 35,
+                    "sp_defense": 100,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 3955,
+                    "attack": 212,
+                    "defense": 143,
+                    "sp_attack": 38,
+                    "sp_defense": 109,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 4627,
+                    "attack": 262,
+                    "defense": 191,
+                    "sp_attack": 52,
+                    "sp_defense": 146,
+                    "crit": 10,
+                    "cdr": 0,
+                    "lifesteal": 5
+                },
+                {
+                    "hp": 4869,
+                    "attack": 280,
+                    "defense": 208,
+                    "sp_attack": 57,
+                    "sp_defense": 158,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 5159,
+                    "attack": 302,
+                    "defense": 229,
+                    "sp_attack": 63,
+                    "sp_defense": 174,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 5507,
+                    "attack": 328,
+                    "defense": 254,
+                    "sp_attack": 70,
+                    "sp_defense": 193,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 5925,
+                    "attack": 359,
+                    "defense": 284,
+                    "sp_attack": 78,
+                    "sp_defense": 216,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 10
+                },
+                {
+                    "hp": 6426,
+                    "attack": 396,
+                    "defense": 320,
+                    "sp_attack": 88,
+                    "sp_defense": 243,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 15
+                },
+                {
+                    "hp": 7028,
+                    "attack": 441,
+                    "defense": 363,
+                    "sp_attack": 100,
+                    "sp_defense": 276,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 15
+                },
+                {
+                    "hp": 7750,
+                    "attack": 495,
+                    "defense": 415,
+                    "sp_attack": 115,
+                    "sp_defense": 315,
+                    "crit": 20,
+                    "cdr": 0,
+                    "lifesteal": 15
+                }
+            ]
+        },
+        "tags": {
+            "range": "Ranged",
+            "difficulty": "Novice",
+            "role": "All-Rounder",
+            "damage": "Physical"
+        }
+    },
     "blastoise": {
         "evolutions": {
             "1": "squirtle",
@@ -4272,6 +4444,177 @@
             "range": "Melee",
             "difficulty": "Novice",
             "role": "Speedster",
+            "damage": "Physical"
+        }
+    },
+    "trevenant": {
+        "evolutions": {
+            "1": "phantump",
+            "5": "trevenant"
+        },
+        "stats": {
+            "combat": 4,
+            "resistance": 8,
+            "mobility": 4,
+            "scoring": 5,
+            "support": 5,
+            "levels": [
+                {
+                    "hp": 3250,
+                    "attack": 175,
+                    "defense": 100,
+                    "sp_attack": 20,
+                    "sp_defense": 70,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3391,
+                    "attack": 178,
+                    "defense": 109,
+                    "sp_attack": 22,
+                    "sp_defense": 78,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3553,
+                    "attack": 182,
+                    "defense": 120,
+                    "sp_attack": 24,
+                    "sp_defense": 87,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 3739,
+                    "attack": 187,
+                    "defense": 132,
+                    "sp_attack": 27,
+                    "sp_defense": 97,
+                    "crit": 0,
+                    "cdr": 0,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 4589,
+                    "attack": 208,
+                    "defense": 188,
+                    "sp_attack": 40,
+                    "sp_defense": 144,
+                    "crit": 0,
+                    "cdr": 5,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 4835,
+                    "attack": 214,
+                    "defense": 204,
+                    "sp_attack": 44,
+                    "sp_defense": 158,
+                    "crit": 0,
+                    "cdr": 5,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 5118,
+                    "attack": 221,
+                    "defense": 223,
+                    "sp_attack": 48,
+                    "sp_defense": 174,
+                    "crit": 0,
+                    "cdr": 5,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 5444,
+                    "attack": 229,
+                    "defense": 245,
+                    "sp_attack": 53,
+                    "sp_defense": 192,
+                    "crit": 0,
+                    "cdr": 5,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 5819,
+                    "attack": 238,
+                    "defense": 270,
+                    "sp_attack": 59,
+                    "sp_defense": 213,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 6251,
+                    "attack": 249,
+                    "defense": 299,
+                    "sp_attack": 66,
+                    "sp_defense": 237,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 6748,
+                    "attack": 261,
+                    "defense": 332,
+                    "sp_attack": 74,
+                    "sp_defense": 264,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 7319,
+                    "attack": 275,
+                    "defense": 370,
+                    "sp_attack": 83,
+                    "sp_defense": 295,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 7976,
+                    "attack": 291,
+                    "defense": 413,
+                    "sp_attack": 93,
+                    "sp_defense": 331,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 8731,
+                    "attack": 309,
+                    "defense": 463,
+                    "sp_attack": 104,
+                    "sp_defense": 373,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                },
+                {
+                    "hp": 9599,
+                    "attack": 330,
+                    "defense": 520,
+                    "sp_attack": 117,
+                    "sp_defense": 421,
+                    "crit": 0,
+                    "cdr": 10,
+                    "lifesteal": 0
+                }
+            ]
+        },
+        "tags": {
+            "range": "Melee",
+            "difficulty": "Intermediate",
+            "role": "Defender",
             "damage": "Physical"
         }
     },

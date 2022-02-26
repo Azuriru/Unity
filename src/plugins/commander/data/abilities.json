@@ -5,6 +5,49 @@
             "desc": "Increases Critical-Hit rate by 15%."
         }
     ],
+    "aegislash": [
+        {
+            "name": "No Guard",
+            "desc": "Increases received damage and dealt damage by Honedge/Doublade.",
+            "evolution": "honedge"
+        },
+        {
+            "name": "Stance Change",
+            "desc": "Aegislash can switch between Blade Stance and Shield Stance. Using a blade move switches stance to Blade Stance, which increases Attack, movement speed, and basic attack speed. Using a shield move switches stance to Shield Stance, which increases Defense and Sp. Defense. After switching stances, movement speed and basic attack speed are further increased for a short time.",
+            "fields": [
+                {
+                    "title": "Defense - Increase (Shield Stance)",
+                    "value": "0% Atk + 25 x (Level - 1) + 50",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 25,
+                        "addend": 50
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Special Defense - Increase (Shield Stance)",
+                    "value": "0% Atk + 20 x (Level - 1) + 20",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 20,
+                        "addend": 20
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Attack - Increase (Sword Stance):",
+                    "value": "0% Atk + 10 x (Level - 1) + 40",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 10,
+                        "addend": 40
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
     "blastoise": [
         {
             "name": "Torrent",
@@ -229,6 +272,12 @@
         {
             "name": "Gale Wings",
             "desc": "While above 85% HP, movement speed is increased by 10%."
+        }
+    ],
+    "trevenant": [
+        {
+            "name": "Natural Cure",
+            "desc": "When Trevenant deals or receives damage while at or below 35% max HP, a continuous HP recovery effect is triggered every .5s for 4s. This effect also reduces the cooldowns of Trevenant's moves by 1s every 1s. When this HP recovery effect ends, there is a 100s cooldown. However, this cooldown is reduced by 1s each time one of Trevenant's moves damage an enemy. This cooldown reduction cannot be triggered more than once every .5s.\n\nHeal - 8 Ticks: 2% + (0.18% * (Level -1)) Max HP"
         }
     ],
     "tsareena": [
