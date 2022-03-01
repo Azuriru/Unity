@@ -54,7 +54,7 @@ class RandomizeCommand extends Command {
         });
 
         const args = this.parseArgs(content.toLowerCase());
-        let list = pokemons;
+        let list = Object.keys(pokemons);
         let generateNumber = 1;
         let result = [];
 
