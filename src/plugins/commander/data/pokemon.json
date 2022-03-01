@@ -2796,7 +2796,7 @@
                     "sp_attack": 136,
                     "sp_defense": 74,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -2806,7 +2806,7 @@
                     "sp_attack": 166,
                     "sp_defense": 82,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -2816,7 +2816,7 @@
                     "sp_attack": 199,
                     "sp_defense": 91,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -2826,7 +2826,7 @@
                     "sp_attack": 236,
                     "sp_defense": 100,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -2836,7 +2836,7 @@
                     "sp_attack": 276,
                     "sp_defense": 110,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -2846,7 +2846,7 @@
                     "sp_attack": 320,
                     "sp_defense": 122,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -2856,7 +2856,7 @@
                     "sp_attack": 369,
                     "sp_defense": 135,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -2866,7 +2866,7 @@
                     "sp_attack": 423,
                     "sp_defense": 149,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -2876,7 +2876,7 @@
                     "sp_attack": 482,
                     "sp_defense": 164,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -2886,7 +2886,7 @@
                     "sp_attack": 547,
                     "sp_defense": 181,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -2896,7 +2896,7 @@
                     "sp_attack": 619,
                     "sp_defense": 200,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 }
             ]
@@ -4676,7 +4676,7 @@
                     "sp_attack": 40,
                     "sp_defense": 144,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -4686,7 +4686,7 @@
                     "sp_attack": 44,
                     "sp_defense": 158,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -4696,7 +4696,7 @@
                     "sp_attack": 48,
                     "sp_defense": 174,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -4706,7 +4706,7 @@
                     "sp_attack": 53,
                     "sp_defense": 192,
                     "crit": 0,
-                    "cdr": 5,
+                    "cdr": 0.05,
                     "lifesteal": 0
                 },
                 {
@@ -4716,7 +4716,7 @@
                     "sp_attack": 59,
                     "sp_defense": 213,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -4726,7 +4726,7 @@
                     "sp_attack": 66,
                     "sp_defense": 237,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -4736,7 +4736,7 @@
                     "sp_attack": 74,
                     "sp_defense": 264,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -4746,7 +4746,7 @@
                     "sp_attack": 83,
                     "sp_defense": 295,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -4756,7 +4756,7 @@
                     "sp_attack": 93,
                     "sp_defense": 331,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -4766,7 +4766,7 @@
                     "sp_attack": 104,
                     "sp_defense": 373,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 },
                 {
@@ -4776,7 +4776,7 @@
                     "sp_attack": 117,
                     "sp_defense": 421,
                     "crit": 0,
-                    "cdr": 10,
+                    "cdr": 0.1,
                     "lifesteal": 0
                 }
             ]
