@@ -448,6 +448,32 @@
             ]
         }
     ],
+    "hoopa": [
+        {
+            "desc": "Becomes a boosted attack with every third attack, dealing damage to enemies by unleashing a beam of light.",
+            "fields": [
+                {
+                    "title": "Damage - Basic",
+                    "value": "100% Atk",
+                    "variables": {
+                        "atk_type": "attack",
+                        "atk_modifier": 1
+                    },
+                    "type": "inline-percentage"
+                },
+                {
+                    "title": "Damage - Boosted",
+                    "value": "53% SpA + 8 x (Level - 1) + 160",
+                    "calc_variables": {
+                        "atk_modifier": 0.53,
+                        "lvl_modifier": 8,
+                        "addend": 160
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
     "lucario": [
         {
             "desc": "Becomes a boosted attack with every third attack, striking twice. The first attack is a normal basic attack and the second is an additional attack that can critically hit, has increased attack range, and throws enemies into the air.",

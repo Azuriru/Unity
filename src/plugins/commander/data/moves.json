@@ -41,7 +41,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "ns"],
             "name": "Night Slash",
             "level": 5,
             "cd": 5,
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "pur"],
             "name": "Pursuit",
             "level": 5,
             "cd": 5,
@@ -121,7 +121,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "pc"],
             "name": "Psycho Cut",
             "level": 7,
             "cd": 7,
@@ -151,7 +151,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "sp"],
             "name": "Sucker Punch",
             "level": 7,
             "cd": 6,
@@ -281,7 +281,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "sclaw"],
             "name": "Shadow Claw",
             "level": 5,
             "cd": 5,
@@ -341,7 +341,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "iron", "head"],
             "name": "Iron Head",
             "level": 7,
             "cd": 7,
@@ -433,7 +433,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "pump"],
             "name": "Hydro Pump",
             "level": 5,
             "cd": 8.5,
@@ -488,7 +488,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "spout"],
             "name": "Water Spout",
             "level": 5,
             "cd": 7.5,
@@ -548,7 +548,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "spin"],
             "name": "Rapid Spin",
             "level": 7,
             "cd": 11,
@@ -645,7 +645,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "egg"],
             "name": "Soft Boiled",
             "level": 4,
             "cd": 12,
@@ -680,7 +680,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "guard", "shield"],
             "name": "Safeguard",
             "level": 4,
             "cd": 8,
@@ -705,7 +705,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "bomb"],
             "name": "Egg Bomb",
             "level": 6,
             "cd": 7.5,
@@ -730,7 +730,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "hh"],
             "name": "Helping Hand",
             "level": 6,
             "cd": 9,
@@ -1094,7 +1094,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "pyro", "ball"],
             "name": "Pyro Ball",
             "level": 7,
             "cd": 5,
@@ -1129,7 +1129,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "blaze", "kick"],
             "name": "Blaze Kick",
             "level": 7,
             "cd": 8,
@@ -1164,7 +1164,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "charge"],
             "name": "Flame Charge",
             "level": 8,
             "cd": 5,
@@ -1279,7 +1279,7 @@
             "desc": "Cramorant throws a circle of feathers at a designated area, slowing enemies by 20% in the radius and reducing their attack speed by 30%."
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "hurri"],
             "name": "Hurricane",
             "level": 4,
             "cd": 9,
@@ -1304,7 +1304,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "slash"],
             "name": "Air Slash",
             "level": 4,
             "cd": 5,
@@ -1451,7 +1451,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "fury"],
             "name": "Fury Cutter",
             "level": 1,
             "cd": 3.5,
@@ -1471,7 +1471,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "tomb"],
             "name": "Rock Tomb",
             "level": 4,
             "cd": 5,
@@ -1506,7 +1506,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "ss"],
             "name": "Shell Smash",
             "level": 4,
             "cd": 7,
@@ -1521,7 +1521,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "sr"],
             "name": "Stealth Rock",
             "level": 6,
             "cd": 6,
@@ -1546,7 +1546,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "xscissor", "xs", "scissor"],
             "name": "X-Scissor",
             "level": 6,
             "cd": 9,
@@ -1663,7 +1663,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "razor"],
             "name": "Razor Leaf",
             "level": 7,
             "cd": 10,
@@ -1703,7 +1703,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "ss", "shackle"],
             "name": "Spirit Shackle",
             "level": 7,
             "cd": 6.5,
@@ -1748,7 +1748,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "storm"],
             "name": "Leaf Storm",
             "level": 8,
             "cd": 6,
@@ -1773,7 +1773,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "sneak"],
             "name": "Shadow Sneak",
             "level": 8,
             "cd": 12,
@@ -1870,7 +1870,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "dd"],
             "name": "Dragon Dance",
             "level": 5,
             "cd": 5,
@@ -1885,7 +1885,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "espeed"],
             "name": "Extreme Speed",
             "level": 5,
             "cd": 9,
@@ -1910,7 +1910,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "beam"],
             "name": "Hyper Beam",
             "level": 8,
             "cd": 8,
@@ -2052,7 +2052,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "pollen", "puff", "pp"],
             "name": "Pollen Puff",
             "level": 4,
             "cd": 6,
@@ -2097,7 +2097,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "tornado", "torn", "nado"],
             "name": "Leaf Tornado",
             "level": 4,
             "cd": 9,
@@ -2127,7 +2127,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "guard"],
             "name": "Cotton Guard",
             "level": 6,
             "cd": 9,
@@ -2152,7 +2152,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "spore"],
             "name": "Cotton Spore",
             "level": 6,
             "cd": 6,
@@ -2262,7 +2262,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "drush", "rush"],
             "name": "Dragon Rush",
             "level": 5,
             "cd": 6,
@@ -2287,7 +2287,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "quake", "eq"],
             "name": "Earthquake",
             "level": 7,
             "cd": 7,
@@ -2322,7 +2322,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "dclaw", "claw"],
             "name": "Dragon Claw",
             "level": 7,
             "cd": 5,
@@ -2467,7 +2467,7 @@
             "desc": "Gardevoir teleports to a targeted area and gains a boosted attack."
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "shock", "ps"],
             "name": "Psyshock",
             "level": 5,
             "cd": 10,
@@ -2522,7 +2522,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "sight", "fs"],
             "name": "Future Sight",
             "level": 5,
             "cd": 9,
@@ -2547,7 +2547,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "p"],
             "name": "Psychic",
             "level": 7,
             "cd": 6,
@@ -2582,7 +2582,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "moon", "blast", "mb"],
             "name": "Moonblast",
             "level": 7,
             "cd": 7,
@@ -2649,7 +2649,7 @@
     ],
     "gengar": [
         {
-            "aliases": ["s01"],
+            "aliases": ["s01", "wisp", "wow"],
             "name": "Will-O-Wisp",
             "level": 1,
             "cd": 5,
@@ -2699,7 +2699,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "sball", "ball"],
             "name": "Shadow Ball",
             "level": 5,
             "cd": 4.5,
@@ -2739,7 +2739,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "sludge", "sbomb", "bomb"],
             "name": "Sludge Bomb",
             "level": 5,
             "cd": 8,
@@ -2769,7 +2769,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "dream", "eater", "deater"],
             "name": "Dream Eater",
             "level": 7,
             "cd": 8,
@@ -2909,7 +2909,7 @@
             "desc": "Grants Greedent a shield (15% max HP) for a short time. In addition, an Oran berry will drop in front of Greedent."
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "cheeks"],
             "name": "Stuff Cheeks",
             "level": 5,
             "cd": 8,
@@ -2971,7 +2971,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "bullet", "seed", "bullshit", "bs"],
             "name": "Bullet Seed",
             "level": 7,
             "cd": 5,
@@ -3083,7 +3083,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "sub"],
             "name": "Substitute",
             "level": 1,
             "cd": 8,
@@ -3091,7 +3091,7 @@
             "desc": "Greninja dashes while leaving behind a targetable decoy. Greninja is unstoppable while dashing."
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "team", "dt"],
             "name": "Double Team",
             "level": 5,
             "cd": 9,
@@ -3106,7 +3106,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "smoke", "ss"],
             "name": "Smokescreen",
             "level": 5,
             "cd": 13,
@@ -3121,7 +3121,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "shuri", "ws"],
             "name": "Water Shuriken",
             "level": 7,
             "cd": 6,
@@ -3231,9 +3231,251 @@
             ]
         }
     ],
-    "lucario": [
+    "hoopa": [
         {
             "aliases": ["s01"],
+            "name": "Astonish",
+            "level": 1,
+            "cd": 6.5,
+            "type": "hindrance",
+            "desc": "Deals damage to enemies in the designated area of effect, leaving them unable to act for .75s.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "116% SpA + 18 x (Level - 1) + 340",
+                    "calc_variables": {
+                        "atk_modifier": 1.16,
+                        "lvl_modifier": 18,
+                        "addend": 340
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s02"],
+            "name": "confusion",
+            "level": 1,
+            "cd": 9,
+            "type": "ranged",
+            "desc": "Unleash a telekinetic force in the designated direction, dealing damage to the first enemy hit. The telekinetic force clings to that enemy and then causes a delayed explosion. The explosion deals damage to enemies in the area of effect and decreases their movement speed for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - Initial",
+                    "value": "56% SpA + 6 x (Level - 1) + 190",
+                    "calc_variables": {
+                        "atk_modifier": 0.56,
+                        "lvl_modifier": 6,
+                        "addend": 190
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Explosion",
+                    "value": "112% SpA + 12 x (Level - 1) + 380",
+                    "calc_variables": {
+                        "atk_modifier": 1.12,
+                        "lvl_modifier": 12,
+                        "addend": 380
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s11", "hole", "portal", "hh"],
+            "name": "Hyperspace Hole",
+            "level": 4,
+            "cd": 10,
+            "type": "dash",
+            "description": "Hoopa creates a large ring at the designated location, dealing damage to enemies in the area of effect. After 3s, Hoopa and any allies in the area of effect will return to their base, and their movement speed will be increased for a short time. These allies can also manually warp back to where the ring was created within 3s. An intact ally forwardmost goal zone can also be designated as the location where the ring is created. Creating a ring on the goal zone of the top path will also create a ring on the forwardmost goal zone of the bottom path for 6.5s, and vice versa. All allies (including Hoopa) can use these rings to manually warp between the two goal zones, and their movement speed will be increased for a short time after warping. After an ally or Hoopa warps, there is 15s cooldown before that Pokémon can manually warp again. If a path's forwardmost goal zone is destroyed, the middle goal zone on the same path will take its place. This move cannot be used on base goal zones.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "112% SpA + 9 x (Level - 1) + 370",
+                    "calc_variables": {
+                        "atk_modifier": 1.12,
+                        "lvl_modifier": 9,
+                        "addend": 370
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 10",
+                    "value": "Also increases the movement speed of allies near the ring when they are heading towards it.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s12"],
+            "name": "Trick",
+            "level": 4,
+            "cd": 7,
+            "type": "buff",
+            "description": "Hoopa creates a link between itself and an ally, increasing both of their movement speeds for 2s and granting them each a shield for 3s. For the next 7s, when Hoopa uses Shadow Ball or performs a basic attack, the ring on the linked ally also unleashes the same move or attack and if both attacks hit the same target, the second deals 50% damage. Hoopa can also use this move on themself, increasing movement speed and granting a shield for a short time. Additionally, increase the damage dealt by Shadow Ball while trick is active.",
+            "fields": [
+                {
+                    "title": "Shield",
+                    "value": "200% SpA + 30 x (Level - 1) + 400",
+                    "calc_variables": {
+                        "atk_modifier": 2,
+                        "lvl_modifier": 30,
+                        "addend": 400
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Shadow Ball Bonus",
+                    "value": "10.2% SpA + 1 x (Level - 1) + 30",
+                    "calc_variables": {
+                        "atk_modifier": 0.1,
+                        "lvl_modifier": 1,
+                        "addend": 30
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 10",
+                    "value": "Hoopa and the linked ally each heal for 40% of their own damage dealt. This effect lasts for 3s.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s21", "pf"],
+            "name": "Phantom Force",
+            "level": 6,
+            "cd": 5,
+            "type": "hindrance",
+            "description": "Hoopa creates a ring under themself and warps to a designated Pokémon's location, dealing damage to nearby enemies at that location and shoving them. Hoopa then shoots two sinister flames that deal damage to enemies hit and decreases their movement speed for a short time. This move can be activated a second time within 5s and if activated, Hoopa can return to the initial ring's location. If there is a nearby ally that is also linked by Trick, that ally can warp to the initial ring's location and recover 30% max HP.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "110% SpA + 14 x (Level - 1) + 320",
+                    "calc_variables": {
+                        "atk_modifier": 1.1,
+                        "lvl_modifier": 14,
+                        "addend": 320
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Per Flame (2 Flames)",
+                    "value": "55% SpA + 7 x (Level - 1) + 160",
+                    "calc_variables": {
+                        "atk_modifier": 0.55,
+                        "lvl_modifier": 7,
+                        "addend": 160
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 12",
+                    "value": "Become invincible for .6s when this move is used.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s22", "sball", "ball"],
+            "name": "Shadow Ball",
+            "level": 6,
+            "cd": 4,
+            "type": "ranged",
+            "description": "Unleash a shadowy blob in front of Hoopa, dealing damage to enemies hit and decreases their movement speed by 50% for 1s and Sp. Def by 30% for 3s. If Hoopa then hits the same enemy with a move or boosted attack within 4s, deal additional damage and leave the enemy unable to act for 1.2s. When using this move, if there is a nearby ally linked by Trick, this move will also unleash a shadowy blob at the same target from that ally's location.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "102% SpA + 14 x (Level - 1) + 300",
+                    "calc_variables": {
+                        "atk_modifier": 1.02,
+                        "lvl_modifier": 14,
+                        "addend": 300
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Damage - Additional",
+                    "value": "25.5% SpA + 4 x (Level - 1) + 75",
+                    "calc_variables": {
+                        "atk_modifier": 0.25,
+                        "lvl_modifier": 4,
+                        "addend": 75
+                    },
+                    "type": "inline"
+                },
+                {
+                    "title": "Level 12",
+                    "value": "The shadowy blob will now explode before disappearing. Enemies hit by the explosion are affected as if they were hit by the shadowy blob itself.",
+                    "type": "data"
+                }
+            ]
+        },
+        {
+            "aliases": ["s31", "fury", "hf"],
+            "name": "Hyperspace Fury",
+            "level": 9,
+            "cd": 7,
+            "type": "ranged",
+            "desc": "Unleash 7 attacks in the designated area with Hoopa Unbound's many arms, dealing damage to enemies in the area of effect and leave them unable to act for a short time.",
+            "fields": [
+                {
+                    "title": "Damage - 7 Hits",
+                    "value": "22% SpA + 2 x (Level - 1) + 70",
+                    "calc_variables": {
+                        "atk_modifier": 0.22,
+                        "lvl_modifier": 2,
+                        "addend": 70
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["s32"],
+            "name": "Psybeam",
+            "level": 9,
+            "cd": 9,
+            "type": "ranged",
+            "desc": "Fire a peculiar ray in front of Hoopa in a horizontal sweeping motion, dealing damage to enemies hit. Hoopa Unbound becomes immune to hindrances while using this move.",
+            "fields": [
+                {
+                    "title": "Damage",
+                    "value": "194% SpA + 14 x (Level - 1) + 650",
+                    "calc_variables": {
+                        "atk_modifier": 1.94,
+                        "lvl_modifier": 14,
+                        "addend": 650
+                    },
+                    "type": "inline"
+                }
+            ]
+        },
+        {
+            "aliases": ["u", "unite", "avengers assemble", "unbound", "assemble"],
+            "name": "Rings Unbound",
+            "level": 9,
+            "cd": 134,
+            "type": "buff",
+            "desc": "Transforms Hoopa into Hoopa Unbound for a short time, increasing max HP by 40% and creating a ring at the designated location. Each ally can warp to the ring's location one time. As Hoopa Unbound, moves change to Hyperspace Fury and Psybeam. Every attack also becomes a boosted attack that deals damage to up to 2 nearby enemies. If only one target is in range then both beams hit the same target, but 1 beam deals 50% damage. Hoopa Unbound cannot score goals or activate the Magician ability.",
+            "fields": [
+                {
+                    "title": "Damage - Basic Attack",
+                    "value": "65% SpA + 7 x (Level - 1) + 190",
+                    "calc_variables": {
+                        "atk_modifier": 0.65,
+                        "lvl_modifier": 7,
+                        "addend": 190
+                    },
+                    "type": "inline"
+                }
+            ]
+        }
+    ],
+    "lucario": [
+        {
+            "aliases": ["s01", "quick"],
             "name": "Quick Attack",
             "level": 1,
             "cd": 6,
@@ -3253,7 +3495,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "mash", "mm"],
             "name": "Meteor Mash",
             "level": 1,
             "cd": 7,
@@ -3273,7 +3515,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "espeed", "speed"],
             "name": "Extreme Speed",
             "level": 5,
             "cd": 9,
@@ -3308,7 +3550,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "power up punch", "pup"],
             "name": "Power-Up Punch",
             "level": 5,
             "cd": 7,
@@ -3348,7 +3590,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "br"],
             "name": "Bone Rush",
             "level": 7,
             "cd": 10,
@@ -3373,7 +3615,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "cc"],
             "name": "Close Combat",
             "level": 7,
             "cd": 9,
@@ -3450,7 +3692,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "bu"],
             "name": "Bulk Up",
             "level": 1,
             "cd": 9,
@@ -3458,7 +3700,7 @@
             "desc": "Machamp buffs themselves for 3 seconds increasing attack by 15%. Machamp is unstoppable for the duration and gains a small amount of attack speed and movement speed. Machamp’s next basic attack is boosted."
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "punch", "dp"],
             "name": "Dynamic Punch",
             "level": 5,
             "cd": 8,
@@ -3483,7 +3725,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "sub"],
             "name": "Submission",
             "level": 5,
             "cd": 11,
@@ -3508,7 +3750,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "cc"],
             "name": "Close Combat",
             "level": 7,
             "cd": 6,
@@ -3543,7 +3785,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "chop"],
             "name": "Cross Chop",
             "level": 7,
             "cd": 6,
@@ -3590,7 +3832,7 @@
     ],
     "mamoswine": [
         {
-            "aliases": ["s01"],
+            "aliases": ["s01", "shard"],
             "name": "Ice Shard",
             "level": 1,
             "cd": 7,
@@ -3630,7 +3872,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "crash"],
             "name": "Icicle Crash",
             "level": 5,
             "cd": 10,
@@ -3675,7 +3917,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "fang"],
             "name": "Ice Fang",
             "level": 5,
             "cd": 8,
@@ -3710,7 +3952,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "horsepower", "hh"],
             "name": "High Horsepower",
             "level": 7,
             "cd": 8,
@@ -3755,7 +3997,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "earth", "quake", "eq"],
             "name": "Earthquake",
             "level": 7,
             "cd": 7,
@@ -3842,7 +4084,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "ls"],
             "name": "Light Screen",
             "level": 1,
             "cd": 8,
@@ -3945,7 +4187,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "guard", "swap", "gs"],
             "name": "Guard Swap",
             "level": 6,
             "cd": 4,
@@ -4012,7 +4254,7 @@
     ],
     "ninetales": [
         {
-            "aliases": ["s01"],
+            "aliases": ["s01", "snow"],
             "name": "Powder Snow",
             "level": 1,
             "cd": 5,
@@ -4032,7 +4274,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "wind"],
             "name": "Icy Wind",
             "level": 1,
             "cd": 8,
@@ -4052,7 +4294,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "ava", "lanche"],
             "name": "Avalanche",
             "level": 4,
             "cd": 7,
@@ -4077,7 +4319,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "dgleam", "gleam", "dg"],
             "name": "Dazzling Gleam",
             "level": 4,
             "cd": 7,
@@ -4112,7 +4354,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "blizz"],
             "name": "Blizzard",
             "level": 6,
             "cd": 9,
@@ -4167,7 +4409,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "aurora", "veil", "av"],
             "name": "Aurora Veil",
             "level": 6,
             "cd": 13,
@@ -4234,7 +4476,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "web"],
             "name": "Electro Web",
             "level": 1,
             "cd": 9,
@@ -4254,7 +4496,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "ball"],
             "name": "Electro Ball",
             "level": 4,
             "cd": 5,
@@ -4324,7 +4566,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "volt", "tackle", "vt"],
             "name": "Volt Tackle",
             "level": 6,
             "cd": 10,
@@ -4349,7 +4591,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "bolt"],
             "name": "Thunderbolt",
             "level": 6,
             "cd": 8,
@@ -4953,7 +5195,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "acro"],
             "name": "Acrobatics",
             "level": 1,
             "cd": 8,
@@ -4973,7 +5215,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "charge", "fc"],
             "name": "Flame Charge",
             "level": 5,
             "cd": 6.5,
@@ -5008,7 +5250,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "aerial", "ace", "aa"],
             "name": "Aerial Ace",
             "level": 5,
             "cd": 5,
@@ -5068,7 +5310,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "brave", "bird", "bb"],
             "name": "Brave Bird",
             "level": 7,
             "cd": 10,
@@ -5115,7 +5357,7 @@
     ],
     "trevenant": [
         {
-            "aliases": ["s01", "wow"],
+            "aliases": ["s01", "wisp", "wow"],
             "name": "Will-o-Wisp",
             "level": 1,
             "cd": 6,
@@ -5165,7 +5407,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "hammer"],
             "name": "Wood Hammer",
             "level": 5,
             "cd": 7,
@@ -5235,7 +5477,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "leech"],
             "name": "Horn Leech",
             "level": 7,
             "cd": 8,
@@ -5275,7 +5517,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "split"],
             "name": "Pain Split",
             "level": 7,
             "cd": 10,
@@ -5310,7 +5552,7 @@
             ]
         },
         {
-            "aliases": ["u", "unite", ""],
+            "aliases": ["u", "unite"],
             "name": "Phantom Forest",
             "level": 9,
             "cd": 134,
@@ -5352,7 +5594,7 @@
     ],
     "tsareena": [
         {
-            "aliases": ["s01"],
+            "aliases": ["s01", "razor"],
             "name": "Razor Leaf",
             "level": 1,
             "cd": 5,
@@ -5372,7 +5614,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "spin"],
             "name": "Rapid Spin",
             "level": 1,
             "cd": 7.5,
@@ -5392,7 +5634,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "axel"],
             "name": "Triple Axel",
             "level": 5,
             "cd": 7,
@@ -5522,7 +5764,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "trop", "kick", "tk"],
             "name": "Trop Kick",
             "level": 6,
             "cd": 10,
@@ -5627,7 +5869,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "grassy", "glide", "gg"],
             "name": "Grassy Glide",
             "level": 6,
             "cd": 6.5,
@@ -5744,7 +5986,7 @@
             ]
         },
         {
-            "aliases": ["s02"],
+            "aliases": ["s02", "razor"],
             "name": "Razor Leaf",
             "level": 1,
             "cd": 9,
@@ -5764,7 +6006,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "sludge", "bomb", "sbomb"],
             "name": "Sludge Bomb",
             "level": 5,
             "cd": 6,
@@ -5799,7 +6041,7 @@
             ]
         },
         {
-            "aliases": ["s12"],
+            "aliases": ["s12", "drain"],
             "name": "Giga Drain",
             "level": 5,
             "cd": 7,
@@ -5844,7 +6086,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "beam"],
             "name": "Solar Beam",
             "level": 7,
             "cd": 9,
@@ -5874,7 +6116,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "petal", "dance", "pd"],
             "name": "Petal Dance",
             "level": 7,
             "cd": 9,
@@ -5959,7 +6201,7 @@
             "desc": "Wigglytuff gains a shield and rolls forward a short distance, throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "roll"],
             "name": "Rollout",
             "level": 4,
             "cd": 10,
@@ -5999,7 +6241,7 @@
             ]
         },
         {
-            "aliases": ["s21"],
+            "aliases": ["s21", "slap"],
             "name": "Double Slap",
             "level": 6,
             "cd": 5,
@@ -6024,7 +6266,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "gleam"],
             "name": "Dazzling Gleam",
             "level": 6,
             "cd": 4.5,
@@ -6109,7 +6351,7 @@
             ]
         },
         {
-            "aliases": ["s11"],
+            "aliases": ["s11", "volt", "switch", "vs"],
             "name": "Volt Switch",
             "level": 6,
             "cd": 8,
@@ -6219,7 +6461,7 @@
             ]
         },
         {
-            "aliases": ["s22"],
+            "aliases": ["s22", "wc"],
             "name": "Wild Charge",
             "level": 8,
             "cd": 9,

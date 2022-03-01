@@ -172,6 +172,12 @@
             "desc": "While HP is at 50% or less, Attack is increased by 5% and movement speed is increased by 12%."
         }
     ],
+    "hoopa": [
+        {
+            "name": "Magician",
+            "desc": "In battles where the map is divided into an ally team side and an opposing team side, this ability creates a hole under one of the berries on the opposing team's side (chosen at random) and warps it in front of Hoopa (40s cooldown). If there are no berries, but there is Aeos Energy on the ground, then some energy is warped in front of Hoopa instead. In the event that no berries from the opposing team's side are warped, the cooldown of this ability is reduced to 20s."
+        }
+    ],
     "lucario": [
         {
             "name": "Steadfast",

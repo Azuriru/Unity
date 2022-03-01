@@ -101,7 +101,8 @@ class MovesCommand extends Command {
         }
 
         const move = pokemon_moves.find(({ name, aliases }) => {
-            if (content.startsWith(name.toLowerCase())) return true;
+            name = name.toLowerCase();
+            if (content.startsWith(name) || content.startsWith(name.replace(/ /g, ''))) return true;
 
             if (aliases.find(alias => content.startsWith(alias))) return true;
         });
