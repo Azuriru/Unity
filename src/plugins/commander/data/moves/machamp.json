@@ -1,0 +1,160 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Karate Chop",
+        "level": 1,
+        "cd": 6,
+        "type": "melee",
+        "desc": "Machamp attacks in a straight line dealing damage to enemies hit.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "205% Atk + 15 x (Level - 1) + 270",
+                "calc_variables": {
+                    "atk_modifier": 2.05,
+                    "lvl_modifier": 15,
+                    "addend": 270
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "bu"],
+        "name": "Bulk Up",
+        "level": 1,
+        "cd": 9,
+        "type": "buff",
+        "desc": "Machamp buffs themselves for 3 seconds increasing attack by 15%. Machamp is unstoppable for the duration and gains a small amount of attack speed and movement speed. Machamp’s next basic attack is boosted."
+    },
+    {
+        "aliases": ["s11", "punch", "dp"],
+        "name": "Dynamic Punch",
+        "level": 5,
+        "cd": 8,
+        "type": "hindrance",
+        "desc": "Machamp jumps to target location, briefly stunning enemies hit, slowing them, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% and gains bonus movement speed for 6 seconds when using Dynamic Punch.",
+        "fields": [
+            {
+                "title": "Damage - Per Tick (4 Ticks)",
+                "value": "37% Atk + 2 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 0.37,
+                    "lvl_modifier": 2,
+                    "addend": 70
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Further increases Atk (from 15% to 20%) and movement speed.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "sub"],
+        "name": "Submission",
+        "level": 5,
+        "cd": 11,
+        "type": "buff",
+        "desc": "Machamp becomes unstoppable and gains significant movement speed for 5 seconds or until the next basic attack. Machamp’s next basic attack during submission is enhanced hitting twice and slamming the target down behind Machamp. If this attack hits Machamp also gains increased critical hit rate and attack speed for 3 seconds.",
+        "fields": [
+            {
+                "title": "Damage - 2x",
+                "value": "91% Atk + 4 x (Level - 1) + 170",
+                "calc_variables": {
+                    "atk_modifier": 0.91,
+                    "lvl_modifier": 4,
+                    "addend": 170
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Further increases critical hit rate and attack speed bonuses.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "cc"],
+        "name": "Close Combat",
+        "level": 7,
+        "cd": 6,
+        "type": "melee",
+        "desc": "Machamp unleashes a barrage of blows in a targeted direction, hitting multiple times and finishing with a single large strike. Machamp is unstoppable for the duration and can move while using close combat.",
+        "fields": [
+            {
+                "title": "Damage - Per Hit (4 Hits)",
+                "value": "59% Atk + 2 x (Level - 1) + 50",
+                "calc_variables": {
+                    "atk_modifier": 0.59,
+                    "lvl_modifier": 2,
+                    "addend": 50
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Hit",
+                "value": "177% Atk + 6 x (Level - 1) + 150",
+                "calc_variables": {
+                    "atk_modifier": 1.77,
+                    "lvl_modifier": 6,
+                    "addend": 150
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Deals additional damage if the target is affected by a status condition.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "chop"],
+        "name": "Cross Chop",
+        "level": 7,
+        "cd": 6,
+        "type": "melee",
+        "desc": "Machamp dashes forward dealing damage to enemies hit. Cross chop has an increased critical hit rate and can critically strike.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "98% Atk + 13 x (Level - 1) + 290",
+                "calc_variables": {
+                    "atk_modifier": 0.98,
+                    "lvl_modifier": 13,
+                    "addend": 290
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Machamp’s basic attacks increases Atk by 2 and stacking up to 40 times.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Barrage Blow",
+        "level": 9,
+        "cd": 134,
+        "type": "buff",
+        "desc": "Increases Machamp's movement speed, Attack by 30%, Defense by 200, and Sp. Defense by 200 for a short time. If used again, unleash a combo attack, dealing damage to enemies in the area of effect and shoving them. The final blow deals double the damage of the previous hits.",
+        "fields": [
+            {
+                "title": "Damage - 6 Hits",
+                "value": "100% Atk + 2 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 1,
+                    "lvl_modifier": 2,
+                    "addend": 100
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

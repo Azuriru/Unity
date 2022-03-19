@@ -1,0 +1,217 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Feint",
+        "level": 1,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Absol dashes in an arc, damaging all enemies hit. Absol deals damage as if enemies hit have 0 defense and bypasses shields.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "66% Atk + 7 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 0.66,
+                    "lvl_modifier": 7,
+                    "addend": 130
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Slash",
+        "level": 1,
+        "cd": 8,
+        "type": "melee",
+        "desc": "Absol quickly slashes in front of themself, damaging any enemy hit by the slash. Slash has an increased cricital-hit rate.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "89% Atk + 6 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 0.89,
+                    "lvl_modifier": 6,
+                    "addend": 200
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "ns"],
+        "name": "Night Slash",
+        "level": 5,
+        "cd": 5,
+        "type": "dash",
+        "desc": "Absol dashes in an arc, damaging and slowing the first Pokémon hit. If Absol hits, this ability can be activated within 6s – allowing Absol to dash again, dealing damage to all enemies hit. The second hit also has increased critical-rate based on enemy remaining HP (the lower their HP, the higher the critical-rate).\n\nCooldown on Hit or without recasting is 6s.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "78% Atk + 4 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 0.78,
+                    "lvl_modifier": 4,
+                    "addend": 180
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "117% Atk + 5 x (Level - 1) + 270",
+                "calc_variables": {
+                    "atk_modifier": 1.17,
+                    "lvl_modifier": 5,
+                    "addend": 270
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Absol heals on hit, and if the damage is a critical hit, the Heal doubles.",
+                "type": "data"
+            },
+            {
+                "title": "Healing",
+                "value": "41.6% Atk + 2 x (Level - 1) + 95",
+                "calc_variables": {
+                    "atk_modifier": 0.416,
+                    "lvl_modifier": 2,
+                    "addend": 95
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "pur"],
+        "name": "Pursuit",
+        "level": 5,
+        "cd": 5,
+        "type": "dash",
+        "desc": "Absol dashes to a location, and dashes to an enemy with its next basic attack. If Absol hits the back of the target, this ability's cooldown is reduced. If it fails to hit the back, damage is halved.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "110% Atk + 9 x (Level - 1) + 220",
+                "calc_variables": {
+                    "atk_modifier": 1.10,
+                    "lvl_modifier": 9,
+                    "addend": 220
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Backstab",
+                "value": "198% Atk + 19 x (Level - 1) + 396",
+                "calc_variables": {
+                    "atk_modifier": 1.98,
+                    "lvl_modifier": 19,
+                    "addend": 396
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Absol gains movement speed data after the initial dash.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "pc"],
+        "name": "Psycho Cut",
+        "level": 7,
+        "cd": 7,
+        "type": "ranged",
+        "desc": "Absol throws a wide slash in front, damaging, debuffing, and slowing enemies hit for 5s. This debuff applies extra damage the next 3 times Absol hits the debuffed Pokémon with an auto attack or a Psycho Cut.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "30.5% Atk + 3 x (Level - 1) + 60",
+                "calc_variables": {
+                    "atk_modifier": 0.305,
+                    "lvl_modifier": 3,
+                    "addend": 60
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Debuff",
+                "value": "Three slash markers are added. The first two deal 2x damage when triggered, the third deals 3x damage.",
+                "type": "data"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases Absol's movespeed when near a debuffed enemy.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "sp"],
+        "name": "Sucker Punch",
+        "level": 7,
+        "cd": 6,
+        "type": "sure-hit",
+        "desc": "Absol attacks a target Pokémon, slowing both the target and Absol. If Absol is attacked while channeling the dash, Absol takes no damage from the attack, immediately dashes to the target, and this hit does 1.5x damage and stuns the target.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "105% Atk + 6 x (Level - 1) + 165",
+                "calc_variables": {
+                    "atk_modifier": 1.05,
+                    "lvl_modifier": 6,
+                    "addend": 165
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Counter",
+                "value": "156% Atk + 10 x (Level - 1) + 250",
+                "calc_variables": {
+                    "atk_modifier": 1.56,
+                    "lvl_modifier": 10,
+                    "addend": 250
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases base attack speed after a successful counter.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Midnight Slash",
+        "level": 9,
+        "cd": 134,
+        "type": "area",
+        "desc": "Unleash a flurry of slashes in front of Absol and become untargetable. This move ends by unleashing powerful blades of energy, dealing increased damage shoving enemies.",
+        "fields": [
+            {
+                "title": "Damage - First 6 Hits",
+                "value": "91% Atk + 4 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 0.91,
+                    "lvl_modifier": 4,
+                    "addend": 200
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final 3 Hits",
+                "value": "28% Atk + 1 x (Level - 1) + 59",
+                "calc_variables": {
+                    "atk_modifier": 0.28,
+                    "lvl_modifier": 1,
+                    "addend": 59
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

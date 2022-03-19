@@ -1,0 +1,200 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Whirlpool",
+        "level": 1,
+        "cd": 5,
+        "type": "area",
+        "desc": "Cramorant creates a whirlpool at a designated location, damaging all enemies in the radius. It also slows enemies by 50% in the area at the end of its duration. Cramorant can enter the whirlpool to catch prey for Gulp Missile (you can catch up to 2 prey).",
+        "fields": [
+            {
+                "title": "Damage - Initial (2 Ticks)",
+                "value": "24% SpA + 5 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.24,
+                    "lvl_modifier": 5,
+                    "addend": 100
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Middle (2 Ticks)",
+                "value": "27% SpA + 6 x (Level - 1) + 110",
+                "calc_variables": {
+                    "atk_modifier": 0.27,
+                    "lvl_modifier": 6,
+                    "addend": 110
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - End (6 Ticks)",
+                "value": "30% SpA + 7 x (Level - 1) + 120",
+                "calc_variables": {
+                    "atk_modifier": 0.3,
+                    "lvl_modifier": 7,
+                    "addend": 120
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Feather Dance",
+        "level": 1,
+        "cd": 8,
+        "type": "debuff",
+        "desc": "Cramorant throws a circle of feathers at a designated area, slowing enemies by 20% in the radius and reducing their attack speed by 30%."
+    },
+    {
+        "aliases": ["s11", "hurri"],
+        "name": "Hurricane",
+        "level": 4,
+        "cd": 9,
+        "type": "hindrance",
+        "desc": "Cramorant creates a fierce wind, damaging and throwing enemies caught in the radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "103% SpA + 10 x (Level - 1) + 540",
+                "calc_variables": {
+                    "atk_modifier": 1.03,
+                    "lvl_modifier": 10,
+                    "addend": 540
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases Cramorant's speed briefly.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "slash"],
+        "name": "Air Slash",
+        "level": 4,
+        "cd": 5,
+        "type": "ranged",
+        "desc": "Cramorant shoots many blades of air while moving backwards, dealing damage to enemies within the cone. This move's cooldown is reduced for every blade that hits.",
+        "fields": [
+            {
+                "title": "Damage - Blade (4 Hits)",
+                "value": "35% SpA + 6 x (Level - 1) + 150",
+                "calc_variables": {
+                    "atk_modifier": 0.35,
+                    "lvl_modifier": 6,
+                    "addend": 150
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Heals Cramorant every time a blade of air hits an enemy.",
+                "type": "data"
+            },
+            {
+                "title": "Healing - Blade (4 Hits)",
+                "value": "30% SpA + 0 x (Level - 1) + 60",
+                "calc_variables": {
+                    "atk_modifier": 0.3,
+                    "lvl_modifier": 0,
+                    "addend": 60
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21"],
+        "name": "Surf",
+        "level": 6,
+        "cd": 8,
+        "type": "ranged",
+        "desc": "Cramorant sends a wave in a designated direction, damaging enemies that make contact with the wave. Once it reaches its full distance, the wave bounces back – further damaging and pulling back affected enemies. Cramorant catches prey with the first wave, and can enter the wave that returns to catch prey for Gulp Missile.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "68% SpA + 9 x (Level - 1) + 360",
+                "calc_variables": {
+                    "atk_modifier": 0.68,
+                    "lvl_modifier": 9,
+                    "addend": 360
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "102% SpA + 14 x (Level - 1) + 540",
+                "calc_variables": {
+                    "atk_modifier": 1.02,
+                    "lvl_modifier": 14,
+                    "addend": 540
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "The wave also slows.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Dive",
+        "level": 6,
+        "cd": 4.5,
+        "type": "dash",
+        "desc": "Cramorant turns the designated area into a puddle, then dives to that area, shoving and damaging enemies in the area. Cramorant catches prey for Gulp Missile as they emerge from the puddle. Holds 3 uses in reserve.\n\nThere is a 1.5 sec cooldown between charges, which is reduced with cooldown reduction.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "78% SpA + 14 x (Level - 1) + 320",
+                "calc_variables": {
+                    "atk_modifier": 0.78,
+                    "lvl_modifier": 14,
+                    "addend": 320
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "86% SpA + 16 x (Level - 1) + 360",
+                "calc_variables": {
+                    "atk_modifier": 0.86,
+                    "lvl_modifier": 16,
+                    "addend": 360
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Gatling Gulp Missile",
+        "level": 9,
+        "cd": 134,
+        "type": "area",
+        "desc": "Cramorant becomes unstoppable and fires a series of Arrokuda missles at the nearest enemy, becoming immobile for the entire duration. Gatling Gulp Missile can be cancelled early.",
+        "fields": [
+            {
+                "title": "Damage - 10 Hits",
+                "value": "83.6% SpA + 18 x (Level - 1) + 319",
+                "calc_variables": {
+                    "atk_modifier": 0.836,
+                    "lvl_modifier": 18,
+                    "addend": 319
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

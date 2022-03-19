@@ -1,0 +1,210 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Confusion",
+        "level": 1,
+        "cd": 4.5,
+        "type": "ranged",
+        "desc": "Gardevoir fires a piercing bolt, damaging enemies.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "72% SpA + 13 x (Level - 1) + 250",
+                "calc_variables": {
+                    "atk_modifier": 0.72,
+                    "lvl_modifier": 13,
+                    "addend": 250
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Teleport",
+        "level": 1,
+        "cd": 11,
+        "type": "dash",
+        "desc": "Gardevoir teleports to a targeted area and gains a boosted attack."
+    },
+    {
+        "aliases": ["s11", "shock", "ps"],
+        "name": "Psyshock",
+        "level": 5,
+        "cd": 10,
+        "type": "area",
+        "desc": "Gardevoir channels three attacks at the targeted area, damaging enemies. Gardevoir's moves' cooldowns is reduced each time it hits an enemy.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "76% SpA + 9 x (Level - 1) + 361",
+                "calc_variables": {
+                    "atk_modifier": 0.76,
+                    "lvl_modifier": 9,
+                    "addend": 361
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Each hit of Psyshock also increases the damage of the next hit.",
+                "type": "data"
+            },
+            {
+                "title": "Damage - First Hit",
+                "value": "76% SpA + 9 x (Level - 1) + 361",
+                "calc_variables": {
+                    "atk_modifier": 0.76,
+                    "lvl_modifier": 9,
+                    "addend": 361
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "80% SpA + 9 x (Level - 1) + 380",
+                "calc_variables": {
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 9,
+                    "addend": 380
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Third Hit",
+                "value": "84% SpA + 9 x (Level - 1) + 399",
+                "calc_variables": {
+                    "atk_modifier": 0.84,
+                    "lvl_modifier": 9,
+                    "addend": 399
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "sight", "fs"],
+        "name": "Future Sight",
+        "level": 5,
+        "cd": 9,
+        "type": "area",
+        "desc": "Gardevoir creates a delayed explosion at the targeted area, damaging enemies. If Future Sight hits an enemy player (not wild), the cooldown is reduced by half and Gardevoir gains a burst of movement speed.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "149% SpA + 21 x (Level - 1) + 880",
+                "calc_variables": {
+                    "atk_modifier": 1.49,
+                    "lvl_modifier": 21,
+                    "addend": 880
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Cooldown is reset on successful hits.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "p"],
+        "name": "Psychic",
+        "level": 7,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Gardevoir fires a blast, damaging enemies in an area on impact. The blast creates a lingering field that damages and slows. Each time Psychic deals damage it reduces the target’s Special Defense by 20%, up to 60%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "72% SpA + 15 x (Level - 1) + 390",
+                "calc_variables": {
+                    "atk_modifier": 0.72,
+                    "lvl_modifier": 15,
+                    "addend": 390
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Damage Over Time (5 Ticks)",
+                "value": "7.2% SpA + 2 x (Level - 1) + 39",
+                "calc_variables": {
+                    "atk_modifier": 0.072,
+                    "lvl_modifier": 2,
+                    "addend": 39
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Cooldown is reduced by 1s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "moon", "blast", "mb"],
+        "name": "Moonblast",
+        "level": 7,
+        "cd": 7,
+        "type": "ranged",
+        "desc": "Gardevoir moves back while firing a blast, stunning the first enemy hit and damaging all enemies in a cone behind it.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "66% SpA + 13 x (Level - 1) + 340",
+                "calc_variables": {
+                    "atk_modifier": 0.66,
+                    "lvl_modifier": 13,
+                    "addend": 340
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Grants Gardevoir a shield.",
+                "type": "data"
+            },
+            {
+                "title": "Shield",
+                "value": "54% SpA + 8 x (Level - 1) + 248",
+                "calc_variables": {
+                    "atk_modifier": 0.54,
+                    "lvl_modifier": 8,
+                    "addend": 248
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Fairy Singularity",
+        "level": 9,
+        "cd": 134,
+        "type": "hindrance",
+        "desc": "Gardevoir warps space in a large area, creating a field stunning, pulling, and damaging all enemies in the radius. When it expires, the field damages and shoves enemies.",
+        "fields": [
+            {
+                "title": "Damage - First Four Ticks",
+                "value": "33% SpA + 4 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 0.33,
+                    "lvl_modifier": 4,
+                    "addend": 200
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Tick",
+                "value": "66% SpA + 8 x (Level - 1) + 400",
+                "calc_variables": {
+                    "atk_modifier": 0.66,
+                    "lvl_modifier": 8,
+                    "addend": 400
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

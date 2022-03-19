@@ -1,0 +1,277 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Flame Burst",
+        "level": 1,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Charizard attacks with a bursting flame forward, exploding on the first enemy hit, dealing damage and burning enemies in a small radius. Charizard gains a small movement speed bonus when hitting an enemy. The burn lasts 4s and reduces enemy Attack by 5%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "105% Atk + 4 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 1.04,
+                    "lvl_modifier": 4,
+                    "addend": 70
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (5 ticks)",
+                "value": "20% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.20,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Fire Spin",
+        "level": 1,
+        "cd": 10,
+        "type": "area",
+        "desc": "Charizard shoots a burst of fire forward, exploding on the first enemy hit or after traveling max distance, dealing damage over time and slowing enemies within the radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "100% Atk + 5 x (Level - 1) + 150",
+                "calc_variables": {
+                    "atk_modifier": 1.00,
+                    "lvl_modifier": 5,
+                    "addend": 150
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Area (10 ticks)",
+                "value": "20% Atk + 1 x (Level - 1) + 30",
+                "calc_variables": {
+                    "atk_modifier": 0.20,
+                    "lvl_modifier": 1,
+                    "addend": 30
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11"],
+        "name": "Flamethrower",
+        "level": 5,
+        "cd": 5.5,
+        "type": "ranged",
+        "desc": "Attacks with a blast of fire, damaging and burning enemies in a line. Charizard gains a small movement speed bonus if they hit. The burn lasts 4s and reduces enemy Attack by 5%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "150% Atk + 6 x (Level - 1) + 160",
+                "calc_variables": {
+                    "atk_modifier": 1.50,
+                    "lvl_modifier": 6,
+                    "addend": 160
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (5 ticks)",
+                "value": "20% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.20,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Deals increased damage",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "176% Atk + 8 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 1.76,
+                    "lvl_modifier": 8,
+                    "addend": 190
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (5 ticks)",
+                "value": "25% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.25,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Fire Punch",
+        "level": 5,
+        "cd": 6,
+        "type": "melee",
+        "desc": "Charizard punches forward, damaging and shoving enemies in their path. The first enemy hit is burned. The burn lasts 4s and reduces enemy Attack by 5%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "224% Atk + 10 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 2.24,
+                    "lvl_modifier": 10,
+                    "addend": 240
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (5 ticks)",
+                "value": "20% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.2,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Cooldown reduces every time Charizard hits with a basic attack.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21"],
+        "name": "Fire Blast",
+        "level": 7,
+        "cd": 6.5,
+        "type": "area",
+        "desc": "Charizard shoots a blast of fire forward, exploding on the first enemy hit or after a short distance, dealing damage over time and slowing enemies while within the radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "150% Atk + 4 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 1.5,
+                    "lvl_modifier": 4,
+                    "addend": 180
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Area (10 Ticks)",
+                "value": "37.5% Atk + 1 x (Level - 1) + 45",
+                "calc_variables": {
+                    "atk_modifier": 0.375,
+                    "lvl_modifier": 1,
+                    "addend": 45
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Deals increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "161% Atk + 5 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 1.61,
+                    "lvl_modifier": 5,
+                    "addend": 210
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Area (10 Ticks)",
+                "value": "40% Atk + 1 x (Level - 1) + 54",
+                "calc_variables": {
+                    "atk_modifier": 0.4,
+                    "lvl_modifier": 1,
+                    "addend": 54
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Flare Blitz",
+        "level": 7,
+        "cd": 10,
+        "type": "melee",
+        "desc": "Charizard charges forward, shielding itself, damaging and knocking back the targeted enemy.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "174% Atk + 5 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 1.74,
+                    "lvl_modifier": 5,
+                    "addend": 210
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Shield",
+                "value": "200% Atk + 0 x (Level - 1) + 600",
+                "calc_variables": {
+                    "atk_modifier": 2,
+                    "lvl_modifier": 0,
+                    "addend": 600
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Also slows enemies for a short time after thrown.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Seismic Slam",
+        "level": 9,
+        "cd": 123,
+        "type": "sure-hit",
+        "desc": "Grab an enemy and slam it onto the ground, damaging the enemy and dealing additional damage based on their max HP. Then, fly up into the air moving freely over obstacles. While this move is active, basic attacks deal increased damage and leave enemies burned. When dealing damage to an enemy or when burning them during this move, recover HP equal to 80% of the damage dealt.",
+        "fields": [
+            {
+                "title": "Damage - Burning (5 Hits)",
+                "value": "20% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.2,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Slam",
+                "value": "307% Atk + 8 x (Level - 1) + 380",
+                "calc_variables": {
+                    "atk_modifier": 3.07,
+                    "lvl_modifier": 8,
+                    "addend": 380
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Slam",
+                "value": "8% of enemy max HP.",
+                "type": "data"
+            }
+        ]
+    }
+]

@@ -1,0 +1,197 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Leafage",
+        "level": 1,
+        "cd": 4.5,
+        "type": "ranged",
+        "desc": "Eldegoss shoots a bundle of leaves that explode on the first enemy hit, damaging and slowing in an area.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "129% SpA + 11 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 1.29,
+                    "lvl_modifier": 11,
+                    "addend": 210
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Synthesis",
+        "level": 1,
+        "cd": 8,
+        "type": "recovery",
+        "desc": "Eldegoss uses sunlight to heal itself and nearby allies.",
+        "fields": [
+            {
+                "title": "Healing",
+                "value": "100% SpA + 5 x (Level - 1) + 350",
+                "calc_variables": {
+                    "atk_modifier": 1,
+                    "lvl_modifier": 5,
+                    "addend": 350
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "pollen", "puff", "pp"],
+        "name": "Pollen Puff",
+        "level": 4,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Eldegoss throws a puff of pollen, which attaches to any Pokémon that touches it. After a delay the puff will explode, damaging enemies and healing allies around it.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "90% SpA + 8 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 0.9,
+                    "lvl_modifier": 8,
+                    "addend": 180
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing",
+                "value": "135% SpA + 12 x (Level - 1) + 270",
+                "calc_variables": {
+                    "atk_modifier": 1.35,
+                    "lvl_modifier": 12,
+                    "addend": 270
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "If attached to an enemy, the puff will deal damage over time. If attached to an ally, it will reduce the damage they receive by 20% for 2s.",
+                "type": "data"
+            },
+            {
+                "title": "Damage - 5 Times Every .5s",
+                "value": "9% SpA + 1 x (Level - 1) + 18",
+                "calc_variables": {
+                    "atk_modifier": 0.9,
+                    "lvl_modifier": 1,
+                    "addend": 18
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "tornado", "torn", "nado"],
+        "name": "Leaf Tornado",
+        "level": 4,
+        "cd": 9,
+        "type": "ranged",
+        "desc": "Eldegoss conjures a tornado full of leaves, which damages enemies and creates a gust of wind that increases the movement speed of allies that touch it. When the tornado reaches max distance, it damages enemies near it a second time.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "106% SpA + 6 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 1.06,
+                    "lvl_modifier": 6,
+                    "addend": 240
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "25% of the damage of the first hit.",
+                "type": "data"
+            },
+            {
+                "title": "Level 11",
+                "value": "Enemies hit by the tornado will miss all of their basic attacks for a small amount of time.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "guard"],
+        "name": "Cotton Guard",
+        "level": 6,
+        "cd": 9,
+        "type": "buff",
+        "desc": "Eldegoss creates barriers out of cotton, granting itself and all nearby allies a shield. When the shield expires, it restores HP equal to 30% of the remaning shield value.",
+        "fields": [
+            {
+                "title": "Shielding",
+                "value": "175% SpA + 27 x (Level - 1) + 300",
+                "calc_variables": {
+                    "atk_modifier": 1.75,
+                    "lvl_modifier": 27,
+                    "addend": 300
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Also briefly increases Eldegoss's movement speed",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "spore"],
+        "name": "Cotton Spore",
+        "level": 6,
+        "cd": 6,
+        "type": "area",
+        "desc": "Eldegoss channels, gathering spores while increasing its movement speed. At the end of the channel the spores are released, damaging and throwing nearby enemies into the air, then slowing them when they land.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "148% SpA + 14 x (Level - 1) + 350",
+                "calc_variables": {
+                    "atk_modifier": 1.48,
+                    "lvl_modifier": 14,
+                    "addend": 350
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Eldegoss gains increased defense and special defense while channeling.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Cotton Cloud Crash",
+        "level": 9,
+        "cd": 134,
+        "type": "area",
+        "desc": "Float into the air and become invincible. If used again, pound the ground, attacking and shoving enemies while restoring HP to allies in the radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "255% SpA + 11 x (Level - 1) + 530",
+                "calc_variables": {
+                    "atk_modifier": 2.55,
+                    "lvl_modifier": 11,
+                    "addend": 530
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing",
+                "value": "306% SpA + 13 x (Level - 1) + 636",
+                "calc_variables": {
+                    "atk_modifier": 3.06,
+                    "lvl_modifier": 13,
+                    "addend": 636
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

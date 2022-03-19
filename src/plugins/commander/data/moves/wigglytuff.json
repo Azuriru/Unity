@@ -1,0 +1,150 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Pound",
+        "level": 1,
+        "cd": 5,
+        "type": "melee",
+        "desc": "Wigglytuff slaps the area in front of them twice, damaging and slowing enemies in a cone.",
+        "fields": [
+            {
+                "title": "Damage - Per Slap",
+                "value": "31% SpA + 18 x (Level - 1) + 340",
+                "calc_variables": {
+                    "atk_modifier": 0.31,
+                    "lvl_modifier": 18,
+                    "addend": 340
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Defense Curl",
+        "level": 1,
+        "cd": 8,
+        "type": "hindrance",
+        "desc": "Wigglytuff gains a shield and rolls forward a short distance, throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
+    },
+    {
+        "aliases": ["s11", "roll"],
+        "name": "Rollout",
+        "level": 4,
+        "cd": 10,
+        "type": "hindrance",
+        "desc": "Wigglytuff gains a shield and rolls forward, damaging and throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam.",
+        "fields": [
+            {
+                "title": "Damage - Per Hit",
+                "value": "47% SpA + 14 x (Level - 1) + 590",
+                "calc_variables": {
+                    "atk_modifier": 0.47,
+                    "lvl_modifier": 14,
+                    "addend": 590
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Increases the amount of time enemies are thrown.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Sing",
+        "level": 4,
+        "cd": 10,
+        "type": "area",
+        "desc": "Wigglytuff begins singing, slowing enemies around them. Enemies that stay inside the song's effect for too long will be put to sleep, and have their defense and special defense reduced for a short time.",
+        "fields": [
+            {
+                "title": "Level 12",
+                "value": "Increases the amount of time enemies are asleep.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "slap"],
+        "name": "Double Slap",
+        "level": 6,
+        "cd": 5,
+        "type": "melee",
+        "desc": "Wigglytuff unleashes a barrage of slaps, damaging and slowing enemies in a cone 3-5 times.",
+        "fields": [
+            {
+                "title": "Damage - Per Slap",
+                "value": "18% SpA + 9 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 0.18,
+                    "lvl_modifier": 9,
+                    "addend": 200
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Slaps 4-6 times instead.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "gleam"],
+        "name": "Dazzling Gleam",
+        "level": 6,
+        "cd": 4.5,
+        "type": "area",
+        "desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone followed by a large amount of damage.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "13% SpA + 6 x (Level - 1) + 144",
+                "calc_variables": {
+                    "atk_modifier": 0.13,
+                    "lvl_modifier": 6,
+                    "addend": 144
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "65% SpA + 33 x (Level - 1) + 720",
+                "calc_variables": {
+                    "atk_modifier": 0.65,
+                    "lvl_modifier": 33,
+                    "addend": 720
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Slows enemies hit by the first flash.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Starlight Recital",
+        "level": 8,
+        "cd": 134,
+        "type": "buff",
+        "desc": "Begin performing a recital, granting Wigglytuff and nearby allies a shield as well as removing all status conditions from the affected allies and granting them immunity to hindrances for a short time.",
+        "fields": [
+            {
+                "title": "Shield",
+                "value": "150% SpA + 0 x (Level - 1) + 800",
+                "calc_variables": {
+                    "atk_modifier": 1.50,
+                    "lvl_modifier": 0,
+                    "addend": 800
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

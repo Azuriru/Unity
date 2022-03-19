@@ -1,0 +1,232 @@
+[
+    {
+        "aliases": ["s01", "shard"],
+        "name": "Ice Shard",
+        "level": 1,
+        "cd": 7,
+        "type": "area",
+        "desc": "Hurls 3 chunks of ice at the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. If an enemy is hit by all three chunks, they're left frozen for a short time.",
+        "fields": [
+            {
+                "title": "Damage - Per Shard (3 Shards)",
+                "value": "62% Atk + 4 x (Level - 1) + 140",
+                "calc_variables": {
+                    "atk_modifier": 0.62,
+                    "lvl_modifier": 4,
+                    "addend": 140
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Tackle",
+        "level": 1,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and throws them in the air.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "101% Atk + 7 x (Level - 1) + 230",
+                "calc_variables": {
+                    "atk_modifier": 1.01,
+                    "lvl_modifier": 7,
+                    "addend": 230
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "crash"],
+        "name": "Icicle Crash",
+        "level": 5,
+        "cd": 10,
+        "type": "hindrance",
+        "desc": "Drops icicles on the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. The final icicle shatters after a set amount of time or when hit by Mamoswine's other moves or boosted attacks, dealing damage to enemies in the area of effect and leaving them frozen. If the icicle is shattered by Tackle or High Horsepower, the ground is covered in ice, which increases the movement speed of allies that run over it. The next basic attack is boosted.",
+        "fields": [
+            {
+                "title": "Damage - Small Icicles (3x)",
+                "value": "40% Atk + 3 x (Level - 1) + 120",
+                "calc_variables": {
+                    "atk_modifier": 0.4,
+                    "lvl_modifier": 3,
+                    "addend": 120
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damge - Large Icicle",
+                "value": "60% Atk + 5 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 0.6,
+                    "lvl_modifier": 5,
+                    "addend": 180
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Shatter",
+                "value": "80% Atk + 6 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 6,
+                    "addend": 240
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "The final icicle leaves enemies hit unable to act for a short time.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "fang"],
+        "name": "Ice Fang",
+        "level": 5,
+        "cd": 8,
+        "type": "hindrance",
+        "desc": "Uses cold-infused fangs to throw the opposing Pokémon closest to the user, dealing damage and leaving them frozen for a short time. The user can then designate a direction to slam the thrown Pokémon forward or backward, dealing damage to enemies in the area of effect and leaving them frozen for a short time. The next basic attack is boosted.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "60% Atk + 4 x (Level - 1) + 170",
+                "calc_variables": {
+                    "atk_modifier": 0.6,
+                    "lvl_modifier": 4,
+                    "addend": 170
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "180% Atk + 12 x (Level - 1) + 510",
+                "calc_variables": {
+                    "atk_modifier": 1.8,
+                    "lvl_modifier": 12,
+                    "addend": 510
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases the area of effect in which enemies are left frozen after the slam attack.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "horsepower", "hh"],
+        "name": "High Horsepower",
+        "level": 7,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and shove them. Mamoswine then stomps their feet, dealing damage to enemies in the area of effect and leaves them unable to act for a short time. This stomping deals increased damage to frozen enemies.",
+        "fields": [
+            {
+                "title": "Damage - Charge",
+                "value": "61% Atk + 4 x (Level - 1) + 170",
+                "calc_variables": {
+                    "atk_modifier": 0.61,
+                    "lvl_modifier": 4,
+                    "addend": 170
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Stomp",
+                "value": "122% Atk + 8 x (Level - 1) + 340",
+                "calc_variables": {
+                    "atk_modifier": 1.22,
+                    "lvl_modifier": 8,
+                    "addend": 340
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Frozen Stomp Bonus",
+                "value": "91.5% Atk + 6 x (Level - 1) + 255",
+                "calc_variables": {
+                    "atk_modifier": 0.91,
+                    "lvl_modifier": 6,
+                    "addend": 255
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases the reckless rush's speed and the length of time enemies are left unable to act.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "earth", "quake", "eq"],
+        "name": "Earthquake",
+        "level": 7,
+        "cd": 7,
+        "type": "dash",
+        "desc": "Mamoswine leaps up in the designated direction and lands forcefully, dealing damage to enemies in the area of effect and pulling them toward Mamoswine.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "151% Atk + 10 x (Level - 1) + 420",
+                "calc_variables": {
+                    "atk_modifier": 1.51,
+                    "lvl_modifier": 10,
+                    "addend": 420
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Decreases the movement speed of enemies for a short time when this move hits and increases the move's pulling power.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Mammoth Mash",
+        "level": 9,
+        "cd": 134,
+        "type": "area",
+        "desc": "Mamoswine jumps to the designated location and becomes immune to hindrances - then repeatedly stomps the ground, dealing damage to enemies in the area of effect and decreases their movement speed for a short time with each stomp. The final stomp throws enemies in the air.",
+        "fields": [
+            {
+                "title": "Damage - First Stomp",
+                "value": "153% Atk + 9 x (Level - 1) + 420",
+                "calc_variables": {
+                    "atk_modifier": 1.53,
+                    "lvl_modifier": 9,
+                    "addend": 420
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Mini Stomps (2 Stomps)",
+                "value": "102% Atk + 6 x (Level - 1) + 280",
+                "calc_variables": {
+                    "atk_modifier": 1.02,
+                    "lvl_modifier": 6,
+                    "addend": 280
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Stomp",
+                "value": "204% Atk + 12 x (Level - 1) + 560",
+                "calc_variables": {
+                    "atk_modifier": 2.04,
+                    "lvl_modifier": 12,
+                    "addend": 560
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

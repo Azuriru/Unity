@@ -1,0 +1,182 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Twister",
+        "level": 1,
+        "cd": 7.5,
+        "type": "ranged",
+        "desc": "Creates a twister and releases it in the designated direction, dealing damage to enemies hit and decreases their movement speed for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "93% Atk + 7 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 0.93,
+                    "lvl_modifier": 7,
+                    "addend": 210
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Dragon Breath",
+        "level": 1,
+        "cd": 7.5,
+        "type": "area",
+        "desc": "Exhale a mighty gust in the designated direction. If this move hits an enemy, the user's next attack becomes a boosted attack.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "154% Atk + 11 x (Level - 1) + 350",
+                "calc_variables": {
+                    "atk_modifier": 1.54,
+                    "lvl_modifier": 11,
+                    "addend": 350
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "dd"],
+        "name": "Dragon Dance",
+        "level": 5,
+        "cd": 5,
+        "type": "dash",
+        "desc": "Dash in a designated direction, in one of three cycling patterns. After using this move, grant a buff increasing attack speed of the next 3 basic attacks, increasing movement speed, increasing Attack by 8% (capping at 24%), as well as increasing the stage of Hyper Beam. This buff stacks up to 3 times, and the duration is reset to full on reuse. All stacks are removed after a few seconds. Basic attacks reduce the cooldown of this ability by 1s.",
+        "fields": [
+            {
+                "title": "Level 11",
+                "value": "Further increases movement speed if there are opposing Pokémon nearby when the dance ends.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "espeed"],
+        "name": "Extreme Speed",
+        "level": 5,
+        "cd": 9,
+        "type": "hindrance",
+        "desc": "Dash toward the designated location stopping upon contact with an enemy, dealing damage and throwing them.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "82% Atk + 4 x (Level - 1) + 150",
+                "calc_variables": {
+                    "atk_modifier": 0.82,
+                    "lvl_modifier": 4,
+                    "addend": 150
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "If the user's movement speed is currently decreased when it uses this move, that movement speed decrease is negated before the move is used.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "beam"],
+        "name": "Hyper Beam",
+        "level": 8,
+        "cd": 8,
+        "type": "ranged",
+        "desc": "Fires a beam of energy toward the targeted enemy after a delay, dealing damage to all enemies that it hits, as well as additional damage based on their Max HP. The move changes Stages based on the number of stacks of Dragon Dance that Dragonite has, from 0 to 3. The Max HP damage is 5%/10%/15%/20%, determined by the current Stage.  Dragonite cannot act while releasing the beam.",
+        "fields": [
+            {
+                "title": "Damage - Stage 0",
+                "value": "220% Atk + 9 x (Level - 1) + 410",
+                "calc_variables": {
+                    "atk_modifier": 2.20,
+                    "lvl_modifier": 9,
+                    "addend": 410
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Stage 1",
+                "value": "259.6% Atk + 11 x (Level - 1) + 484",
+                "calc_variables": {
+                    "atk_modifier": 2.596,
+                    "lvl_modifier": 11,
+                    "addend": 484
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Stage 2",
+                "value": "292.2% Atk + 12 x (Level - 1) + 558",
+                "calc_variables": {
+                    "atk_modifier": 2.922,
+                    "lvl_modifier": 12,
+                    "addend": 558
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Stage 3",
+                "value": "338.8% Atk + 14 x (Level - 1) + 631",
+                "calc_variables": {
+                    "atk_modifier": 3.338,
+                    "lvl_modifier": 14,
+                    "addend": 631
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Reduces damage taken by 50% while charging this move.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Outrage",
+        "level": 8,
+        "cd": 8,
+        "type": "melee",
+        "desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack he used. Additionally, Dragonite gains a buff for 5 seconds, converting all of their attacks into melee Boosted Attacks, alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is briefly stunned.",
+        "fields": [
+            {
+                "title": "Damage - Stomp",
+                "value": "176% Atk + 7 x (Level - 1) + 330",
+                "calc_variables": {
+                    "atk_modifier": 1.76,
+                    "lvl_modifier": 7,
+                    "addend": 330
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Reduces the duration of hindrances on the user while rampaging",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Draco Impact",
+        "level": 9,
+        "cd": 134,
+        "type": "dash",
+        "desc": "Briefly fly up in the air before crashing down with several comets on a designated area, dealing damage and throwing enemies in the area. The farther Dragonite flies, the more the Unite guage is consumed (25% at min disatance and 100% at max). Dragonite is unstoppable while using this move.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "206% Atk + 17 x (Level - 1) + 860",
+                "calc_variables": {
+                    "atk_modifier": 2.06,
+                    "lvl_modifier": 17,
+                    "addend": 860
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

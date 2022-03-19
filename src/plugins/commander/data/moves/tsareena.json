@@ -1,0 +1,372 @@
+[
+    {
+        "aliases": ["s01", "razor"],
+        "name": "Razor Leaf",
+        "level": 1,
+        "cd": 5,
+        "type": "area",
+        "desc": "Pelts leaves in the designated direction, dealing damage to enemies hit. The critical-hit rate of this move is higher than that of basic attacks.",
+        "fields": [
+            {
+                "title": "Damage - 3 Hits",
+                "value": "62% Atk + 7 x (Level - 1) + 120",
+                "calc_variables": {
+                    "atk_modifier": 0.62,
+                    "lvl_modifier": 7,
+                    "addend": 120
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "spin"],
+        "name": "Rapid Spin",
+        "level": 1,
+        "cd": 7.5,
+        "type": "dash",
+        "desc": "Tsareena spins in the designated direction, dealing damage to any enemy hit. When this move hits, increase Tsareena's movement speed for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "113% Atk + 8 x (Level - 1) + 260",
+                "calc_variables": {
+                    "atk_modifier": 1.13,
+                    "lvl_modifier": 8,
+                    "addend": 260
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "axel"],
+        "name": "Triple Axel",
+        "level": 5,
+        "cd": 7,
+        "type": "dash",
+        "desc": "Tsareena spin-kicks 3 times in the designated direction, dealing damage to enemies. Landed hits add a Triple Axel Buff stack. The stacks last for 5 seconds and decay together. During the duration of the buff, basic attack speed is increased depending upon the number of stacks (caps at 3 stacks). In addition, all damage dealt by basic attacks or Triple Axel during the buff is increased by 5% per stack (caps at 6 stacks).\n\nQueenly Majesty Effect: Restores HP each time a kick hits.",
+        "fields": [
+            {
+                "title": "Damage - Per Hit",
+                "value": "71.3% Atk + 4 x (Level - 1) + 96",
+                "calc_variables": {
+                    "atk_modifier": 0.713,
+                    "lvl_modifier": 4,
+                    "addend": 96
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Per Hit (Queenly Majesty Buff)",
+                "value": "114.09% Atk + 7 x (Level - 1) + 153",
+                "calc_variables": {
+                    "atk_modifier": 1.1309,
+                    "lvl_modifier": 7,
+                    "addend": 153
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Heal - Queenly Majesty Buff",
+                "value": "30% Atk + 2 x (Level - 1) + 30",
+                "calc_variables": {
+                    "atk_modifier": 0.3,
+                    "lvl_modifier": 2,
+                    "addend": 30
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage - Per Hit",
+                "value": "82% Atk + 5 x (Level - 1) + 110",
+                "calc_variables": {
+                    "atk_modifier": 0.82,
+                    "lvl_modifier": 5,
+                    "addend": 110
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Per Hit (Queenly Majesty Buff",
+                "value": "131.2% Atk + 8 x (Level - 1) + 176",
+                "calc_variables": {
+                    "atk_modifier": 1.312,
+                    "lvl_modifier": 8,
+                    "addend": 176
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Stomp",
+        "level": 5,
+        "cd": 5.5,
+        "type": "area",
+        "desc": "Tsareena jumps up high and attacks enemies their feet. When this move hits, deal damage to enemies and leave them unable to act for a short time.\n\nQueenly Majesty Effect: Queenly Majesty Effect: Restores HP when this move hits.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "185.22% Atk + 10 x (Level - 1) + 243",
+                "calc_variables": {
+                    "atk_modifier": 1.8522,
+                    "lvl_modifier": 10,
+                    "addend": 243
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Queenly Majesty Buff",
+                "value": "296.35% Atk + 17 x (Level - 1) + 390",
+                "calc_variables": {
+                    "atk_modifier": 2.9335,
+                    "lvl_modifier": 17,
+                    "addend": 390
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Heal - Queenly Majesty Buff",
+                "value": "37.5% Atk + 2 x (Level - 1) + 75",
+                "calc_variables": {
+                    "atk_modifier": 0.375,
+                    "lvl_modifier": 2,
+                    "addend": 75
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "213% Atk + 12 x (Level - 1) + 280",
+                "calc_variables": {
+                    "atk_modifier": 2.13,
+                    "lvl_modifier": 12,
+                    "addend": 280
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Queenly Majesty Buff",
+                "value": "340.8% Atk + 19 x (Level - 1) + 448",
+                "calc_variables": {
+                    "atk_modifier": 3.408,
+                    "lvl_modifier": 19,
+                    "addend": 448
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "trop", "kick", "tk"],
+        "name": "Trop Kick",
+        "level": 6,
+        "cd": 10,
+        "type": "dash",
+        "desc": "Perform a flying kick in the designated direction, dealing damage to enemies hit and decrease their Attack for a short time. Enemies that make contact with the flying kick's wake receive damage and have their movement speed decreased for a short time.\n\nQueenly Majesty Effect: Grants Tsareena a shield when this move is used.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "75.65% Atk + 3 x (Level - 1) + 113",
+                "calc_variables": {
+                    "atk_modifier": 0.7565,
+                    "lvl_modifier": 3,
+                    "addend": 113
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Over Time (7 Ticks)",
+                "value": "7.57% Atk + 1 x (Level - 1) + 11",
+                "calc_variables": {
+                    "atk_modifier": 0.0757,
+                    "lvl_modifier": 1,
+                    "addend": 11
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Queenly Majest Buff",
+                "value": "121.1% Atk + 4 x (Level - 1) + 181",
+                "calc_variables": {
+                    "atk_modifier": 1.211,
+                    "lvl_modifier": 4,
+                    "addend": 181
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Over Time (7 Ticks - Queenly Majesty Buff)",
+                "value": "12.1% Atk + 1 x (Level - 1) + 18",
+                "calc_variables": {
+                    "atk_modifier": 0.121,
+                    "lvl_modifier": 1,
+                    "addend": 18
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Shield - Queenly Majesty Buff",
+                "value": "225% Atk + 15 x (Level - 1) + 450",
+                "calc_variables": {
+                    "atk_modifier": 2.25,
+                    "lvl_modifier": 15,
+                    "addend": 450
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "87% Atk + 3 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 0.87,
+                    "lvl_modifier": 3,
+                    "addend": 130
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Over Time (7 Ticks)",
+                "value": "8.7% Atk + 1 x (Level - 1) + 13",
+                "calc_variables": {
+                    "atk_modifier": 0.087,
+                    "lvl_modifier": 1,
+                    "addend": 13
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Queenly Majesty Buff",
+                "value": "139.2% Atk + 5 x (Level - 1) + 208",
+                "calc_variables": {
+                    "atk_modifier": 1.392,
+                    "lvl_modifier": 5,
+                    "addend": 208
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Over Time (7 Ticks - Queenly Majesty Buff)",
+                "value": "13.9% Atk + 1 x (Level - 1) + 21",
+                "calc_variables": {
+                    "atk_modifier": 0.139,
+                    "lvl_modifier": 1,
+                    "addend": 21
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "grassy", "glide", "gg"],
+        "name": "Grassy Glide",
+        "level": 6,
+        "cd": 6.5,
+        "type": "dash",
+        "desc": "Tsareena slides in the designated direction, dealing damage to enemies hit and decreases their movement speed for a short time. This is followed by an attack in the opposite direction, dealing damage and shoving enemies hit.\n\nQueenly Majesty Effect: Grants Tsareena a shield when this move is used.",
+        "fields": [
+            {
+                "title": "Damage - 2 Hits",
+                "value": "67% Atk + 3 x (Level - 1) + 87",
+                "calc_variables": {
+                    "atk_modifier": 0.67,
+                    "lvl_modifier": 3,
+                    "addend": 87
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Queenly Majesty Buff",
+                "value": "107.2% Atk + 5 x (Level - 1) + 139",
+                "calc_variables": {
+                    "atk_modifier": 1.072,
+                    "lvl_modifier": 5,
+                    "addend": 139
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Shield - Queenly Majesty Buff",
+                "value": "225% Atk + 15 x (Level - 1) + 450",
+                "calc_variables": {
+                    "atk_modifier": 2.25,
+                    "lvl_modifier": 15,
+                    "addend": 450
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "77% Atk + 4 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.77,
+                    "lvl_modifier": 4,
+                    "addend": 100
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Queenly Majesty Buff",
+                "value": "123.2% Atk + 6 x (Level - 1) + 160",
+                "calc_variables": {
+                    "atk_modifier": 1.232,
+                    "lvl_modifier": 6,
+                    "addend": 160
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Queen Ascendant",
+        "level": 9,
+        "cd": 112,
+        "type": "sure-hit",
+        "desc": "Tsareena leaps toward an enemy from the opposing team and kicks it high into the air before showering it with a series of kicks while airborne, dealing damage to them. The moment Tsareena lands on the ground, recover HP. While airborne, the enemy that is being kicked and Tsareena are not affected by other moves.",
+        "fields": [
+            {
+                "title": "Damage - 9 Hits",
+                "value": "49% Atk + 1 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 0.49,
+                    "lvl_modifier": 1,
+                    "addend": 70
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Hit",
+                "value": "196% Atk + 4 x (Level - 1) + 280",
+                "calc_variables": {
+                    "atk_modifier": 1.96,
+                    "lvl_modifier": 4,
+                    "addend": 280
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

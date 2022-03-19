@@ -1,0 +1,242 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Astonish",
+        "level": 1,
+        "cd": 6.5,
+        "type": "hindrance",
+        "desc": "Deals damage to enemies in the designated area of effect, leaving them unable to act for .75s.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "116% SpA + 18 x (Level - 1) + 340",
+                "calc_variables": {
+                    "atk_modifier": 1.16,
+                    "lvl_modifier": 18,
+                    "addend": 340
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Confusion",
+        "level": 1,
+        "cd": 9,
+        "type": "ranged",
+        "desc": "Unleash a telekinetic force in the designated direction, dealing damage to the first enemy hit. The telekinetic force clings to that enemy and then causes a delayed explosion. The explosion deals damage to enemies in the area of effect and decreases their movement speed for a short time.",
+        "fields": [
+            {
+                "title": "Damage - Initial",
+                "value": "56% SpA + 6 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.56,
+                    "lvl_modifier": 6,
+                    "addend": 190
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Explosion",
+                "value": "112% SpA + 12 x (Level - 1) + 380",
+                "calc_variables": {
+                    "atk_modifier": 1.12,
+                    "lvl_modifier": 12,
+                    "addend": 380
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "hole", "portal", "hh"],
+        "name": "Hyperspace Hole",
+        "level": 4,
+        "cd": 10,
+        "type": "dash",
+        "desc": "Hoopa creates a large ring at the designated location, dealing damage to enemies in the area of effect. After 3s, Hoopa and any allies in the area of effect will return to their base, and their movement speed will be increased for a short time. These allies can also manually warp back to where the ring was created within 3s. An intact ally forwardmost goal zone can also be designated as the location where the ring is created. Creating a ring on the goal zone of the top path will also create a ring on the forwardmost goal zone of the bottom path for 6.5s, and vice versa. All allies (including Hoopa) can use these rings to manually warp between the two goal zones, and their movement speed will be increased for a short time after warping. After an ally or Hoopa warps, there is 15s cooldown before that Pokémon can manually warp again. If a path's forwardmost goal zone is destroyed, the middle goal zone on the same path will take its place. This move cannot be used on base goal zones.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "112% SpA + 9 x (Level - 1) + 370",
+                "calc_variables": {
+                    "atk_modifier": 1.12,
+                    "lvl_modifier": 9,
+                    "addend": 370
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Also increases the movement speed of allies near the ring when they are heading towards it.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Trick",
+        "level": 4,
+        "cd": 7,
+        "type": "buff",
+        "desc": "Hoopa creates a link between itself and an ally, increasing both of their movement speeds for 2s and granting them each a shield for 3s. For the next 7s, when Hoopa uses Shadow Ball or performs a basic attack, the ring on the linked ally also unleashes the same move or attack and if both attacks hit the same target, the second deals 50% damage. Hoopa can also use this move on themself, increasing movement speed and granting a shield for a short time. Additionally, increase the damage dealt by Shadow Ball while trick is active.",
+        "fields": [
+            {
+                "title": "Shield",
+                "value": "200% SpA + 30 x (Level - 1) + 400",
+                "calc_variables": {
+                    "atk_modifier": 2,
+                    "lvl_modifier": 30,
+                    "addend": 400
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Shadow Ball Bonus",
+                "value": "10.2% SpA + 1 x (Level - 1) + 30",
+                "calc_variables": {
+                    "atk_modifier": 0.1,
+                    "lvl_modifier": 1,
+                    "addend": 30
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Hoopa and the linked ally each heal for 40% of their own damage dealt. This effect lasts for 3s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "pf"],
+        "name": "Phantom Force",
+        "level": 6,
+        "cd": 5,
+        "type": "hindrance",
+        "desc": "Hoopa creates a ring under themself and warps to a designated Pokémon's location, dealing damage to nearby enemies at that location and shoving them. Hoopa then shoots two sinister flames that deal damage to enemies hit and decreases their movement speed for a short time. This move can be activated a second time within 5s and if activated, Hoopa can return to the initial ring's location. If there is a nearby ally that is also linked by Trick, that ally can warp to the initial ring's location and recover 30% max HP.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "110% SpA + 14 x (Level - 1) + 320",
+                "calc_variables": {
+                    "atk_modifier": 1.1,
+                    "lvl_modifier": 14,
+                    "addend": 320
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Per Flame (2 Flames)",
+                "value": "55% SpA + 7 x (Level - 1) + 160",
+                "calc_variables": {
+                    "atk_modifier": 0.55,
+                    "lvl_modifier": 7,
+                    "addend": 160
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Become invincible for .6s when this move is used.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "sball", "ball"],
+        "name": "Shadow Ball",
+        "level": 6,
+        "cd": 4,
+        "type": "ranged",
+        "desc": "Unleash a shadowy blob in front of Hoopa, dealing damage to enemies hit and decreases their movement speed by 50% for 1s and Sp. Def by 30% for 3s. If Hoopa then hits the same enemy with a move or boosted attack within 4s, deal additional damage and leave the enemy unable to act for 1.2s. When using this move, if there is a nearby ally linked by Trick, this move will also unleash a shadowy blob at the same target from that ally's location.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "102% SpA + 14 x (Level - 1) + 300",
+                "calc_variables": {
+                    "atk_modifier": 1.02,
+                    "lvl_modifier": 14,
+                    "addend": 300
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Additional",
+                "value": "25.5% SpA + 4 x (Level - 1) + 75",
+                "calc_variables": {
+                    "atk_modifier": 0.25,
+                    "lvl_modifier": 4,
+                    "addend": 75
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "The shadowy blob will now explode before disappearing. Enemies hit by the explosion are affected as if they were hit by the shadowy blob itself.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s31", "fury", "hf"],
+        "name": "Hyperspace Fury",
+        "level": 9,
+        "cd": 7,
+        "type": "ranged",
+        "desc": "Unleash 7 attacks in the designated area with Hoopa Unbound's many arms, dealing damage to enemies in the area of effect and leave them unable to act for a short time.",
+        "fields": [
+            {
+                "title": "Damage - 7 Hits",
+                "value": "22% SpA + 2 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 0.22,
+                    "lvl_modifier": 2,
+                    "addend": 70
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s32"],
+        "name": "Psybeam",
+        "level": 9,
+        "cd": 9,
+        "type": "ranged",
+        "desc": "Fire a peculiar ray in front of Hoopa in a horizontal sweeping motion, dealing damage to enemies hit. Hoopa Unbound becomes immune to hindrances while using this move.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "194% SpA + 14 x (Level - 1) + 650",
+                "calc_variables": {
+                    "atk_modifier": 1.94,
+                    "lvl_modifier": 14,
+                    "addend": 650
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite", "avengers assemble", "unbound", "assemble"],
+        "name": "Rings Unbound",
+        "level": 9,
+        "cd": 134,
+        "type": "buff",
+        "desc": "Transforms Hoopa into Hoopa Unbound for a short time, increasing max HP by 40% and creating a ring at the designated location. Each ally can warp to the ring's location one time. As Hoopa Unbound, moves change to Hyperspace Fury and Psybeam. Every attack also becomes a boosted attack that deals damage to up to 2 nearby enemies. If only one target is in range then both beams hit the same target, but 1 beam deals 50% damage. Hoopa Unbound cannot score goals or activate the Magician ability.",
+        "fields": [
+            {
+                "title": "Damage - Basic Attack",
+                "value": "65% SpA + 7 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.65,
+                    "lvl_modifier": 7,
+                    "addend": 190
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

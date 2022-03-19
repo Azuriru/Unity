@@ -1,0 +1,177 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Ember",
+        "level": 1,
+        "cd": 6,
+        "type": "sure-hit",
+        "desc": "Cinderace shoots out a small flame, damaging and applying burn to hit enemies.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "58% Atk + 7 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 0.58,
+                    "lvl_modifier": 7,
+                    "addend": 130
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Low Sweep",
+        "level": 1,
+        "cd": 7.5,
+        "type": "dash",
+        "desc": "Cinderace makes a swift low sweep in the designated direction, damaging any enemy it hits.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "36% Atk + 3 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.36,
+                    "lvl_modifier": 3,
+                    "addend": 100
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "pyro", "ball"],
+        "name": "Pyro Ball",
+        "level": 7,
+        "cd": 5,
+        "type": "ranged",
+        "desc": "Cinderace kicks a ball of flame in a designated direction, burning and damaging enemies hit. The burn reduces enemy Attack and Sp. Attack by 5%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "253% Atk + 24 x (Level - 1) + 610",
+                "calc_variables": {
+                    "atk_modifier": 2.53,
+                    "lvl_modifier": 24,
+                    "addend": 610
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (3 Hits)",
+                "value": "10% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.1,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Reduces the cooldown of Flame Charge or Feint by 2s when this move hits.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "blaze", "kick"],
+        "name": "Blaze Kick",
+        "level": 7,
+        "cd": 8,
+        "type": "sure-hit",
+        "desc": "Cinderace performs a fiery flying kick; shoving, burning, and critting enemies hit. In addition, Cinderace is immune to hindrances while using this move. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "64% Atk + 6 x (Level - 1) + 150",
+                "calc_variables": {
+                    "atk_modifier": 0.64,
+                    "lvl_modifier": 6,
+                    "addend": 150
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (3 Hits)",
+                "value": "10% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.1,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases Cinderace's basic attack speed for a short time after this move hits.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "charge"],
+        "name": "Flame Charge",
+        "level": 8,
+        "cd": 5,
+        "type": "dash",
+        "desc": "Cinderace charges forward, damaging all enemies hit.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "47% Atk + 3 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 0.47,
+                    "lvl_modifier": 3,
+                    "addend": 130
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "The next boosted attack after this move ends also slows enemies hit for a short time.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Feint",
+        "level": 8,
+        "cd": 11,
+        "type": "buff",
+        "desc": "Cinderace dodges, increasing movement speed for 2s and becoming briefly invincible for .5s.",
+        "fields": [
+            {
+                "title": "Level 13",
+                "value": "After dodging, the next 3 basic attacks that hit restore HP equal to 30% of Attack.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Blazing Bicycle Kick",
+        "level": 9,
+        "cd": 150,
+        "type": "sure-hit",
+        "desc": "Create a giant ball of flame and kick it toward the designated enemy for a sure hit, dealing damage to enemies in the area of effect. Apply 2 stacks of cinder on the target. Deal additional damage if the target is burning. Consume all stacks of cinder for an increased damage multiplier. Note: Deals the most damage at 3 stacks of cinder, not the max of 4.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "247% Atk + 14 x (Level - 1) + 670",
+                "calc_variables": {
+                    "atk_modifier": 2.47,
+                    "lvl_modifier": 14,
+                    "addend": 670
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Execute",
+                "value": "14% of enemy missing HP.",
+                "type": "data"
+            }
+        ]
+    }
+]

@@ -1,0 +1,172 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Heal Pulse",
+        "level": 1,
+        "cd": 10,
+        "type": "recovery",
+        "desc": "Blissey continually restores HP as well as the HP of a designated ally for a short time.",
+        "fields": [
+            {
+                "title": "Healing - 4 Times Over Time",
+                "value": "40% SpA + 0 x (Level - 1) + 60",
+                "calc_variables": {
+                    "atk_modifier": 0.40,
+                    "lvl_modifier": 0,
+                    "addend": 60
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Pound",
+        "level": 1,
+        "cd": 6,
+        "type": "melee",
+        "desc": "Blissey pounds in a designated direction, damaging and slowing enemies hit.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "47% SpA + 28 x (Level - 1) + 520",
+                "calc_variables": {
+                    "atk_modifier": 0.47,
+                    "lvl_modifier": 28,
+                    "addend": 520
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "egg"],
+        "name": "Soft Boiled",
+        "level": 4,
+        "cd": 12,
+        "type": "recovery",
+        "desc": "Blissey throws an egg to an ally, healing Blissey and the designated ally. Holds 3 uses in reserve and cannot be used more than once every 2s.",
+        "fields": [
+            {
+                "title": "Healing",
+                "value": "200% SpA + 0 x (Level - 1) + 250",
+                "calc_variables": {
+                    "atk_modifier": 2.00,
+                    "lvl_modifier": 0,
+                    "addend": 250
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing - 2 Heals Over Time ",
+                "value": "80% SpA + 0 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 0,
+                    "addend": 100
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Holds 4 uses in reserve instead. Cooldown is reduced by 3s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "guard", "shield"],
+        "name": "Safeguard",
+        "level": 4,
+        "cd": 8,
+        "type": "buff",
+        "desc": "Blissey grants both the targeted ally and themself a shield, purging hindrances and making both immune to hindrances for 3s.",
+        "fields": [
+            {
+                "title": "Shield",
+                "value": "160% SpA + 0 x (Level - 1) + 800",
+                "calc_variables": {
+                    "atk_modifier": 1.60,
+                    "lvl_modifier": 0,
+                    "addend": 800
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Shield value increased.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "bomb"],
+        "name": "Egg Bomb",
+        "level": 6,
+        "cd": 7.5,
+        "type": "ranged",
+        "desc": "Blissey hurls an egg at a location which explodes, damaging and throwing enemies in the radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "62% SpA + 21 x (Level - 1) + 780",
+                "calc_variables": {
+                    "atk_modifier": 0.62,
+                    "lvl_modifier": 21,
+                    "addend": 780
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Also briefly slows enemies after they're thrown.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "hh"],
+        "name": "Helping Hand",
+        "level": 6,
+        "cd": 9,
+        "type": "buff",
+        "desc": "Blissey greatly improves movement speed and basic attack speed for self and allies by 35% for 3s. During this duration, all of Blissey's basic attacks are boosted. After this bonus expires, Blissey loses any boosted attack that was granted.",
+        "fields": [
+            {
+                "title": "Level 10",
+                "value": "Also increases basic attack damage for all those affected by 15%.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Bliss Assistance",
+        "level": 8,
+        "cd": 134,
+        "type": "buff",
+        "desc": "Blissey dashes to the designated ally to give it an egg, granting that ally a shield and increasing their Attack and Sp. Attack by 20% for a short time. The user also intercepts a portion of the damage received by that ally for a short time. While dashing, the user throws nearby enemies and those it comes in contact with.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "118% SpA + 31 x (Level - 1) + 1490",
+                "calc_variables": {
+                    "atk_modifier": 1.18,
+                    "lvl_modifier": 31,
+                    "addend": 1490
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Shield",
+                "value": "300% SpA + 0 x (Level - 1) + 1500",
+                "calc_variables": {
+                    "atk_modifier": 3.00,
+                    "lvl_modifier": 0,
+                    "addend": 1500
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

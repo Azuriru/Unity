@@ -1,0 +1,170 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Water Gun",
+        "level": 1,
+        "cd": 5,
+        "type": "ranged",
+        "desc": "Slowbro fires a stream of water, damaging and slowing enemies hit. This move can be channeled to increase its range and damage.",
+        "fields": [
+            {
+                "title": "Damage - Uncharged",
+                "value": "132% SpA + 11 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 1.32,
+                    "lvl_modifier": 11,
+                    "addend": 210
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Low Charge",
+                "value": "176% SpA + 15 x (Level - 1) + 280",
+                "calc_variables": {
+                    "atk_modifier": 1.76,
+                    "lvl_modifier": 15,
+                    "addend": 280
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Mid Charge",
+                "value": "220% SpA + 19 x (Level - 1) + 350",
+                "calc_variables": {
+                    "atk_modifier": 2.20,
+                    "lvl_modifier": 190,
+                    "addend": 350
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - High Charge",
+                "value": "264% SpA + 23 x (Level - 1) + 420",
+                "calc_variables": {
+                    "atk_modifier": 2.64,
+                    "lvl_modifier": 23,
+                    "addend": 420
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Slack Off",
+        "level": 1,
+        "cd": 11,
+        "type": "recovery",
+        "desc": "Slowbro gains a heal over time, healing 1.5% max HP per tick (6 ticks) and begins channeling a nap. While Slowbro remains channelling its nap, this healing is doubled."
+    },
+    {
+        "aliases": ["s11"],
+        "name": "Scald",
+        "level": 4,
+        "cd": 5,
+        "type": "ranged",
+        "desc": "Slowbro fires a stream of boiling water, damaging enemies hit; creating a cloud of stream at the location of the first enemy hit, which slows and applies burn to all enemies inside. This burn reduces Attack by 30%.",
+        "fields": [
+            {
+                "title": "Damage - Per Hit (3 Hits)",
+                "value": "81% SpA + 6 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 0.81,
+                    "lvl_modifier": 6,
+                    "addend": 130
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (5 Ticks)",
+                "value": "16% SpA + 1 x (Level - 1) + 26",
+                "calc_variables": {
+                    "atk_modifier": 0.16,
+                    "lvl_modifier": 1,
+                    "addend": 26
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases the size of the steam cloud.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Surf",
+        "level": 4,
+        "cd": 9,
+        "type": "hindrance",
+        "desc": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air briefly. Two more waves follow after the first, damaging and slowing enemies.",
+        "fields": [
+            {
+                "title": "Damage - Per Wave (3 Waves)",
+                "value": "103% SpA + 6 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 1.03,
+                    "lvl_modifier": 6,
+                    "addend": 210
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "The second and third waves will now also throw enemies in the air, and the second wave will knock them back.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21"],
+        "name": "Amnesia",
+        "level": 6,
+        "cd": 9,
+        "type": "recovery",
+        "desc": "Slowbro briefly becomes unstoppable, gaining +300 Defense for 4s, healing 22.5% of Slowbro's Oblivious health (blue HP) 3 times, and gains 10% bonus damage on the next Surf or Scald used.",
+        "fields": [
+            {
+                "title": "Level 13",
+                "value": "Also increases Slowbro's Sp. Defense by 150.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Telekinesis",
+        "level": 6,
+        "cd": 11,
+        "type": "hindrance",
+        "desc": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2s, restoring 15% of Slowbro's Oblivious health (blue HP). Slowbro can reactivate the ability to pull the enemy to them, but otherwise cannot act for the duration.",
+        "fields": [
+            {
+                "title": "Level 13",
+                "value": "Increases the range and speed of the beam.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Slowbeam",
+        "level": 9,
+        "cd": 134,
+        "type": "hindrance",
+        "desc": "Stare at an enemy and attack continually, dealing damage and rooting them. Grants a shield (40% max HP + 600 HP) and makes the user immune to hindrances while using this move.",
+        "fields": [
+            {
+                "title": "Damage - 6 Ticks",
+                "value": "80% SpA + 3 x (Level - 1) + 170",
+                "calc_variables": {
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 3,
+                    "addend": 170
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

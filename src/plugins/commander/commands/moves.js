@@ -4,7 +4,6 @@ const Pokemon = require('../structs/Pokemon.js');
 const { MessageEmbed } = require('discord.js');
 const { SERVICE_URL: url } = require('../../../util/config');
 const names = require('../data/pokemons.json');
-const moves = require('../data/moves.json');
 
 const pokemon_names = Object.keys(names);
 const pokemon_aliases = Object.values(names).flat();
@@ -78,7 +77,7 @@ class MovesCommand extends Command {
             return;
         }
 
-        const pokemon_moves = moves[pokemon_name];
+        const pokemon_moves = require(`../data/moves/${pokemon_name}.json`);
 
         if (!pokemon_moves) {
             await message.channel.send(`Moves for ${this.capitalize(pokemon_name)} has not been implemented yet. Check back later.`);

@@ -1,0 +1,192 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Rock Slide",
+        "level": 1,
+        "cd": 6,
+        "type": "hindrance",
+        "desc": "Crustle drops rocks in a small radius, stunning enemies hit for 1s.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "63% Atk + 8 x (Level - 1) + 160",
+                "calc_variables": {
+                    "atk_modifier": 0.63,
+                    "lvl_modifier": 8,
+                    "addend": 160
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "fury"],
+        "name": "Fury Cutter",
+        "level": 1,
+        "cd": 3.5,
+        "type": "melee",
+        "desc": "Crustle attacks once with his claws. Enemies hit by Fury Cutter receive a debuff that causes subsequent Fury Cutter attacks to deal 20% additional damage. Maximum 2 debuff stacks. Additional damage from this debuff is always rounded up.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "117% Atk + 15 x (Level - 1) + 290",
+                "calc_variables": {
+                    "atk_modifier": 1.17,
+                    "lvl_modifier": 15,
+                    "addend": 290
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "tomb"],
+        "name": "Rock Tomb",
+        "level": 4,
+        "cd": 5,
+        "type": "hindrance",
+        "desc": "Crustle emits a beam that deals 100% ability damage. Upon reaching its maximum distance, or hitting an enemy, a curved wall rises from the ground, dealing 50% ability damage to all enemies on top of it. When the barrier de-spawns, 50% ability damage is dealt again to all enemies near it.",
+        "fields": [
+            {
+                "title": "Damage - Projectile",
+                "value": "81% Atk + 7 x (Level - 1) + 260",
+                "calc_variables": {
+                    "atk_modifier": 0.81,
+                    "lvl_modifier": 7,
+                    "addend": 260
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Barrier Spawn/De-Spawn",
+                "value": "40.5% Atk + 4 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 0.405,
+                    "lvl_modifier": 4,
+                    "addend": 130
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Each hit additionally inflicts 2s of slow.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "ss"],
+        "name": "Shell Smash",
+        "level": 4,
+        "cd": 7,
+        "type": "buff",
+        "desc": "Crustle smashes his shell, setting his Def and SpD to 0, gaining a boost to his Atk and SpA equal to 40% of the Def and SpD lost, respectively. Def and SpD not from base stats, i.e. from items and buffs (including Crustle's passive) are exempt. Crustle also gains a significant speed boost and becomes briefly unstoppable while activing this move.",
+        "fields": [
+            {
+                "title": "Level 11",
+                "value": "Def and SpD conversion is increased from 40% to 50%.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "sr"],
+        "name": "Stealth Rock",
+        "level": 6,
+        "cd": 6,
+        "type": "area",
+        "desc": "Crustle aims and creates a radius in which rocks hit enemies 8 times. Each hit applies a stack of a debuff which causes subsequent hits to deal 15% more damage. Additional damage from this debuff is always rounded up.",
+        "fields": [
+            {
+                "title": "Damage - 8 Hits",
+                "value": "21% Atk + 8 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.21,
+                    "lvl_modifier": 8,
+                    "addend": 190
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Number of hits increased from 8 to 10.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "xscissor", "xs", "scissor"],
+        "name": "X-Scissor",
+        "level": 6,
+        "cd": 9,
+        "type": "melee",
+        "desc": "Crustle attacks three times with his claws, dealing increased damage with each hit and knocking back enemies with each hit. Stuns for 2s if the enemy is against a wall when the third hit lands.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "128% Atk + 3 x (Level - 1) + 120",
+                "calc_variables": {
+                    "atk_modifier": 1.28,
+                    "lvl_modifier": 3,
+                    "addend": 120
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "158% Atk + 3 x (Level - 1) + 130",
+                "calc_variables": {
+                    "atk_modifier": 1.58,
+                    "lvl_modifier": 3,
+                    "addend": 130
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Third Hit",
+                "value": "188% Atk + 3 x (Level - 1) + 140",
+                "calc_variables": {
+                    "atk_modifier": 1.88,
+                    "lvl_modifier": 3,
+                    "addend": 140
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Cooldown reduced by 2s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Rubble Rouser",
+        "level": 9,
+        "cd": 134,
+        "type": "buff",
+        "desc": "Summon a whirlwind of rocks for a short time, gaining a shield (40% max HP + 600 HP) and leaving nearby enemies unable to act. Deal damage to nearby enemies - and If Crustle receives damage while this move is in effect, deal additional revenge damage.",
+        "fields": [
+            {
+                "title": "Damage - Aura",
+                "value": "40% Atk + 3.33 x (Level - 1) + 90",
+                "calc_variables": {
+                    "atk_modifier": 0.4,
+                    "lvl_modifier": 3.33,
+                    "addend": 90
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Revenge",
+                "value": "120% Atk + 10 x (Level - 1) + 270",
+                "calc_variables": {
+                    "atk_modifier": 1.20,
+                    "lvl_modifier": 10,
+                    "addend": 270
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

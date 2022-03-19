@@ -1,0 +1,192 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Swift",
+        "level": 1,
+        "cd": 7,
+        "type": "ranged",
+        "desc": "Shoots star-shaped rays at enemies, dealing damage to them.",
+        "fields": [
+            {
+                "title": "Damage - Per Star (4 Stars)",
+                "value": "32% SpA + 6 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.32,
+                    "lvl_modifier": 6,
+                    "addend": 190
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Baby Doll Eyes",
+        "level": 1,
+        "cd": 5,
+        "type": "ranged",
+        "desc": "Stare at an enemy with baby-doll eyes, dealing damage and decreasing their Attack and movement speed for a short time when this move hits.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "63% SpA + 18 x (Level - 1) + 340",
+                "calc_variables": {
+                    "atk_modifier": 0.63,
+                    "lvl_modifier": 18,
+                    "addend": 340
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11"],
+        "name": "Mystical Fire",
+        "level": 4,
+        "cd": 7,
+        "type": "dash",
+        "desc": "Create four small flames while leaping in the designated direction. The flames shoot toward enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move and after the first flame hits, subsequent flames on the same target deal 25% damage.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "70% SpA + 11 x (Level - 1) + 420",
+                "calc_variables": {
+                    "atk_modifier": 0.7,
+                    "lvl_modifier": 11,
+                    "addend": 420
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Increases the number of flames by one.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Hyper Voice",
+        "level": 4,
+        "cd": 5,
+        "type": "area",
+        "desc": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% (stacking up to 4 times at 80%) after dealing damage to an enemy.",
+        "fields": [
+            {
+                "title": "Damage - Near (6 Waves)",
+                "value": "32% SpA + 5 x (Level - 1) + 110",
+                "calc_variables": {
+                    "atk_modifier": 0.32,
+                    "lvl_modifier": 5,
+                    "addend": 110
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Far (6 Waves)",
+                "value": "54% SpA + 8 x (Level - 1) + 184",
+                "calc_variables": {
+                    "atk_modifier": 0.54,
+                    "lvl_modifier": 8,
+                    "addend": 184
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 10",
+                "value": "Increases the number of sound waves by one.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21"],
+        "name": "Draining Kiss",
+        "level": 6,
+        "cd": 10,
+        "type": "sure-hit",
+        "desc": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore  HP. When it hits the enemy, deal damage and decrease their movement speed for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal.",
+        "fields": [
+            {
+                "title": "Damge - 3 Hits",
+                "value": "26% SpA + 4 x (Level - 1) + 160",
+                "calc_variables": {
+                    "atk_modifier": 0.26,
+                    "lvl_modifier": 4,
+                    "addend": 160
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing - 3 Times",
+                "value": "15% SpA + 0 x (Level - 1) + 120",
+                "calc_variables": {
+                    "atk_modifier": 0.15,
+                    "lvl_modifier": 0,
+                    "addend": 120
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Increases the amount of HP this move restores.",
+                "type": "data"
+            },
+            {
+                "title": "Healing - 3 Times",
+                "value": "22.5% SpA + 0 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 0.22,
+                    "lvl_modifier": 0,
+                    "addend": 180
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Calm Mind",
+        "level": 6,
+        "cd": 10,
+        "type": "buff",
+        "desc": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for a short time.",
+        "fields": [
+            {
+                "title": "Level 12",
+                "value": "Up to 3s after using this move, if Sylveon is hit by an Enemy's move, the damage is completely nullified and Sylveon is granted a shield.",
+                "type": "data"
+            },
+            {
+                "title": "Shield",
+                "value": "90% SpA + 0 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.9,
+                    "lvl_modifier": 0,
+                    "addend": 100
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Fairy Frolic",
+        "level": 9,
+        "cd": 139,
+        "type": "buff",
+        "desc": "Jump into the air and become briefly invincible. The moment Sylveon lands, deal damage to enemies in the area of effect and restore Sylveon's HP. For 10s afterward, 50% of damage dealt by Sylveon is converted into HP.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "104% SpA + 13 x (Level - 1) + 620",
+                "calc_variables": {
+                    "atk_modifier": 1.04,
+                    "lvl_modifier": 13,
+                    "addend": 620
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

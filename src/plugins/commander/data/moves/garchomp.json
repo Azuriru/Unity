@@ -1,0 +1,230 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Sand Attack",
+        "level": 1,
+        "cd": 6,
+        "type": "debuff",
+        "desc": "Garchomp hurls sand toward a designated area, reducing enemy visibility and slowing them for 2s. Garchomp's movement speed and basic attack speed are increased if an enemy is hit."
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Bulldoze",
+        "level": 1,
+        "cd": 5,
+        "type": "area",
+        "desc": "Garchomp stomps the ground forcefully, dealing damage in a radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "145% Atk + 13 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 1.45,
+                    "lvl_modifier": 13,
+                    "addend": 240
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11"],
+        "name": "Dig",
+        "level": 5,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Garchomp quickly dives underground in a short dash, then bursts from the ground at the end of the designated area or beneath the first enemy hit, dealing damage in a small radius and throwing enemies into the air.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "116% Atk + 5 x (Level - 1) + 220",
+                "calc_variables": {
+                    "atk_modifier": 1.16,
+                    "lvl_modifier": 5,
+                    "addend": 220
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Defenses are increased by 350 for a short time after jumping out of the ground.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "drush", "rush"],
+        "name": "Dragon Rush",
+        "level": 5,
+        "cd": 6,
+        "type": "dash",
+        "desc": "Garchomp jumps back, and briefly channels before diving forward, dragging all enemies within a small radius to the designated area, then dealing damage in a radius. Garchomp can use Dragon Claw during the first half of the channel to provide two more hits and replace the radial damage at the end of the move with a damaging stun.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "121% Atk + 8 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 1.21,
+                    "lvl_modifier": 8,
+                    "addend": 200
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Slows enemies for a short time when they are shoved the maximum distance.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "quake", "eq"],
+        "name": "Earthquake",
+        "level": 7,
+        "cd": 7,
+        "type": "area",
+        "desc": "Garchomp jumps and crashes forcefully to the ground, dealing damage in a wide radius. After the initial damage, two aftershocks occur in the designated area, each dealing less damage than the initial move.",
+        "fields": [
+            {
+                "title": "Damage - Initial",
+                "value": "112% Atk + 8 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 1.12,
+                    "lvl_modifier": 8,
+                    "addend": 180
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Aftershock (2 Times)",
+                "value": "56% Atk + 7 x (Level - 1) + 90",
+                "calc_variables": {
+                    "atk_modifier": 0.56,
+                    "lvl_modifier": 7,
+                    "addend": 90
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Slows enemies for a short time if they are in the radius",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "dclaw", "claw"],
+        "name": "Dragon Claw",
+        "level": 7,
+        "cd": 5,
+        "type": "melee",
+        "desc": "Garchomp viciously claws everything in the designated area twice. The first attack deals damage and pushes enemies. The second attack deals increased damage, in a range slightly larger than the designated area. Basic attack speed is increased for a short time if this attack hits an enemy.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "80% Atk + 5 x (Level - 1) + 140",
+                "calc_variables": {
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 5,
+                    "addend": 140
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "96% Atk + 6 x (Level - 1) + 168",
+                "calc_variables": {
+                    "atk_modifier": 0.96,
+                    "lvl_modifier": 6,
+                    "addend": 168
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases damage dealt.",
+                "type": "data"
+            },
+            {
+                "title": "Damage - Initial",
+                "value": "100% Atk + 4 x (Level - 1) + 168",
+                "calc_variables": {
+                    "atk_modifier": 1,
+                    "lvl_modifier": 4,
+                    "addend": 168
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "111% Atk + 9 x (Level - 1) + 185",
+                "calc_variables": {
+                    "atk_modifier": 1.11,
+                    "lvl_modifier": 9,
+                    "addend": 185
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Livid Outrage",
+        "level": 9,
+        "cd": 134,
+        "type": "melee",
+        "desc": "Garchomp goes berzerk, taking 30% less damage and unleashing a powerful, unstoppable chain attack. Garchomp dashes and deals damage in the designated area five times, taking a brief moment to aim before every attack. Every attack has a different designated area and does more damage than the last. The fifth and final attack stuns Garchomp for .5 seconds, and throws all enemies hit into the air.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "227% Atk + 10 x (Level - 1) + 330",
+                "calc_variables": {
+                    "atk_modifier": 2.27,
+                    "lvl_modifier": 10,
+                    "addend": 330
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "267% Atk + 11 x (Level - 1) + 450",
+                "calc_variables": {
+                    "atk_modifier": 2.67,
+                    "lvl_modifier": 11,
+                    "addend": 450
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Third Hit",
+                "value": "307% Atk + 12 x (Level - 1) + 570",
+                "calc_variables": {
+                    "atk_modifier": 3.07,
+                    "lvl_modifier": 12,
+                    "addend": 570
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Fourth Hit",
+                "value": "307% Atk + 13 x (Level - 1) + 920",
+                "calc_variables": {
+                    "atk_modifier": 3.07,
+                    "lvl_modifier": 13,
+                    "addend": 920
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Fifth Hit",
+                "value": "307% Atk + 14 x (Level - 1) + 1270",
+                "calc_variables": {
+                    "atk_modifier": 3.07,
+                    "lvl_modifier": 14,
+                    "addend": 1270
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

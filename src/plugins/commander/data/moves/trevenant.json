@@ -1,0 +1,237 @@
+[
+    {
+        "aliases": ["s01", "wisp", "wow"],
+        "name": "Will-o-Wisp",
+        "level": 1,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Shoots sinister flames in the designated direction, dealing damage to enemies hit and leaving them burned for a short time. This burn reduces enemy Attack and Sp. Attack by 5% for 3s. The first wisp to hit a target deals full damage, and subsequent flame hits deal 50% damage.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "58% Atk + 10 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.58,
+                    "lvl_modifier": 10,
+                    "addend": 190
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn",
+                "value": "14.5% Atk + 3 x (Level - 1) + 48",
+                "calc_variables": {
+                    "atk_modifier": 0.145,
+                    "lvl_modifier": 3,
+                    "addend": 48
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Branch Poke",
+        "level": 1,
+        "cd": 7.5,
+        "type": "dash",
+        "desc": "Trevenant jabs in the designated direction, dealing damage to enemies and decreases their movement speed by 30% for 2s when it hits.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "65% Atk + 8 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 0.65,
+                    "lvl_modifier": 8,
+                    "addend": 240
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "hammer"],
+        "name": "Wood Hammer",
+        "level": 5,
+        "cd": 7,
+        "type": "hindrance",
+        "desc": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for .5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act for .6s. The lower Trevenant's HP, the longer the enemy will be left unable to act. Every time this move is used, it consumes 10% of Trevenant's current HP.",
+        "fields": [
+            {
+                "title": "Damage - First Hit",
+                "value": "119% Atk + 11 x (Level - 1) + 450",
+                "calc_variables": {
+                    "atk_modifier": 1.19,
+                    "lvl_modifier": 11,
+                    "addend": 450
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Second Hit",
+                "value": "119% Atk + 11 x (Level - 1) + 450",
+                "calc_variables": {
+                    "atk_modifier": 1.19,
+                    "lvl_modifier": 11,
+                    "addend": 450
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Damage dealt by enemies hit by the second hammer reduced by 20% for 3s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Curse",
+        "level": 5,
+        "cd": 6,
+        "type": "hindrance",
+        "desc": "Trevenant creates a cursed zone in exchange for 4% max HP per second for 6 seconds, dealing damage over time to enemies in the area of effect every .5s for 6s and decreasing their movement speed. The lower Trevenant's HP is, the greater the decrease in movement speed. While using this move, Trevenant builds up curse power every time it deals or receives damage. Releasing this built-up power will deal additional damage to enemies in the area of effect. If the curse power is at maximum when it’s released, the cooldowns of Branch Poke, Horn Leech, and Pain Split are reset.",
+        "fields": [
+            {
+                "title": "Damage - 12 Ticks",
+                "value": "38% Atk + 2 x (Level - 1) + 90",
+                "calc_variables": {
+                    "atk_modifier": 0.38,
+                    "lvl_modifier": 2,
+                    "addend": 90
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Hit",
+                "value": "152% Atk + 8 x (Level - 1) + 360",
+                "calc_variables": {
+                    "atk_modifier": 1.52,
+                    "lvl_modifier": 8,
+                    "addend": 360
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases the radius.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "leech"],
+        "name": "Horn Leech",
+        "level": 7,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Charge forward becoming unstoppable, dealing damage to enemies and stunning them while dashing in the designated duration. At the end of the charge, enemies that were shoved are dealt additional damage and then thrown. Colliding with an enemy while charging recovers Trevenant's HP 3 times, and the lower Trevenant's remaining HP the more HP that is recovered. After this move hits an enemy, Trevenant's next three basic attacks deal more damage and reduce this move’s cooldown by .5s (for each enemy hit) when they hit.",
+        "fields": [
+            {
+                "title": "Heal - Per Tick",
+                "value": "Below 40% HP = 6% max HP\n40%-70% HP = 5% max HP\nAbove 70% HP = 4% max HP",
+                "type": "data"
+            },
+            {
+                "title": "Damage - 2 Hits",
+                "value": "43% Atk + 4 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 0.43,
+                    "lvl_modifier": 4,
+                    "addend": 200
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Basic - Bonus Damage",
+                "value": "21.5% Atk + 2 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.21,
+                    "lvl_modifier": 2,
+                    "addend": 100
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "After using this move, Trevenant's movement speed is increased for a short time.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "split"],
+        "name": "Pain Split",
+        "level": 7,
+        "cd": 10,
+        "type": "sure-hit",
+        "desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a portion of the damage Trevenant receives is redirected to the linked enemy. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. Additionally, if Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP equal to the damage dealt every .5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed for a short time.",
+        "fields": [
+            {
+                "title": "Damage - Reflect (Per Tick)",
+                "value": "Below 40% HP = 14% reflect damage\n40%-70% HP = 10% reflect damage\nAbove 70% HP = 6% reflect damage",
+                "type": "data"
+            },
+            {
+                "title": "Damage - 12 Ticks",
+                "value": "29% Atk + 2 x (Level - 1) + 80",
+                "calc_variables": {
+                    "atk_modifier": 0.29,
+                    "lvl_modifier": 2,
+                    "addend": 80
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Heal",
+                "value": "Trevenant heals for 100% of damage dealt on each tick.",
+                "type": "data"
+            },
+            {
+                "title": "Level 13",
+                "value": "Duration increased to 8.5s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Phantom Forest",
+        "level": 9,
+        "cd": 134,
+        "type": "hindrance",
+        "desc": "Creates a cursed forest, dealing damage to enemies in the area of effect and mark them, throwing them, and decreasing their movement speed for a short time. For a short time afterward, the basic attacks of Trevenant and allies deal increased damage to enemies that were marked by this move. Trevenant is also granted a shield for 6s when this move hits an enemy; the shield effect is strengthened for each enemy hit. While Trevenant is shielded, HP recovery effects applied to Trevenant are increased by 50%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "160% Atk + 15 x (Level - 1) + 700",
+                "calc_variables": {
+                    "atk_modifier": 1.6,
+                    "lvl_modifier": 15,
+                    "addend": 700
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Shield - Per Enemy Hit",
+                "value": "80% Atk + 0 x (Level - 1) + 500",
+                "calc_variables": {
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 0,
+                    "addend": 500
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Marked Bonus",
+                "value": "0% Atk + 8 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0,
+                    "lvl_modifier": 8,
+                    "addend": 190
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

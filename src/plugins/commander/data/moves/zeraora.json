@@ -1,0 +1,190 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Agility",
+        "level": 1,
+        "cd": 6,
+        "type": "dash",
+        "desc": "Zeraora quickly dashes forward, increasing basic attack speed for a short duration."
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Slash",
+        "level": 1,
+        "cd": 8.5,
+        "type": "melee",
+        "desc": "Zeraora charges toward an enemy and attacks them with multiple swipes, ending with an interrupt that knocks the enemy into the air.",
+        "fields": [
+            {
+                "title": "Damage - Per Hit (3 Hits)",
+                "value": "70% Atk + 5 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.7,
+                    "lvl_modifier": 5,
+                    "addend": 190
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "volt", "switch", "vs"],
+        "name": "Volt Switch",
+        "level": 6,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Zeraora charges forward, damaging enemies in their path and increasing their basic attack speed for a short time. Activating this ability again before it expires will teleport Zeraora to their original location.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "58% Atk + 4 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.58,
+                    "lvl_modifier": 4,
+                    "addend": 190
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "Increased damage and longer duration of increased basic attack speed.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "71% Atk + 5 x (Level - 1) + 220",
+                "calc_variables": {
+                    "atk_modifier": 0.71,
+                    "lvl_modifier": 5,
+                    "addend": 220
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Spark",
+        "level": 6,
+        "cd": 10,
+        "type": "dash",
+        "desc": "Zeraora leaps in a selected direction, damaging enemies in their path. If a basic attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing damage. Holds 3 uses in reserve.",
+        "fields": [
+            {
+                "title": "Damage - Jump",
+                "value": "45% Atk + 2 x (Level - 1) + 90",
+                "calc_variables": {
+                    "atk_modifier": 0.45,
+                    "lvl_modifier": 2,
+                    "addend": 90
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Attack",
+                "value": "110% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 1.1,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 12",
+                "value": "HP is restored if the user performs a basic attack before reaching the enemy.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21"],
+        "name": "Discharge",
+        "level": 8,
+        "cd": 12,
+        "type": "area",
+        "desc": "Zeraora emits an electric aura, damaging all enemies within the aura and granting a shield to Zeraora when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora when the move ends, damaging and stunning them.",
+        "fields": [
+            {
+                "title": "Damage - Per Tick (6 Ticks)",
+                "value": "37% Atk + 2 x (Level - 1) + 110",
+                "calc_variables": {
+                    "atk_modifier": 0.37,
+                    "lvl_modifier": 2,
+                    "addend": 110
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Aura (Final Tick)",
+                "value": "Deals double damage.",
+                "type": "data"
+            },
+            {
+                "title": "Shield",
+                "value": "60% Atk + 2 x (Level - 1) + 135",
+                "calc_variables": {
+                    "atk_modifier": 0.6,
+                    "lvl_modifier": 2,
+                    "addend": 135
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 14",
+                "value": "Enemies hit are slowed.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "wc"],
+        "name": "Wild Charge",
+        "level": 8,
+        "cd": 9,
+        "type": "melee",
+        "desc": "Zeraora charges towards an enemy, damaging them and switching to the nearest enemy if the initial target's HP drops to zero. Hitting enemies with abilities or boosted attacks previously within a set time provides up to 3 stacks, each stack adding an additional hit to Wild Charge. The first hit deals full damage and subsequent hits deal half damage.\n\nZeraora takes 1% remaining HP (per hit) as physical damage upon use. The first hit deals 2 instances of recoil damage and subsequent hits deal only 1.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "149% Atk + 11 x (Level - 1) + 500",
+                "calc_variables": {
+                    "atk_modifier": 1.49,
+                    "lvl_modifier": 11,
+                    "addend": 500
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Subsequent Hits",
+                "value": "Deals half damage.",
+                "type": "data"
+            },
+            {
+                "title": "Level 14",
+                "value": "Deals damage to nearby enemies when it hits.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Plasma Gale",
+        "level": 10,
+        "cd": 112,
+        "type": "sure-hit",
+        "desc": "Launches a bolt of lightning that travels towards the enemy, dealing damage in an area of effect and knocking all enemies hit into the air. Creates a temporary area of electricity centered on the initial target that increases Zeraora's basic attack damage by 20% while inside the area.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "200% Atk + 10 x (Level - 1) + 540",
+                "calc_variables": {
+                    "atk_modifier": 2,
+                    "lvl_modifier": 10,
+                    "addend": 540
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

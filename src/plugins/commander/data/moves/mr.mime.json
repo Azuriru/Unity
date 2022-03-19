@@ -1,0 +1,190 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Fake Out",
+        "level": 1,
+        "cd": 7,
+        "type": "melee",
+        "desc": "Mr. Mime claps, damaging and knocking enemies back in a cone.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "194% SpA + 25 x (Level - 1) + 470",
+                "calc_variables": {
+                    "atk_modifier": 1.94,
+                    "lvl_modifier": 24,
+                    "addend": 470
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "ls"],
+        "name": "Light Screen",
+        "level": 1,
+        "cd": 8,
+        "type": "hindrance",
+        "desc": "Mr. Mime creates a wall that prevents enemies from passing."
+    },
+    {
+        "aliases": ["s11"],
+        "name": "Confusion",
+        "level": 4,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned. Enemies debuffed by Guard Swap take bonus damage and are stunned, but are not knocked back.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "170.4% SpA + 20 x (Level - 1) + 460",
+                "calc_variables": {
+                    "atk_modifier": 1.704,
+                    "lvl_modifier": 20,
+                    "addend": 460
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Wall Hit",
+                "value": "204.48% SpA + 23 x (Level - 1) + 552",
+                "calc_variables": {
+                    "atk_modifier": 2.0448,
+                    "lvl_modifier": 23,
+                    "addend": 552
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "213% SpA + 23 x (Level - 1) + 510",
+                "calc_variables": {
+                    "atk_modifier": 2.13,
+                    "lvl_modifier": 23,
+                    "addend": 510
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Wall Hit",
+                "value": "255.6% SpA + 27 x (Level - 1) + 612",
+                "calc_variables": {
+                    "atk_modifier": 2.556,
+                    "lvl_modifier": 27,
+                    "addend": 612
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Psychic",
+        "level": 4,
+        "cd": 6,
+        "type": "area",
+        "desc": "After a short channel, Mr. Mime creates a pulse of energy that damages enemies around themself and any target affected by Guard Swap, with a smaller pulse around any created Barriers or Light Screens. Enemies hit by more than 1 pulse are stunned.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "152% SpA + 16 x (Level - 1) + 370",
+                "calc_variables": {
+                    "atk_modifier": 1.52,
+                    "lvl_modifier": 16,
+                    "addend": 370
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Also briefly slows.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21"],
+        "name": "Barrier",
+        "level": 6,
+        "cd": 8,
+        "type": "hindrance",
+        "desc": "Mr. Mime creates a wall that prevents enemies from passing. Holds 2 uses in reserve and cannot be used more than once every 2s. When upgrading Barrier, reserved Barriers will be restored to the maximum.",
+        "fields": [
+            {
+                "title": "Level 13",
+                "value": "Stores 3 charges in reserve instead.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "guard", "swap", "gs"],
+        "name": "Guard Swap",
+        "level": 6,
+        "cd": 4,
+        "type": "debuff",
+        "desc": "Mr. Mime fires a beam, swapping base Defense and Sp. Defense with another Pokémon for 6s when it hits. Swapping with an enemy slows and damages them over time while increasing Mr. Mime's movement speed. Swapping with an ally increases the movement speed of that ally and Mr. Mime.",
+        "fields": [
+            {
+                "title": "Damage - 7 Ticks",
+                "value": "19% SpA + 2 x (Level - 1) + 50",
+                "calc_variables": {
+                    "atk_modifier": 0.19,
+                    "lvl_modifier": 2,
+                    "addend": 50
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Heals Mr. Mime, plus an ally if tethered to them.",
+                "type": "data"
+            },
+            {
+                "title": "Healing",
+                "value": "12% SpA + 2 x (Level - 1) + 60",
+                "calc_variables": {
+                    "atk_modifier": 0.12,
+                    "lvl_modifier": 2,
+                    "addend": 60
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Showtime",
+        "level": 9,
+        "cd": 100,
+        "type": "area",
+        "desc": "Mr. Mime leaps forward and begins a performance, stunning enemies and dealing damage in a large area around him 4 times. The final hit does double damage.",
+        "fields": [
+            {
+                "title": "Damage - First 3 Hits",
+                "value": "88% SpA + 5 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 0.88,
+                    "lvl_modifier": 5,
+                    "addend": 240
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Hit",
+                "value": "176% SpA + 10 x (Level - 1) + 480",
+                "calc_variables": {
+                    "atk_modifier": 1.76,
+                    "lvl_modifier": 10,
+                    "addend": 480
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

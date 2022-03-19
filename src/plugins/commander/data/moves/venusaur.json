@@ -1,0 +1,207 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Seed Bomb",
+        "level": 1,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Venusaur hurls a large seed to the designated location, damaging all enemies in the radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "55% SpA + 10 x (Level - 1) + 190",
+                "calc_variables": {
+                    "atk_modifier": 0.55,
+                    "lvl_modifier": 10,
+                    "addend": 190
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "razor"],
+        "name": "Razor Leaf",
+        "level": 1,
+        "cd": 9,
+        "type": "area",
+        "desc": "Venusaur launches a barrage of sharp-edged leaves in the designated direction, damaging enemies over time.",
+        "fields": [
+            {
+                "title": "Damage - 10 Ticks",
+                "value": "17% SpA + 2 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 0.17,
+                    "lvl_modifier": 2,
+                    "addend": 70
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "sludge", "bomb", "sbomb"],
+        "name": "Sludge Bomb",
+        "level": 5,
+        "cd": 6,
+        "type": "debuff",
+        "desc": "Venusaur hurls toxic sludge to the designated location, damaging and poisoning all enemies in the radius when it lands. The sludge lingers, damaging enemies over time in the radius, slowing them, and reducing their Sp. Def (by 30% after each damaging tick and only stacks once) for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "37% SpA + 11 x (Level - 1) + 250",
+                "calc_variables": {
+                    "atk_modifier": 0.37,
+                    "lvl_modifier": 11,
+                    "addend": 250
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Area  (10 Ticks)",
+                "value": "4% SpA + 1 x (Level - 1) + 25",
+                "calc_variables": {
+                    "atk_modifier": 0.04,
+                    "lvl_modifier": 1,
+                    "addend": 25
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases the radius.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "drain"],
+        "name": "Giga Drain",
+        "level": 5,
+        "cd": 7,
+        "type": "recovery",
+        "desc": "Venusaur emits a cone-shaped blast in the designated direction, damaging enemies and restoring health when it hits. Venusaur also takes 35% reduced damage for a short time.\n\nThis move's healing is not increased by Venusaur's passive.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "55% SpA + 16 x (Level - 1) + 400",
+                "calc_variables": {
+                    "atk_modifier": 0.55,
+                    "lvl_modifier": 16,
+                    "addend": 400
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing",
+                "value": "27% SpA + 7 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 0.27,
+                    "lvl_modifier": 7,
+                    "addend": 180
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Healing increased.",
+                "type": "data"
+            },
+            {
+                "title": "Healing",
+                "value": "30% SpA + 8 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 0.3,
+                    "lvl_modifier": 8,
+                    "addend": 210
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "beam"],
+        "name": "Solar Beam",
+        "level": 7,
+        "cd": 9,
+        "type": "area",
+        "desc": "Venusaur fires a beam of light in the designated direction, damaging enemies over time. It is divided into four distinct hits, with ten damaging ticks randomly divided among these four hits. Total damage cannot exceed 2250.",
+        "fields": [
+            {
+                "title": "Damage - 5 Ticks",
+                "value": "27% SpA + 5 x (Level - 1) + 230",
+                "calc_variables": {
+                    "atk_modifier": 0.27,
+                    "lvl_modifier": 5,
+                    "addend": 230
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage 5 Ticks",
+                "value": "1.5% Enemy Max HP",
+                "type": "data"
+            },
+            {
+                "title": "Level 13",
+                "value": "Reduces cast time and cooldown is reduced by 3s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "petal", "dance", "pd"],
+        "name": "Petal Dance",
+        "level": 7,
+        "cd": 9,
+        "type": "area",
+        "desc": "Venusaur scatters petals around themself for 5s, increasing movement speed and damaging enemies over time in the radius. This movement speed increase slowly decays during the duration of this move. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more).",
+        "fields": [
+            {
+                "title": "Damage - Aura (16 Ticks)",
+                "value": "8% SpA + 2 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 0.08,
+                    "lvl_modifier": 2,
+                    "addend": 70
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases the radius.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Verdant Anger",
+        "level": 9,
+        "cd": 134,
+        "type": "ranged",
+        "desc": "Venusaur hurls a massive seed to the designated location, damaging all enemies in the radius. The seed then splits apart into 4 smaller seeds, each damaging all enemies in their radius.",
+        "fields": [
+            {
+                "title": "Damage - Initial",
+                "value": "131% SpA + 23 x (Level - 1) + 1080",
+                "calc_variables": {
+                    "atk_modifier": 1.31,
+                    "lvl_modifier": 23,
+                    "addend": 1080
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Secondary",
+                "value": "65.5% SpA + 12 x (Level - 1) + 540",
+                "calc_variables": {
+                    "atk_modifier": 0.655,
+                    "lvl_modifier": 12,
+                    "addend": 540
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

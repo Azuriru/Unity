@@ -1,0 +1,207 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Leafage",
+        "level": 1,
+        "cd": 8,
+        "type": "area",
+        "desc": "Pelts leaves in the designated direction, dealing damage in a cone to enemies hit (only hits once). For a short time after using this move, Decidueye’s Attack is increased by 10% (this also affects Leafage) and basic attack speed is increased by 25%.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "124% Atk + 7 x (Level - 1) + 230",
+                "calc_variables": {
+                    "atk_modifier": 1.24,
+                    "lvl_modifier": 7,
+                    "addend": 230
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Astonish",
+        "level": 1,
+        "cd": 8,
+        "type": "sure-hit",
+        "desc": "Deals damage to enemies and decreases their movement speed by 80% for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "43% Atk + 2 x (Level - 1) + 80",
+                "calc_variables": {
+                    "atk_modifier": 0.43,
+                    "lvl_modifier": 2,
+                    "addend": 80
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "razor"],
+        "name": "Razor Leaf",
+        "level": 7,
+        "cd": 10,
+        "type": "buff",
+        "desc": "Summons whirling razor leaves.  While active, Decidueye's basic attack is replaced by a new basic attack that targets all enemies in range, as well as increasing Attack by 10% and basic attack speed.",
+        "fields": [
+            {
+                "title": "Damage - Main Target (Unboosted)",
+                "value": "70% Atk + 3 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.7,
+                    "lvl_modifier": 3,
+                    "addend": 100
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Main Target (Boosted 3 Hits)",
+                "value": "26.6% Atk + 1 x (Level - 1) + 38",
+                "calc_variables": {
+                    "atk_modifier": 0.266,
+                    "lvl_modifier": 1,
+                    "addend": 38
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Secondary Targets",
+                "value": "Deals half damage",
+                "type": "data"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases basic attack damage by 2% of enemies remaining HP.\n\nThis damage only applies once per attack, not on each of the 3 boosted quills.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "ss", "shackle"],
+        "name": "Spirit Shackle",
+        "level": 7,
+        "cd": 6.5,
+        "type": "ranged",
+        "desc": "Charges power before firing a large arrow in the designated direction. Damage dealt increases the longer power is charged (with 6 breakpoints), but movement speed is decreased by 25% while charging. If this move hits after power is charged to the maximum, it can stitch enemies to the ground. The affected enemy has their movement speed is decreased by 80% for a short time while in the area, and receives damage upon leaving the area.",
+        "fields": [
+            {
+                "title": "Damage - Minimum Charge",
+                "value": "227% Atk + 6 x (Level - 1) + 160",
+                "calc_variables": {
+                    "atk_modifier": 2.27,
+                    "lvl_modifier": 6,
+                    "addend": 160
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Above Minimum Charge",
+                "value": "408.6% Atk + 11 x (Level - 1) + 288",
+                "calc_variables": {
+                    "atk_modifier": 4.086,
+                    "lvl_modifier": 11,
+                    "addend": 288
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Exiting Sitched Area",
+                "value": "45.4% Atk + 1 x (Level - 1) + 32",
+                "calc_variables": {
+                    "atk_modifier": 0.454,
+                    "lvl_modifier": 1,
+                    "addend": 32
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Deals 15% increased damage to enemies with less than 50% remaining HP.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "storm"],
+        "name": "Leaf Storm",
+        "level": 8,
+        "cd": 6,
+        "type": "ranged",
+        "desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 30% for a short time. At point-blank range, it also shoves enemies hit.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "108% Atk + 6 x (Level - 1) + 170",
+                "calc_variables": {
+                    "atk_modifier": 1.08,
+                    "lvl_modifier": 6,
+                    "addend": 170
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases the length of time that the movement speed of enemies is decreased.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "sneak"],
+        "name": "Shadow Sneak",
+        "level": 8,
+        "cd": 12,
+        "type": "sure-hit",
+        "desc": "Creates a shadow that takes hold of one enemy in the area of effect, dealing damage and decreasing their movement speed by 30%, decreasing their Defense by 60%, and increasing Decidueye’s movement speed by 70% for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "56% Atk + 2 x (Level - 1) + 80",
+                "calc_variables": {
+                    "atk_modifier": 0.56,
+                    "lvl_modifier": 2,
+                    "addend": 80
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Defense reduction of enemies is increased to 80%.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Nock Nock",
+        "level": 9,
+        "cd": 150,
+        "type": "ranged",
+        "desc": "Fires quills in the designated direction, dealing damage to enemies but does not pierce through them. The move ends by unleashing a large quill that deals damage to all enemies it hits. While using this move, Decidueye becomes immune to hindrances but is unable to move. (This move currently is not adding % HP damage like it states in-game).",
+        "fields": [
+            {
+                "title": "Damage - Quill (30 Hits)",
+                "value": "62% Atk + 2 x (Level - 1) + 90",
+                "calc_variables": {
+                    "atk_modifier": 0.62,
+                    "lvl_modifier": 2,
+                    "addend": 90
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Large Arrow",
+                "value": "248% Atk + 8 x (Level - 1) + 360",
+                "calc_variables": {
+                    "atk_modifier": 2.48,
+                    "lvl_modifier": 8,
+                    "addend": 360
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

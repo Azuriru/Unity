@@ -1,0 +1,232 @@
+[
+    {
+        "aliases": ["s01", "wisp", "wow"],
+        "name": "Will-O-Wisp",
+        "level": 1,
+        "cd": 5,
+        "type": "ranged",
+        "desc": "Gengar shoots 3 wisps of flame in a cone, damaging and burning enemies hit. This burn reduces enemy Attack and Sp. Attack by 10%. A single enemy can only be damaged by a maximum of 2 wisps. Damage is halved if the target is burning.",
+        "fields": [
+            {
+                "title": "Damage - Per Wisp (x3)",
+                "value": "84% SpA + 5 x (Level - 1) + 100",
+                "calc_variables": {
+                    "atk_modifier": 0.84,
+                    "lvl_modifier": 5,
+                    "addend": 100
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Burn",
+                "value": "28% SpA + 2 x (Level - 1) + 40",
+                "calc_variables": {
+                    "atk_modifier": 0.28,
+                    "lvl_modifier": 2,
+                    "addend": 40
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02"],
+        "name": "Lick",
+        "level": 1,
+        "cd": 7,
+        "type": "hindrance",
+        "desc": "Gengar attacks forward in a line with their tongue, damaging enemies hit, and pulling them to Gengar. The next basic attack is boosted.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "113% SpA + 7 x (Level - 1) + 140",
+                "calc_variables": {
+                    "atk_modifier": 1.13,
+                    "lvl_modifier": 7,
+                    "addend": 140
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "sball", "ball"],
+        "name": "Shadow Ball",
+        "level": 5,
+        "cd": 4.5,
+        "type": "ranged",
+        "desc": "Gengar hurls a shadowy ball forward in a line - damaging, slowing, and reducing the SpD of enemies hit. This ball pierces through wild Pokémon.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "115.2% SpA + 32 x (Level - 1) + 756",
+                "calc_variables": {
+                    "atk_modifier": 1.15,
+                    "lvl_modifier": 32,
+                    "addend": 756
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Sp. Defense Reduction",
+                "value": "80 + 5 * (Level - 1)",
+                "type": "data"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increased Damage",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "128% SpA + 36 x (Level - 1) + 840",
+                "calc_variables": {
+                    "atk_modifier": 1.28,
+                    "lvl_modifier": 36,
+                    "addend": 840
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "sludge", "sbomb", "bomb"],
+        "name": "Sludge Bomb",
+        "level": 5,
+        "cd": 8,
+        "type": "area",
+        "desc": "Gengar hurls unsanitary sludge to the designated area, poisoning and damaging enemies over time in the radius. Poison damage cannot exceed 120 per tick.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "106% SpA + 6 x (Level - 1) + 230",
+                "calc_variables": {
+                    "atk_modifier": 1.06,
+                    "lvl_modifier": 6,
+                    "addend": 230
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Poison (10 Ticks)",
+                "value": "1% Enemy Max HP every .5s",
+                "type": "data"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increased area duration by 1s (adds 2 additional ticks)",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "dream", "eater", "deater"],
+        "name": "Dream Eater",
+        "level": 7,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Gengar shoots forward a mysterious orb, sleeping enemies when it hits. If used again when a nearby enemy is asleep, Gengar teleports behind them and attacks: dealing damage to the enemy, healing Gengar, and reducing the cooldown of Shadow Ball or Sludge Bomb. Before and after teleporting, the next basic attack is boosted.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "260% SpA + 12 x (Level - 1) + 550",
+                "calc_variables": {
+                    "atk_modifier": 2.60,
+                    "lvl_modifier": 12,
+                    "addend": 550
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing",
+                "value": "45% SpA + 5 x (Level - 1) + 250",
+                "calc_variables": {
+                    "atk_modifier": 0.45,
+                    "lvl_modifier": 5,
+                    "addend": 250
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increased damage and healing.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "293% SpA + 14 x (Level - 1) + 620",
+                "calc_variables": {
+                    "atk_modifier": 2.93,
+                    "lvl_modifier": 14,
+                    "addend": 620
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Healing",
+                "value": "52% SpA + 5 x (Level - 1) + 310",
+                "calc_variables": {
+                    "atk_modifier": 0.52,
+                    "lvl_modifier": 5,
+                    "addend": 310
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22"],
+        "name": "Hex",
+        "level": 7,
+        "cd": 7.5,
+        "type": "dash",
+        "desc": "Gengar vanishes and teleports to a designated location, damaging enemies in a radius where Gengar appears. If this hits an enemy afflicted with a status condition, damage dealt is doubled and Hex cooldown is reduced. The next basic attack is boosted.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "115% SpA + 5 x (Level - 1) + 220",
+                "calc_variables": {
+                    "atk_modifier": 1.15,
+                    "lvl_modifier": 5,
+                    "addend": 220
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "124% SpA + 6 x (Level - 1) + 260",
+                "calc_variables": {
+                    "atk_modifier": 1.24,
+                    "lvl_modifier": 6,
+                    "addend": 260
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Phantom Ambush",
+        "level": 9,
+        "cd": 134,
+        "type": "dash",
+        "desc": "Jump to the designated area and start sneaking - gaining increased movement speed, become invisible, and the next basic attack is boosted. Moves can be used while invisible, but bring you above the ground. While above the ground, become visible to the enemies. If this move is used again, deal damage to enemies in the area of effect and decrease their movement speed for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "263% SpA + 12 x (Level - 1) + 560",
+                "calc_variables": {
+                    "atk_modifier": 2.63,
+                    "lvl_modifier": 12,
+                    "addend": 560
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Peck",
+        "level": 1,
+        "cd": 5,
+        "type": "melee",
+        "desc": "Talonflame flies toward a target Pokémon and attacks it three times.",
+        "fields": [
+            {
+                "title": "Damage - 3 Hits",
+                "value": "38% Atk + 2 x (Level - 1) + 70",
+                "calc_variables": {
+                    "atk_modifier": 0.38,
+                    "lvl_modifier": 2,
+                    "addend": 70
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "acro"],
+        "name": "Acrobatics",
+        "level": 1,
+        "cd": 8,
+        "type": "dash",
+        "desc": "Talonflame flies toward a targeted area, attacking all Pokémon in the area up to three times. Talonflame can choose a direction to dash after the move ends.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "75% Atk + 6 x (Level - 1) + 200",
+                "calc_variables": {
+                    "atk_modifier": 0.75,
+                    "lvl_modifier": 6,
+                    "addend": 200
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "charge", "fc"],
+        "name": "Flame Charge",
+        "level": 5,
+        "cd": 6.5,
+        "type": "dash",
+        "desc": "Talonflame dashes forward, damaging enemies in its path. Talonflame gains a speed boost after the dash.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "106% Atk + 14 x (Level - 1) + 340",
+                "calc_variables": {
+                    "atk_modifier": 1.06,
+                    "lvl_modifier": 14,
+                    "addend": 340
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "For a short time after this move hits, Talonflame's abilities and basic attacks partially ignore the enemies defense for the next 3s (capped at 0) and enemies hit are slowed by 30% for 5 seconds.",
+                "type": "data"
+            },
+            {
+                "title": "Defense Reduction",
+                "value": "0% Atk + 3 x (Level - 1) + 60",
+                "calc_variables": {
+                    "atk_modifier": 0,
+                    "lvl_modifier": 3,
+                    "addend": 60
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12", "aerial", "ace", "aa"],
+        "name": "Aerial Ace",
+        "level": 5,
+        "cd": 5,
+        "type": "dash",
+        "desc": "Talonflame dashes through a targeted enemy, damaging it. Talonflame's next basic attack is boosted.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "95% Atk + 14 x (Level - 1) + 350",
+                "calc_variables": {
+                    "atk_modifier": 0.95,
+                    "lvl_modifier": 14,
+                    "addend": 350
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "103% Atk + 16 x (Level - 1) + 370",
+                "calc_variables": {
+                    "atk_modifier": 1.03,
+                    "lvl_modifier": 16,
+                    "addend": 370
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "dick move"],
+        "name": "Fly",
+        "level": 7,
+        "cd": 9,
+        "type": "dash",
+        "desc": "Talonflame flies up into the sky, becoming untargetable. After 3 seconds, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "255% Atk + 24 x (Level - 1) + 1050",
+                "calc_variables": {
+                    "atk_modifier": 2.55,
+                    "lvl_modifier": 24,
+                    "addend": 1050
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Enemies hit are also knocked up.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "brave", "bird", "bb"],
+        "name": "Brave Bird",
+        "level": 7,
+        "cd": 10,
+        "type": "dash",
+        "desc": "Talonflame dives at the targeted area, taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted basic attack on an enemy hit by Brave Bird within 4 seconds, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "230% Atk + 21 x (Level - 1) + 940",
+                "calc_variables": {
+                    "atk_modifier": 2.3,
+                    "lvl_modifier": 21,
+                    "addend": 940
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Talonflame takes 15% less damage for 5 seconds when this move hits.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Flame Sweep",
+        "level": 9,
+        "cd": 89,
+        "type": "dash",
+        "desc": "Talonflame charges forward, damaging and shoving all enemies in its path. Flame Sweep deals damage up to 2 times.",
+        "fields": [
+            {
+                "title": "Damage - 2 Hits",
+                "value": "146% Atk + 12 x (Level - 1) + 600",
+                "calc_variables": {
+                    "atk_modifier": 1.46,
+                    "lvl_modifier": 12,
+                    "addend": 600
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]

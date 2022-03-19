@@ -1,0 +1,192 @@
+[
+    {
+        "aliases": ["s01"],
+        "name": "Thunder Shock",
+        "level": 1,
+        "cd": 5,
+        "type": "sure-hit",
+        "desc": "Pikachu releases electricity to a designated area, damaging enemies in the radius. Also paralyzes (slows) enemies for a short time.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "75% SpA + 21 x (Level - 1) + 390",
+                "calc_variables": {
+                    "atk_modifier": 0.75,
+                    "lvl_modifier": 21,
+                    "addend": 390
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s02", "web"],
+        "name": "Electro Web",
+        "level": 1,
+        "cd": 9,
+        "type": "hindrance",
+        "desc": "Pikachu attacks and captures enemies using an electric net, rooting them.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "36% SpA + 11 x (Level - 1) + 350",
+                "calc_variables": {
+                    "atk_modifier": 0.36,
+                    "lvl_modifier": 11,
+                    "addend": 350
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["s11", "ball"],
+        "name": "Electro Ball",
+        "level": 4,
+        "cd": 5,
+        "type": "sure-hit",
+        "desc": "Pikachu hurls an electric orb at an enemy, paralyzing (slowing) and damaging them and nearby enemies. Damage increases as the enemies' remaining HP decreases. Damage caps at 1200.",
+        "fields": [
+            {
+                "title": "Damage - Area",
+                "value": "66% SpA + 25 x (Level - 1) + 530",
+                "calc_variables": {
+                    "atk_modifier": 0.66,
+                    "lvl_modifier": 25,
+                    "addend": 530
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Execute",
+                "value": "4% of enemy missing HP.",
+                "type": "data"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage - Area",
+                "value": "77% SpA + 29 x (Level - 1) + 640",
+                "calc_variables": {
+                    "atk_modifier": 0.77,
+                    "lvl_modifier": 29,
+                    "addend": 640
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Execute",
+                "value": "5% of enemy missing HP",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s12"],
+        "name": "Thunder",
+        "level": 4,
+        "cd": 8,
+        "type": "area",
+        "desc": "Pikachu drops wicked thunderbolts at a designated area, damaging enemies in the radius.",
+        "fields": [
+            {
+                "title": "Damage - Area (5 Strikes)",
+                "value": "20% SpA + 5 x (Level - 1) + 210",
+                "calc_variables": {
+                    "atk_modifier": 0.2,
+                    "lvl_modifier": 5,
+                    "addend": 210
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 11",
+                "value": "Increases the number of times this move strikes to 7.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s21", "volt", "tackle", "vt"],
+        "name": "Volt Tackle",
+        "level": 6,
+        "cd": 10,
+        "type": "hindrance",
+        "desc": "Pikachu electrifies themself and charges ahead becoming unstoppable, throwing and damaging enemies hit.",
+        "fields": [
+            {
+                "title": "Damage - 5 Hits",
+                "value": "14% SpA + 3 x (Level - 1) + 140",
+                "calc_variables": {
+                    "atk_modifier": 0.14,
+                    "lvl_modifier": 3,
+                    "addend": 140
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Cooldown reduced by 2s.",
+                "type": "data"
+            }
+        ]
+    },
+    {
+        "aliases": ["s22", "bolt"],
+        "name": "Thunderbolt",
+        "level": 6,
+        "cd": 8,
+        "type": "hindrance",
+        "desc": "Pikachu attacks with a strong electric blast at a designated area, stunning and damaging enemies in the area.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "50% SpA + 12 x (Level - 1) + 500",
+                "calc_variables": {
+                    "atk_modifier": 0.5,
+                    "lvl_modifier": 12,
+                    "addend": 500
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increased damage.",
+                "type": "data"
+            },
+            {
+                "title": "Damage",
+                "value": "61% SpA + 12 x (Level - 1) + 609",
+                "calc_variables": {
+                    "atk_modifier": 0.61,
+                    "lvl_modifier": 12,
+                    "addend": 609
+                },
+                "type": "inline"
+            }
+        ]
+    },
+    {
+        "aliases": ["u", "unite"],
+        "name": "Thunderstorm",
+        "level": 9,
+        "cd": 89,
+        "type": "area",
+        "desc": "Four bolts of lightning strike 4 times over 3 seconds. The first strike hits all enemies in the radius, and the next three strikes hit a random enemy within radius.",
+        "fields": [
+            {
+                "title": "Damage",
+                "value": "49% SpA + 10 x (Level - 1) + 490",
+                "calc_variables": {
+                    "atk_modifier": 0.49,
+                    "lvl_modifier": 10,
+                    "addend": 490
+                },
+                "type": "inline"
+            }
+        ]
+    }
+]
