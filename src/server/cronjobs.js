@@ -1,5 +1,4 @@
 const { CronJob } = require('cron');
-const alwaysOnline = require('./crons/alwaysonline');
 const ping = require('./crons/ping');
 
 const jobs = [ alwaysOnline, ping ];

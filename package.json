@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"build": "cd src/plugins/web && webpack --mode production"
+		"webserver": "cd src/plugins/web && webpack --mode production",
+		"watch": "webpack --watch --mode development",
+		"dev": "concurrently \"npm:webserver\" \"npm:watch\""
 	},
 	"repository": {
 		"type": "git",
@@ -23,15 +25,16 @@
 	"dependencies": {
 		"@babel/core": "^7.12.17",
 		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.13.8",
+		"@csstools/postcss-sass": "^4.0.0",
 		"@discordjs/builders": "^0.5.0",
 		"@discordjs/rest": "^0.1.0-canary.0",
-		"@csstools/postcss-sass": "^4.0.0",
 		"acorn": "^8.5.0",
 		"autoprefixer": "^9.8.6",
 		"babel-loader": "^8.1.0",
 		"babel-plugin-wildcard": "^6.0.0",
 		"cheerio": "^1.0.0-rc.9",
 		"clean-stack": "^4.1.0",
+		"concurrently": "^5.2.0",
 		"confusables": "^1.0.0",
 		"copy-webpack-plugin": "^6.0.3",
 		"cron": "^1.8.2",
