@@ -31,19 +31,19 @@
     },
     "slowsmoke": {
         "name": "Slow Smoke",
-        "description": "Create a ring of smoke around you, greatly slowing enemies within. (1s duration)",
-        "cooldown": 40,
+        "description": "Create a ring of smoke around you, greatly slowing enemies movement speed by 80% and attack speed by 30% within the area. (2s duration)",
+        "cooldown": 45,
         "unlock_level": 13
     },
     "xattack": {
         "name": "X Attack",
-        "description": "Raises your Attack and Sp. Attack for a short time. (7s duration – 20% increased Attack/Sp. Attack)",
+        "description": "Raises your basic Attack Speed by 25%, Attack and Sp. Attack by 20% for a short time. (7s duration)",
         "cooldown": 40,
         "unlock_level": 7
     },
     "xspeed": {
         "name": "X Speed",
-        "description": "Raises your movement speed by 30% and become immune to move speed reduction for 6s.",
+        "description": "Raises your movement speed by 45% and become immune to move speed reduction for 6s.",
         "cooldown": 50,
         "unlock_level": 8
     }

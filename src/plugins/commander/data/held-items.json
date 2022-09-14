@@ -114,27 +114,27 @@
         ],
         "name": "Buddy Barrier",
         "bonus": [
-            "HP +600"
+            "HP +450"
         ],
         "stats": [
             {
                 "label": "HP",
                 "percent": false,
                 "float": 0,
-                "initial": 20,
+                "initial": 15,
                 "start": 0,
                 "skip": 0,
-                "increment": 20,
+                "increment": 15,
                 "initial_diff": 0
             }
         ],
-        "description": "Grant a shield to you and a nearby ally Pokémon with the lowest HP for 20%/30%/40% max HP when using your Unite Move. (5s duration - 30s cooldown)",
+        "description": "Grant a shield to you and a nearby ally Pokémon with the lowest HP for 15%/20%/25% max HP when using your Unite Move. (5s duration - 30s cooldown)",
         "passive": {
             "stat": "Max HP",
             "levels": [
+                "15%",
                 "20%",
-                "30%",
-                "40%"
+                "25%"
             ]
         }
     },
@@ -244,13 +244,13 @@
                 "initial_diff": 0
             }
         ],
-        "description": "Increases the Pokémon's Passive Exp. Point gain by 2/3/4 per second while it has the fewest Exp. Points on its team. In addition, when a nearby teammate defeats a wild Pokémon that teammate gains slightly more Exp. Points.",
+        "description": "Increases the Pokémon's Passive Exp. Point gain by 3/4/5 per second while it has the fewest Exp. Points on its team. In addition, when a nearby teammate defeats a wild Pokémon that teammate gains slightly more Exp. Points.",
         "passive": {
             "stat": "EXP/s",
             "levels": [
-                "2",
                 "3",
-                "4"
+                "4",
+                "5"
             ]
         }
     },
@@ -346,7 +346,7 @@
         "name": "Leftovers",
         "bonus": [
             "HP +240",
-            "HP Recovery +9"
+            "HP/5s +9"
         ],
         "stats": [
             {
@@ -574,13 +574,13 @@
                 "initial_diff": 0
             }
         ],
-        "description": "Shields you while you attempt to score a goal. Shield value is equal to 5%/7.5%/10% max HP. Scoring cannot be interrupted while the shield remains active. (6s cooldown)",
+        "description": "Shields you while you attempt to score a goal. This shield will break before all other shields. Scoring cannot be interrupted while the shield remains active. (20s cooldown). Shield value is dependent on item level and Pokémon level.",
         "passive": {
             "stat": "Max HP",
             "levels": [
-                "5%",
-                "7.50%",
-                "10%"
+                "5% Max HP + 15 × (MonLevel - 1) + 15 Shield",
+                "7.5% Max HP + 22 × (MonLevel - 1) + 22 Shield",
+                "10% Max HP + 30 × (MonLevel - 1) + 30 Shield"
             ]
         }
     },
