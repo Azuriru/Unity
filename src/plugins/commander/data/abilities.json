@@ -8,12 +8,12 @@
     "aegislash": [
         {
             "name": "No Guard",
-            "desc": "Increases received damage and dealt damage by Honedge/Doublade.",
+            "desc": "Honedge and Doublade do not gain the stat benefits of Stance Change, however, their boosted attack functions like Aegislash's Sword Stance boosted attack.",
             "evolution": "honedge"
         },
         {
             "name": "Stance Change",
-            "desc": "Aegislash can switch between Blade Stance and Shield Stance. Using a blade move switches stance to Blade Stance, which increases Attack, movement speed, and basic attack speed. Using a shield move switches stance to Shield Stance, which increases Defense and Sp. Defense. After switching stances, movement speed and basic attack speed are further increased for a short time.",
+            "desc": "Aegislash can switch between Sword Stance and Shield Stance. Using a blade move switches stance to Sword Stance; which increases Attack, movement speed by 5%, and Attack Speed by 15%. Using a shield move switches stance to Shield Stance; which increases Defense and Sp. Defense and reduces Attack Speed by 20%. After switching stances, movement speed and basic attack speed are further increased by 15% for 3.5s.",
             "fields": [
                 {
                     "title": "Defense - Increase (Shield Stance)",
@@ -69,13 +69,13 @@
     "cinderace": [
         {
             "name": "Blaze",
-            "desc": "When at half HP or less, critical-hit rate is increased by 10% and basic attack speed is increased by 20% for a short time. When hitting an enemy with a basic attack, a cinder is placed on that enemy for 5s. Boosted Attacks and moves apply 2 cinders. When the target receives it's 5th cinder, they will all be consumed to deal additional damage to the enemy."
+            "desc": "When at half HP or less, critical-hit rate is increased by 10% and auto attack speed is increased by 20% for 5s (30s cooldown). When hitting an enemy with an auto attack, a cinder is placed on that enemy for 5s. Boosted Attacks and moves apply 2 cinders. When the target receives it's 5th cinder, they will all be consumed to deal additional damage to the enemy equal to 90% Atk + .6% Enemy Max HP x (Level - 1) + 25. \n\nAgainst Wild Pokemon, the total damage is capped at 500."
         }
     ],
     "cramorant": [
         {
             "name": "Gulp Missile",
-            "desc": "When Cramorant has prey in its mouth, it will counterattack upon taking damage from an enemy.  Alternatively, Cramorant can shoot the prey at his enemy as a boosted basic attack. The prey bounces to 1 nearby enemy.\n\nAt high HP, caught prey will be Arrokuda, which deals damage to the enemy.  At low HP, the prey will be Pikachu which deals damage to the enemy and slows them."
+            "desc": "When Cramorant has prey in its mouth, it will counterattack upon taking damage from an enemy. Alternatively, Cramorant can shoot the prey at his enemy as a boosted attack. The prey bounces to 1 nearby enemy.            While above 50% HP, caught prey will be Arrokuda which deals damage and reduces enemy Defense by 20% and Sp. Def by 5% for 3s. While below 50% HP, the prey will be Pikachu which deals damage to the enemy and slows them by 50% for 1s."
         }
     ],
     "crustle": [
@@ -87,7 +87,7 @@
     "decidueye": [
         {
             "name": "Long Reach",
-            "desc": "Deals 20% increased damage to distant enemies."
+            "desc": "Deals 20% increased damage to distant enemies. Additional damage added per level from each move's damage formula is excluded from this bonus."
         }
     ],
     "dragonite": [
@@ -105,7 +105,7 @@
     "eldegoss": [
         {
             "name": "Cotton Down",
-            "desc": "When receiving a certain amount of damage, recover HP, deal revenge damage, and decrease the enemies movement speed for a short time.",
+            "desc": "When receiving 5% max HP as damage in a single attack; recover HP, deal revenge damage, and decrease that enemy's movement speed by 15% for 1.5s. This ability has a 10s cooldown.",
             "fields": [
                 {
                     "title": "Damage - Revenge",
@@ -133,13 +133,13 @@
     "garchomp": [
         {
             "name": "Rough Skin",
-            "desc": "When Garchomp takes a hit from a physical attack by a melee Pokémon, a portion of that damage is also dealt to the attacker. 2s cooldown and this damage is subject to defense reduction."
+            "desc": "When Garchomp takes a hit from a melee Pokémon; 30% of that damage is also dealt to the attacker. 2s cooldown and this damage is subject to defense reduction."
         }
     ],
     "gardevoir": [
         {
             "name": "Synchronize",
-            "desc": "When an enemy inflicts decreased movement speed or a damage-over-time effect on Gardevoir, movement speed reduction or damage is inflicted back to the attacker, respectively. This ability has a 9s cooldown after it's triggered.",
+            "desc": "When an enemy inflicts decreased movement speed or a damage-over-time effect on Gardevoir; damage that enemy one time and slow them by 40% for 3s, when triggered. This ability goes on a 8s cooldown when triggered.",
             "fields": [
                 {
                     "title": "Damage - Reflected",
@@ -163,7 +163,7 @@
     "greedent": [
         {
             "name": "Cheek Pouch",
-            "desc": "When Greedent eats a berry, recover HP after receiving the effects of the berry. At the same time, Greedent stashes an Oran berry in its tail. Being hit by a single attack or combination of attacks will cause an Oran berry to drop from Greedent's tail. Berries stay on the ground for 10s.\n\nIf any ally or enemy eats an Oran Berry, they heal for 45 + 2% max HP (unless the enemy is Greedent). Greedent enemies that eat an Oran Berry heal for 45 + 5 x (Level -1) + 2% max HP"
+            "desc": "When Greedent eats a berry, recover HP after receiving the effects of the berry. At the same time, Greedent stashes an Oran berry in its tail. Being hit by a single attack or combination of attacks will cause an Oran berry to drop from Greedent's tail (4.5s cd). Berries stay on the ground for 10s.\n\nIf any ally or enemy eats an Oran Berry, they heal for 45 + 2% max HP (unless the enemy is Greedent). Greedent enemies that eat an Oran Berry heal for 45 + 5 x (Level -1) + 2% max HP"
         }
     ],
     "greninja": [
@@ -199,13 +199,13 @@
     "machamp": [
         {
             "name": "Guts",
-            "desc": "Increases Attack by 10% for 5s when afflicted by a status condition."
+            "desc": "Increases Attack by 10% for 5s when afflicted by any debuff."
         }
     ],
     "mamoswine": [
         {
             "name": "Thick Fat",
-            "desc": "When Mamoswine deals damage, Defense and Sp. Def are increased for 3s, stacking up to 3 times. When Mamoswine uses Ice Shard, Icicle Crash or Ice Fang, the next basic attack is boosted. If any of these moves creates a freezing area of effect inside an ally goal zone, the goal-scoring speed of enemies is decreased.",
+            "desc": "When Mamoswine deals damage, Defense and Sp. Def are increased for 3s, stacking up to 3 times. When Mamoswine uses Ice Shard, Icicle Crash or Ice Fang, the next auto attack is boosted. If any of these moves creates a freezing area of effect inside an ally goal zone, the goal-scoring speed of enemies is decreased by 30%.",
             "fields": [
                 {
                     "title": "Defense & Sp. Defense",
@@ -229,7 +229,7 @@
     "ninetales": [
         {
             "name": "Snow Warning",
-            "desc": "Causes snow to fall on an enemy, dealing damage to it and decreasing their movement speed for a short time. Boosted attacks and moves (except Aurora Veil) sling snow, and hitting the same target with snow multiple times will freeze it for a short time. This ability has an 8s cooldown.",
+            "desc": "Causes snow to fall on an enemy, dealing damage to it and decreasing their movement speed by 30% for .75s. Boosted attacks and all moves (except Aurora Veil) sling snow; hitting the same target with snow multiple times will freeze it for 1s. This ability has an 8s cooldown.",
             "fields": [
                 {
                     "title": "Damage",
@@ -247,13 +247,13 @@
     "pikachu": [
         {
             "name": "Static",
-            "desc": "Paralyzes (slow) all enemies nearby for a short time when receiving damage. This ability goes on a 30s cooldown after it's triggered."
+            "desc": "Paralyzes (slow and reduce Attack Speed by 10% for 2s) all enemies nearby for a short time when receiving damage. This ability goes on a 30s cooldown after it's triggered."
         }
     ],
     "slowbro": [
         {
             "name": "Oblivious",
-            "desc": "Slowbro stores up lost HP for a short time. When hitting an enemy with a move, restore some HP using the stored-up health, and also decrease the enemy's Sp.Def for a short time."
+            "desc": "Slowbro stores up lost HP for a short time (blue HP). Slowbro's Oblivious health remains for 6s and then decreases by 3% max HP every second. When dealing damage to an enemy with Water Gun, Scald, Surf, or Slowbeam - decrease the enemy's Sp.Def by 4% for 5s, stacking up to 5 times."
         }
     ],
     "snorlax": [
@@ -283,7 +283,7 @@
     "trevenant": [
         {
             "name": "Natural Cure",
-            "desc": "When Trevenant deals or receives damage while at or below 35% max HP, a continuous HP recovery effect is triggered every .5s for 4s. This effect also reduces the cooldowns of Trevenant's moves by 1s every 1s. When this HP recovery effect ends, there is a 100s cooldown. However, this cooldown is reduced by 1s each time one of Trevenant's moves damage an enemy. This cooldown reduction cannot be triggered more than once every .5s.\n\nHeal - 8 Ticks: 2% + (0.18% * (Level -1)) Max HP"
+            "desc": "When Trevenant deals or receives damage while at or below 35% max HP, a continuous HP recovery effect is triggered every .5s for 4s. This effect also reduces the cooldowns of Trevenant's moves by 1s every 1s. When this HP recovery effect ends, there is a 100s cooldown. However, this cooldown is reduced by 1s each time one of Trevenant's moves damage an enemy. This cooldown reduction cannot be triggered more than once every .5s.\n\nHeal - 8 Ticks: 2% + (0.18% * (Level - 1)) Max HP"
         }
     ],
     "tsareena": [
