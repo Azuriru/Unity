@@ -1,8 +1,7 @@
 const { CronJob } = require('cron');
-const alwaysOnline = require('./crons/alwaysonline');
 const ping = require('./crons/ping');
 
-const jobs = [ alwaysOnline, ping ];
+const jobs = [ ping ];
 
 module.exports = jobs.map(job => {
     try {
