@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 5,
         "type": "dash",
-        "desc": "Cast a shadow in the designated direction, dealing damage to enemies hit. After the shadow hits an enemy or travels its maximum distance, Aegislash warps to the shadow’s location, dealing damage to nearby enemies and increase boost count by 1.",
+        "desc": "Cast a shadow in the designated direction, dealing damage to enemies hit. After the shadow hits an enemy or travels its maximum distance, Aegislash warps to the shadow’s location, dealing damage to nearby enemies and increasing boost count by 1.",
         "fields": [
             {
                 "title": "Damage - 2 Hits",
@@ -31,33 +31,33 @@
         "aliases": ["s11"],
         "name": "Sacred Sword",
         "level": 5,
-        "cd": 7,
+        "cd": 7.5,
         "type": "area",
-        "desc": "Aegislash thrusts its blade into the ground, creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For a short time after this slash hits, damage dealt by Aegislas ignores 45% of the enemies Defense.",
+        "desc": "Aegislash thrusts its blade into the ground; creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them in the air for .6s. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For 3s after this slash hits, damage dealt by Aegislash ignores 45% of the enemies Defense.",
         "fields": [
             {
                 "title": "Damage - Triangle Attack",
-                "value": "87% Atk + 3 x (Level - 1) + 110",
+                "value": "96% Atk + 3 x (Level - 1) + 120",
                 "calc_variables": {
-                    "atk_modifier": 0.87,
+                    "atk_modifier": 0.96,
                     "lvl_modifier": 3,
-                    "addend": 110
+                    "addend": 120
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Dash Attack",
-                "value": "174% Atk + 6 x (Level - 1) + 220",
+                "value": "192% Atk + 6 x (Level - 1) + 240",
                 "calc_variables": {
-                    "atk_modifier": 1.74,
+                    "atk_modifier": 1.92,
                     "lvl_modifier": 6,
-                    "addend": 220
+                    "addend": 240
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 11",
-                "value": "Increase Attack by 50 for a short time after hitting enemies with the triangle attack.",
+                "value": "Increase Attack by 50 for 3s after hitting enemies with the triangle attack.",
                 "type": "data"
             }
         ]
@@ -68,7 +68,7 @@
         "level": 5,
         "cd": 5,
         "type": "dash",
-        "desc": "Aegislash slashes with its blade twice in the designated direction, dealing damage to enemies hit. Follow up with a final rising slash that deals damage to enemies hit and throw them. Boost count increases by 1 when at least one of the three slashes hits.",
+        "desc": "Aegislash slashes with its blade twice in the designated direction, dealing damage to enemies hit. Follow up with a final rising slash that deals damage to enemies hit and throws them in the air for .75s. Boost count increases by 1 when at least one of the three slashes hits.",
         "fields": [
             {
                 "title": "Damage - First 2 Hits",
@@ -92,7 +92,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Increases Critical-Hit Rate by 20% for a short time.",
+                "value": "Increases Critical-Hit Rate by 20% for 1s (This move does not benefit).",
                 "type": "data"
             }
         ]
@@ -101,9 +101,9 @@
         "aliases": ["s21"],
         "name": "Wide Guard",
         "level": 7,
-        "cd": 10,
+        "cd": 9,
         "type": "buff",
-        "desc": "Focus in place for a short time to create a great shield on Aegislash. When this shield appears, boost count increases by 1, granting a shield to Aegislash and shoves enemies in front. While this shield is active, enemy player attacks increase boost count by 1 for each different enemy player (capping at 4). When this move ends, shove enemies in front of Aegislash once again.",
+        "desc": "Focus in place for a short time to create a great shield on Aegislash for 1.2s. When this great shield appears, boost count increases by 1, granting a shield to Aegislash and shoves enemies in front. While this great shield is active, enemy player attacks increase boost count by 1 for each different enemy (capping at 2). When this move ends, shove enemies for .75s in front of Aegislash once again and slow them by 45% for 2s.\n\nGain 1 boosted count if the shove at the end hits at least one enemy. If the great shield is depleted before the duration of this move ends, the boosted count is granted regardless of whether an enemy is hit.",
         "fields": [
             {
                 "title": "Shield",
@@ -116,8 +116,13 @@
                 "type": "inline"
             },
             {
+                "title": "Shield - Additional",
+                "value": "10% max HP",
+                "type": "data"
+            },
+            {
                 "title": "Level 13",
-                "value": "Cooldown Reduced.",
+                "value": "Cooldown Reduced by 1s.",
                 "type": "data"
             }
         ]
@@ -128,7 +133,7 @@
         "level": 7,
         "cd": 7,
         "type": "buff",
-        "desc": "Dash in the designated direction, dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for a short time afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack, it disappears and boost count is increased by 1.",
+        "desc": "Dash in the designated direction; dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for 1s afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack; it disappears, the cooldown is reduced by 50%, and boost count is increased by 1.",
         "fields": [
             {
                 "title": "Damage",
@@ -142,7 +147,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "If an attack is blocked with this move, Aegislash gains +10% Attack for a short time.",
+                "value": "If an attack is blocked with this move, Aegislash gains +10% Attack for 3s.",
                 "type": "data"
             }
         ]
@@ -153,7 +158,7 @@
         "level": 9,
         "cd": 100,
         "type": "area",
-        "desc": "Unleash a ground-splitting slash in the designated direction, dealing damage to enemies hit. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 1.\n\nAgainst Wild Pokemon: The additional damage from remaining HP is capped at 1200.",
+        "desc": "Unleash a ground-splitting slash in the designated direction; dealing damage to enemies hit and switching to Sword Stance. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 2.\n\nAgainst Wild Pokemon: The additional damage from remaining HP is capped at 1200.",
         "fields": [
             {
                 "title": "Damage",

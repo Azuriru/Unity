@@ -170,7 +170,7 @@
     {
         "aliases": ["u", "unite"],
         "name": "Plasma Gale",
-        "level": 10,
+        "level": 9,
         "cd": 112,
         "type": "sure-hit",
         "desc": "Launches a bolt of lightning that travels towards the enemy, dealing damage in an area of effect and knocking all enemies hit into the air. Creates a temporary area of electricity centered on the initial target that increases Zeraora's basic attack damage by 20% while inside the area.",
