@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 4.5,
         "type": "ranged",
-        "desc": "Eldegoss shoots a bundle of leaves that explode on the first enemy hit, damaging and slowing in an area.",
+        "desc": "Eldegoss shoots a bundle of leaves that explode on the first enemy hit; damaging and slowing movement speed by 40% for 2s in an area.",
         "fields": [
             {
                 "title": "Damage",
@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 6,
         "type": "ranged",
-        "desc": "Eldegoss throws a puff of pollen, which attaches to any Pokémon that touches it. After a delay the puff will explode, damaging enemies and healing allies around it.",
+        "desc": "Eldegoss throws a puff of pollen, which attaches to any Pokémon that touches it. After 2s, the puff will explode, damaging enemies and healing allies around it.",
         "fields": [
             {
                 "title": "Damage",
@@ -73,7 +73,7 @@
                 "type": "data"
             },
             {
-                "title": "Damage - 5 Times Every .5s",
+                "title": "Damage Over Time - every .5s, up to 4 times",
                 "value": "9% SpA + 1 x (Level - 1) + 18",
                 "calc_variables": {
                     "atk_modifier": 0.9,
@@ -90,7 +90,7 @@
         "level": 4,
         "cd": 9,
         "type": "ranged",
-        "desc": "Eldegoss conjures a tornado full of leaves, which damages enemies and creates a gust of wind that increases the movement speed of allies that touch it. When the tornado reaches max distance, it damages enemies near it a second time.",
+        "desc": "Eldegoss conjures a tornado full of leaves; which damages enemies and creates a gust of wind that increases the movement speed of allies that touch it by 55% for 1.5s. When the tornado reaches max distance, it damages enemies near it a second time.",
         "fields": [
             {
                 "title": "Damage - First Hit",
@@ -109,7 +109,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Enemies hit by the tornado will miss all of their basic attacks for a small amount of time.",
+                "value": "Enemies hit by the tornado will miss all of their auto attacks for 2.5s.",
                 "type": "data"
             }
         ]
@@ -120,21 +120,21 @@
         "level": 6,
         "cd": 9,
         "type": "buff",
-        "desc": "Eldegoss creates barriers out of cotton, granting itself and all nearby allies a shield. When the shield expires, it restores HP equal to 30% of the remaning shield value.",
+        "desc": "Eldegoss creates barriers out of cotton; granting Eldegoss and all nearby allies a shield for 3s. When the shield expires, it restores HP equal to 15% of the remaining shield value.",
         "fields": [
             {
                 "title": "Shielding",
-                "value": "175% SpA + 27 x (Level - 1) + 300",
+                "value": "150% SpA + 20 x (Level - 1) + 250",
                 "calc_variables": {
-                    "atk_modifier": 1.75,
-                    "lvl_modifier": 27,
-                    "addend": 300
+                    "atk_modifier": 1.5,
+                    "lvl_modifier": 20,
+                    "addend": 250
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 13",
-                "value": "Also briefly increases Eldegoss's movement speed",
+                "value": "Also increases Eldegoss's movement speed by 30% for 2s.",
                 "type": "data"
             }
         ]
@@ -145,7 +145,7 @@
         "level": 6,
         "cd": 6,
         "type": "area",
-        "desc": "Eldegoss channels, gathering spores while increasing its movement speed. At the end of the channel the spores are released, damaging and throwing nearby enemies into the air, then slowing them when they land.",
+        "desc": "Eldegoss channels for 2s, gathering spores while increasing its movement speed by 30% for 2s. At the end of the channel the spores are released; damaging and throwing nearby enemies into the air for .5s, then slowing their movement speed by 30% for 2s when they land.",
         "fields": [
             {
                 "title": "Damage",
@@ -159,7 +159,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Eldegoss gains increased defense and special defense while channeling.",
+                "value": "Eldegoss gains 40% increased Defense and Special Defense while channeling.",
                 "type": "data"
             }
         ]
@@ -168,9 +168,9 @@
         "aliases": ["u", "unite"],
         "name": "Cotton Cloud Crash",
         "level": 9,
-        "cd": 134,
+        "cd": 112,
         "type": "area",
-        "desc": "Float into the air and become invincible. If used again, pound the ground, attacking and shoving enemies while restoring HP to allies in the radius.",
+        "desc": "Float into the air for 3s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius.",
         "fields": [
             {
                 "title": "Damage",

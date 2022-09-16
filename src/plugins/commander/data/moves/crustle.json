@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 5,
         "type": "hindrance",
-        "desc": "Crustle emits a beam that deals 100% ability damage. Upon reaching its maximum distance, or hitting an enemy, a curved wall rises from the ground, dealing 50% ability damage to all enemies on top of it. When the barrier de-spawns, 50% ability damage is dealt again to all enemies near it.",
+        "desc": "Crustle emits a beam that deals damage to enemies hit and briefly slow their movement speed by 40% for 2s, then create a curved wall at the designated location. When the wall rises or despawns, nearby enemies are damaged and have their movement speed slowed by 40% for 2s. The wall lasts for 3s and can be cancelled early.",
         "fields": [
             {
                 "title": "Damage - Projectile",
@@ -69,7 +69,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Each hit additionally inflicts 2s of slow.",
+                "value": "Movement speed reduction increased to 60%.",
                 "type": "data"
             }
         ]
@@ -80,7 +80,7 @@
         "level": 4,
         "cd": 7,
         "type": "buff",
-        "desc": "Crustle smashes his shell, setting his Def and SpD to 0, gaining a boost to his Atk and SpA equal to 40% of the Def and SpD lost, respectively. Def and SpD not from base stats, i.e. from items and buffs (including Crustle's passive) are exempt. Crustle also gains a significant speed boost and becomes briefly unstoppable while activing this move.",
+        "desc": "Crustle smashes their shell, setting Def and SpD to 0, gaining a boost to Atk and SpA equal to 40% of the Def and SpD lost, respectively. Additional Def and SpD from items and buffs (including Crustle's passive) are exempt. Crustle also gains 75% movement speed (decreasing by 5% every 1s) and becomes unstoppable for 0.8s while activating this move. This buff lasts for 4.5s.",
         "fields": [
             {
                 "title": "Level 11",
@@ -95,7 +95,7 @@
         "level": 6,
         "cd": 6,
         "type": "area",
-        "desc": "Crustle aims and creates a radius in which rocks hit enemies 8 times. Each hit applies a stack of a debuff which causes subsequent hits to deal 15% more damage. Additional damage from this debuff is always rounded up.",
+        "desc": "Crustle launches a pile of rocks in the designated direction. Upon hitting an enemy, a wall, or reaching maximum distance, create a radius in which rocks deal damage to enemies up to 8 times every .5s over 4s. Each hit applies a stack of a debuff which causes subsequent hits to deal 15% more damage for 1.5s, stacking up to 10 times. Additional damage from this debuff is always rounded up.",
         "fields": [
             {
                 "title": "Damage - 8 Hits",
@@ -109,7 +109,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Number of hits increased from 8 to 10.",
+                "value": "Duration of rocks increased by 1s. Number of hits increased from 8 to 10. In addition, slow enemy movement speed by 35% for 1s.",
                 "type": "data"
             }
         ]
@@ -118,9 +118,9 @@
         "aliases": ["s22", "xscissor", "xs", "scissor"],
         "name": "X-Scissor",
         "level": 6,
-        "cd": 9,
+        "cd": 7,
         "type": "melee",
-        "desc": "Crustle attacks three times with his claws, dealing increased damage with each hit and knocking back enemies with each hit. Stuns for 2s if the enemy is against a wall when the third hit lands.",
+        "desc": "Crustle attacks three times with his claws, dealing increased damage with each hit and shoving enemies for .2s with each hit. Stuns for 1.5s if the enemy is against a wall when the third hit lands.",
         "fields": [
             {
                 "title": "Damage - First Hit",
@@ -154,7 +154,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Cooldown reduced by 2s.",
+                "value": "Cooldown reduced by 1s.",
                 "type": "data"
             }
         ]
@@ -165,7 +165,7 @@
         "level": 9,
         "cd": 134,
         "type": "buff",
-        "desc": "Summon a whirlwind of rocks for a short time, gaining a shield (40% max HP + 600 HP) and leaving nearby enemies unable to act. Deal damage to nearby enemies - and If Crustle receives damage while this move is in effect, deal additional revenge damage.",
+        "desc": "Summon a whirlwind of rocks. At the beginning leave nearby enemies stunned for 1s and gain a shield (40% max HP + 600 HP). Then deal damage to nearby enemies every 1s for 10s, and if Crustle receives damage while this move is in effect deal additional revenge damage (this cannot happen more than once every 2s).",
         "fields": [
             {
                 "title": "Damage - Aura",

@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 8,
         "type": "area",
-        "desc": "Pelts leaves in the designated direction, dealing damage in a cone to enemies hit (only hits once). For a short time after using this move, Decidueye’s Attack is increased by 10% (this also affects Leafage) and basic attack speed is increased by 25%.",
+        "desc": "Pelts leaves in the designated direction, dealing damage in a cone to enemies hit (only hits once). For a short time after using this move, Decidueye’s Attack is increased by 10% (this also affects Leafage) and auto attack speed is increased by 25% for 3s.   ",
         "fields": [
             {
                 "title": "Damage",
@@ -45,25 +45,25 @@
         "level": 7,
         "cd": 10,
         "type": "buff",
-        "desc": "Summons whirling razor leaves.  While active, Decidueye's basic attack is replaced by a new basic attack that targets all enemies in range, as well as increasing Attack by 10% and basic attack speed.",
+        "desc": "Summons whirling razor leaves. While active, Decidueye's auto attack is replaced by a new auto attack that targets up to 2 additional enemies in range, as well as increasing Attack by 10% and auto attack speed. This buff lasts for 5.5s.",
         "fields": [
             {
                 "title": "Damage - Main Target (Unboosted)",
-                "value": "70% Atk + 3 x (Level - 1) + 100",
+                "value": "80% Atk + 3 x (Level - 1) + 120",
                 "calc_variables": {
-                    "atk_modifier": 0.7,
+                    "atk_modifier": 0.8,
                     "lvl_modifier": 3,
-                    "addend": 100
+                    "addend": 120
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Main Target (Boosted 3 Hits)",
-                "value": "26.6% Atk + 1 x (Level - 1) + 38",
+                "value": "30.4% Atk + 1 x (Level - 1) + 46",
                 "calc_variables": {
-                    "atk_modifier": 0.266,
+                    "atk_modifier": 0.304,
                     "lvl_modifier": 1,
-                    "addend": 38
+                    "addend": 46
                 },
                 "type": "inline"
             },
@@ -73,8 +73,13 @@
                 "type": "data"
             },
             {
+                "title": "Attack Speed - Increase",
+                "value": "Increases Attack Speed by 1% x (Level -1) + 21% for 5.5s.",
+                "type": "data"
+            },
+            {
                 "title": "Level 11",
-                "value": "Increases basic attack damage by 2% of enemies remaining HP.\n\nThis damage only applies once per attack, not on each of the 3 boosted quills.",
+                "value": "Increases auto attack damage by 2% of the primary target's remaining HP and 1% for secondary targets. This damage only applies once per attack, not on each of the 3 boosted quills. \n\nAgainst All Enemies: The additional damage from remaining HP is capped at 240 on the primary target and 120 on secondary targets.",
                 "type": "data"
             }
         ]
@@ -83,37 +88,37 @@
         "aliases": ["s12", "ss", "shackle"],
         "name": "Spirit Shackle",
         "level": 7,
-        "cd": 6.5,
+        "cd": 8.5,
         "type": "ranged",
-        "desc": "Charges power before firing a large arrow in the designated direction. Damage dealt increases the longer power is charged (with 6 breakpoints), but movement speed is decreased by 25% while charging. If this move hits after power is charged to the maximum, it can stitch enemies to the ground. The affected enemy has their movement speed is decreased by 80% for a short time while in the area, and receives damage upon leaving the area.",
+        "desc": "Charges power before firing a large arrow in the designated direction. Damage dealt increases the longer power is charged (with 6 breakpoints), but movement speed is decreased by 25% while charging. If this move hits after power is charged to the maximum, it can stitch enemies to the ground. The affected enemy has their movement speed decreased by 80% for a short time when exiting the area, and receives damage upon leaving the area. A maximum of 3 uses can be kept in reserve for this move. There is a 2s cooldown between uses.",
         "fields": [
             {
                 "title": "Damage - Minimum Charge",
-                "value": "227% Atk + 6 x (Level - 1) + 160",
+                "value": "248% Atk + 5 x (Level - 1) + 200",
                 "calc_variables": {
-                    "atk_modifier": 2.27,
-                    "lvl_modifier": 6,
-                    "addend": 160
+                    "atk_modifier": 2.48,
+                    "lvl_modifier": 5,
+                    "addend": 200
                 },
                 "type": "inline"
             },
             {
-                "title": "Damage - Above Minimum Charge",
-                "value": "408.6% Atk + 11 x (Level - 1) + 288",
+                "title": "Damage - Maximum Charge",
+                "value": "446% Atk + 9 x (Level - 1) + 361",
                 "calc_variables": {
-                    "atk_modifier": 4.086,
-                    "lvl_modifier": 11,
-                    "addend": 288
+                    "atk_modifier": 4.46,
+                    "lvl_modifier": 9,
+                    "addend": 361
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Exiting Sitched Area",
-                "value": "45.4% Atk + 1 x (Level - 1) + 32",
+                "value": "49.6% Atk + 1 x (Level - 1) + 40",
                 "calc_variables": {
-                    "atk_modifier": 0.454,
+                    "atk_modifier": 0.496,
                     "lvl_modifier": 1,
-                    "addend": 32
+                    "addend": 40
                 },
                 "type": "inline"
             },
@@ -130,7 +135,7 @@
         "level": 8,
         "cd": 6,
         "type": "ranged",
-        "desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 30% for a short time. At point-blank range, it also shoves enemies hit.",
+        "desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 30% for a short time. At point-blank range, it also shoves and stuns enemies hit.",
         "fields": [
             {
                 "title": "Damage",
@@ -155,7 +160,7 @@
         "level": 8,
         "cd": 12,
         "type": "sure-hit",
-        "desc": "Creates a shadow that takes hold of one enemy in the area of effect, dealing damage and decreasing their movement speed by 30%, decreasing their Defense by 60%, and increasing Decidueye’s movement speed by 70% for a short time.",
+        "desc": "Creates a shadow that takes hold of one enemy in the area of effect, dealing damage and decreasing their movement speed by 30%, decreasing their Defense by 60%, and increasing Decidueye’s movement speed by 70% for 3s.",
         "fields": [
             {
                 "title": "Damage",
@@ -180,25 +185,25 @@
         "level": 9,
         "cd": 150,
         "type": "ranged",
-        "desc": "Fires quills in the designated direction, dealing damage to enemies but does not pierce through them. The move ends by unleashing a large quill that deals damage to all enemies it hits. While using this move, Decidueye becomes immune to hindrances but is unable to move. (This move currently is not adding % HP damage like it states in-game).",
+        "desc": "Fires quills in the designated direction, dealing damage to enemies but does not pierce through them. The move ends by unleashing a large quill that deals damage to all enemies it hits (30% more damage if the target is below 50% HP). While using this move, Decidueye becomes immune to hindrances but is unable to move.",
         "fields": [
             {
                 "title": "Damage - Quill (30 Hits)",
-                "value": "62% Atk + 2 x (Level - 1) + 90",
+                "value": "70% Atk + 2 x (Level - 1) + 100",
                 "calc_variables": {
-                    "atk_modifier": 0.62,
+                    "atk_modifier": 0.7,
                     "lvl_modifier": 2,
-                    "addend": 90
+                    "addend": 100
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Large Arrow",
-                "value": "248% Atk + 8 x (Level - 1) + 360",
+                "value": "280% Atk + 8 x (Level - 1) + 400",
                 "calc_variables": {
-                    "atk_modifier": 2.48,
+                    "atk_modifier": 2.8,
                     "lvl_modifier": 8,
-                    "addend": 360
+                    "addend": 400
                 },
                 "type": "inline"
             }
