@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 5,
         "type": "area",
-        "desc": "Cramorant creates a whirlpool at a designated location, damaging all enemies in the radius. It also slows enemies by 50% in the area at the end of its duration. Cramorant can enter the whirlpool to catch prey for Gulp Missile (you can catch up to 2 prey).",
+        "desc": "Cramorant creates a whirlpool at a designated location, damaging all enemies in the radius. It also slows enemies by 50% in the area at the end of its duration. Cramorant can enter the whirlpool to catch prey for Gulp Missile (up to 2 prey may be caught).",
         "fields": [
             {
                 "title": "Damage - Initial (2 Ticks)",
@@ -45,7 +45,7 @@
         "level": 1,
         "cd": 8,
         "type": "debuff",
-        "desc": "Cramorant throws a circle of feathers at a designated area, slowing enemies by 20% in the radius and reducing their attack speed by 30%."
+        "desc": "Cramorant throws a circle of feathers at a designated area, slowing enemies by 20% in the radius and reducing their Attack by 30%."
     },
     {
         "aliases": ["s11", "hurri"],
@@ -67,7 +67,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Increases Cramorant's speed briefly.",
+                "value": "Increases Cramorant's movement speed briefly.",
                 "type": "data"
             }
         ]
@@ -76,12 +76,12 @@
         "aliases": ["s12", "slash"],
         "name": "Air Slash",
         "level": 4,
-        "cd": 5,
+        "cd": 8,
         "type": "ranged",
-        "desc": "Cramorant shoots many blades of air while moving backwards, dealing damage to enemies within the cone. This move's cooldown is reduced for every blade that hits.",
+        "desc": "Cramorant shoots many blades of air while moving backwards, dealing damage to enemies within the cone. This move's cooldown is reduced by .5s for each blade that hits.",
         "fields": [
             {
-                "title": "Damage - Blade (4 Hits)",
+                "title": "Damage - Blade (5 blades)",
                 "value": "35% SpA + 6 x (Level - 1) + 150",
                 "calc_variables": {
                     "atk_modifier": 0.35,
@@ -96,10 +96,10 @@
                 "type": "data"
             },
             {
-                "title": "Healing - Blade (4 Hits)",
-                "value": "30% SpA + 0 x (Level - 1) + 60",
+                "title": "Healing - Blade (5 blades)",
+                "value": "45% SpA + 0 x (Level - 1) + 60",
                 "calc_variables": {
-                    "atk_modifier": 0.3,
+                    "atk_modifier": 0.45,
                     "lvl_modifier": 0,
                     "addend": 60
                 },
@@ -117,27 +117,27 @@
         "fields": [
             {
                 "title": "Damage - First Hit",
-                "value": "68% SpA + 9 x (Level - 1) + 360",
+                "value": "75% SpA + 9 x (Level - 1) + 390",
                 "calc_variables": {
-                    "atk_modifier": 0.68,
+                    "atk_modifier": 0.75,
                     "lvl_modifier": 9,
-                    "addend": 360
+                    "addend": 390
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Second Hit",
-                "value": "102% SpA + 14 x (Level - 1) + 540",
+                "value": "112.5% SpA + 14 x (Level - 1) + 585",
                 "calc_variables": {
-                    "atk_modifier": 1.02,
+                    "atk_modifier": 1.125,
                     "lvl_modifier": 14,
-                    "addend": 540
+                    "addend": 585
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 13",
-                "value": "The wave also slows.",
+                "value": "The wave also slows by 40% for 2s.",
                 "type": "data"
             }
         ]
@@ -146,17 +146,17 @@
         "aliases": ["s22"],
         "name": "Dive",
         "level": 6,
-        "cd": 4.5,
+        "cd": 6,
         "type": "dash",
-        "desc": "Cramorant turns the designated area into a puddle, then dives to that area, shoving and damaging enemies in the area. Cramorant catches prey for Gulp Missile as they emerge from the puddle. Holds 3 uses in reserve.\n\nThere is a 1.5 sec cooldown between charges, which is reduced with cooldown reduction.",
+        "desc": "Cramorant turns the designated area into a puddle, then dives to that area; becoming unstoppable for .25s, shoving and damaging enemies in the area. Cramorant catches prey for Gulp Missile as they emerge from the puddle and the next boosted attack deals additional damage. Holds 3 uses in reserve. \n\nThere is a 1.5 sec cooldown between each use, which is reduced with cooldown reduction.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "78% SpA + 14 x (Level - 1) + 320",
+                "value": "45% SpA + 9 x (Level - 1) + 180",
                 "calc_variables": {
-                    "atk_modifier": 0.78,
-                    "lvl_modifier": 14,
-                    "addend": 320
+                    "atk_modifier": 0.45,
+                    "lvl_modifier": 9,
+                    "addend": 180
                 },
                 "type": "inline"
             },
@@ -167,11 +167,11 @@
             },
             {
                 "title": "Damage",
-                "value": "86% SpA + 16 x (Level - 1) + 360",
+                "value": "42% SpA + 16 x (Level - 1) + 185",
                 "calc_variables": {
-                    "atk_modifier": 0.86,
+                    "atk_modifier": 0.42,
                     "lvl_modifier": 16,
-                    "addend": 360
+                    "addend": 185
                 },
                 "type": "inline"
             }
@@ -181,17 +181,17 @@
         "aliases": ["u", "unite"],
         "name": "Gatling Gulp Missile",
         "level": 9,
-        "cd": 134,
+        "cd": 123,
         "type": "area",
-        "desc": "Cramorant becomes unstoppable and fires a series of Arrokuda missles at the nearest enemy, becoming immobile for the entire duration. Gatling Gulp Missile can be cancelled early.",
+        "desc": "Cramorant becomes unstoppable and fires a series of prey at the nearest enemy, becoming immobile for the entire duration (6.5s). The prey that is fired will be Arrokuda while above 50% HP and Pikachu while under 50% HP. Gatling Gulp Missile can be cancelled early.",
         "fields": [
             {
                 "title": "Damage - 10 Hits",
-                "value": "83.6% SpA + 18 x (Level - 1) + 319",
+                "value": "101% SpA + 9 x (Level - 1) + 390",
                 "calc_variables": {
-                    "atk_modifier": 0.836,
-                    "lvl_modifier": 18,
-                    "addend": 319
+                    "atk_modifier": 1.01,
+                    "lvl_modifier": 9,
+                    "addend": 390
                 },
                 "type": "inline"
             }
