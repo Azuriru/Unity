@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 5,
         "type": "ranged",
-        "desc": "Gengar shoots 3 wisps of flame in a cone, damaging and burning enemies hit. This burn reduces enemy Attack and Sp. Attack by 10%. A single enemy can only be damaged by a maximum of 2 wisps. Damage is halved if the target is burning.",
+        "desc": "Gengar shoots 3 wisps of flame in a cone, damaging and burning enemies hit for 2s. This burn reduces enemy Attack and Sp. Attack by 10% for 4s. A single enemy can only be damaged by a maximum of 2 wisps. Damage is halved if the target is burning.",
         "fields": [
             {
                 "title": "Damage - Per Wisp (x3)",
@@ -18,7 +18,7 @@
                 "type": "inline"
             },
             {
-                "title": "Damage - Burn",
+                "title": "Damage - Burn (3 ticks)",
                 "value": "28% SpA + 2 x (Level - 1) + 40",
                 "calc_variables": {
                     "atk_modifier": 0.28,
@@ -50,12 +50,12 @@
         ]
     },
     {
-        "aliases": ["s11", "sball", "ball"],
+        "aliases": ["s21", "sball", "ball"],
         "name": "Shadow Ball",
-        "level": 5,
+        "level": 7,
         "cd": 4.5,
         "type": "ranged",
-        "desc": "Gengar hurls a shadowy ball forward in a line - damaging, slowing, and reducing the SpD of enemies hit. This ball pierces through wild Pokémon.",
+        "desc": "Gengar hurls a shadowy ball forward in a line; damaging, slowing their movement speed by 90% for 1s, and reducing the Sp. Defense of enemies hit for 3s. This ball pierces through wild Pokémon.",
         "fields": [
             {
                 "title": "Damage",
@@ -69,7 +69,7 @@
             },
             {
                 "title": "Sp. Defense Reduction",
-                "value": "80 + 5 * (Level - 1)",
+                "value": "0% SpA + 5 x (Level - 1) + 80",
                 "type": "data"
             },
             {
@@ -90,12 +90,12 @@
         ]
     },
     {
-        "aliases": ["s12", "sludge", "sbomb", "bomb"],
+        "aliases": ["s22", "sludge", "sbomb", "bomb"],
         "name": "Sludge Bomb",
-        "level": 5,
+        "level": 7,
         "cd": 8,
         "type": "area",
-        "desc": "Gengar hurls unsanitary sludge to the designated area, poisoning and damaging enemies over time in the radius. Poison damage cannot exceed 120 per tick.",
+        "desc": "Gengar hurls unsanitary sludge to the designated area, damaging enemies and poisoning them for 5s. Poison deals 1% of the Pokemon's max HP per tick. \n\nAgainst Wild Pokémon: The poison damage is capped at 120 per tick.",
         "fields": [
             {
                 "title": "Damage",
@@ -120,12 +120,12 @@
         ]
     },
     {
-        "aliases": ["s21", "dream", "eater", "deater"],
+        "aliases": ["s11", "dream", "eater", "deater"],
         "name": "Dream Eater",
-        "level": 7,
+        "level": 5,
         "cd": 8,
         "type": "dash",
-        "desc": "Gengar shoots forward a mysterious orb, sleeping enemies when it hits. If used again when a nearby enemy is asleep, Gengar teleports behind them and attacks: dealing damage to the enemy, healing Gengar, and reducing the cooldown of Shadow Ball or Sludge Bomb. Before and after teleporting, the next basic attack is boosted.",
+        "desc": "Gengar shoots forward a mysterious orb, sleeping enemies for 1s when it hits. If used again when a nearby enemy is affected by Dream Eater, Gengar teleports behind them and attacks; dealing damage to the enemy, healing Gengar, and reducing the cooldown of Will-o-Wisp, Shadow Ball or Sludge Bomb by 2s. Before and after teleporting, the next auto attack is boosted. If Gengar knocks out an enemy player, the cooldown of this move is reset.",
         "fields": [
             {
                 "title": "Damage",
@@ -175,20 +175,20 @@
         ]
     },
     {
-        "aliases": ["s22"],
+        "aliases": ["s12"],
         "name": "Hex",
-        "level": 7,
+        "level": 5,
         "cd": 7.5,
         "type": "dash",
-        "desc": "Gengar vanishes and teleports to a designated location, damaging enemies in a radius where Gengar appears. If this hits an enemy afflicted with a status condition, damage dealt is doubled and Hex cooldown is reduced. The next basic attack is boosted.",
+        "desc": "Gengar vanishes and teleports to a designated location, damaging enemies in a radius where Gengar appears. If this hits an enemy afflicted with a status condition, damage dealt is doubled and Hex cooldown is reduced by 85%. The next auto attack is boosted.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "115% SpA + 5 x (Level - 1) + 220",
+                "value": "105% SpA + 3 x (Level - 1) + 150",
                 "calc_variables": {
-                    "atk_modifier": 1.15,
-                    "lvl_modifier": 5,
-                    "addend": 220
+                    "atk_modifier": 1.05,
+                    "lvl_modifier": 3,
+                    "addend": 150
                 },
                 "type": "inline"
             },
@@ -199,11 +199,11 @@
             },
             {
                 "title": "Damage",
-                "value": "124% SpA + 6 x (Level - 1) + 260",
+                "value": "125% SpA + 4 x (Level - 1) + 200",
                 "calc_variables": {
-                    "atk_modifier": 1.24,
-                    "lvl_modifier": 6,
-                    "addend": 260
+                    "atk_modifier": 1.25,
+                    "lvl_modifier": 4,
+                    "addend": 200
                 },
                 "type": "inline"
             }
@@ -215,7 +215,7 @@
         "level": 9,
         "cd": 134,
         "type": "dash",
-        "desc": "Jump to the designated area and start sneaking - gaining increased movement speed, become invisible, and the next basic attack is boosted. Moves can be used while invisible, but bring you above the ground. While above the ground, become visible to the enemies. If this move is used again, deal damage to enemies in the area of effect and decrease their movement speed for a short time.",
+        "desc": "Jump to the designated area and start sneaking for 7s - gaining 30% increased movement speed, become invisible, and the next auto attack is boosted. Moves and auto attacks can be used while invisible, but bring you above the ground. While above the ground, become visible to the enemies. If this move is used again, deal damage to enemies in the area of effect and decrease their movement speed by 50% for 1.5s.",
         "fields": [
             {
                 "title": "Damage",
