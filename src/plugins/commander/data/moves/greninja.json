@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 9,
         "type": "ranged",
-        "desc": "Greninja launches 2 bubbles which pop when they hit an enemy, damaging and slowing them.",
+        "desc": "Greninja launches 2 bubbles which pop when they hit an enemy, damaging and slowing them by 25% for 1s.",
         "fields": [
             {
                 "title": "Damage - Per Hit (2x)",
@@ -33,7 +33,7 @@
         "level": 5,
         "cd": 9,
         "type": "dash",
-        "desc": "Greninja briefly vanishes before dashing and sending clones in different directions. The clones can attack nearby targets. Greninja is unstoppable while dashing.",
+        "desc": "Greninja briefly vanishes before dashing and sending clones in different directions. The clones attack nearby targets, have the same HP and defenses as Greninja, deal 15% of Greninja's damage (clones use Surf or Water Shuriken - whichever is learned by Greninja), and last for 3s. Greninja is unstoppable while dashing.",
         "fields": [
             {
                 "title": "Level 13",
@@ -48,11 +48,21 @@
         "level": 5,
         "cd": 13,
         "type": "buff",
-        "desc": "Greninja becomes invisible, leaving behind a cloud of smoke while dashing and gaining bonus movement speed. Greninja's next attack is boosted and deals 5% increased damage. Greninja is unstoppable while dashing.",
+        "desc": "Greninja becomes invisible for 3s, gaining 10% bonus movement speed, and leaving behind a cloud of smoke. Enemies that stay in the smoke cloud have their vision range reduced by 60%. Greninja's next attack is boosted and deals increased damage, melee and ranged bonus effects apply. Greninja is unstoppable while dashing.",
         "fields": [
             {
+                "title": "Damage - Basic (Additional)",
+                "value:": "125% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 1.25,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+            },
+            {
                 "title": "Level 13",
-                "value": "Also increases Greninja's attack by 20% for 3s when leaving stealth.",
+                "value": "Also increases Greninja's attack by 20% for 2s when leaving stealth.",
                 "type": "data"
             }
         ]
@@ -63,7 +73,7 @@
         "level": 7,
         "cd": 6,
         "type": "ranged",
-        "desc": "Greninja throws 3-5 shurikens made of water which explode when they hit an enemy, damaging and slowing enemies in a small area while healing Greninja.",
+        "desc": "Greninja throws 3-5 shurikens made of water which explode when they hit an enemy, damaging and slowing enemies by 25% for 1s in a small area while healing Greninja. While using this move, Greninja's movement speed is increased by 15% for 3s.",
         "fields": [
             {
                 "title": "Damage - Per Shuriken",
@@ -98,25 +108,25 @@
         "level": 7,
         "cd": 9,
         "type": "melee",
-        "desc": "Greninja dashes on a wave, damaging enemies (capped at 1200) and healing themself for each enemy hit. Enemies below half health are dealt bonus damage (capped at 600), and if this move KOs an enemy the cooldown is reset.",
+        "desc": "Greninja dashes on a wave, damaging enemies and healing themself for each enemy hit. Enemies below half health are dealt bonus damage, and if this move KOs an enemy the cooldown is reset. \n\nAgainst Wild Pokémon: The first hit is capped at 1200 and the second hit is capped at 600.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "226% Atk + 9 x (Level - 1) + 410",
+                "value": "200% Atk + 8 x (Level - 1) + 370",
                 "calc_variables": {
-                    "atk_modifier": 2.26,
-                    "lvl_modifier": 9,
-                    "addend": 410
+                    "atk_modifier": 2,
+                    "lvl_modifier": 8,
+                    "addend": 370
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Bonus",
-                "value": "113% Atk + 5 x (Level - 1) + 205",
+                "value": "100% Atk + 4 x (Level - 1) + 185",
                 "calc_variables": {
-                    "atk_modifier": 1.13,
-                    "lvl_modifier": 6,
-                    "addend": 205
+                    "atk_modifier": 1,
+                    "lvl_modifier": 4,
+                    "addend": 185
                 },
                 "type": "inline"
             },
@@ -132,7 +142,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Increases healing.",
+                "value": "Increased healing.",
                 "type": "data"
             },
             {
@@ -151,9 +161,9 @@
         "aliases": ["u", "unite"],
         "name": "Waterburst Shuriken",
         "level": 9,
-        "cd": 164,
+        "cd": 134,
         "type": "area",
-        "desc": "Throw a giant water shuriken toward the designated area, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time when this move hits. The water shuriken then immediately explodes, dealing damage to enemies in the area of effect and throws them in the air. Once this move ends, Greninja may jump in a designated direction.",
+        "desc": "Throw a giant water shuriken toward the designated area, dealing damage to enemies in the area of effect and decreasing their movement speed by 50% for 2s when this move hits. The water shuriken then immediately explodes, dealing damage to enemies in the area of effect and throws them in the air. Once this move ends, Greninja may jump in a designated direction.",
         "fields": [
             {
                 "title": "Damage - x2",
