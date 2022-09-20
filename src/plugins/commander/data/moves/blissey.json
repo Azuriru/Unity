@@ -45,31 +45,31 @@
         "level": 4,
         "cd": 12,
         "type": "recovery",
-        "desc": "Blissey throws an egg to an ally, healing Blissey and the designated ally. Holds 3 uses in reserve and cannot be used more than once every 2s.",
+        "desc": "Blissey throws an egg to an ally; healing Blissey and the designated ally. Holds 2 uses in reserve and cannot be used more than once every 2s. \n\nWhen learning Soft Boiled and Egg Bomb, gain 2 additional charges for Soft Boiled. Charges are shared between both moves. Base cooldown becomes 5s for both moves and time between using the same move remains a 2s cooldown.",
         "fields": [
             {
                 "title": "Healing",
-                "value": "200% SpA + 0 x (Level - 1) + 250",
+                "value": "170% SpA + 0 x (Level - 1) + 220",
                 "calc_variables": {
-                    "atk_modifier": 2.00,
+                    "atk_modifier": 1.7,
                     "lvl_modifier": 0,
-                    "addend": 250
+                    "addend": 220
                 },
                 "type": "inline"
             },
             {
                 "title": "Healing - 2 Heals Over Time ",
-                "value": "80% SpA + 0 x (Level - 1) + 100",
+                "value": "70% SpA + 0 x (Level - 1) + 85",
                 "calc_variables": {
-                    "atk_modifier": 0.8,
+                    "atk_modifier": 0.7,
                     "lvl_modifier": 0,
-                    "addend": 100
+                    "addend": 85
                 },
                 "type": "inline"
             },
             {
-                "title": "Level 12",
-                "value": "Holds 4 uses in reserve instead. Cooldown is reduced by 3s.",
+                "title": "Level 10",
+                "value": "Gain an additional charge.",
                 "type": "data"
             }
         ]
@@ -80,22 +80,32 @@
         "level": 4,
         "cd": 8,
         "type": "buff",
-        "desc": "Blissey grants both the targeted ally and themself a shield, purging hindrances and making both immune to hindrances for 3s.",
+        "desc": "Blissey grants both the targeted ally and themself a shield for 3s; purging hindrances and making both immune to hindrances until the shield is removed (3s shield duration).",
         "fields": [
             {
                 "title": "Shield",
-                "value": "160% SpA + 0 x (Level - 1) + 800",
+                "value": "162% SpA + 13 x (Level - 1) + 648",
                 "calc_variables": {
-                    "atk_modifier": 1.60,
-                    "lvl_modifier": 0,
-                    "addend": 800
+                    "atk_modifier": 1.62,
+                    "lvl_modifier": 13,
+                    "addend": 648
                 },
                 "type": "inline"
             },
             {
-                "title": "Level 12",
+                "title": "Level 10",
                 "value": "Shield value increased.",
                 "type": "data"
+            },
+            {
+                "title": "Shield",
+                "value": "180% SpA + 14 x (Level - 1) + 720",
+                "calc_variables": {
+                    "atk_modifier": 1.8,
+                    "lvl_modifier": 14,
+                    "addend": 720
+                },
+                "type": "inline"
             }
         ]
     },
@@ -103,23 +113,23 @@
         "aliases": ["s21", "bomb"],
         "name": "Egg Bomb",
         "level": 6,
-        "cd": 7.5,
+        "cd": 9,
         "type": "ranged",
-        "desc": "Blissey hurls an egg at a location which explodes, damaging and throwing enemies in the radius.",
+        "desc": "Blissey hurls an egg at a location which explodes; damaging and throwing enemies in the radius for .8s. Holds 2 uses in reserve and cannot be used more than once every 2s. \n\nWhen learning Soft Boiled and Egg Bomb, gain 2 additional charges for Soft Boiled. Charges are shared between both moves. Base cooldown becomes 5s for both moves and time between using the same move remains a 2s cooldown.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "62% SpA + 21 x (Level - 1) + 780",
+                "value": "41% SpA + 21 x (Level - 1) + 460",
                 "calc_variables": {
-                    "atk_modifier": 0.62,
+                    "atk_modifier": 0.41,
                     "lvl_modifier": 21,
-                    "addend": 780
+                    "addend": 460
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 10",
-                "value": "Also briefly slows enemies after they're thrown.",
+                "value": "Also slows enemies by 40% for 2s after they're thrown.",
                 "type": "data"
             }
         ]
@@ -130,11 +140,11 @@
         "level": 6,
         "cd": 9,
         "type": "buff",
-        "desc": "Blissey greatly improves movement speed and basic attack speed for self and allies by 35% for 3s. During this duration, all of Blissey's basic attacks are boosted. After this bonus expires, Blissey loses any boosted attack that was granted.",
+        "desc": "Blissey greatly improves movement speed and auto attack speed for self and allies by 35% for 3s. During this duration, all of Blissey's auto attacks are boosted. After this bonus expires, Blissey loses any boosted attack that was granted.",
         "fields": [
             {
-                "title": "Level 10",
-                "value": "Also increases basic attack damage for all those affected by 15%.",
+                "title": "Level 12",
+                "value": "Also increases auto attack damage for all those affected by 15%.",
                 "type": "data"
             }
         ]
@@ -145,7 +155,7 @@
         "level": 8,
         "cd": 134,
         "type": "buff",
-        "desc": "Blissey dashes to the designated ally to give it an egg, granting that ally a shield and increasing their Attack and Sp. Attack by 20% for a short time. The user also intercepts a portion of the damage received by that ally for a short time. While dashing, the user throws nearby enemies and those it comes in contact with.",
+        "desc": "Blissey dashes to the designated ally to give it an egg; granting that ally a shield and increasing their Attack and Sp. Attack by 20% for 6s. Blissey also intercepts 50% of the damage received by that ally for 6s. While dashing, throw hit enemies into the air for .8s. When reaching the target ally, deal additional damage to all nearby enemies.",
         "fields": [
             {
                 "title": "Damage",

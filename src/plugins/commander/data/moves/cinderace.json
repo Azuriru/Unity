@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 6,
         "type": "sure-hit",
-        "desc": "Cinderace shoots out a small flame, damaging and applying burn to hit enemies.",
+        "desc": "Cinderace shoots out a small flame, damaging and applying burn to hit enemies. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
         "fields": [
             {
                 "title": "Damage",
@@ -16,6 +16,17 @@
                     "addend": 130
                 },
                 "type": "inline"
+            },
+            {
+                "title": "Damage - Burn (3 Hits)",
+                "value": "10% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 0.1,
+                    "lvl_modifier": 0,
+                    "addend": 0
+                },
+                "type": "inline"
+
             }
         ]
     },
@@ -45,7 +56,7 @@
         "level": 7,
         "cd": 5,
         "type": "ranged",
-        "desc": "Cinderace kicks a ball of flame in a designated direction, burning and damaging enemies hit. The burn reduces enemy Attack and Sp. Attack by 5%.",
+        "desc": "Cinderace kicks a ball of flame in a designated direction, burning and damaging enemies hit. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
         "fields": [
             {
                 "title": "Damage",
@@ -69,7 +80,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Reduces the cooldown of Flame Charge or Feint by 2s when this move hits.",
+                "value": "Reduces the cooldown of Flame Charge or Feint by 3.5s when this move hits.",
                 "type": "data"
             }
         ]
@@ -80,15 +91,15 @@
         "level": 7,
         "cd": 8,
         "type": "sure-hit",
-        "desc": "Cinderace performs a fiery flying kick; shoving, burning, and critting enemies hit. In addition, Cinderace is immune to hindrances while using this move. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
+        "desc": "Perform a fiery flying kick, jumping towards a designated enemy; shoving and burning them. Cinderace can land in a targeted direction after this move hits. In addition, Cinderace is immune to hindrances during this move and is always a critical-hit. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "64% Atk + 6 x (Level - 1) + 150",
+                "value": "48% Atk + 4 x (Level - 1) + 120",
                 "calc_variables": {
-                    "atk_modifier": 0.64,
-                    "lvl_modifier": 6,
-                    "addend": 150
+                    "atk_modifier": 0.48,
+                    "lvl_modifier": 4,
+                    "addend": 120
                 },
                 "type": "inline"
             },
@@ -104,7 +115,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Increases Cinderace's basic attack speed for a short time after this move hits.",
+                "value": "Increased auto attack speed by 65% for 3s after this move hits.",
                 "type": "data"
             }
         ]
@@ -129,7 +140,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "The next boosted attack after this move ends also slows enemies hit for a short time.",
+                "value": "The next boosted attack after this move ends also slows enemies hit by 30% for 2s.",
                 "type": "data"
             }
         ]
@@ -140,11 +151,11 @@
         "level": 8,
         "cd": 11,
         "type": "buff",
-        "desc": "Cinderace dodges, increasing movement speed for 2s and becoming briefly invincible for .5s.",
+        "desc": "Cinderace dodges, increasing movement speed by 25% for 2s and becoming briefly invincible for .5s.",
         "fields": [
             {
                 "title": "Level 13",
-                "value": "After dodging, the next 3 basic attacks that hit restore HP equal to 30% of Attack.",
+                "value": "After dodging, the next 3 auto attacks that hit restore HP equal to 30% of damage dealt.",
                 "type": "data"
             }
         ]
@@ -155,7 +166,7 @@
         "level": 9,
         "cd": 150,
         "type": "sure-hit",
-        "desc": "Create a giant ball of flame and kick it toward the designated enemy for a sure hit, dealing damage to enemies in the area of effect. Apply 2 stacks of cinder on the target. Deal additional damage if the target is burning. Consume all stacks of cinder for an increased damage multiplier. Note: Deals the most damage at 3 stacks of cinder, not the max of 4.",
+        "desc": "Create a giant ball of flame and kick it toward the designated enemy for a sure hit, dealing damage to enemies in the area of effect. Apply 2 stacks of cinder on the target and deal additional damage based on their missing HP.",
         "fields": [
             {
                 "title": "Damage",

@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 7.5,
         "type": "ranged",
-        "desc": "Creates a twister and releases it in the designated direction, dealing damage to enemies hit and decreases their movement speed for a short time.",
+        "desc": "Creates a twister and releases it in the designated direction, dealing damage to enemies hit and decreases their movement speed by 50% for 1s.",
         "fields": [
             {
                 "title": "Damage",
@@ -43,13 +43,13 @@
         "aliases": ["s11", "dd"],
         "name": "Dragon Dance",
         "level": 5,
-        "cd": 5,
+        "cd": 5.5,
         "type": "dash",
-        "desc": "Dash in a designated direction, in one of three cycling patterns. After using this move, grant a buff increasing attack speed of the next 3 basic attacks, increasing movement speed, increasing Attack by 8% (capping at 24%), as well as increasing the stage of Hyper Beam. This buff stacks up to 3 times, and the duration is reset to full on reuse. All stacks are removed after a few seconds. Basic attacks reduce the cooldown of this ability by 1s.",
+        "desc": "Dash in a designated direction, alternating each use between a left arc, right arc and a direct dash. After using this move, grant a buff increasing attack speed of the next 3 auto attacks by 80% for 4.5s, increasing movement speed by 30% for 1s, increasing Attack by 8% (capping at 24%), as well as increasing the stage of Hyper Beam. This buff stacks up to 3 times, and the duration is reset to full on reuse. All stacks are removed after a few seconds. Auto attacks reduce the cooldown of this ability by 1s.",
         "fields": [
             {
                 "title": "Level 11",
-                "value": "Further increases movement speed if there are opposing Pokémon nearby when the dance ends.",
+                "value": "Further increases Dragonite's movement speed by 10% for 4.5s if there are enemies nearby when the dance ends.",
                 "type": "data"
             }
         ]
@@ -58,9 +58,9 @@
         "aliases": ["s12", "espeed"],
         "name": "Extreme Speed",
         "level": 5,
-        "cd": 9,
+        "cd": 7,
         "type": "hindrance",
-        "desc": "Dash toward the designated location stopping upon contact with an enemy, dealing damage and throwing them.",
+        "desc": "Dash toward the designated enemy, damaging and slowing all enemies in a small radius around the target upon impact by 50% for 2s, throwing the primary target and shoving others away. Using this move resets the cooldown of Multiscale.",
         "fields": [
             {
                 "title": "Damage",
@@ -74,7 +74,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "If the user's movement speed is currently decreased when it uses this move, that movement speed decrease is negated before the move is used.",
+                "value": "If Dragonite's movement speed is currently decreased when it uses this move, that movement speed decrease is negated before the move is used.",
                 "type": "data"
             }
         ]
@@ -85,45 +85,45 @@
         "level": 8,
         "cd": 8,
         "type": "ranged",
-        "desc": "Fires a beam of energy toward the targeted enemy after a delay, dealing damage to all enemies that it hits, as well as additional damage based on their Max HP. The move changes Stages based on the number of stacks of Dragon Dance that Dragonite has, from 0 to 3. The Max HP damage is 5%/10%/15%/20%, determined by the current Stage.  Dragonite cannot act while releasing the beam.",
+        "desc": "Fires a beam of energy toward the targeted enemy after a delay, dealing damage to all enemies that it hits, as well as additional damage based on their Max HP. The move changes Stages based on the number of stacks of Dragon Dance that Dragonite has, from 0 to 3. The max HP damage is 0%/5%/10%/20%, determined by the current Stage. Dragonite cannot act while releasing the beam. \n\nAgainst Wild Pokémon: The additional damage from max HP is capped at 0/600/1200/2400 depending on the stage.",
         "fields": [
             {
                 "title": "Damage - Stage 0",
-                "value": "220% Atk + 9 x (Level - 1) + 410",
+                "value": "187% Atk + 8 x (Level - 1) + 350",
                 "calc_variables": {
-                    "atk_modifier": 2.20,
-                    "lvl_modifier": 9,
-                    "addend": 410
+                    "atk_modifier": 1.87,
+                    "lvl_modifier": 8,
+                    "addend": 350
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Stage 1",
-                "value": "259.6% Atk + 11 x (Level - 1) + 484",
+                "value": "224.4% Atk + 10 x (Level - 1) + 420",
                 "calc_variables": {
-                    "atk_modifier": 2.596,
-                    "lvl_modifier": 11,
-                    "addend": 484
+                    "atk_modifier": 2.244,
+                    "lvl_modifier": 10,
+                    "addend": 420
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Stage 2",
-                "value": "292.2% Atk + 12 x (Level - 1) + 558",
+                "value": "261.8% Atk + 11 x (Level - 1) + 490",
                 "calc_variables": {
-                    "atk_modifier": 2.922,
-                    "lvl_modifier": 12,
-                    "addend": 558
+                    "atk_modifier": 2.618,
+                    "lvl_modifier": 11,
+                    "addend": 490
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Stage 3",
-                "value": "338.8% Atk + 14 x (Level - 1) + 631",
+                "value": "299.2% Atk + 13 x (Level - 1) + 560",
                 "calc_variables": {
-                    "atk_modifier": 3.338,
-                    "lvl_modifier": 14,
-                    "addend": 631
+                    "atk_modifier": 2.992,
+                    "lvl_modifier": 13,
+                    "addend": 560
                 },
                 "type": "inline"
             },
@@ -140,7 +140,7 @@
         "level": 8,
         "cd": 8,
         "type": "melee",
-        "desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack he used. Additionally, Dragonite gains a buff for 5 seconds, converting all of their attacks into melee Boosted Attacks, alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is briefly stunned.",
+        "desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack he used. Additionally, Dragonite gains a buff for 5.5s, increasing auto attack speed by 30% for 5.5s, converting all of their attacks into melee Boosted Attacks, and alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is stunned for .7s.",
         "fields": [
             {
                 "title": "Damage - Stomp",
@@ -154,7 +154,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Reduces the duration of hindrances on the user while rampaging",
+                "value": "Reduce the duration of hindrances inflicted on Dragonite while rampaging by 40% for 5.5s.",
                 "type": "data"
             }
         ]
@@ -165,13 +165,13 @@
         "level": 9,
         "cd": 134,
         "type": "dash",
-        "desc": "Briefly fly up in the air before crashing down with several comets on a designated area, dealing damage and throwing enemies in the area. The farther Dragonite flies, the more the Unite guage is consumed (25% at min disatance and 100% at max). Dragonite is unstoppable while using this move.",
+        "desc": "Briefly fly up in the air before crashing down with several comets on a designated area, dealing damage and throwing enemies in the area. The farther Dragonite flies, the more the Unite gauge is consumed (50% at min distance and 100% at max). Dragonite is unstoppable while using this move.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "206% Atk + 17 x (Level - 1) + 860",
+                "value": "203% Atk + 18 x (Level - 1) + 860",
                 "calc_variables": {
-                    "atk_modifier": 2.06,
+                    "atk_modifier": 2.03,
                     "lvl_modifier": 17,
                     "addend": 860
                 },

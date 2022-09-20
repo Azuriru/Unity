@@ -5,15 +5,15 @@
         "level": 1,
         "cd": 4.5,
         "type": "ranged",
-        "desc": "Gardevoir fires a piercing bolt, damaging enemies.",
+        "desc": "Gardevoir fires a piercing bolt; damaging enemies and slowing them by 35% for 1s.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "72% SpA + 13 x (Level - 1) + 250",
+                "value": "72% SpA + 16 x (Level - 1) + 300",
                 "calc_variables": {
                     "atk_modifier": 0.72,
-                    "lvl_modifier": 13,
-                    "addend": 250
+                    "lvl_modifier": 16,
+                    "addend": 300
                 },
                 "type": "inline"
             }
@@ -33,15 +33,15 @@
         "level": 5,
         "cd": 10,
         "type": "area",
-        "desc": "Gardevoir channels three attacks at the targeted area, damaging enemies. Gardevoir's moves' cooldowns is reduced each time it hits an enemy.",
+        "desc": "Gardevoir channels three attacks at the targeted area; damaging enemies. Gardevoir's moves' cooldowns is reduced by 15% each time it hits an enemy.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "76% SpA + 9 x (Level - 1) + 361",
+                "value": "85.5% SpA + 10 x (Level - 1) + 409",
                 "calc_variables": {
-                    "atk_modifier": 0.76,
-                    "lvl_modifier": 9,
-                    "addend": 361
+                    "atk_modifier": 0.855,
+                    "lvl_modifier": 10,
+                    "addend": 409
                 },
                 "type": "inline"
             },
@@ -52,31 +52,31 @@
             },
             {
                 "title": "Damage - First Hit",
-                "value": "76% SpA + 9 x (Level - 1) + 361",
+                "value": "85.5% SpA + 10 x (Level - 1) + 409",
                 "calc_variables": {
-                    "atk_modifier": 0.76,
-                    "lvl_modifier": 9,
-                    "addend": 361
+                    "atk_modifier": 0.855,
+                    "lvl_modifier": 10,
+                    "addend": 409
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Second Hit",
-                "value": "80% SpA + 9 x (Level - 1) + 380",
+                "value": "90% SpA + 10 x (Level - 1) + 430",
                 "calc_variables": {
-                    "atk_modifier": 0.8,
-                    "lvl_modifier": 9,
-                    "addend": 380
+                    "atk_modifier": 0.9,
+                    "lvl_modifier": 10,
+                    "addend": 430
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Third Hit",
-                "value": "84% SpA + 9 x (Level - 1) + 399",
+                "value": "94.5% SpA + 10 x (Level - 1) + 452",
                 "calc_variables": {
-                    "atk_modifier": 0.84,
-                    "lvl_modifier": 9,
-                    "addend": 399
+                    "atk_modifier": 0.945,
+                    "lvl_modifier": 10,
+                    "addend": 452
                 },
                 "type": "inline"
             }
@@ -88,7 +88,7 @@
         "level": 5,
         "cd": 9,
         "type": "area",
-        "desc": "Gardevoir creates a delayed explosion at the targeted area, damaging enemies. If Future Sight hits an enemy player (not wild), the cooldown is reduced by half and Gardevoir gains a burst of movement speed.",
+        "desc": "Gardevoir creates a delayed explosion at the targeted area; damaging enemies. If Future Sight hits an enemy player (not wild), the cooldown is reduced by 75% and Gardevoir gains 40% movement speed for 1.5s.",
         "fields": [
             {
                 "title": "Damage",
@@ -113,13 +113,13 @@
         "level": 7,
         "cd": 6,
         "type": "ranged",
-        "desc": "Gardevoir fires a blast, damaging enemies in an area on impact. The blast creates a lingering field that damages and slows. Each time Psychic deals damage it reduces the target’s Special Defense by 20%, up to 60%.",
+        "desc": "Gardevoir fires a blast; damaging enemies in an area on impact. The blast creates a lingering field that damages and slows enemies by 50% for 1s. Each time Psychic deals damage it reduces the target’s Special Defense by 20% for 4s, up to 60%.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "72% SpA + 15 x (Level - 1) + 390",
+                "value": "76% SpA + 15 x (Level - 1) + 390",
                 "calc_variables": {
-                    "atk_modifier": 0.72,
+                    "atk_modifier": 0.76,
                     "lvl_modifier": 15,
                     "addend": 390
                 },
@@ -127,9 +127,9 @@
             },
             {
                 "title": "Damage - Damage Over Time (5 Ticks)",
-                "value": "7.2% SpA + 2 x (Level - 1) + 39",
+                "value": "7.6% SpA + 2 x (Level - 1) + 39",
                 "calc_variables": {
-                    "atk_modifier": 0.072,
+                    "atk_modifier": 0.076,
                     "lvl_modifier": 2,
                     "addend": 39
                 },
@@ -148,7 +148,7 @@
         "level": 7,
         "cd": 7,
         "type": "ranged",
-        "desc": "Gardevoir moves back while firing a blast, stunning the first enemy hit and damaging all enemies in a cone behind it.",
+        "desc": "Gardevoir moves back while firing a blast; stunning the first enemy hit for 1.2s and damaging all enemies in a cone behind it.",
         "fields": [
             {
                 "title": "Damage",
@@ -162,16 +162,16 @@
             },
             {
                 "title": "Level 13",
-                "value": "Grants Gardevoir a shield.",
+                "value": "Grants Gardevoir a shield for 3s.",
                 "type": "data"
             },
             {
                 "title": "Shield",
-                "value": "54% SpA + 8 x (Level - 1) + 248",
+                "value": "60% SpA + 0 x (Level - 1) + 300",
                 "calc_variables": {
-                    "atk_modifier": 0.54,
-                    "lvl_modifier": 8,
-                    "addend": 248
+                    "atk_modifier": 0.6,
+                    "lvl_modifier": 0,
+                    "addend": 300
                 },
                 "type": "inline"
             }
@@ -183,7 +183,7 @@
         "level": 9,
         "cd": 134,
         "type": "hindrance",
-        "desc": "Gardevoir warps space in a large area, creating a field stunning, pulling, and damaging all enemies in the radius. When it expires, the field damages and shoves enemies.",
+        "desc": "Gardevoir warps space in a large area, creating a field, damaging all enemies in the radius and pulling them towards the center 4 times. When it expires, the field damages and shoves enemies.",
         "fields": [
             {
                 "title": "Damage - First Four Ticks",

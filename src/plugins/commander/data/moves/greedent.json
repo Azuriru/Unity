@@ -3,9 +3,9 @@
         "aliases": ["s01"],
         "name": "Tackle",
         "level": 1,
-        "cd": 6,
+        "cd": 5.5,
         "type": "dash",
-        "desc": "Leap to the designated area, dealing damage to enemies in the area of effect and decrease their movement speed for a short time. If this move is used while Covet is active, no area can be designated for the user to leap to. Instead, while the user is running, damage is dealt in an area to enemies in front of Greedent. If Greedent has any Oran berries stashed, consume all of them, reducing Tackle's cooldown for each berry consumed.",
+        "desc": "Leap to the designated area, dealing damage to enemies in the area of effect and decreasing their movement speed by 20% for 1s. If this move is used while Covet is active, no area can be designated for Greedent to leap to. Instead, while running, damage is dealt in an area to enemies in front of Greedent. If Greedent has any Oran berries stashed, consume all of them, reducing Tackle's cooldown by 1s for each berry consumed.",
         "fields": [
             {
                 "title": "Damage",
@@ -25,7 +25,7 @@
         "level": 1,
         "cd": 8,
         "type": "buff",
-        "desc": "Grants Greedent a shield (15% max HP) for a short time. In addition, an Oran berry will drop in front of Greedent."
+        "desc": "Grants Greedent a shield (10% max HP) for 3s. In addition, an Oran berry will drop in front of Greedent."
     },
     {
         "aliases": ["s11", "cheeks"],
@@ -33,21 +33,21 @@
         "level": 5,
         "cd": 8,
         "type": "buff",
-        "desc": "Greedent drops several Oran berries, which can be eaten to recover HP. Any HP recovered from an Oran berry eaten within 5s that exceeds Greedent's max HP will be converted to a shield. If Greedent catches sight of a berry while using this move, movement speed is increased for a short time.",
+        "desc": "Greedent drops 5 Oran berries, which can be eaten to recover HP. Any HP recovered from an Oran berry eaten within 5s that exceeds Greedent's max HP will be converted to a shield for 1.8% max HP per berry. If Greedent catches sight of a berry while using this move, movement speed is increased by 70% for 6s, but decreasing by 15% every 1s.",
         "fields": [
             {
-                "title": "Shield Per Oran Berry",
-                "value": "50 + 6 x (Level - 1)",
+                "title": "Heal Per Oran Berry",
+                "value": "45 + 5 x (Level - 1) + 2% max HP",
                 "calc_variables": {
-                    "atk_modifier": 0 ,
-                    "lvl_modifier": 6,
-                    "addend": 50
+                    "atk_modifier": 0,
+                    "lvl_modifier": 5,
+                    "addend": 45
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 11",
-                "value": "Increase the number of Oran berries dropped.",
+                "value": "Increase the number of Oran berries dropped by 1.",
                 "type": "data"
             }
         ]
@@ -58,32 +58,32 @@
         "level": 5,
         "cd": 11,
         "type": "hindrance",
-        "desc": "Greedent runs with all its might for 6s, becoming unstoppable and dealing damage to enemies hit and throwing them. While running, Greedent drops Oran berries. Eating a dropped berry increases movement speed for a short time. The more berries eaten, the more movement speed is increased. In addition, Tackle, Belch or Bullet Seed can also be used while running and using this move will reset the cooldown of Tackle or Belch.\n\nThis damage is mitigated by Defense.",
+        "desc": "Greedent runs with all its might for 6s; becoming resistant to hindrances (for 6.1s), dealing damage to enemies hit and throwing them. While running; Greedent drops Oran berries every 1s. Eating a dropped berry increases movement speed by 22% for 1s (stacking up to 5 times). In addition, Tackle, Belch or Bullet Seed can also be used while running and using this move will reset the cooldown of Tackle or Belch.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "75% SpA + 5 x (Level - 1) + 250",
+                "value": "55% Atk + 4 x (Level - 1) + 180",
                 "calc_variables": {
                     "atk_type": "sp_attack",
-                    "atk_modifier": 0.75,
-                    "lvl_modifier": 5,
-                    "addend": 250
+                    "atk_modifier": 0.55,
+                    "lvl_modifier": 4,
+                    "addend": 180
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 11",
-                "value": "Increased damage dealt and increased frequency of Oran berries dropping.",
+                "value": "Increased damage and increased frequency of Oran berries dropping (8 berries over 6s).",
                 "type": "data"
             },
             {
                 "title": "Damage",
-                "value": "79% SpA + 6 x (Level - 1) + 280",
+                "value": "59% Atk + 5 x (Level - 1) + 200",
                 "calc_variables": {
                     "atk_type": "sp_attack",
-                    "atk_modifier": 0.79,
-                    "lvl_modifier": 6,
-                    "addend": 280
+                    "atk_modifier": 0.59,
+                    "lvl_modifier": 5,
+                    "addend": 200
                 },
                 "type": "inline"
             }
@@ -95,7 +95,7 @@
         "level": 7,
         "cd": 5,
         "type": "ranged",
-        "desc": "Spit berry seeds in the designated direction, dealing damage to enemies in the area of effect and decrease their movement speed for a short time. The more Oran berries Greedent has stashed, the more damage this move deals.",
+        "desc": "Spit berry seeds in the designated direction for 6s; dealing damage to enemies in the area of effect and decreasing their movement speed by 30% for 1s. Greedent fires more seeds for each Oran berry stashed.",
         "fields": [
             {
                 "title": "Damage",
@@ -130,7 +130,7 @@
         "level": 7,
         "cd": 5,
         "type": "ranged",
-        "desc": "Deals damage to enemies in the area of effect and decrease their movement speed for a short time. If Greedent has any Oran berries stashed, consume all of them, reducing Belch's cooldown for each berry consumed.",
+        "desc": "Deals damage to enemies in the area of effect and decrease their movement speed by 15% for 1s. If Greedent has any Oran berries stashed, consume all of them, reducing Belch's cooldown by 1s for each berry consumed (capping at 4s). This move's cooldown cannot be reduced beyond 1s.",
         "fields": [
             {
                 "title": "Damage",
@@ -163,9 +163,9 @@
         "aliases": ["u", "unite"],
         "name": "Berry Belly Flop",
         "level": 9,
-        "cd": 140,
+        "cd": 112,
         "type": "area",
-        "desc": "Greedent eats an Oran berry to recover HP and then leaps to the designated area, dealing damage and throwing enemies within the area of effect. Greedent then eats a special berry, allowing an unlimited amount of Oran berries to be stored for a short time and resets cooldowns of all moves.",
+        "desc": "Greedent eats a special berry to recover 15% max HP and then leaps to the designated area; becoming briefly unstoppable, dealing damage, and throwing enemies within the area of effect. Greedent then eats another berry, allowing an unlimited amount of Oran berries to be stored for 8s and resets cooldowns of all moves.",
         "fields": [
             {
                 "title": "Damage",

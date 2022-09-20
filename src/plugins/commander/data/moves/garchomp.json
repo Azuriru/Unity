@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 6,
         "type": "debuff",
-        "desc": "Garchomp hurls sand toward a designated area, reducing enemy visibility and slowing them for 2s. Garchomp's movement speed and basic attack speed are increased if an enemy is hit."
+        "desc": "Garchomp hurls sand toward a designated area; reducing enemy visibility by 50% and slowing them by 20% for 2s. Garchomp's movement speed is increased by 30% for 2s and auto attack speed is increased by 30% for 3s if an enemy is hit."
     },
     {
         "aliases": ["s02"],
@@ -33,7 +33,7 @@
         "level": 5,
         "cd": 8,
         "type": "dash",
-        "desc": "Garchomp quickly dives underground in a short dash, then bursts from the ground at the end of the designated area or beneath the first enemy hit, dealing damage in a small radius and throwing enemies into the air.",
+        "desc": "Garchomp quickly dives underground in a short dash; then bursts from the ground at the end of the designated area or beneath the first enemy hit, dealing damage in a small radius and throwing enemies into the air for 0.5s. Defense and Sp. Def. are increased for 3s after jumping out of the ground.",
         "fields": [
             {
                 "title": "Damage",
@@ -46,8 +46,18 @@
                 "type": "inline"
             },
             {
+                "title": "Defenses - Increase",
+                "value": "0% Atk + 25 x (Level - 1) + 25",
+                "calc_variables": {
+                    "atk_modifier": 0,
+                    "lvl_modifier": 25,
+                    "addend": 25
+                },
+                "type": "inline"
+            },
+            {
                 "title": "Level 11",
-                "value": "Defenses are increased by 350 for a short time after jumping out of the ground.",
+                "value": "Increased throw duration to 1s.",
                 "type": "data"
             }
         ]
@@ -58,7 +68,7 @@
         "level": 5,
         "cd": 6,
         "type": "dash",
-        "desc": "Garchomp jumps back, and briefly channels before diving forward, dragging all enemies within a small radius to the designated area, then dealing damage in a radius. Garchomp can use Dragon Claw during the first half of the channel to provide two more hits and replace the radial damage at the end of the move with a damaging stun.",
+        "desc": "Garchomp jumps back and briefly channels before diving forward; dragging all enemies within a small radius to the designated area and reducing damage taken by 30% for .9s; then deals damage in a radius. Garchomp can use Dragon Claw during the first half of the channel to add the Dragon Claw hits as a combo attack, increasing attack speed by 25% for 5s if it hits an enemy, and replace the radial damage at the end of the move with a damaging stun and slow.",
         "fields": [
             {
                 "title": "Damage",
@@ -72,7 +82,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Slows enemies for a short time when they are shoved the maximum distance.",
+                "value": "Become unstoppable during this move.",
                 "type": "data"
             }
         ]
@@ -83,7 +93,7 @@
         "level": 7,
         "cd": 7,
         "type": "area",
-        "desc": "Garchomp jumps and crashes forcefully to the ground, dealing damage in a wide radius. After the initial damage, two aftershocks occur in the designated area, each dealing less damage than the initial move.",
+        "desc": "Garchomp jumps and crashes forcefully to the ground; dealing damage in a wide radius and slowing enemies by 30% for 2s. After the initial damage, two aftershocks occur in the designated area; each dealing less damage than the initial move.",
         "fields": [
             {
                 "title": "Damage - Initial",
@@ -107,7 +117,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Slows enemies for a short time if they are in the radius",
+                "value": "Slow increased to 45% near the center.",
                 "type": "data"
             }
         ]
@@ -118,7 +128,7 @@
         "level": 7,
         "cd": 5,
         "type": "melee",
-        "desc": "Garchomp viciously claws everything in the designated area twice. The first attack deals damage and pushes enemies. The second attack deals increased damage, in a range slightly larger than the designated area. Basic attack speed is increased for a short time if this attack hits an enemy.",
+        "desc": "Garchomp viciously claws everything in the designated area twice. The first attack deals damage and pushes enemies. The second attack deals increased damage; in a range slightly larger than the designated area. When using Dragon Rush combo with this move, increase the slow to enemies.",
         "fields": [
             {
                 "title": "Damage - First Hit",
@@ -132,11 +142,11 @@
             },
             {
                 "title": "Damage - Second Hit",
-                "value": "96% Atk + 6 x (Level - 1) + 168",
+                "value": "96% Atk + 6 x (Level - 1) + 160",
                 "calc_variables": {
                     "atk_modifier": 0.96,
                     "lvl_modifier": 6,
-                    "addend": 168
+                    "addend": 160
                 },
                 "type": "inline"
             },
@@ -147,21 +157,21 @@
             },
             {
                 "title": "Damage - Initial",
-                "value": "100% Atk + 4 x (Level - 1) + 168",
+                "value": "96% Atk + 6 x (Level - 1) + 168",
                 "calc_variables": {
-                    "atk_modifier": 1,
-                    "lvl_modifier": 4,
+                    "atk_modifier": 0.96,
+                    "lvl_modifier": 6,
                     "addend": 168
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Second Hit",
-                "value": "111% Atk + 9 x (Level - 1) + 185",
+                "value": "115.2% Atk + 7 x (Level - 1) + 192",
                 "calc_variables": {
-                    "atk_modifier": 1.11,
-                    "lvl_modifier": 9,
-                    "addend": 185
+                    "atk_modifier": 1.152,
+                    "lvl_modifier": 7,
+                    "addend": 192
                 },
                 "type": "inline"
             }
@@ -173,7 +183,7 @@
         "level": 9,
         "cd": 134,
         "type": "melee",
-        "desc": "Garchomp goes berzerk, taking 30% less damage and unleashing a powerful, unstoppable chain attack. Garchomp dashes and deals damage in the designated area five times, taking a brief moment to aim before every attack. Every attack has a different designated area and does more damage than the last. The fifth and final attack stuns Garchomp for .5 seconds, and throws all enemies hit into the air.",
+        "desc": "Garchomp goes berzerk, taking 30% less damage for 5s and unleashes a powerful, unstoppable chain attack. Garchomp dashes and deals damage in the designated area five times; taking a brief moment to aim before every attack. Every attack has a different designated area and does more damage than the last. The fifth and final attack stuns Garchomp for .5s and throws all enemies hit into the air. Enemies hit are slowed by 30% for 1s.",
         "fields": [
             {
                 "title": "Damage - First Hit",

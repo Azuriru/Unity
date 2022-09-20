@@ -29,11 +29,11 @@
         "fields": [
             {
                 "title": "Damage",
-                "value": "200% Atk + 10 x (Level - 1) + 210",
+                "value": "167% Atk + 8 x (Level - 1) + 180",
                 "calc_variables": {
-                    "atk_modifier": 2,
-                    "lvl_modifier": 10,
-                    "addend": 210
+                    "atk_modifier": 1.67,
+                    "lvl_modifier": 8,
+                    "addend": 180
                 },
                 "type": "inline"
             }
@@ -45,31 +45,31 @@
         "level": 5,
         "cd": 9,
         "type": "dash",
-        "desc": "Lucario dashes forward, damaging all enemies hit and healing Lucario for each enemy hit. The first enemy hit will reset the cooldown of Extreme Speed. This effect cannot occur on the same target more than once every 10 seconds. Attacking immediately after the dash will perform a unique attack in an area dealing 75% Atk and can critically hit.",
+        "desc": "Lucario dashes forward, damaging all enemies hit and healing Lucario for each enemy hit. The first enemy hit will reset the cooldown of Extreme Speed. This effect cannot occur on the same target more than once every 10s. Attacking immediately after the dash will perform a unique attack in an area dealing 75% Atk and can critically hit.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "225% Atk + 6 x (Level - 1) + 280",
+                "value": "198% Atk + 6 x (Level - 1) + 270",
                 "calc_variables": {
-                    "atk_modifier": 2.25,
+                    "atk_modifier": 1.98,
                     "lvl_modifier": 6,
-                    "addend": 280
+                    "addend": 270
                 },
                 "type": "inline"
             },
             {
                 "title": "Healing",
-                "value": "45% Atk + 1 x (Level - 1) + 56",
+                "value": "33.75% Atk + 1 x (Level - 1) + 42",
                 "calc_variables": {
-                    "atk_modifier": 0.45,
+                    "atk_modifier": 0.3375,
                     "lvl_modifier": 1,
-                    "addend": 56
+                    "addend": 42
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 11",
-                "value": "Increases Lucario's damage by 15% for a short time.",
+                "value": "Increases Lucario's damage by 7.5% for 2s. This buff activates regardless if an enemy was hit, and is applied the moment this move is activated.",
                 "type": "data"
             }
         ]
@@ -80,7 +80,7 @@
         "level": 5,
         "cd": 7,
         "type": "melee",
-        "desc": "Lucario begins charging power, slowing themself and reducing damage taken by 30% while preparing to unleash a devastating punch. Upon release, Lucario lunges – damaging the first enemy hit. Power-Up Punch does bonus damage based on the enemy's missing health (capping at 1000), and will cause Lucario's next attack to be boosted. The cooldown for Power-Up Punch is reduced whenever Lucario lands a move.",
+        "desc": "Lucario begins charging power, slowing themself and reducing damage taken by 30% while preparing to unleash a devastating punch. Upon release, Lucario lunges – damaging the first enemy hit and briefly stunning them. Power-Up Punch does bonus damage based on the enemy's missing HP, and will cause Lucario's next attack to be boosted. The cooldown for Power-Up Punch is reduced by 1s whenever Lucario lands a move. \n\nAgainst Wild Pokémon: The additional damage from missing HP is capped at 1000.",
         "fields": [
             {
                 "title": "Damage - Uncharged",
@@ -120,7 +120,7 @@
         "level": 7,
         "cd": 10,
         "type": "dash",
-        "desc": "Lucario rapidly strikes with a bone, damaging enemies hit up to 6 times. Enemies in long range will be hit 3 times and at close range they will be hit 6 times. Lucario then throws the bone after the final strike, shoving enemies and causing the bone to land a short distance away. Lucario can activate Bone Rush again to teleport to the bone, damaging enemies in a small area around it. Landing one of Bone Rush's initial strikes will reset the cooldown timer for extreme speed on that target.",
+        "desc": "Lucario rapidly strikes with a bone, damaging enemies hit up to 6 times. Enemies in long range will be hit 3 times and at close range they will be hit 6 times. Lucario then throws the bone after the final strike, shoving enemies and causing the bone to land a short distance away. Lucario can activate Bone Rush again to teleport to the bone, damaging enemies in a small area around it. Landing one of Bone Rush's initial strikes will reset the cooldown timer for Extreme Speed on that target.",
         "fields": [
             {
                 "title": "Damage - per Hit (4-7 Hits)",
@@ -145,15 +145,25 @@
         "level": 7,
         "cd": 9,
         "type": "melee",
-        "desc": "Lucario rapidly punches, damaging enemies in the area in front of them 11 times over the duration.",
+        "desc": "Lucario rapidly punches, damaging enemies in the area in front of them 11 times over the duration, restoring HP per hit, and becomes Unstoppable while punching. For 5s after this move is used, Lucario's next basic attack gains increased range and causes Lucario to dash to the target.",
         "fields": [
             {
                 "title": "Damage - per Hit (11 Hits)",
-                "value": "59% Atk + 2 x (Level - 1) + 76",
+                "value": "50% Atk + 2 x (Level - 1) + 60",
                 "calc_variables": {
                     "atk_modifier": 0.59,
                     "lvl_modifier": 2,
                     "addend": 76
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Heal - per Hit",
+                "value": "10% Atk + 0 x (Level - 1) + 20",
+                "calc_variables": {
+                    "atk_modifier": 0.1,
+                    "lvl_modifier": 0,
+                    "addend": 20
                 },
                 "type": "inline"
             },
@@ -164,11 +174,11 @@
             },
             {
                 "title": "Damage - per Hit (11 Hits)",
-                "value": "62% Atk + 2 x (Level - 1) + 80",
+                "value": "56% Atk + 2 x (Level - 1) + 69",
                 "calc_variables": {
-                    "atk_modifier": 0.62,
+                    "atk_modifier": 0.56,
                     "lvl_modifier": 2,
-                    "addend": 80
+                    "addend": 69
                 },
                 "type": "inline"
             }
@@ -180,7 +190,7 @@
         "level": 9,
         "cd": 134,
         "type": "ranged",
-        "desc": "Aura Cannon does not have a limit to the number of times it can hit one target, rather it deals damage to enemies in its area while it travels, gaining speed. At close range, a still enemy can be hit up to 4 times and when the cannon is at max speed, a still enemy will only be struck twice. Damage of the next Power-Up Punch is increased by roughly 20%, and enemies hit by the cannon have their internal cooldown for Extreme Speed reset.",
+        "desc": "Lucario charges a massive aura sphere and launches it in the designated direction. Aura Cannon does not have a limit to the number of times it can hit one target, rather it deals damage to enemies in its area while it travels, gaining speed. At close range, a still enemy can be hit up to 4 times and when the cannon is at max speed, a still enemy will only be struck once. Damage of the next Power-Up Punch is increased by roughly 20%, and enemies hit by the cannon have their internal cooldown for Extreme Speed reset.",
         "fields": [
             {
                 "title": "Damage - Per Tick",

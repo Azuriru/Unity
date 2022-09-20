@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 7,
         "type": "melee",
-        "desc": "Mr. Mime claps, damaging and knocking enemies back in a cone.",
+        "desc": "Mr. Mime claps, damaging and knocking back enemies hit.",
         "fields": [
             {
                 "title": "Damage",
@@ -25,33 +25,33 @@
         "level": 1,
         "cd": 8,
         "type": "hindrance",
-        "desc": "Mr. Mime creates a wall that prevents enemies from passing."
+        "desc": "Mr. Mime creates a wall that prevents enemies from passing. If an enemy is near the location where the wall is created, they are shoved and left unable to act for a short time."
     },
     {
-        "aliases": ["s11"],
+        "aliases": ["s11", "confusion"],
         "name": "Confusion",
         "level": 4,
         "cd": 6,
         "type": "ranged",
-        "desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned. Enemies debuffed by Guard Swap take bonus damage and are stunned, but are not knocked back.",
+        "description": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned for 1.5s. Enemies debuffed by Power Swap take bonus damage and are stunned, but are not knocked back.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "170.4% SpA + 20 x (Level - 1) + 460",
+                "value": "175% SpA + 16 x (Level - 1) + 400",
                 "calc_variables": {
-                    "atk_modifier": 1.704,
-                    "lvl_modifier": 20,
-                    "addend": 460
+                    "atk_modifier": 1.75,
+                    "lvl_modifier": 16,
+                    "addend": 400
                 },
                 "type": "inline"
             },
             {
-                "title": "Damage - Wall Hit",
-                "value": "204.48% SpA + 23 x (Level - 1) + 552",
+                "title": "Damage - Stunned",
+                "value": "200% SpA + 16 x (Level - 1) + 450",
                 "calc_variables": {
-                    "atk_modifier": 2.0448,
-                    "lvl_modifier": 23,
-                    "addend": 552
+                    "atk_modifier": 2,
+                    "lvl_modifier": 16,
+                    "addend": 450
                 },
                 "type": "inline"
             },
@@ -62,98 +62,108 @@
             },
             {
                 "title": "Damage",
-                "value": "213% SpA + 23 x (Level - 1) + 510",
+                "value": "191% SpA + 21 x (Level - 1) + 460",
                 "calc_variables": {
-                    "atk_modifier": 2.13,
-                    "lvl_modifier": 23,
-                    "addend": 510
+                    "atk_modifier": 1.91,
+                    "lvl_modifier": 21,
+                    "addend": 460
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Wall Hit",
-                "value": "255.6% SpA + 27 x (Level - 1) + 612",
+                "value": "219% SpA + 21 x (Level - 1) + 500",
                 "calc_variables": {
-                    "atk_modifier": 2.556,
-                    "lvl_modifier": 27,
-                    "addend": 612
+                    "atk_modifier": 2.19,
+                    "lvl_modifier": 21,
+                    "addend": 500
                 },
                 "type": "inline"
             }
         ]
     },
     {
-        "aliases": ["s12"],
+        "aliases": ["s12", "psychic"],
         "name": "Psychic",
         "level": 4,
         "cd": 6,
         "type": "area",
-        "desc": "After a short channel, Mr. Mime creates a pulse of energy that damages enemies around themself and any target affected by Guard Swap, with a smaller pulse around any created Barriers or Light Screens. Enemies hit by more than 1 pulse are stunned.",
+        "description": "Mr. Mime. pulses energy, dealing damage in an area around themself, any target affected by Power Swap, and any Barriers or Light Screens. After three pulses, a final pulse will damage enemies and stun them for 1s. Enemies hit by the pulses have their SpDef lowered by 5% for each hit.",
         "fields": [
             {
-                "title": "Damage",
-                "value": "152% SpA + 16 x (Level - 1) + 370",
+                "title": "Damage - per Pulse",
+                "value": "30.3% SpA + 3 x (Level - 1) + 72",
                 "calc_variables": {
-                    "atk_modifier": 1.52,
-                    "lvl_modifier": 16,
-                    "addend": 370
+                    "atk_modifier": 0.3,
+                    "lvl_modifier": 3,
+                    "addend": 72
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Final Pulse",
+                "value": "101% SpA + 11 x (Level - 1) + 240",
+                "calc_variables": {
+                    "atk_modifier": 1.01,
+                    "lvl_modifier": 11,
+                    "addend": 240
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 11",
-                "value": "Also briefly slows.",
+                "value": "Enemies hit by the pulses are additionally slowed by 30%.",
                 "type": "data"
             }
         ]
     },
     {
-        "aliases": ["s21"],
+        "aliases": ["s21", "barrier"],
         "name": "Barrier",
         "level": 6,
         "cd": 8,
         "type": "hindrance",
-        "desc": "Mr. Mime creates a wall that prevents enemies from passing. Holds 2 uses in reserve and cannot be used more than once every 2s. When upgrading Barrier, reserved Barriers will be restored to the maximum.",
+        "description": "Mr. Mime creates a wall that prevents enemies from passing. If an enemy is near the location where the wall is created, they are shoved and left unable to act for a short time. Holds 2 uses in reserve and cannot be used more than once every 2s.",
         "fields": [
             {
                 "title": "Level 13",
-                "value": "Stores 3 charges in reserve instead.",
+                "value": "Stores 3 uses in reserve instead.",
                 "type": "data"
             }
         ]
     },
     {
-        "aliases": ["s22", "guard", "swap", "gs"],
-        "name": "Guard Swap",
+        "aliases": ["s22", "powerswap", "ps"],
+        "name": "Power Swap",
         "level": 6,
         "cd": 4,
         "type": "debuff",
-        "desc": "Mr. Mime fires a beam, swapping base Defense and Sp. Defense with another Pokémon for 6s when it hits. Swapping with an enemy slows and damages them over time while increasing Mr. Mime's movement speed. Swapping with an ally increases the movement speed of that ally and Mr. Mime.",
+        "description": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 15% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s. \n\nIf the linked target is an ally, this move increases their movement speed by 15%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 15%, decreases the amount of damage they deal by 15% and deals damage over time to them. Power Swap can be cleansed.",
         "fields": [
             {
-                "title": "Damage - 7 Ticks",
-                "value": "19% SpA + 2 x (Level - 1) + 50",
+                "title": "Damage - per Tick",
+                "value": "20% SpA + 2 x (Level - 1) + 50",
                 "calc_variables": {
-                    "atk_modifier": 0.19,
+                    "atk_modifier": 0.2,
                     "lvl_modifier": 2,
                     "addend": 50
                 },
                 "type": "inline"
             },
             {
-                "title": "Level 13",
-                "value": "Heals Mr. Mime, plus an ally if tethered to them.",
-                "type": "data"
-            },
-            {
-                "title": "Healing",
-                "value": "12% SpA + 2 x (Level - 1) + 60",
+                "title": "Healing - per Tick",
+                "value": "20% SpA + 2 x (Level - 1) + 15",
                 "calc_variables": {
-                    "atk_modifier": 0.12,
+                    "atk_modifier": 0.2,
                     "lvl_modifier": 2,
-                    "addend": 60
+                    "addend": 15
                 },
                 "type": "inline"
+            },
+            {
+                "title": "Level 13",
+                "value": "Increases the amount of damage dealt by allies to 20% and further strengthens the debuff to enemies, making them deal 20% less damage.",
+                "type": "data"
             }
         ]
     },
@@ -163,7 +173,7 @@
         "level": 9,
         "cd": 100,
         "type": "area",
-        "desc": "Mr. Mime leaps forward and begins a performance, stunning enemies and dealing damage in a large area around him 4 times. The final hit does double damage.",
+        "desc": "Mr. Mime leaps forward and begins a performance; stunning enemies for .5s, dealing damage in a large area around him 4 times, and becomes unstoppable for the duration. The final hit deals double damage.",
         "fields": [
             {
                 "title": "Damage - First 3 Hits",

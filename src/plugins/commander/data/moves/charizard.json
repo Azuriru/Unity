@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 6,
         "type": "ranged",
-        "desc": "Charizard attacks with a bursting flame forward, exploding on the first enemy hit, dealing damage and burning enemies in a small radius. Charizard gains a small movement speed bonus when hitting an enemy. The burn lasts 4s and reduces enemy Attack by 5%.",
+        "desc": "Charizard attacks with a bursting flame forward, exploding on the first enemy hit, dealing damage and burning enemies in a small radius. Charizard gains a 20% movement speed bonus for 3s when hitting an enemy. The burn lasts 4s and reduces enemy Attack by 5%.",
         "fields": [
             {
                 "title": "Damage",
@@ -35,7 +35,7 @@
         "level": 1,
         "cd": 10,
         "type": "area",
-        "desc": "Charizard shoots a burst of fire forward, exploding on the first enemy hit or after traveling max distance, dealing damage over time and slowing enemies within the radius.",
+        "desc": "Charizard shoots a burst of fire forward, exploding on the first enemy hit or after traveling max distance, dealing damage over time every 0.5s and slowing enemies within the radius by 25% for 1s (refreshing on every damage tick).",
         "fields": [
             {
                 "title": "Damage",
@@ -65,15 +65,15 @@
         "level": 5,
         "cd": 5.5,
         "type": "ranged",
-        "desc": "Attacks with a blast of fire, damaging and burning enemies in a line. Charizard gains a small movement speed bonus if they hit. The burn lasts 4s and reduces enemy Attack by 5%.",
+        "desc": "Attacks with a blast of fire while moving, damaging and burning enemies in a line. Charizard gains a small movement speed bonus by 40% for 4s if they hit. The burn lasts 4s and reduces enemy Attack by 5%.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "150% Atk + 6 x (Level - 1) + 160",
+                "value": "132% Atk + 6 x (Level - 1) + 145",
                 "calc_variables": {
-                    "atk_modifier": 1.50,
+                    "atk_modifier": 1.32,
                     "lvl_modifier": 6,
-                    "addend": 160
+                    "addend": 145
                 },
                 "type": "inline"
             },
@@ -94,11 +94,11 @@
             },
             {
                 "title": "Damage",
-                "value": "176% Atk + 8 x (Level - 1) + 190",
+                "value": "156% Atk + 7 x (Level - 1) + 170",
                 "calc_variables": {
-                    "atk_modifier": 1.76,
-                    "lvl_modifier": 8,
-                    "addend": 190
+                    "atk_modifier": 1.56,
+                    "lvl_modifier": 7,
+                    "addend": 170
                 },
                 "type": "inline"
             },
@@ -143,8 +143,8 @@
                 "type": "inline"
             },
             {
-                "title": "Level 13",
-                "value": "Cooldown reduces every time Charizard hits with a basic attack.",
+                "title": "Level 11",
+                "value": "Cooldown reduces by .25s every time Charizard damages an enemy with an auto attack damage tick (1s total for an entire auto attack animation).",
                 "type": "data"
             }
         ]
@@ -155,7 +155,7 @@
         "level": 7,
         "cd": 6.5,
         "type": "area",
-        "desc": "Charizard shoots a blast of fire forward, exploding on the first enemy hit or after a short distance, dealing damage over time and slowing enemies while within the radius.",
+        "desc": "Charizard shoots a blast of fire forward while moving, exploding on the first enemy hit or after a short distance, damaging enemies and leaving a fire area for 5s that deals damage over time every 0.5s and slows enemies within the radius by 35% for 1s (refreshing on every damage tick).",
         "fields": [
             {
                 "title": "Damage",
@@ -194,11 +194,11 @@
             },
             {
                 "title": "Damage - Area (10 Ticks)",
-                "value": "40% Atk + 1 x (Level - 1) + 54",
+                "value": "40.25% Atk + 1 x (Level - 1) + 53",
                 "calc_variables": {
-                    "atk_modifier": 0.4,
+                    "atk_modifier": 0.4025,
                     "lvl_modifier": 1,
-                    "addend": 54
+                    "addend": 53
                 },
                 "type": "inline"
             }
@@ -210,7 +210,7 @@
         "level": 7,
         "cd": 10,
         "type": "melee",
-        "desc": "Charizard charges forward, shielding itself, damaging and knocking back the targeted enemy.",
+        "desc": "Charizard charges forward, shielding themself for 5s, damaging and knocking back the targeted enemy.",
         "fields": [
             {
                 "title": "Damage",
@@ -234,7 +234,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Also slows enemies for a short time after thrown.",
+                "value": "Also slows enemies by 40% for 3s after thrown.",
                 "type": "data"
             }
         ]
@@ -245,7 +245,7 @@
         "level": 9,
         "cd": 123,
         "type": "sure-hit",
-        "desc": "Grab an enemy and slam it onto the ground, damaging the enemy and dealing additional damage based on their max HP. Then, fly up into the air moving freely over obstacles. While this move is active, basic attacks deal increased damage and leave enemies burned. When dealing damage to an enemy or when burning them during this move, recover HP equal to 80% of the damage dealt.",
+        "desc": "Grab an enemy and slam it onto the ground, damaging the target and nearby enemies and deal additional damage based on their max HP. Then, fly up into the air moving freely over obstacles for 7.5s. While this move is active, auto attacks apply a burn to the target which lasts for 1s, dealing 2 instances of damage and is refreshed by each instance of damage from auto attacks. When dealing damage with auto attacks to an enemy (not from burn or additional damage), recover HP equal to 80% of the damage dealt.",
         "fields": [
             {
                 "title": "Damage - Burning (5 Hits)",

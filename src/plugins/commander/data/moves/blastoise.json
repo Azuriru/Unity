@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 9,
         "type": "ranged",
-        "desc": "Blastoise shoots a jet of water in a straight line, damaging, stunning, and knocking back enemies hit. Enemies hit are also slowed for 1 second.",
+        "desc": "Blastoise shoots a jet of water in a straight line, damaging, stunning, and knocking back enemies hit for 0.5s. Enemies hit are also slowed for 1 second.",
         "fields": [
             {
                 "title": "Damage",
@@ -25,7 +25,7 @@
         "level": 1,
         "cd": 10,
         "type": "dash",
-        "desc": "Blastoise dashes forward damaging and stunning all enemies hit.",
+        "desc": "Blastoise dashes forward damaging and stunning all enemies hit for 0.5s.",
         "fields": [
             {
                 "title": "Damage",
@@ -43,9 +43,9 @@
         "aliases": ["s11", "pump"],
         "name": "Hydro Pump",
         "level": 5,
-        "cd": 8.5,
+        "cd": 7.5,
         "type": "ranged",
-        "desc": "Blastoise shoots a large amount of water: damaging, stunning, and knocking back enemies hit.\n\n**During Rapid Spin**\nBlastoise unleashes a large burst of water in a radius around themselves, damaging, stunning, and knocking back enemies hit. Blastoise also gains a small movement speed bonus for the duration of this move.",
+        "desc": "Blastoise shoots a large amount of water: damaging, stunning, and knocking back enemies hit for 0.5s.\n\n**During Rapid Spin**\nBlastoise unleashes a large burst of water in a radius around themselves, damaging, stunning, and knocking back enemies hit. Blastoise also gains a small movement speed bonus for the duration of this move.",
         "fields": [
             {
                 "title": "Damage - 3 Hits",
@@ -100,10 +100,10 @@
         "level": 5,
         "cd": 7.5,
         "type": "area",
-        "desc": "Blastoise calls down a barrage of water in a targeted radius. Enemies within the radius are struck 6 times over its duration, damaging and slowing them.\n\n**During Rapid Spin**\nBlastoise rapidly unleashes bursts of water in a radius around themselves dealing up to 8 instances of damage over a short duration. Blastoise also gains a small movement speed bonus for the duration of this move.",
+        "desc": "Blastoise calls down a barrage of water in a targeted radius. Enemies within the radius are struck 6 times over its duration, damaging and slowing them.\n\n**During Rapid Spin**\nBlastoise rapidly unleashes bursts of water in a radius around themselves dealing up to 17 instances of damage over the duration of Rapid Spin. Blastoise also gains a small movement speed bonus for the duration of this move.",
         "fields": [
             {
-                "title": "Damage - Area (6 Hits, 8 Hits - Rapid Spin)",
+                "title": "Damage - Area (6 Hits, 17 Hits - Rapid Spin)",
                 "value": "36% SpA + 4 x (Level - 1) + 120",
                 "calc_variables": {
                     "atk_modifier": 0.36,
@@ -118,7 +118,7 @@
                 "type": "data"
             },
             {
-                "title": "Damage - Area (6 Hits, 8 Hits - Rapid Spin)",
+                "title": "Damage - Area (6 Hits, 17 Hits - Rapid Spin)",
                 "value": "42% SpA + 4 x (Level - 1) + 140",
                 "calc_variables": {
                     "atk_modifier": 0.42,
@@ -135,7 +135,7 @@
         "level": 7,
         "cd": 12,
         "type": "dash",
-        "desc": "Blastoise rides a large wave in the designated direction, damaging, stunning, and knocking back enemies hit. Blastoise is unstoppable while surfing, and once it ends, Blastoise can jump in a designated direction. The wave continues for a short duration after Blastoise has leapt off and continues to knock back enemies hit but inflicts no damage.",
+        "desc": "Blastoise rides a large wave in the designated direction; damaging, knocking back, and stunning enemies hit for 1.6s. Blastoise is unstoppable while surfing, and once it ends, Blastoise can jump in a designated direction. The wave continues for a short duration after leaping off and the wave continues to knock back enemies hit but inflicts no damage.",
         "fields": [
             {
                 "title": "Damage",
@@ -149,8 +149,18 @@
             },
             {
                 "title": "Level 13",
-                "value": "Blastoise gains a small shield when hitting an enemy with Surf.",
+                "value": "Blastoise gains a small shield for 4s when hitting an enemy with Surf.",
                 "type": "data"
+            },
+            {
+                "title": "Shield",
+                "value": "180% SpA + 0 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 1.8,
+                    "lvl_modifier": 0,
+                    "addend": 180
+                },
+                "type": "inline"
             }
         ]
     },
@@ -160,7 +170,7 @@
         "level": 7,
         "cd": 11,
         "type": "area",
-        "desc": "Blastoise withdraws into its shell and begins rapidly spinning, resetting the cooldown of its other move. Blastoise is unstoppable for the duration of Rapid Spin and can freely move about the battlefield. While spinning, Blastoise will damage and slow nearby enemies. Blastoise’s next basic attack after Rapid Spin ends becomes boosted. For the duration of Rapid Spin, the mechanics of Blastoise’s Basic attacks as well as Hydro Pump and Water Spout are changed.",
+        "desc": "Blastoise withdraws into its shell and begins rapidly spinning for 5.5s; resetting the cooldown of its other move. Blastoise resists hindrances for the duration of Rapid Spin and can freely move about the battlefield. While spinning, Blastoise will damage nearby enemies. Blastoise’s next auto attack after Rapid Spin ends becomes boosted. For the duration of Rapid Spin, the mechanics of Blastoise’s auto attacks as well as Hydro Pump and Water Spout are changed.",
         "fields": [
             {
                 "title": "Damage - 10 hits",
@@ -193,17 +203,27 @@
         "aliases": ["u", "unite"],
         "name": "Hydro Typhoon",
         "level": 9,
-        "cd": 113,
+        "cd": 112,
         "type": "hindrance",
-        "desc": "Blastoise gains a shield and sweeps powerful water jets in a large circle around itself dealing massive damage and knocking enemies hit into the air.",
+        "desc": "Blastoise gains a shield for 4s and sweeps powerful water jets in a large circle around itself dealing massive damage and knocking enemies hit into the air for 1.5s.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "218% SpA + 27 x (Level - 1) + 1390",
+                "value": "164% SpA + 22 x (Level - 1) + 1040",
                 "calc_variables": {
-                    "atk_modifier": 2.18,
-                    "lvl_modifier": 27,
-                    "addend": 1390
+                    "atk_modifier": 1.64,
+                    "lvl_modifier": 22,
+                    "addend": 1040
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Shield",
+                "value": "360% SpA + 0 x (Level - 1) + 180",
+                "calc_variables": {
+                    "atk_modifier": 3.6,
+                    "lvl_modifier": 0,
+                    "addend": 180
                 },
                 "type": "inline"
             }
