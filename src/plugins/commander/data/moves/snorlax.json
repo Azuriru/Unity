@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 6,
         "type": "dash",
-        "desc": "Snorlax dashes a short distance forward, dealing damage and stunning the first target hit. Snorlax’s next basic attack is boosted.",
+        "desc": "Snorlax dashes a short distance forward, dealing damage, stunning the first target hit for 1s, and slightly throwing them. Snorlax’s next auto attack is boosted.",
         "fields": [
             {
                 "title": "Damage",
@@ -25,7 +25,7 @@
         "level": 1,
         "cd": 10,
         "type": "recovery",
-        "desc": "Snorlax falls asleep for a short duration, healing 3 times for 8% Max HP. While asleep other Pokémon cannot pass through Snorlax’s hitbox."
+        "desc": "Snorlax falls asleep for 3s, becoming unstoppable, and healing 3 times for 8% Max HP. While asleep, enemies cannot pass through Snorlax’s hitbox."
     },
     {
         "aliases": ["s11"],
@@ -33,7 +33,7 @@
         "level": 5,
         "cd": 7,
         "type": "dash",
-        "desc": "Snorlax jumps to target location, dealing damage and throwing enemies within the landing radius into the air briefly.",
+        "desc": "Snorlax jumps to target location, dealing damage and throwing enemies within the landing radius into the air for 1s.",
         "fields": [
             {
                 "title": "Damage",
@@ -68,21 +68,21 @@
         "level": 5,
         "cd": 6.5,
         "type": "buff",
-        "desc": "Snorlax buffs themselves for 5 seconds causing basic attacks to deal increased damage. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed when Flail is activated.",
+        "desc": "Snorlax buffs themselves for 5s causing auto attacks to deal increased damage and slow enemies hit. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed and slows nearby enemies for 1.5s when Flail is activated.",
         "fields": [
             {
                 "title": "Basic Attack - Above 80% HP",
-                "value": "45% Atk",
+                "value": "45% Atk \nAgainst Wild Pokemon: The total damage is capped at 2000.",
                 "type": "data"
             },
             {
                 "title": "Boosted Attack - Above 80% HP",
-                "value": "67.5% Atk",
+                "value": "67.5% Atk \nAgainst Wild Pokemon: The total damage is capped at 2500.",
                 "type": "data"
             },
             {
                 "title": "Level 11",
-                "value": "Deals increased damage. In addition, if Snorlax is below 40% HP, Snorlax's basic attacks will also gain 30% lifesteal.",
+                "value": "Increased damage. In addition, if Snorlax is below 40% HP, auto attacks will also gain 30% lifesteal.",
                 "type": "data"
             },
             {
@@ -98,12 +98,12 @@
         ]
     },
     {
-        "aliases": ["s21"],
+        "aliases": ["s21", "block"],
         "name": "Block",
         "level": 7,
-        "cd": 11,
+        "cd": 9,
         "type": "hindrance",
-        "desc": "Snorlax creates and holds a wall in a targeted direction for 4 seconds and gains a shield. The shield lasts 3.75 sec even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned. Snorlax cannot attack or use abilities while Blocking but can move slowly.",
+        "description": "Snorlax creates and holds a wall in a targeted direction for 4s and gains a shield. The shield lasts 3.75s even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned for 1s. Snorlax cannot attack or use abilities while Blocking but can move slowly.",
         "fields": [
             {
                 "title": "Shield",
@@ -112,22 +112,22 @@
             },
             {
                 "title": "Level 13",
-                "value": "While Blocking Snorlax’s Def and SpDef are increased by 25%.",
+                "value": "While blocking, Snorlax’s Def and SpDef are increased by 25%.",
                 "type": "data"
             }
         ]
     },
     {
-        "aliases": ["s22"],
+        "aliases": ["s", "yawn"],
         "name": "Yawn",
         "level": 7,
         "cd": 12,
         "type": "hindrance",
-        "desc": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 2 seconds.",
+        "description": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 3s.",
         "fields": [
             {
                 "title": "Level 13",
-                "value": "Targets are also slowed for 3s upon waking up.",
+                "value": "Enemy movement speed reduced by 35% for 3s upon waking up.",
                 "type": "data"
             }
         ]
@@ -136,9 +136,9 @@
         "aliases": ["u", "unite"],
         "name": "Power Nap",
         "level": 9,
-        "cd": 128,
+        "cd": 112,
         "type": "recovery",
-        "desc": "Go to sleep and begin snoring, dealing damage to enemies in the area of effect and throws them in the air. While sleeping, become immune to hindrances, deal damage over time to nearby enemies, slow enemies hit for 1s, and continually restore 7% of max HP, 9 times. This move can be recasted to flip over, dealing an extra instance of the DoT damage.",
+        "desc": "Go to sleep and begin snoring, dealing damage to enemies in the area of effect and throws them in the air for 1s. While sleeping enemies cannot pass through Snorlax’s hitbox, Snorlax becomes immune to hindrances, deals damage over time to nearby enemies, slow enemies hit by 30% for 1s, and continually restore 7% of max HP, 9 times. This move can be recasted to flip over, dealing an extra instance of the DoT damage and throwing enemies in the air for 1s.",
         "fields": [
             {
                 "title": "Damage",

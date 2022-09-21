@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 5,
         "type": "sure-hit",
-        "desc": "Pikachu releases electricity to a designated area, damaging enemies in the radius. Also paralyzes (slows) enemies for a short time.",
+        "desc": "Pikachu releases electricity to a designated area, damaging enemies in the radius. Also paralyzes (slow by 30% for 1s and reduce Attack Speed by 10% for 1s) enemies hit.",
         "fields": [
             {
                 "title": "Damage",
@@ -25,7 +25,7 @@
         "level": 1,
         "cd": 9,
         "type": "hindrance",
-        "desc": "Pikachu attacks and captures enemies using an electric net, rooting them.",
+        "desc": "Pikachu attacks and captures enemies using an electric net, rooting them for 1.5s.",
         "fields": [
             {
                 "title": "Damage",
@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 5,
         "type": "sure-hit",
-        "desc": "Pikachu hurls an electric orb at an enemy, paralyzing (slowing) and damaging them and nearby enemies. Damage increases as the enemies' remaining HP decreases. Damage caps at 1200.",
+        "desc": "Pikachu hurls an electric orb at the targeted enemy, damaging and paralyzing (slow by 50% for 1s and reduce Attack Speed by 10% for 1s) all enemies in a small radius around the target upon impact. Deals bonus damage based on the enemy's missing HP. \n\nAgainst Wild Pokémon: The total damage is capped at 1200.",
         "fields": [
             {
                 "title": "Damage - Area",
@@ -90,7 +90,7 @@
         "level": 4,
         "cd": 8,
         "type": "area",
-        "desc": "Pikachu drops wicked thunderbolts at a designated area, damaging enemies in the radius.",
+        "desc": "Pikachu drops wicked thunderbolts at a designated area for 2.5s, damaging enemies in the radius every 0.5s.",
         "fields": [
             {
                 "title": "Damage - Area (5 Strikes)",
@@ -104,7 +104,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Increases the number of times this move strikes to 7.",
+                "value": "Increases the number of times this move strikes to 7. Does not increase the duration of the area.",
                 "type": "data"
             }
         ]
@@ -115,7 +115,7 @@
         "level": 6,
         "cd": 10,
         "type": "hindrance",
-        "desc": "Pikachu electrifies themself and charges ahead becoming unstoppable, throwing and damaging enemies hit.",
+        "desc": "Pikachu charges the targeted enemy, becoming unstoppable, damaging and throwing the target in the air for 1.4s.",
         "fields": [
             {
                 "title": "Damage - 5 Hits",
@@ -140,7 +140,7 @@
         "level": 6,
         "cd": 8,
         "type": "hindrance",
-        "desc": "Pikachu attacks with a strong electric blast at a designated area, stunning and damaging enemies in the area.",
+        "desc": "Pikachu attacks with a strong electric blast at a designated area; damaging and stunning enemies in the area for 1.25s.",
         "fields": [
             {
                 "title": "Damage",
@@ -159,11 +159,11 @@
             },
             {
                 "title": "Damage",
-                "value": "61% SpA + 12 x (Level - 1) + 609",
+                "value": "59% SpA + 14 x (Level - 1) + 600",
                 "calc_variables": {
-                    "atk_modifier": 0.61,
-                    "lvl_modifier": 12,
-                    "addend": 609
+                    "atk_modifier": 0.59,
+                    "lvl_modifier": 14,
+                    "addend": 600
                 },
                 "type": "inline"
             }
@@ -175,7 +175,7 @@
         "level": 9,
         "cd": 89,
         "type": "area",
-        "desc": "Four bolts of lightning strike 4 times over 3 seconds. The first strike hits all enemies in the radius, and the next three strikes hit a random enemy within radius.",
+        "desc": "Briefly become unstoppable and summon bolts of lightning 4 times over 3s in a radius around Pikachu. The first strike targets all enemy players in the radius and the next 3 strikes target a single random enemy player within the radius.Targets that are struck by bolts deal damage to their allies in a small area around them. Enemies in the area of multiple bolts during the first strike are only damaged once. \n\nAll moves can be used during this Thunderstorm.",
         "fields": [
             {
                 "title": "Damage",
