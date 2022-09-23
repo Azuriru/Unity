@@ -45,7 +45,7 @@
         "level": 5,
         "cd": 6.5,
         "type": "dash",
-        "desc": "Talonflame dashes forward, damaging enemies in its path. Talonflame gains a speed boost after the dash.",
+        "desc": "Talonflame dashes forward; damaging enemies in its path. Talonflame gains 30% movement speed for 1.5s after dashing.",
         "fields": [
             {
                 "title": "Damage",
@@ -59,7 +59,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "For a short time after this move hits, Talonflame's abilities and basic attacks partially ignore the enemies defense for the next 3s (capped at 0) and enemies hit are slowed by 30% for 5 seconds.",
+                "value": "For 3s after this move hits; Talonflame's abilities and auto attacks partially ignore the enemies defense (capped at 0) and enemies hit are slowed by 30% for 5s.",
                 "type": "data"
             },
             {
@@ -80,7 +80,7 @@
         "level": 5,
         "cd": 5,
         "type": "dash",
-        "desc": "Talonflame dashes through a targeted enemy, damaging it. Talonflame's next basic attack is boosted.",
+        "desc": "Talonflame dashes through a targeted enemy; damaging them and healing Talonflame. Talonflame's next auto attack is boosted.",
         "fields": [
             {
                 "title": "Damage",
@@ -89,6 +89,16 @@
                     "atk_modifier": 0.95,
                     "lvl_modifier": 14,
                     "addend": 350
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Heal",
+                "value": "50% Atk + 0 x (Level - 1) + 45",
+                "calc_variables": {
+                    "atk_modifier": 0.5,
+                    "lvl_modifier": 0,
+                    "addend": 45
                 },
                 "type": "inline"
             },
@@ -113,23 +123,23 @@
         "aliases": ["s21", "dick move"],
         "name": "Fly",
         "level": 7,
-        "cd": 9,
+        "cd": 12,
         "type": "dash",
-        "desc": "Talonflame flies up into the sky, becoming untargetable. After 3 seconds, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early.",
+        "desc": "Talonflame flies up into the sky; becoming untargetable. After 3s, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early. This move's cooldown is reduced by 40% if it hits an enemy player. After using this move, the next attack becomes a boosted attack.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "255% Atk + 24 x (Level - 1) + 1050",
+                "value": "221% Atk + 21 x (Level - 1) + 910",
                 "calc_variables": {
-                    "atk_modifier": 2.55,
-                    "lvl_modifier": 24,
-                    "addend": 1050
+                    "atk_modifier": 2.21,
+                    "lvl_modifier": 21,
+                    "addend": 910
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 13",
-                "value": "Enemies hit are also knocked up.",
+                "value": "Enemies hit are also thrown in the air.",
                 "type": "data"
             }
         ]
@@ -140,21 +150,21 @@
         "level": 7,
         "cd": 10,
         "type": "dash",
-        "desc": "Talonflame dives at the targeted area, taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted basic attack on an enemy hit by Brave Bird within 4 seconds, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
+        "desc": "Talonflame dives at the targeted area; taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted attack on an enemy hit by Brave Bird within 4s, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "230% Atk + 21 x (Level - 1) + 940",
+                "value": "230% Atk + 18 x (Level - 1) + 800",
                 "calc_variables": {
                     "atk_modifier": 2.3,
-                    "lvl_modifier": 21,
-                    "addend": 940
+                    "lvl_modifier": 18,
+                    "addend": 800
                 },
                 "type": "inline"
             },
             {
                 "title": "Level 13",
-                "value": "Talonflame takes 15% less damage for 5 seconds when this move hits.",
+                "value": "Talonflame takes 15% less damage per enemy hit for 5s when this move hits. This damage reduction stacks up to 3 times (capped at 45%).",
                 "type": "data"
             }
         ]
@@ -163,17 +173,17 @@
         "aliases": ["u", "unite"],
         "name": "Flame Sweep",
         "level": 9,
-        "cd": 89,
+        "cd": 100,
         "type": "dash",
-        "desc": "Talonflame charges forward, damaging and shoving all enemies in its path. Flame Sweep deals damage up to 2 times.",
+        "desc": "Talonflame charges forward; damaging and shoving all enemies in its path. Flame Sweep deals damage up to 2 times and Talonflame takes 50% less damage for 6s.",
         "fields": [
             {
                 "title": "Damage - 2 Hits",
-                "value": "146% Atk + 12 x (Level - 1) + 600",
+                "value": "124% Atk + 11 x (Level - 1) + 510",
                 "calc_variables": {
-                    "atk_modifier": 1.46,
-                    "lvl_modifier": 12,
-                    "addend": 600
+                    "atk_modifier": 1.24,
+                    "lvl_modifier": 11,
+                    "addend": 510
                 },
                 "type": "inline"
             }

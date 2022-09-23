@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 7,
         "type": "ranged",
-        "desc": "Shoots star-shaped rays at enemies, dealing damage to them.",
+        "desc": "Shoots 4 star-shaped rays at enemies, dealing damage to them.",
         "fields": [
             {
                 "title": "Damage - Per Star (4 Stars)",
@@ -25,15 +25,15 @@
         "level": 1,
         "cd": 5,
         "type": "ranged",
-        "desc": "Stare at an enemy with baby-doll eyes, dealing damage and decreasing their Attack and movement speed for a short time when this move hits.",
+        "desc": "Stare at an enemy with baby-doll eyes, dealing damage and decreasing their Attack by 15% and decreasing their movement speed for a short time when this move hits.",
         "fields": [
             {
                 "title": "Damage",
-                "value": "63% SpA + 18 x (Level - 1) + 340",
+                "value": "63% SpA + 18 x (Level - 1) + 330",
                 "calc_variables": {
                     "atk_modifier": 0.63,
                     "lvl_modifier": 18,
-                    "addend": 340
+                    "addend": 330
                 },
                 "type": "inline"
             }
@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 7,
         "type": "dash",
-        "desc": "Create four small flames while leaping in the designated direction. The flames shoot toward enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move and after the first flame hits, subsequent flames on the same target deal 25% damage.",
+        "desc": "Create four small flames while leaping in the designated direction. These flames shoot towards enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move by 1s but not lower than 2s. After the first flame hits, subsequent flames on the same target deal 25% damage. Wild Pokémon will only be prioritized if no enemy players are in range.",
         "fields": [
             {
                 "title": "Damage - First Hit",
@@ -70,7 +70,7 @@
         "level": 4,
         "cd": 5,
         "type": "area",
-        "desc": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% (stacking up to 4 times at 80%) after dealing damage to an enemy.",
+        "desc": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% for 1.5s (capping at 80%).",
         "fields": [
             {
                 "title": "Damage - Near (6 Waves)",
@@ -105,7 +105,7 @@
         "level": 6,
         "cd": 10,
         "type": "sure-hit",
-        "desc": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore  HP. When it hits the enemy, deal damage and decrease their movement speed for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal.",
+        "desc": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore HP. When it hits the enemy, deal damage and decrease their movement speed by 20% for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal.",
         "fields": [
             {
                 "title": "Damge - 3 Hits",
@@ -150,7 +150,7 @@
         "level": 6,
         "cd": 10,
         "type": "buff",
-        "desc": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for a short time.",
+        "desc": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for 3s.",
         "fields": [
             {
                 "title": "Level 12",
@@ -172,10 +172,10 @@
     {
         "aliases": ["u", "unite"],
         "name": "Fairy Frolic",
-        "level": 9,
+        "level": 8,
         "cd": 139,
         "type": "buff",
-        "desc": "Jump into the air and become briefly invincible. The moment Sylveon lands, deal damage to enemies in the area of effect and restore Sylveon's HP. For 10s afterward, 50% of damage dealt by Sylveon is converted into HP.",
+        "desc": "Jump into the air, removing most statuses and becoming invincible. The moment Sylveon lands, lose invincibility and immediately gain Fairy Frolic buff, while dealing damage to enemies in the area of effect. Fairy Frolic buff: for 10s, 50% of the damage dealt by Sylveon is converted into HP. No HP is recovered if the damage is dealt to shields",
         "fields": [
             {
                 "title": "Damage",
