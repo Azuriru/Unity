@@ -25,7 +25,7 @@
         "level": 1,
         "cd": 9,
         "type": "area",
-        "desc": "Venusaur launches a barrage of sharp-edged leaves in the designated direction, damaging enemies over time.",
+        "desc": "Venusaur launches a barrage of sharp-edged leaves in the designated direction, damaging enemies 10 times over 0.75s.",
         "fields": [
             {
                 "title": "Damage - 10 Ticks",
@@ -45,7 +45,7 @@
         "level": 5,
         "cd": 6,
         "type": "debuff",
-        "desc": "Venusaur hurls toxic sludge to the designated location, damaging and poisoning all enemies in the radius when it lands. The sludge lingers, damaging enemies over time in the radius, slowing them, and reducing their Sp. Def (by 30% after each damaging tick and only stacks once) for a short time.",
+        "desc": "Venusaur hurls toxic sludge to the designated location, damaging and poisoning all enemies in the radius when it lands. The sludge lingers; damaging enemies every 0.5s for 5s in the radius, slowing them by 45%, and reducing their Sp. Defense by 30% for 1s (refreshes every tick).",
         "fields": [
             {
                 "title": "Damage",
@@ -69,7 +69,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Increases the radius.",
+                "value": "Increased radius.",
                 "type": "data"
             }
         ]
@@ -80,7 +80,7 @@
         "level": 5,
         "cd": 7,
         "type": "recovery",
-        "desc": "Venusaur emits a cone-shaped blast in the designated direction, damaging enemies and restoring health when it hits. Venusaur also takes 35% reduced damage for a short time.\n\nThis move's healing is not increased by Venusaur's passive.",
+        "desc": "Venusaur emits a cone-shaped blast in the designated direction, damaging enemies and restoring health when it hits. Venusaur also takes 35% reduced damage for 2.5s. \n\nThis move's healing is not increased by Venusaur's passive.",
         "fields": [
             {
                 "title": "Damage",
@@ -125,26 +125,26 @@
         "level": 7,
         "cd": 9,
         "type": "area",
-        "desc": "Venusaur fires a beam of light in the designated direction, damaging enemies over time. It is divided into four distinct hits, with ten damaging ticks randomly divided among these four hits. Total damage cannot exceed 2250.",
+        "desc": "Venusaur charges for 0.7s before firing a beam of light in the designated direction, damaging enemies several times over 0.3s. It is randomly divided into several distinct hits, with 10 ticks of damage divided among these hits. Half of the ticks deal damage solely based on the enemies' Max HP. \n\nAgainst Wild Pokémon: Each tick is capped at 450 damage and the total damage is capped at 2250.",
         "fields": [
             {
                 "title": "Damage - 5 Ticks",
-                "value": "27% SpA + 5 x (Level - 1) + 230",
+                "value": "31% SpA + 6 x (Level - 1) + 250",
                 "calc_variables": {
-                    "atk_modifier": 0.27,
-                    "lvl_modifier": 5,
-                    "addend": 230
+                    "atk_modifier": 0.31,
+                    "lvl_modifier": 6,
+                    "addend": 250
                 },
                 "type": "inline"
             },
             {
-                "title": "Damage 5 Ticks",
+                "title": "Damage - 5 Ticks",
                 "value": "1.5% Enemy Max HP",
                 "type": "data"
             },
             {
                 "title": "Level 13",
-                "value": "Reduces cast time and cooldown is reduced by 3s.",
+                "value": "Reduced cast time to 0.6s and cooldown is further reduced by 2s.",
                 "type": "data"
             }
         ]
@@ -155,7 +155,7 @@
         "level": 7,
         "cd": 9,
         "type": "area",
-        "desc": "Venusaur scatters petals around themself for 5s, increasing movement speed and damaging enemies over time in the radius. This movement speed increase slowly decays during the duration of this move. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more).",
+        "desc": "Venusaur scatters petals around themself for 4.8s, increasing movement speed by 90% and damaging enemies every 0.3s in the radius (for a total of 16 damage ticks). This movement speed increase slowly decays during the duration of this move by 9% every every 0.5s. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more).",
         "fields": [
             {
                 "title": "Damage - Aura (16 Ticks)",
@@ -169,7 +169,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Increases the radius.",
+                "value": "Increased radius.",
                 "type": "data"
             }
         ]
@@ -180,7 +180,7 @@
         "level": 9,
         "cd": 134,
         "type": "ranged",
-        "desc": "Venusaur hurls a massive seed to the designated location, damaging all enemies in the radius. The seed then splits apart into 4 smaller seeds, each damaging all enemies in their radius.",
+        "desc": "Venusaur hurls a massive seed to the designated location, damaging all enemies in the radius and slowing them by 35% for 1s. The seed then splits apart into 4 smaller seeds, each damaging all enemies in their radius.",
         "fields": [
             {
                 "title": "Damage - Initial",

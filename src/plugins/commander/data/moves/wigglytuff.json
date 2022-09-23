@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 5,
         "type": "melee",
-        "desc": "Wigglytuff slaps the area in front of them twice, damaging and slowing enemies in a cone.",
+        "desc": "Wigglytuff slaps the area in front of them twice (.3s apart), damaging enemies in a cone and slowing them by 40% for .5s.",
         "fields": [
             {
                 "title": "Damage - Per Slap",
@@ -25,7 +25,7 @@
         "level": 1,
         "cd": 8,
         "type": "hindrance",
-        "desc": "Wigglytuff gains a shield and rolls forward a short distance, throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
+        "desc": "Wigglytuff gains a 25% max HP shield for 0.5s and rolls forward a short distance, throwing enemies hit in the air for .5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
     },
     {
         "aliases": ["s11", "roll"],
@@ -33,7 +33,7 @@
         "level": 4,
         "cd": 10,
         "type": "hindrance",
-        "desc": "Wigglytuff gains a shield and rolls forward, damaging and throwing enemies hit. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam.",
+        "desc": "Wigglytuff gains a 25% max HP shield for 1s, becomes unstoppable for 1.2s and rolls forward, damaging and throwing enemies hit in the air for .5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam.",
         "fields": [
             {
                 "title": "Damage - Per Hit",
@@ -47,7 +47,7 @@
             },
             {
                 "title": "Level 12",
-                "value": "Increases the amount of time enemies are thrown.",
+                "value": "Increases the amount of time enemies are thrown in the air to 0.7s.",
                 "type": "data"
             }
         ]
@@ -58,11 +58,11 @@
         "level": 4,
         "cd": 10,
         "type": "area",
-        "desc": "Wigglytuff begins singing, slowing enemies around them. Enemies that stay inside the song's effect for too long will be put to sleep, and have their defense and special defense reduced for a short time.",
+        "desc": "Wigglytuff begins singing, slowing enemies around them by 10% for 2s per Note and increasing Wigglytuff's movement speed by 30% for 2.5s. Enemies that stay inside the song's effect will be put to sleep (when reaching 4 Notes) for 1.5s, and have their defense and special defense reduced by 25% for 1.25s.",
         "fields": [
             {
                 "title": "Level 12",
-                "value": "Increases the amount of time enemies are asleep.",
+                "value": "Increases the amount of time enemies are asleep to 1.75s and the duration of Defense and Sp. Defense drop to 1.5s.",
                 "type": "data"
             }
         ]
@@ -73,15 +73,15 @@
         "level": 6,
         "cd": 5,
         "type": "melee",
-        "desc": "Wigglytuff unleashes a barrage of slaps, damaging and slowing enemies in a cone 3-5 times.",
+        "desc": "Wigglytuff unleashes a barrage of slaps, damaging enemies in a cone 3-5 times and slowing them by 45% for 1.5s.",
         "fields": [
             {
                 "title": "Damage - Per Slap",
-                "value": "18% SpA + 9 x (Level - 1) + 200",
+                "value": "21% SpA + 11 x (Level - 1) + 240",
                 "calc_variables": {
-                    "atk_modifier": 0.18,
-                    "lvl_modifier": 9,
-                    "addend": 200
+                    "atk_modifier": 0.21,
+                    "lvl_modifier": 11,
+                    "addend": 240
                 },
                 "type": "inline"
             },
@@ -98,7 +98,7 @@
         "level": 6,
         "cd": 4.5,
         "type": "area",
-        "desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone followed by a large amount of damage.",
+        "desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone after 0.6s followed by a large amount of damage.",
         "fields": [
             {
                 "title": "Damage - First Hit",
@@ -122,7 +122,7 @@
             },
             {
                 "title": "Level 10",
-                "value": "Slows enemies hit by the first flash.",
+                "value": "Slows enemies hit by the first flash by 40% for 1s.",
                 "type": "data"
             }
         ]
@@ -133,15 +133,15 @@
         "level": 8,
         "cd": 134,
         "type": "buff",
-        "desc": "Begin performing a recital, granting Wigglytuff and nearby allies a shield as well as removing all status conditions from the affected allies and granting them immunity to hindrances for a short time.",
+        "desc": "Begin performing a recital and become unstoppable for 3s, granting Wigglytuff and nearby allies a shield for 2.5s as well as removing all status conditions from the affected allies and granting them immunity to hindrances for as long as the shield is active.",
         "fields": [
             {
                 "title": "Shield",
-                "value": "150% SpA + 0 x (Level - 1) + 800",
+                "value": "112.5% SpA + 0 x (Level - 1) + 600",
                 "calc_variables": {
-                    "atk_modifier": 1.50,
+                    "atk_modifier": 1.12,
                     "lvl_modifier": 0,
-                    "addend": 800
+                    "addend": 600
                 },
                 "type": "inline"
             }
