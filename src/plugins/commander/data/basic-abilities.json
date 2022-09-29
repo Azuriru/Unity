@@ -36,7 +36,7 @@
     ],
     "aegislash": [
         {
-            "desc": "Slash at enemies in front of Aegislash, dealing damage to them. If the boost count is one or more, basic attacks become a boosted attack. When in Blade Stance: pierce through enemies, dealing damage. When in Shield Stance: ram enemies, dealing damage and leaving them unable to act for a short time, restore HP, and reduce the cooldown of Sacred Sword and Shadow Claw by 1s when this attack hits. Every boosted attack consumes one boost count. Up to 4 boosted boosted attacks can be stored.",
+            "desc": "Slash at enemies in front of Aegislash; dealing damage to them. If the boost count is one or more, auto attacks become a boosted attack. When in Sword Stance or No Guard: pierce through enemies, dealing damage. When in Shield Stance: ram enemies, dealing damage and leaving them unable to act for .1s, restore HP, and reduce the cooldown of Sacred Sword and Shadow Claw by 1s when this attack hits. Every boosted attack consumes one boost count. Up to 4 boosted attacks can be stored.",
             "fields": [
                 {
                     "title": "Damage - Basic, Boosted (Shield Stance)",
@@ -48,20 +48,20 @@
                     "type": "inline-percentage"
                 },
                 {
-                    "title": "Damage - Healing (Shield Stance)",
-                    "value": "125% Atk + 10 x (Level - 1) + 60",
+                    "title": "Healing - Boosted (Shield Stance)",
+                    "value": "150% Atk + 12 x (Level - 1) + 72",
                     "calc_variables": {
-                        "atk_modifier": 1.25,
-                        "lvl_modifier": 10,
-                        "addend": 60
+                        "atk_modifier": 1.5,
+                        "lvl_modifier": 12,
+                        "addend": 72
                     },
                     "type": "inline"
                 },
                 {
                     "title": "Damage - Boosted (Sword Stance)",
-                    "value": "125% Atk + 0 x (Level - 1) + 0",
+                    "value": "135% Atk + 0 x (Level - 1) + 0",
                     "calc_variables": {
-                        "atk_modifier": 1.25,
+                        "atk_modifier": 1.35,
                         "lvl_modifier": 0,
                         "addend": 0
                     },
@@ -69,7 +69,7 @@
                 },
                 {
                     "title": "Damage - Additional (Sword Stance)",
-                    "value": "Deals an additional 6% of the enemies Max HP as damage (capping at 1200).",
+                    "value": "Deals an additional 7% of the enemies Max HP as damage. Against Wild Pokemon: The additional damage from maximum HP is capped at 1200.",
                     "type": "data"
                 }
             ]
@@ -77,7 +77,7 @@
     ],
     "blastoise": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing 3 instances of damage, slowing enemies hit, and reducing Blastoise’s move cooldowns by 1 second each.\n\nWhen evolving into Blastoise, basic attacks instead strike twice for 50% Atk.",
+            "desc": "Becomes a boosted attack with every third attack, dealing 3 instances of damage, slowing enemies hit by 50% for 1s, and reducing Blastoise’s move cooldowns by 1s.\n\nWhen evolving into Blastoise, auto attacks instead strike twice for 50% Atk.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -107,7 +107,7 @@
             "fields": [
                 {
                     "title": "Damage - Basic",
-                    "value": "110% Atk as SpA",
+                    "value": "110% Atk",
                     "variables": {
                         "atk_type": "attack",
                         "atk_modifier": 1.1
@@ -129,7 +129,7 @@
     ],
     "charizard": [
         {
-            "desc": "Channel fire, dealing continual damage 4 times. Deal increased damage to enemies that are burned. Basic attacks gain increased range when evolving.",
+            "desc": "Channel fire; dealing continual damage 4 times. Deal additional damage to enemies that have been burned by Charizard. This additional damage ignores Defense, shields, and can not critically strike. Auto attacks gain increased range when evolving. \n\nAgainst Wild Pokemon: The total damage is capped at 250.",
             "fields": [
                 {
                     "title": "Damage - Basic (4 Hits)",
@@ -154,7 +154,7 @@
     ],
     "cinderace": [
         {
-            "desc": "Becomes a boosted attack with every third attack or when using a move, dealing increased damage.",
+            "desc": "Becomes a boosted attack with every third attack or when using a move, dealing increased damage. \n\nAgainst Wild Pokemon: Basic Attack damage is capped at 1000 and Boosted Attack damage is capped at 1300.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -205,7 +205,7 @@
     ],
     "crustle": [
         {
-            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to enemies in the area of effect and decreases their movement speed for a short time.",
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to enemies in the area of effect and decreases their movement speed by 40% for 2s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -217,10 +217,10 @@
                 },
                 {
                     "title": "Damage - Boosted",
-                    "value": "96% Atk + 7 x (Level - 1) + 150",
+                    "value": "96% Atk + 7 x (Level - 1) + 130",
                     "calc_variables": {
                         "atk_modifier": 0.96,
-                        "lvl_modifier": 6,
+                        "lvl_modifier": 7,
                         "addend": 130
                     },
                     "type": "inline"
@@ -257,11 +257,11 @@
             "evolution": "dratini"
         },
         {
-            "desc": "The boosted attack alternates between water and electric with every use of a boosted attack. If the water attack hits, it triggers the same effects as Dratini's boosted attack. If the electric attack hits, it leaves enemies unable to act for a short time and reduces the cooldown of Dragonair's moves by 1s when this hits.",
+            "desc": "The boosted attack alternates between water and electric with every use of a boosted attack. If the water attack hits, it triggers the same effects as Dratini's boosted attack. If the electric attack hits, it leaves enemies unable to act for .6s and reduces the cooldown of Dragonair's moves by 1s when this hits.",
             "evolution": "dragonair"
         },
         {
-            "desc": "The boosted attack alternates between water, electric, and fire with every use of a boosted attack. If the water or electric attack hits, it triggers the same effects as Dragonair's boosted attack. If the fire attack hits, it deals additional damage equal to 10% of the enemy's remaining HP (capped at 1200 dmg) and reduces the cooldown of Dragonite's moves by 1s when this hits.",
+            "desc": "The boosted attack alternates between water, electric, and fire with every use of a boosted attack. If the water or electric attack hits, it triggers the same effects as Dragonair's boosted attack. If the fire attack hits, it deals additional damage equal to 10% of the enemy's remaining HP (capped at 1200 dmg against wilds) and reduces the cooldown of Dragonite's moves by 1s when this hits.",
             "evolution": "dragonite",
             "fields": [
                 {
@@ -287,7 +287,7 @@
     ],
     "eldegoss": [
         {
-            "desc": "Becomes a boosted attack with every third attack, attaching a bit of cotton fluff to the enemy. The user's basic attacks against an enemy with cotton fluff on it deal increased damage and decreases the enemies movement speed for a short time.",
+            "desc": "Becomes a boosted attack with every third attack, attaching a bit of cotton fluff to the enemy. Eldegoss's auto attacks against an enemy with cotton fluff on it deal increased damage and decreases the enemy movement speed by 15% for 1.5s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -323,7 +323,7 @@
     ],
     "garchomp": [
         {
-            "desc": "Any attack or move that hits provides a boosted stack. Stacks last 4.5s and decay together. At 5 stacks, Garchomp's attack is empowered, dealing more damage, attacking 15% faster, gaining 15% lifesteal, and dealing 10% of enemy remaining HP as damage (this damage caps at 350 against wild Pokémon).",
+            "desc": "Any attack or move that hits provides a boosted stack. Stacks last 4s and decay together. At 5 stacks, all of Garchomp's auto attacks become boosted; dealing more damage, attacking faster, gaining 15% lifesteal, and dealing 10% of enemy remaining HP as damage. \n\nAgainst Wild Pokémon: Basic Attack damage is capped at 1000, Boosted Attack damage is capped at 1100, and additional damage from remaining HP is capped at 350.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -342,13 +342,23 @@
                         "addend": 0
                     },
                     "type": "inline"
+                },
+                {
+                    "title": "Attack Speed - % increase",
+                    "value": "0% Atk + 3 x (Level - 1) + 28",
+                    "calc_variables": {
+                        "atk_modifier": 0,
+                        "lvl_modifier": 3,
+                        "addend": 28
+                    },
+                    "type": "inline"
                 }
             ]
         }
     ],
     "gardevoir": [
         {
-            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to enemies in the area of effect and decreases their Sp. Defense by 10% for a short time.",
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to enemies in the area of effect and decreases their Sp. Defense by 10% for 2s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -387,11 +397,11 @@
                 },
                 {
                     "title": "Damage - Boosted",
-                    "value": "84% SpA + 5 x (Level - 1) + 100",
+                    "value": "84% SpA + 8 x (Level - 1) + 160",
                     "calc_variables": {
                         "atk_modifier": 0.84,
-                        "lvl_modifier": 5,
-                        "addend": 100
+                        "lvl_modifier": 8,
+                        "addend": 160
                     },
                     "type": "inline"
                 }
@@ -425,7 +435,7 @@
     ],
     "greninja": [
         {
-            "desc": "At range, Greninja's basic attacks reduce the cooldown of Surf, Water Shuriken, or Bubble by 0.5 seconds and boosted attacks apply a slow. In melee, Greninja's basic attacks instead deal bonus damage equal to 5% missing HP (calculated as basic attack damage and subject to basic attack effects). Boosted melee attacks also dash through the primary target and increases the missing HP damage to 10%.",
+            "desc": "At range, Greninja's auto attacks reduce the cooldown of Surf, Water Shuriken, or Bubble by 0.5s and boosted attacks reduce enemy movement speed by 25% for 0.5s. In melee, Greninja's auto attacks instead deal bonus damage equal to 5% missing HP (calculated as auto attack damage and subject to auto attack effects). Boosted melee attacks also dash through the primary target and increases the missing HP damage to 10%. \n\nAgainst Wild Pokémon: The total damage of melee attacks is capped at 500.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -476,7 +486,7 @@
     ],
     "lucario": [
         {
-            "desc": "Becomes a boosted attack with every third attack, striking twice. The first attack is a normal basic attack and the second is an additional attack that can critically hit, has increased attack range, and throws enemies into the air.",
+            "desc": "Becomes a boosted attack with every third attack, striking twice. The first attack is a normal auto attack and the second is an additional attack that can critically hit, has increased attack range, and throws enemies into the air.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -501,7 +511,7 @@
     ],
     "machamp": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing increased damage when it hits. This boosted attack also decreases the movement speed of enemies for a short time.",
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage when it hits. This boosted attack also decreases the movement speed of enemies by 50% for 1s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -526,7 +536,7 @@
     ],
     "mamoswine": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing damage and freezing enemies for a short time when it hits. Mamoswine's basic attacks deal increased damage for a short time to enemies recently frozen with one of Mamoswine's moves.",
+            "desc": "Becomes a boosted attack with every third attack, dealing damage and freezing enemies for .5s when it hits. Mamoswine's auto attacks deal increased damage for a short time to enemies recently frozen with one of Mamoswine's moves.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -561,7 +571,7 @@
     ],
     "mr.mime": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing increased damage and throwing enemies when it hits.",
+            "desc": "Gains a Boosted Attack every 5s, dealing increased damage and throwing enemies in the air for .5s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -604,7 +614,7 @@
                     "calc_variables": {
                         "atk_modifier": 0.56,
                         "lvl_modifier": 14,
-                        "addend": 230
+                        "addend": 260
                     },
                     "type": "inline"
                 }
@@ -613,7 +623,7 @@
     ],
     "pikachu": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. This boosted attack also paralyzes enemies for a short time when it hits.",
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. This boosted attack also paralyzes (slow by 30% for 1s and reduce Attack Speed by 10% for 1s) enemies when it hits.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -639,7 +649,7 @@
     ],
     "slowbro": [
         {
-            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, deal damage to nearby enemies and decrease their movement speed.",
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, deal damage to nearby enemies and decrease their movement speed by 30% for 1s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -665,7 +675,7 @@
     ],
     "snorlax": [
         {
-            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals damage to nearby enemies and decreases their movement speed for a short time.",
+            "desc": "Becomes a boosted attack with every third attack. When this boosted attack hits, it deals increased damage to nearby enemies and decreases their movement speed for 1s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -694,7 +704,7 @@
             "evolution": "eevee"
         },
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. In addition, increase movement speed when this boosted attack hits.",
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage. In addition, increase movement speed by 75% for 1s when this boosted attack hits.",
             "evolution": "sylveon",
             "fields": [
                 {
@@ -746,7 +756,7 @@
     ],
     "trevenant": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing increased damage to enemies and restores 5% max HP when this boosted attack hits. Both normal and boosted attacks reduce the cooldown of Trevenant's moves by 0.5s.",
+            "desc": "When Trevenant deals or receives damage while at or below 35% max HP, a continuous HP recovery effect is triggered every .5s for 4s. This effect also reduces the cooldowns of Trevenant's moves by 1s every 1s. When this HP recovery effect ends, there is a 100s cooldown. However, this cooldown is reduced by 1s each time one of Trevenant's moves damage an enemy. This cooldown reduction cannot be triggered more than once every .5s. \n\nHeal - 8 Ticks: [2+(0.18 * (Level -1))]% of max HP",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -771,7 +781,7 @@
     ],
     "tsareena": [
         {
-            "desc": "Becomes a boosted attack with every third attack, lunging at an enemy, dealing damage and lowering their Defense for a short time.",
+            "desc": "Becomes a boosted attack with every third attack, lunging at an enemy, dealing damage and lowering their Defense by 20% for 1s.",
             "fields": [
                 {
                     "title": "Damage - Basic",
@@ -822,7 +832,7 @@
     ],
     "wigglytuff": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing damage to enemies and spinning them around when it hits.",
+            "desc": "Becomes a boosted attack with every third attack, dealing damage to enemies and stunning them for .5s when it hits.",
             "fields": [
                 {
                     "title": "Damage - Auto",
@@ -848,7 +858,7 @@
     ],
     "zeraora": [
         {
-            "desc": "Becomes a boosted attack with every third attack, dealing increased damage and paralyzing the enemy while restoring 10% of Zeraora's missing HP.",
+            "desc": "Becomes a boosted attack with every third attack, dealing increased damage and paralyzing (slow by 15% for 2.5s and reduce Attack Speed by 25% for 1s) the enemy while restoring 10% of Zeraora's missing HP.",
             "fields": [
                 {
                     "title": "Damage - Basic",
