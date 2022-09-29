@@ -9,11 +9,11 @@
         "fields": [
             {
                 "title": "Damage - 2 Hits",
-                "value": "122% Atk + 11 x (Level - 1) + 200",
+                "value": "103% Atk + 9 x (Level - 1) + 170",
                 "calc_variables": {
-                    "atk_modifier": 1.22,
-                    "lvl_modifier": 11,
-                    "addend": 200
+                    "atk_modifier": 1.03,
+                    "lvl_modifier": 9,
+                    "addend": 170
                 },
                 "type": "inline"
             }

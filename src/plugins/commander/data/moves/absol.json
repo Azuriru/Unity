@@ -80,7 +80,7 @@
         "level": 5,
         "cd": 5,
         "type": "dash",
-        "desc": "Absol dashes to a location, and dashes to an enemy with its next basic attack. If Absol hits the back of the target, this ability's cooldown is reduced. If it fails to hit the back, damage is halved.",
+        "desc": "Absol dashes to a location, and dashes to an enemy with its next auto attack. If Absol hits the back of the target, this ability's cooldown is reduced by 80%. If it fails to hit the back, damage is reduced. The next auto attack stays empowered for 3s.",
         "fields": [
             {
                 "title": "Damage",

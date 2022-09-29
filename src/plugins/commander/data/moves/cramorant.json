@@ -97,11 +97,11 @@
             },
             {
                 "title": "Healing - Blade (5 blades)",
-                "value": "45% SpA + 0 x (Level - 1) + 60",
+                "value": "30% SpA + 0 x (Level - 1) + 40",
                 "calc_variables": {
-                    "atk_modifier": 0.45,
+                    "atk_modifier": 0.30,
                     "lvl_modifier": 0,
-                    "addend": 60
+                    "addend": 40
                 },
                 "type": "inline"
             }

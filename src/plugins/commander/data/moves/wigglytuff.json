@@ -9,11 +9,11 @@
         "fields": [
             {
                 "title": "Damage - Per Slap",
-                "value": "31% SpA + 18 x (Level - 1) + 340",
+                "value": "35% SpA + 21 x (Level - 1) + 390",
                 "calc_variables": {
-                    "atk_modifier": 0.31,
-                    "lvl_modifier": 18,
-                    "addend": 340
+                    "atk_modifier": 0.35,
+                    "lvl_modifier": 21,
+                    "addend": 390
                 },
                 "type": "inline"
             }
@@ -96,7 +96,7 @@
         "aliases": ["s22", "gleam"],
         "name": "Dazzling Gleam",
         "level": 6,
-        "cd": 4.5,
+        "cd": 4,
         "type": "area",
         "desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone after 0.6s followed by a large amount of damage.",
         "fields": [
@@ -131,7 +131,7 @@
         "aliases": ["u", "unite"],
         "name": "Starlight Recital",
         "level": 8,
-        "cd": 134,
+        "cd": 112,
         "type": "buff",
         "desc": "Begin performing a recital and become unstoppable for 3s, granting Wigglytuff and nearby allies a shield for 2.5s as well as removing all status conditions from the affected allies and granting them immunity to hindrances for as long as the shield is active.",
         "fields": [

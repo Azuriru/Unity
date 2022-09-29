@@ -9,41 +9,41 @@
         "fields": [
             {
                 "title": "Damage - Uncharged",
-                "value": "132% SpA + 11 x (Level - 1) + 210",
+                "value": "147% SpA + 13 x (Level - 1) + 240",
                 "calc_variables": {
-                    "atk_modifier": 1.32,
-                    "lvl_modifier": 11,
-                    "addend": 210
+                    "atk_modifier": 1.47,
+                    "lvl_modifier": 13,
+                    "addend": 240
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Low Charge",
-                "value": "176% SpA + 15 x (Level - 1) + 280",
+                "value": "196% SpA + 17 x (Level - 1) + 320",
                 "calc_variables": {
-                    "atk_modifier": 1.76,
-                    "lvl_modifier": 15,
-                    "addend": 280
+                    "atk_modifier": 1.96,
+                    "lvl_modifier": 17,
+                    "addend": 320
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Mid Charge",
-                "value": "220% SpA + 19 x (Level - 1) + 350",
+                "value": "245% SpA + 22 x (Level - 1) + 400",
                 "calc_variables": {
-                    "atk_modifier": 2.20,
-                    "lvl_modifier": 190,
-                    "addend": 350
+                    "atk_modifier": 2.45,
+                    "lvl_modifier": 22,
+                    "addend": 400
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - High Charge",
-                "value": "264% SpA + 23 x (Level - 1) + 420",
+                "value": "294% SpA + 26 x (Level - 1) + 480",
                 "calc_variables": {
-                    "atk_modifier": 2.64,
-                    "lvl_modifier": 23,
-                    "addend": 420
+                    "atk_modifier": 2.94,
+                    "lvl_modifier": 26,
+                    "addend": 480
                 },
                 "type": "inline"
             }
@@ -96,7 +96,7 @@
         "aliases": ["s12"],
         "name": "Surf",
         "level": 4,
-        "cd": 9,
+        "cd": 8,
         "type": "hindrance",
         "desc": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air for .4s. Two more waves follow after the first, damaging and slowing enemies by 25% for 1s. Restore 10% of Slowbro's Oblivious health (blue HP) per wave, when hitting at least one enemy (maximum 3 times).",
         "fields": [
@@ -136,7 +136,7 @@
         "aliases": ["s22"],
         "name": "Telekinesis",
         "level": 6,
-        "cd": 11,
+        "cd": 9,
         "type": "hindrance",
         "desc": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2.3s, restoring 15% of Slowbro's Oblivious health (blue HP) every second for 5s. Slowbro can reactivate the ability to pull the enemy to themself, but otherwise cannot act for the duration.",
         "fields": [
@@ -151,7 +151,7 @@
         "aliases": ["u", "unite"],
         "name": "Slowbeam",
         "level": 9,
-        "cd": 123,
+        "cd": 112,
         "type": "hindrance",
         "desc": "Stare at an enemy and attack continually, dealing damage every .5 seconds for 3s and applying 'Bound' to them. This ability counters unstoppable. Grants a shield (10% max HP) and makes Slowbro immune to hindrances while using this move.",
         "fields": [

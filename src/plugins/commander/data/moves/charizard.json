@@ -118,7 +118,7 @@
         "aliases": ["s12"],
         "name": "Fire Punch",
         "level": 5,
-        "cd": 6,
+        "cd": 5,
         "type": "melee",
         "desc": "Charizard punches forward, damaging and shoving enemies in their path. The first enemy hit is burned. The burn lasts 4s and reduces enemy Attack by 5%.",
         "fields": [
@@ -144,7 +144,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Cooldown reduces by .25s every time Charizard damages an enemy with an auto attack damage tick (1s total for an entire auto attack animation).",
+                "value": "Cooldown reduces by .3s per target, every time Charizard damages an enemy with an auto attack (1.2s total for an entire auto attack animation on a single target).",
                 "type": "data"
             }
         ]

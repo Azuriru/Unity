@@ -92,21 +92,21 @@
         "fields": [
             {
                 "title": "Damage - per Pulse",
-                "value": "30.3% SpA + 3 x (Level - 1) + 72",
+                "value": "21.6% SpA + 2 x (Level - 1) + 51",
                 "calc_variables": {
-                    "atk_modifier": 0.3,
-                    "lvl_modifier": 3,
-                    "addend": 72
+                    "atk_modifier": 0.216,
+                    "lvl_modifier": 2,
+                    "addend": 51
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Final Pulse",
-                "value": "101% SpA + 11 x (Level - 1) + 240",
+                "value": "72% SpA + 8 x (Level - 1) + 170",
                 "calc_variables": {
-                    "atk_modifier": 1.01,
-                    "lvl_modifier": 11,
-                    "addend": 240
+                    "atk_modifier": 0.72,
+                    "lvl_modifier": 8,
+                    "addend": 170
                 },
                 "type": "inline"
             },
@@ -138,15 +138,15 @@
         "level": 6,
         "cd": 4,
         "type": "debuff",
-        "description": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 15% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s. \n\nIf the linked target is an ally, this move increases their movement speed by 15%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 15%, decreases the amount of damage they deal by 15% and deals damage over time to them. Power Swap can be cleansed.",
+        "description": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 15% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s. \n\nIf the linked target is an ally, this move increases their movement speed by 15%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 8%, decreases the amount of damage they deal by 15% and deals damage over time to them. Power Swap can be cleansed.",
         "fields": [
             {
                 "title": "Damage - per Tick",
-                "value": "20% SpA + 2 x (Level - 1) + 50",
+                "value": "18% SpA + 1 x (Level - 1) + 30",
                 "calc_variables": {
-                    "atk_modifier": 0.2,
-                    "lvl_modifier": 2,
-                    "addend": 50
+                    "atk_modifier": 0.18,
+                    "lvl_modifier": 1,
+                    "addend": 30
                 },
                 "type": "inline"
             },

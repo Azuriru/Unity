@@ -9,11 +9,11 @@
         "fields": [
             {
                 "title": "Damage",
-                "value": "88% SpA + 16 x (Level - 1) + 510",
+                "value": "97% SpA + 17 x (Level - 1) + 560",
                 "calc_variables": {
-                    "atk_modifier": 0.88,
-                    "lvl_modifier": 16,
-                    "addend": 510
+                    "atk_modifier": 0.97,
+                    "lvl_modifier": 17,
+                    "addend": 560
                 },
                 "type": "inline"
             }
@@ -29,11 +29,11 @@
         "fields": [
             {
                 "title": "Damage",
-                "value": "54% SpA + 10 x (Level - 1) + 310",
+                "value": "61% SpA + 11 x (Level - 1) + 350",
                 "calc_variables": {
-                    "atk_modifier": 0.54,
-                    "lvl_modifier": 10,
-                    "addend": 310
+                    "atk_modifier": 0.61,
+                    "lvl_modifier": 11,
+                    "addend": 350
                 },
                 "type": "inline"
             }
@@ -133,7 +133,7 @@
         "aliases": ["s21"],
         "name": "Surf",
         "level": 7,
-        "cd": 12,
+        "cd": 10,
         "type": "dash",
         "desc": "Blastoise rides a large wave in the designated direction; damaging, knocking back, and stunning enemies hit for 1.6s. Blastoise is unstoppable while surfing, and once it ends, Blastoise can jump in a designated direction. The wave continues for a short duration after leaping off and the wave continues to knock back enemies hit but inflicts no damage.",
         "fields": [
@@ -203,7 +203,7 @@
         "aliases": ["u", "unite"],
         "name": "Hydro Typhoon",
         "level": 9,
-        "cd": 112,
+        "cd": 100,
         "type": "hindrance",
         "desc": "Blastoise gains a shield for 4s and sweeps powerful water jets in a large circle around itself dealing massive damage and knocking enemies hit into the air for 1.5s.",
         "fields": [
