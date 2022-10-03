@@ -170,7 +170,7 @@
         "level": 7,
         "cd": 10,
         "type": "sure-hit",
-        "desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a portion of the damage Trevenant receives is redirected to the linked enemy. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. Additionally, if Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP equal to the damage dealt every .5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed by 45% for 2s.",
+        "desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a portion of the damage Trevenant takes is redirected to the linked enemy as True damage. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. Additionally, if Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP equal to the damage dealt every .5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed by 45% for 2s.",
         "fields": [
             {
                 "title": "Damage - Reflect (Per Tick)",
