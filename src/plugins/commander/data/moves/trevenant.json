@@ -205,7 +205,7 @@
         "level": 9,
         "cd": 112,
         "type": "hindrance",
-        "desc": "Creates a cursed forest, dealing damage to enemies in the area of effect and mark them for 6s, throwing them, and decreasing their movement speed by 50% for 2s. For 6s afterward, the auto attacks of Trevenant and allies deal increased damage to enemies that were marked by this move. Trevenant is also granted a shield for 6s when this move hits an enemy; the shield effect is strengthened for each enemy hit, up to 5 times. While Trevenant is shielded, HP recovery effects applied to Trevenant are increased by 50%.",
+        "desc": "Creates a cursed forest, dealing damage to enemies in the area of effect and mark them for 6s, throwing them, and decreasing their movement speed by 50% for 2s. For 6s afterward, the auto attacks of Trevenant and allies deal increased damage to enemies that were marked by this move (0.5s cooldown per attacker). Trevenant is also granted a shield for 6s when this move hits an enemy; the shield effect is strengthened for each enemy hit, up to 5 times. While Trevenant is shielded, HP recovery effects applied to Trevenant are increased by 50%.",
         "fields": [
             {
                 "title": "Damage",
