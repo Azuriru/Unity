@@ -95,7 +95,7 @@
         "level": 5,
         "cd": 6,
         "type": "hindrance",
-        "desc": "Trevenant creates a cursed zone in exchange for 3% max HP per second for 6s, dealing damage over time to enemies in the area of effect every .5s for 6s and decreasing their movement speed for 1s, refreshing with each tick. The lower Trevenant's HP is, the greater the decrease in movement speed (Below 40% HP = 8%, 40%-70% HP = 10%, Above 70% HP = 14%). While using this move, Trevenant builds up curse power every time it deals or receives damage. Releasing this built-up power will deal additional damage to enemies in the area of effect. If the curse power is at maximum when it’s released, the cooldowns of Branch Poke, Horn Leech, and Pain Split are reset.",
+        "desc": "Trevenant creates a cursed zone in exchange for 3% max HP per second for 6s, dealing damage over time to enemies in the area of effect every .5s for 6s and decreasing their movement speed for 1s, refreshing with each tick. The lower Trevenant's HP is, the greater the decrease in movement speed (Above 70% HP = 8%, 40%-70% HP = 10%, Below 40% HP = 14%). While using this move, Trevenant builds up curse power every time it deals or receives damage. Releasing this built-up power will deal additional damage to enemies in the area of effect. If the curse power is at maximum when it’s released, the cooldowns of Branch Poke, Horn Leech, and Pain Split are reset.",
         "fields": [
             {
                 "title": "Damage - 12 Ticks",
