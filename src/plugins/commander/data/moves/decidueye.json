@@ -135,7 +135,7 @@
         "level": 8,
         "cd": 6,
         "type": "ranged",
-        "desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 30% for a short time. At point-blank range, it also shoves and stuns enemies hit.",
+        "desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 45% for 2s. At point-blank range, it also shoves and stuns enemies hit.",
         "fields": [
             {
                 "title": "Damage",
@@ -149,7 +149,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Increases the length of time that the movement speed of enemies is decreased.",
+                "value": "Increases the length of time that the movement speed of enemies is decreased to 3s.",
                 "type": "data"
             }
         ]
