@@ -133,7 +133,7 @@
         "level": 7,
         "cd": 7,
         "type": "buff",
-        "desc": "Dash in the designated direction; dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for 1s afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack; it disappears, the cooldown is reduced by 50%, and boost count is increased by 1.",
+        "desc": "Dash in the designated direction; dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for 1s afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack; it disappears, the cooldown is reduced by 3s, and boost count is increased by 1.",
         "fields": [
             {
                 "title": "Damage",
