@@ -33,7 +33,7 @@
         "level": 5,
         "cd": 9,
         "type": "dash",
-        "desc": "Greninja briefly vanishes before dashing and sending clones in different directions. The clones attack nearby targets, have the same HP and defenses as Greninja, deal 15% of Greninja's damage (clones use Surf or Water Shuriken - whichever is learned by Greninja), and last for 3s. Greninja is unstoppable while dashing.",
+        "desc": "Greninja briefly vanishes before dashing and sending clones in different directions. The clones attack nearby targets, have the same HP and defenses as Greninja, deal 18% of Greninja's damage (clones use Surf or Water Shuriken - whichever is learned by Greninja), and last for 3s. Greninja is unstoppable while dashing.",
         "fields": [
             {
                 "title": "Level 13",
@@ -73,15 +73,15 @@
         "level": 7,
         "cd": 6,
         "type": "ranged",
-        "desc": "Greninja throws 3-5 shurikens made of water which explode when they hit an enemy, damaging and slowing enemies by 25% for 1s in a small area while healing Greninja. While using this move, Greninja's movement speed is increased by 15% for 3s.",
+        "desc": "Greninja throws 4 shurikens made of water which explode when they hit an enemy, damaging and slowing enemies by 25% for 1s in a small area while healing Greninja. While using this move, Greninja's movement speed is increased by 15% for 3s.",
         "fields": [
             {
                 "title": "Damage - Per Shuriken",
-                "value": "122% Atk + 8 x (Level - 1) + 190",
+                "value": "135% Atk + 8 x (Level - 1) + 210",
                 "calc_variables": {
-                    "atk_modifier": 1.22,
+                    "atk_modifier": 1.35,
                     "lvl_modifier": 8,
-                    "addend": 190
+                    "addend": 210
                 },
                 "type": "inline"
             },
@@ -97,7 +97,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Throws 4-6 shurikens instead.",
+                "value": "Throws 5 shurikens instead.",
                 "type": "data"
             }
         ]

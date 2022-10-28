@@ -128,25 +128,25 @@
         "level": 7,
         "cd": 5,
         "type": "melee",
-        "desc": "Garchomp viciously claws everything in the designated area twice. The first attack deals damage and pushes enemies. The second attack deals increased damage; in a range slightly larger than the designated area. When using Dragon Rush combo with this move, increase the slow to enemies.",
+        "desc": "Garchomp viciously claws everything in the designated area twice. The first attack deals damage and pushes enemies. The second attack deals increased damage and slows movement speed by 45%. When using Dragon Rush combo with this move, increase the slow to 60%.",
         "fields": [
             {
                 "title": "Damage - First Hit",
-                "value": "80% Atk + 5 x (Level - 1) + 140",
+                "value": "88% Atk + 6 x (Level - 1) + 155",
                 "calc_variables": {
-                    "atk_modifier": 0.8,
-                    "lvl_modifier": 5,
-                    "addend": 140
+                    "atk_modifier": 0.88,
+                    "lvl_modifier": 6,
+                    "addend": 155
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Second Hit",
-                "value": "96% Atk + 6 x (Level - 1) + 160",
+                "value": "108% Atk + 7 x (Level - 1) + 188",
                 "calc_variables": {
-                    "atk_modifier": 0.96,
-                    "lvl_modifier": 6,
-                    "addend": 160
+                    "atk_modifier": 1.08,
+                    "lvl_modifier": 7,
+                    "addend": 188
                 },
                 "type": "inline"
             },
@@ -157,21 +157,21 @@
             },
             {
                 "title": "Damage - Initial",
-                "value": "96% Atk + 6 x (Level - 1) + 168",
+                "value": "106% Atk + 6 x (Level - 1) + 170",
                 "calc_variables": {
-                    "atk_modifier": 0.96,
+                    "atk_modifier": 1.06,
                     "lvl_modifier": 6,
-                    "addend": 168
+                    "addend": 170
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Second Hit",
-                "value": "115.2% Atk + 7 x (Level - 1) + 192",
+                "value": "127.2% Atk + 7 x (Level - 1) + 204",
                 "calc_variables": {
-                    "atk_modifier": 1.152,
+                    "atk_modifier": 1.27,
                     "lvl_modifier": 7,
-                    "addend": 192
+                    "addend": 204
                 },
                 "type": "inline"
             }

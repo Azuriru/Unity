@@ -58,9 +58,9 @@
         "aliases": ["s11", "hammer"],
         "name": "Wood Hammer",
         "level": 5,
-        "cd": 7,
+        "cd": 6,
         "type": "hindrance",
-        "desc": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for .5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act (Below 40% HP = 1.2s, 40%-70% HP = 1s, Above 70% HP = 0.8s). The lower Trevenant's HP, the longer the enemy will be left unable to act. Every time this move is used, it consumes 7% of Trevenant's current HP.",
+        "desc": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for .5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act (Below 40% HP = 1.5s, 40%-70% HP = 1.3s, Above 70% HP = 1.1s). The lower Trevenant's HP, the longer the enemy will be left unable to act. Every time this move is used, it consumes 7% of Trevenant's current HP.",
         "fields": [
             {
                 "title": "Damage - First Hit",

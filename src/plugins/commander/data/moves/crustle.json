@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 5,
         "type": "hindrance",
-        "desc": "Crustle emits a beam that deals damage to enemies hit and briefly slow their movement speed by 40% for 2s, then create a curved wall at the designated location. When the wall rises or despawns, nearby enemies are damaged and have their movement speed slowed by 40% for 2s. The wall lasts for 3s and can be cancelled early.",
+        "desc": "Crustle emits a beam that deals damage to enemies hit and briefly slow their movement speed by 60% for 2s, then create a curved wall at the designated location. When the wall rises or despawns, nearby enemies are damaged and have their movement speed slowed by 40% for 2s. The wall lasts for 3s and can be cancelled early.",
         "fields": [
             {
                 "title": "Damage - Projectile",
@@ -69,7 +69,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "Movement speed reduction increased to 60%.",
+                "value": "Movement speed reduction increased to 80%.",
                 "type": "data"
             }
         ]
@@ -93,7 +93,7 @@
         "aliases": ["s21", "sr"],
         "name": "Stealth Rock",
         "level": 6,
-        "cd": 6,
+        "cd": 5,
         "type": "area",
         "desc": "Crustle launches a pile of rocks in the designated direction. Upon hitting an enemy, a wall, or reaching maximum distance, create a radius in which rocks deal damage to enemies up to 8 times every .5s over 4s. Each hit applies a stack of a debuff which causes subsequent hits to deal 15% more damage for 1.5s, stacking up to 10 times. Additional damage from this debuff is always rounded up.",
         "fields": [
@@ -163,7 +163,7 @@
         "aliases": ["u", "unite"],
         "name": "Rubble Rouser",
         "level": 9,
-        "cd": 134,
+        "cd": 112,
         "type": "buff",
         "desc": "Summon a whirlwind of rocks. At the beginning leave nearby enemies stunned for 1s and gain a shield (40% max HP + 600 HP). Then deal damage to nearby enemies every 1s for 10s, and if Crustle receives damage while this move is in effect deal additional revenge damage (this cannot happen more than once every 2s).",
         "fields": [

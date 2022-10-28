@@ -46,12 +46,22 @@
                 "type": "inline"
             },
             {
-                "title": "Damage - Stunned",
+                "title": "Damage - Stunned (Wall Hit)",
                 "value": "200% SpA + 16 x (Level - 1) + 450",
                 "calc_variables": {
                     "atk_modifier": 2,
                     "lvl_modifier": 16,
                     "addend": 450
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Stunned (Power Swap)",
+                "value": "120% SpA + 10 x (Level - 1) + 270",
+                "calc_variables": {
+                    "atk_modifier": 1.2,
+                    "lvl_modifier": 10,
+                    "addend": 270
                 },
                 "type": "inline"
             },
@@ -71,12 +81,22 @@
                 "type": "inline"
             },
             {
-                "title": "Damage - Wall Hit",
+                "title": "Damage - Stunned (Wall Hit)",
                 "value": "219% SpA + 21 x (Level - 1) + 500",
                 "calc_variables": {
                     "atk_modifier": 2.19,
                     "lvl_modifier": 21,
                     "addend": 500
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Stunned (Power Swap)",
+                "value": "131.4% SpA + 12 x (Level - 1) + 300",
+                "calc_variables": {
+                    "atk_modifier": 1.31,
+                    "lvl_modifier": 12,
+                    "addend": 300
                 },
                 "type": "inline"
             }
@@ -177,21 +197,21 @@
         "fields": [
             {
                 "title": "Damage - First 3 Hits",
-                "value": "88% SpA + 5 x (Level - 1) + 240",
+                "value": "79% SpA + 5 x (Level - 1) + 220",
                 "calc_variables": {
-                    "atk_modifier": 0.88,
+                    "atk_modifier": 0.79,
                     "lvl_modifier": 5,
-                    "addend": 240
+                    "addend": 220
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Final Hit",
-                "value": "176% SpA + 10 x (Level - 1) + 480",
+                "value": "158% SpA + 10 x (Level - 1) + 440",
                 "calc_variables": {
-                    "atk_modifier": 1.76,
+                    "atk_modifier": 1.58,
                     "lvl_modifier": 10,
-                    "addend": 480
+                    "addend": 440
                 },
                 "type": "inline"
             }

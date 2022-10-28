@@ -45,7 +45,7 @@
         "level": 5,
         "cd": 6,
         "type": "debuff",
-        "desc": "Venusaur hurls toxic sludge to the designated location, damaging and poisoning all enemies in the radius when it lands. The sludge lingers; damaging enemies every 0.5s for 5s in the radius, slowing them by 45%, and reducing their Sp. Defense by 30% for 1s (refreshes every tick).",
+        "desc": "Venusaur hurls toxic sludge to the designated location, damaging, slowing movement speed by 35% for 1s (stacking with the radius slow), and poisoning all enemies in the radius when it lands. The sludge lingers; damaging enemies every 0.5s for 5s in the radius, slowing them by 45%, and reducing their Sp. Defense by 30% for 1s (refreshes every tick).",
         "fields": [
             {
                 "title": "Damage",
@@ -153,15 +153,15 @@
         "aliases": ["s22", "petal", "dance", "pd"],
         "name": "Petal Dance",
         "level": 7,
-        "cd": 9,
+        "cd": 8,
         "type": "area",
         "desc": "Venusaur scatters petals around themself for 4.8s, increasing movement speed by 90% and damaging enemies every 0.3s in the radius (for a total of 16 damage ticks). This movement speed increase slowly decays during the duration of this move by 9% every every 0.5s. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more).",
         "fields": [
             {
                 "title": "Damage - Aura (16 Ticks)",
-                "value": "8% SpA + 2 x (Level - 1) + 70",
+                "value": "12% SpA + 2 x (Level - 1) + 70",
                 "calc_variables": {
-                    "atk_modifier": 0.08,
+                    "atk_modifier": 0.12,
                     "lvl_modifier": 2,
                     "addend": 70
                 },
@@ -178,7 +178,7 @@
         "aliases": ["u", "unite"],
         "name": "Verdant Anger",
         "level": 9,
-        "cd": 134,
+        "cd": 112,
         "type": "ranged",
         "desc": "Venusaur hurls a massive seed to the designated location, damaging all enemies in the radius and slowing them by 35% for 1s. The seed then splits apart into 4 smaller seeds, each damaging all enemies in their radius.",
         "fields": [

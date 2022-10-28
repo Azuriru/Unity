@@ -53,7 +53,7 @@
         "aliases": ["s11", "hole", "portal", "hh"],
         "name": "Hyperspace Hole",
         "level": 4,
-        "cd": 12,
+        "cd": 10,
         "type": "dash",
         "desc": "Hoopa creates a large ring at the designated location, dealing damage to enemies in the area of effect. After 3s, Hoopa and any allies in the area of effect will return to their base, and their movement speed will be increased for a short time. These allies can also manually warp back to where the ring was created within 3s. An intact ally forwardmost goal zone can also be designated as the location where the ring is created. Creating a ring on the goal zone of the top path will also create a ring on the forwardmost goal zone of the bottom path for 6.5s, and vice versa. All allies (including Hoopa) can use these rings to manually warp between the two goal zones, and their movement speed will be increased for a short time after warping. After an ally or Hoopa warps, there is 15s cooldown before that Pokémon can manually warp again. If a path's forwardmost goal zone is destroyed, the middle goal zone on the same path will take its place. This move cannot be used on base goal zones. \n\nHyperspace Hole and Rings Unbound share the 15s teleporting cooldown.",
         "fields": [
@@ -78,9 +78,9 @@
         "aliases": ["s12"],
         "name": "Trick",
         "level": 4,
-        "cd": 9,
+        "cd": 7.5,
         "type": "buff",
-        "desc": "Hoopa creates a link between itself and an ally, increasing both of their movement speeds by 60% for 2s and granting them each a shield for 3s. For the next 7s, when Hoopa uses Shadow Ball or performs an auto attack, the ring on the linked ally also unleashes the same move or attack and if both attacks hit the same target, the second deals 50% damage. Hoopa can also use this move on themself, increasing movement speed and granting a shield for a short time. Additionally, increase the damage dealt by Shadow Ball while trick is active.",
+        "desc": "Hoopa creates a link between itself and an ally, increasing both of their movement speeds by 70% for 2s and granting them each a shield for 3s. For the next 7s, when Hoopa uses Shadow Ball or performs an auto attack, the ring on the linked ally also unleashes the same move or attack and if both attacks hit the same target, the second deals 50% damage. Hoopa can also use this move on themself, increasing movement speed and granting a shield for a short time. Additionally, increase the damage dealt by Shadow Ball while trick is active.",
         "fields": [
             {
                 "title": "Shield",

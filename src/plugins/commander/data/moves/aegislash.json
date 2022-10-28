@@ -3,17 +3,17 @@
         "aliases": ["s01"],
         "name": "Shadow Sneak",
         "level": 1,
-        "cd": 5,
+        "cd": 6,
         "type": "dash",
         "desc": "Cast a shadow in the designated direction, dealing damage to enemies hit. After the shadow hits an enemy or travels its maximum distance, Aegislash warps to the shadow’s location, dealing damage to nearby enemies and increasing boost count by 1.",
         "fields": [
             {
                 "title": "Damage - 2 Hits",
-                "value": "103% Atk + 9 x (Level - 1) + 170",
+                "value": "93% Atk + 8 x (Level - 1) + 150",
                 "calc_variables": {
-                    "atk_modifier": 1.03,
-                    "lvl_modifier": 9,
-                    "addend": 170
+                    "atk_modifier": 0.93,
+                    "lvl_modifier": 8,
+                    "addend": 150
                 },
                 "type": "inline"
             }
@@ -23,7 +23,7 @@
         "aliases": ["s02", "irond"],
         "name": "Iron Defense",
         "level": 1,
-        "cd": 6,
+        "cd": 7,
         "type": "buff",
         "desc": "Envelops Aegislash in a powerful protective force for 3s or after blocking one attack. If this move blocks an attack, increase boost count by 1."
     },
@@ -33,7 +33,7 @@
         "level": 5,
         "cd": 7.5,
         "type": "area",
-        "desc": "Aegislash thrusts its blade into the ground; creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them in the air for .6s. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For 3s after this slash hits, damage dealt by Aegislash ignores 45% of the enemies Defense.",
+        "desc": "Aegislash thrusts its blade into the ground; creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them in the air for .6s. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For 3s after this slash hits, damage dealt by Aegislash ignores 25% of the enemies Defense.",
         "fields": [
             {
                 "title": "Damage - Triangle Attack",

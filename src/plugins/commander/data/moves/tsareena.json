@@ -180,7 +180,7 @@
         "level": 6,
         "cd": 8.5,
         "type": "dash",
-        "desc": "Perform a flying kick in the designated direction, dealing damage to enemies hit and decreasing their Attack by 25% for a 2s. Enemies that make contact with the flying kick's wake receive damage and have their movement speed decreased for a short time.\n\nQueenly Majesty Effect: Grants Tsareena a shield for 3s when this move is used.",
+        "desc": "Perform a flying kick in the designated direction, dealing damage to enemies hit and decreasing their Attack by 25% for a 2s. Enemies that make contact with the flying kick's wake receive damage and have their movement speed decreased by 35% for a short time.\n\nQueenly Majesty Effect: Grants Tsareena a shield for 3s when this move is used.",
         "fields": [
             {
                 "title": "Damage",
@@ -224,11 +224,11 @@
             },
             {
                 "title": "Shield - Queenly Majesty Buff",
-                "value": "225% Atk + 15 x (Level - 1) + 450",
+                "value": "157.5% Atk + 10 x (Level - 1) + 300",
                 "calc_variables": {
-                    "atk_modifier": 2.25,
-                    "lvl_modifier": 15,
-                    "addend": 450
+                    "atk_modifier": 1.57,
+                    "lvl_modifier": 10,
+                    "addend": 300
                 },
                 "type": "inline"
             },

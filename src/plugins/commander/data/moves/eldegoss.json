@@ -43,7 +43,7 @@
         "aliases": ["s11", "pollen", "puff", "pp"],
         "name": "Pollen Puff",
         "level": 4,
-        "cd": 6,
+        "cd": 5,
         "type": "ranged",
         "desc": "Eldegoss throws a puff of pollen, which attaches to any Pokémon that touches it. After 2s, the puff will explode, damaging enemies and healing allies around it.",
         "fields": [
@@ -59,11 +59,11 @@
             },
             {
                 "title": "Healing",
-                "value": "135% SpA + 12 x (Level - 1) + 270",
+                "value": "175.5% SpA + 16 x (Level - 1) + 350",
                 "calc_variables": {
-                    "atk_modifier": 1.35,
-                    "lvl_modifier": 12,
-                    "addend": 270
+                    "atk_modifier": 1.75,
+                    "lvl_modifier": 16,
+                    "addend": 350
                 },
                 "type": "inline"
             },
@@ -124,11 +124,11 @@
         "fields": [
             {
                 "title": "Shielding",
-                "value": "150% SpA + 20 x (Level - 1) + 250",
+                "value": "172.5% SpA + 23 x (Level - 1) + 290",
                 "calc_variables": {
-                    "atk_modifier": 1.5,
-                    "lvl_modifier": 20,
-                    "addend": 250
+                    "atk_modifier": 1.72,
+                    "lvl_modifier": 23,
+                    "addend": 290
                 },
                 "type": "inline"
             },
@@ -168,7 +168,7 @@
         "aliases": ["u", "unite"],
         "name": "Cotton Cloud Crash",
         "level": 9,
-        "cd": 112,
+        "cd": 100,
         "type": "area",
         "desc": "Float into the air for 3s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius.",
         "fields": [
