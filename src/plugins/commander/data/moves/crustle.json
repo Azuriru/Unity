@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 5,
         "type": "hindrance",
-        "desc": "Crustle emits a beam that deals damage to enemies hit and briefly slow their movement speed by 60% for 2s, then create a curved wall at the designated location. When the wall rises or despawns, nearby enemies are damaged and have their movement speed slowed by 40% for 2s. The wall lasts for 3s and can be cancelled early.",
+        "desc": "Crustle emits a beam that deals damage to enemies hit and briefly slow their movement speed by 60% for 2s, then create a curved wall at the designated location. When the wall rises or despawns, nearby enemies are damaged and have their movement speed slowed by 60% for 2s. The wall lasts for 3s and can be cancelled early.",
         "fields": [
             {
                 "title": "Damage - Projectile",
