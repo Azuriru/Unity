@@ -118,7 +118,7 @@
         "level": 7,
         "cd": 6,
         "type": "melee",
-        "desc": "Machamp dashes forward dealing damage to enemies hit. Cross chop increases Critical-Hit Rate by 30% for 3s and can critically strike.",
+        "desc": "Machamp dashes forward dealing damage to enemies hit. Cross chop increases Critical-Hit Rate by 5% for 3s and can critically strike.",
         "fields": [
             {
                 "title": "Damage",
