@@ -33,7 +33,7 @@
         "level": 5,
         "cd": 8,
         "type": "hindrance",
-        "desc": "Machamp jumps to target location, briefly stunning enemies hit, slowing them by 40% for 3s, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% and gains bonus movement speed for 6s when using Dynamic Punch.",
+        "desc": "Machamp jumps to target location, briefly stunning enemies hit for 0.5s, slowing them by 40% for 3s, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% and gains bonus movement speed for 6s when using Dynamic Punch.",
         "fields": [
             {
                 "title": "Damage - Per Tick (4 Ticks)",
