@@ -158,7 +158,7 @@
         "level": 9,
         "cd": 100,
         "type": "area",
-        "desc": "Unleash a ground-splitting slash in the designated direction; dealing damage to enemies hit and switching to Sword Stance. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 2.\n\nAgainst Wild Pokemon: The additional damage from missing HP is capped at 1200.",
+        "desc": "Unleash a ground-splitting slash in the designated direction; dealing damage to enemies hit and switching to Sword Stance. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 2.\n\nAgainst Wild Pokemon: The additional damage from missing HP is capped at 1000.",
         "fields": [
             {
                 "title": "Damage",

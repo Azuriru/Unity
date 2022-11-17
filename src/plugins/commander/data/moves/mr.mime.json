@@ -33,7 +33,7 @@
         "level": 4,
         "cd": 6,
         "type": "ranged",
-        "desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned for 1.5s. Enemies debuffed by Power Swap take bonus damage and are stunned, but are not knocked back.",
+        "desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned for 1.5s. Enemies debuffed by Power Swap take bonus damage and are stunned for 0.65s, but are not knocked back.",
         "fields": [
             {
                 "title": "Damage",
@@ -57,11 +57,11 @@
             },
             {
                 "title": "Damage - Stunned (Power Swap)",
-                "value": "120% SpA + 10 x (Level - 1) + 270",
+                "value": "80% SpA + 6 x (Level - 1) + 180",
                 "calc_variables": {
-                    "atk_modifier": 1.2,
-                    "lvl_modifier": 10,
-                    "addend": 270
+                    "atk_modifier": 0.8,
+                    "lvl_modifier": 6,
+                    "addend": 180
                 },
                 "type": "inline"
             },
@@ -92,11 +92,11 @@
             },
             {
                 "title": "Damage - Stunned (Power Swap)",
-                "value": "131.4% SpA + 12 x (Level - 1) + 300",
+                "value": "88% SpA + 7 x (Level - 1) + 200",
                 "calc_variables": {
-                    "atk_modifier": 1.31,
-                    "lvl_modifier": 12,
-                    "addend": 300
+                    "atk_modifier": 0.88,
+                    "lvl_modifier": 7,
+                    "addend": 200
                 },
                 "type": "inline"
             }

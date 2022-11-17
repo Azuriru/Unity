@@ -9,11 +9,11 @@
         "fields": [
             {
                 "title": "Damage",
-                "value": "72% SpA + 16 x (Level - 1) + 300",
+                "value": "83% SpA + 19 x (Level - 1) + 350",
                 "calc_variables": {
-                    "atk_modifier": 0.72,
-                    "lvl_modifier": 16,
-                    "addend": 300
+                    "atk_modifier": 0.83,
+                    "lvl_modifier": 19,
+                    "addend": 350
                 },
                 "type": "inline"
             }
@@ -117,21 +117,21 @@
         "fields": [
             {
                 "title": "Damage",
-                "value": "76% SpA + 15 x (Level - 1) + 390",
+                "value": "85% SpA + 16 x (Level - 1) + 440",
                 "calc_variables": {
-                    "atk_modifier": 0.76,
-                    "lvl_modifier": 15,
-                    "addend": 390
+                    "atk_modifier": 0.85,
+                    "lvl_modifier": 16,
+                    "addend": 440
                 },
                 "type": "inline"
             },
             {
                 "title": "Damage - Damage Over Time (5 Ticks)",
-                "value": "7.6% SpA + 2 x (Level - 1) + 39",
+                "value": "8.5% SpA + 2 x (Level - 1) + 44",
                 "calc_variables": {
                     "atk_modifier": 0.076,
                     "lvl_modifier": 2,
-                    "addend": 39
+                    "addend": 44
                 },
                 "type": "inline"
             },
@@ -181,7 +181,7 @@
         "aliases": ["u", "unite"],
         "name": "Fairy Singularity",
         "level": 9,
-        "cd": 134,
+        "cd": 112,
         "type": "hindrance",
         "desc": "Gardevoir warps space in a large area, creating a field, damaging all enemies in the radius and pulling them towards the center 4 times. When it expires, the field damages and shoves enemies.",
         "fields": [

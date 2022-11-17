@@ -69,7 +69,7 @@
                 },
                 {
                     "title": "Damage - Additional (Sword Stance)",
-                    "value": "Deals an additional 7% of the enemies Max HP as damage. Against Wild Pokemon: The additional damage from maximum HP is capped at 1200.",
+                    "value": "Deals an additional 7% of the enemies Max HP as damage. Against Wild Pokemon: The additional damage from maximum HP is capped at 1000.",
                     "type": "data"
                 }
             ]
@@ -90,11 +90,11 @@
                 },
                 {
                     "title": "Damage - Boosted (3 Hits)",
-                    "value": "20% SpA + 5 x (Level - 1) + 90",
+                    "value": "24% SpA + 6 x (Level - 1) + 110",
                     "calc_variables": {
-                        "atk_modifier": 0.2,
-                        "lvl_modifier": 5,
-                        "addend": 90
+                        "atk_modifier": 0.24,
+                        "lvl_modifier": 6,
+                        "addend": 110
                     },
                     "type": "inline"
                 }

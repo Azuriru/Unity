@@ -136,7 +136,7 @@
         "aliases": ["s22"],
         "name": "Telekinesis",
         "level": 6,
-        "cd": 9,
+        "cd": 7.5,
         "type": "hindrance",
         "desc": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2.3s, restoring 15% of Slowbro's Oblivious health (blue HP) every second for 5s. Slowbro can reactivate the ability to pull the enemy to themself, but otherwise cannot act for the duration.",
         "fields": [

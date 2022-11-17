@@ -133,7 +133,7 @@
         "aliases": ["s21"],
         "name": "Surf",
         "level": 7,
-        "cd": 10,
+        "cd": 9,
         "type": "dash",
         "desc": "Blastoise rides a large wave in the designated direction; damaging, knocking back, and stunning enemies hit for 1.6s. Blastoise is unstoppable while surfing, and once it ends, Blastoise can jump in a designated direction. The wave continues for a short duration after leaping off and the wave continues to knock back enemies hit but inflicts no damage.",
         "fields": [
