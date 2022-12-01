@@ -129,7 +129,7 @@
     ],
     "charizard": [
         {
-            "desc": "Channel fire; dealing continual damage 4 times. Deal additional damage to enemies that have been burned by Charizard. This additional damage ignores Defense, shields, and can not critically strike. Auto attacks gain increased range when evolving. \n\nAgainst Wild Pokemon: The total damage is capped at 250.",
+            "desc": "Channel fire; dealing continual damage 4 times. Deal additional damage to enemies that have been burned by Charizard. This additional damage can not critically strike. Auto attacks gain increased range when evolving. \n\nAgainst Wild Pokemon: The total damage is capped at 250.",
             "fields": [
                 {
                     "title": "Damage - Basic (4 Hits)",

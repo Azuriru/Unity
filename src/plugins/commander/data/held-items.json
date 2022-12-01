@@ -244,7 +244,7 @@
                 "initial_diff": 0
             }
         ],
-        "description": "Increases the Pokémon's Passive Exp. Point gain by 3/4/5 per second while it has the fewest Exp. Points on its team. In addition, when a nearby teammate defeats a wild Pokémon that teammate gains slightly more Exp. Points.",
+        "description": "Grants 3/4/5 experience points per second while the wearer has the fewest Exp. Points on their team. In addition, when the wearer or nearby teammates defeat a wild Pokémon, nearby teammates gain slightly more Exp. Points from that wild Pokémon knockout.",
         "passive": {
             "stat": "EXP/s",
             "levels": [

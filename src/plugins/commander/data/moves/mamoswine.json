@@ -88,7 +88,7 @@
         "aliases": ["s12", "fang"],
         "name": "Ice Fang",
         "level": 5,
-        "cd": 7,
+        "cd": 6,
         "type": "hindrance",
         "desc": "Uses cold-infused fangs to throw the enemy closest to Mamoswine, dealing damage and leaving them frozen for 1.75s. Mamoswine can then designate a direction to slam the thrown Pokémon forward or backward, dealing damage to enemies in the area of effect and leaving them frozen for .5s. The next auto attack is boosted.",
         "fields": [

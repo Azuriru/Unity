@@ -113,7 +113,7 @@
         "aliases": ["s12", "stomp"],
         "name": "Stomp",
         "level": 5,
-        "cd": 6,
+        "cd": 7,
         "type": "area",
         "description": "Tsareena jumps up high and attacks enemies with their feet. When this move hits, deal damage to enemies and leave them unable to act for .1s. \n\nQueenly Majesty Effect: Restores HP when this move hits.",
         "fields": [
@@ -309,11 +309,11 @@
             },
             {
                 "title": "Shield (Queenly Majesty buff)",
-                "value": "225% Atk + 15 x (Level - 1) + 450",
+                "value": "157.5% Atk + 10 x (Level - 1) + 350",
                 "calc_variables": {
-                    "atk_modifier": 2.25,
-                    "lvl_modifier": 15,
-                    "addend": 450
+                    "atk_modifier": 1.57,
+                    "lvl_modifier": 10,
+                    "addend": 350
                 },
                 "type": "inline"
             },

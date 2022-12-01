@@ -13,8 +13,8 @@
     },
     "fullheal": {
         "name": "Full Heal",
-        "description": "Remove all status conditions and become immune to hindrances for a short time. (2.5s duration)",
-        "cooldown": 40,
+        "description": "Remove all status conditions and become immune to hindrances for a short time. (1.5s duration)",
+        "cooldown": 50,
         "unlock_level": 14
     },
     "goalgetter": {
