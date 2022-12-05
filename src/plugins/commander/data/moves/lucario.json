@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "espeed", "speed"],
+        "aliases": ["s11", "espeed", "speed", "es"],
         "name": "Extreme Speed",
         "level": 5,
         "cd": 9,

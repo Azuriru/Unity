@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "wg"],
         "name": "Water Gun",
         "level": 1,
         "cd": 5,
@@ -133,7 +133,7 @@
         ]
     },
     {
-        "aliases": ["s22"],
+        "aliases": ["s22", "tele"],
         "name": "Telekinesis",
         "level": 6,
         "cd": 7.5,

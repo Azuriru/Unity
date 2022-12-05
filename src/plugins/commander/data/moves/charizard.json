@@ -30,7 +30,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "spin", "fs"],
         "name": "Fire Spin",
         "level": 1,
         "cd": 10,
@@ -60,7 +60,7 @@
         ]
     },
     {
-        "aliases": ["s11"],
+        "aliases": ["s11", "ft"],
         "name": "Flamethrower",
         "level": 5,
         "cd": 5.5,
@@ -115,7 +115,7 @@
         ]
     },
     {
-        "aliases": ["s12"],
+        "aliases": ["s12", "fp", "punch"],
         "name": "Fire Punch",
         "level": 5,
         "cd": 5,
@@ -150,7 +150,7 @@
         ]
     },
     {
-        "aliases": ["s21"],
+        "aliases": ["s21", "blast"],
         "name": "Fire Blast",
         "level": 7,
         "cd": 6.5,
@@ -205,7 +205,7 @@
         ]
     },
     {
-        "aliases": ["s22"],
+        "aliases": ["s22", "blitz"],
         "name": "Flare Blitz",
         "level": 7,
         "cd": 10,

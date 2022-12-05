@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "tele"],
         "name": "Teleport",
         "level": 1,
         "cd": 11,

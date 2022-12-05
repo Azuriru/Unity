@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "sneak"],
         "name": "Shadow Sneak",
         "level": 1,
         "cd": 6,
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02", "irond"],
+        "aliases": ["s02", "irond", "id"],
         "name": "Iron Defense",
         "level": 1,
         "cd": 7,
@@ -28,7 +28,7 @@
         "desc": "Envelops Aegislash in a powerful protective force for 3s or after blocking one attack. If this move blocks an attack, increase boost count by 1."
     },
     {
-        "aliases": ["s11"],
+        "aliases": ["s11", "ss", "sacred", "sword"],
         "name": "Sacred Sword",
         "level": 5,
         "cd": 7.5,
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "aliases": ["s12", "sclaw"],
+        "aliases": ["s12", "sclaw", "claw", "sc"],
         "name": "Shadow Claw",
         "level": 5,
         "cd": 5,
@@ -98,7 +98,7 @@
         ]
     },
     {
-        "aliases": ["s21"],
+        "aliases": ["s21", "wg", "guard"],
         "name": "Wide Guard",
         "level": 7,
         "cd": 9,
@@ -128,7 +128,7 @@
         ]
     },
     {
-        "aliases": ["s22", "iron", "head"],
+        "aliases": ["s22", "iron", "head", "ih"],
         "name": "Iron Head",
         "level": 7,
         "cd": 7,

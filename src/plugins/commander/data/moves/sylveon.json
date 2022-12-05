@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "baby"],
         "name": "Baby Doll Eyes",
         "level": 1,
         "cd": 5,
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11"],
+        "aliases": ["s11", "mf", "mystical", "fire"],
         "name": "Mystical Fire",
         "level": 4,
         "cd": 7,
@@ -65,7 +65,7 @@
         ]
     },
     {
-        "aliases": ["s12"],
+        "aliases": ["s12", "hv", "voice", "screaming"],
         "name": "Hyper Voice",
         "level": 4,
         "cd": 5,
@@ -100,7 +100,7 @@
         ]
     },
     {
-        "aliases": ["s21"],
+        "aliases": ["s21", "kiss", "dk"],
         "name": "Draining Kiss",
         "level": 6,
         "cd": 9,
@@ -145,7 +145,7 @@
         ]
     },
     {
-        "aliases": ["s22"],
+        "aliases": ["s22", "cm"],
         "name": "Calm Mind",
         "level": 6,
         "cd": 10,

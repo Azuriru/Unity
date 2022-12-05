@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "heal", "pulse", "hp"],
         "name": "Heal Pulse",
         "level": 1,
         "cd": 10,
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "egg"],
+        "aliases": ["s11", "egg", "sb", "soft"],
         "name": "Soft Boiled",
         "level": 4,
         "cd": 12,
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "aliases": ["s12", "guard", "shield"],
+        "aliases": ["s12", "guard", "shield", "sg"],
         "name": "Safeguard",
         "level": 4,
         "cd": 8,
@@ -110,7 +110,7 @@
         ]
     },
     {
-        "aliases": ["s21", "bomb"],
+        "aliases": ["s21", "bomb", "eb"],
         "name": "Egg Bomb",
         "level": 6,
         "cd": 9,
@@ -135,7 +135,7 @@
         ]
     },
     {
-        "aliases": ["s22", "hh"],
+        "aliases": ["s22", "hh", "hand"],
         "name": "Helping Hand",
         "level": 6,
         "cd": 9,

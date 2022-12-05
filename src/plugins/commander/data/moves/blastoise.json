@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "wg"],
         "name": "Water Gun",
         "level": 1,
         "cd": 9,
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "sb", "bash"],
         "name": "Skull Bash",
         "level": 1,
         "cd": 10,
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "pump"],
+        "aliases": ["s11", "pump", "hp"],
         "name": "Hydro Pump",
         "level": 5,
         "cd": 7.5,
@@ -95,7 +95,7 @@
         ]
     },
     {
-        "aliases": ["s12", "spout"],
+        "aliases": ["s12", "spout", "ws"],
         "name": "Water Spout",
         "level": 5,
         "cd": 7.5,
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "aliases": ["s22", "spin"],
+        "aliases": ["s22", "spin", "rs"],
         "name": "Rapid Spin",
         "level": 7,
         "cd": 11,

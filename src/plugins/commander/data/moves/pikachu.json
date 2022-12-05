@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "ball"],
+        "aliases": ["s11", "ball", "eball", "eb"],
         "name": "Electro Ball",
         "level": 4,
         "cd": 5,
@@ -135,7 +135,7 @@
         ]
     },
     {
-        "aliases": ["s22", "bolt"],
+        "aliases": ["s22", "bolt", "tb"],
         "name": "Thunderbolt",
         "level": 6,
         "cd": 8,

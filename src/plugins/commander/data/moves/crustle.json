@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "rs"],
         "name": "Rock Slide",
         "level": 1,
         "cd": 6,
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02", "fury"],
+        "aliases": ["s02", "fury", "fc"],
         "name": "Fury Cutter",
         "level": 1,
         "cd": 3.5,
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "tomb"],
+        "aliases": ["s11", "tomb", "rt"],
         "name": "Rock Tomb",
         "level": 4,
         "cd": 5,
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "aliases": ["s12", "ss"],
+        "aliases": ["s12", "ss", "smash"],
         "name": "Shell Smash",
         "level": 4,
         "cd": 7,

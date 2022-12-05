@@ -30,7 +30,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "poke"],
         "name": "Branch Poke",
         "level": 1,
         "cd": 7.5,
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "aliases": ["s11", "hammer"],
+        "aliases": ["s11", "hammer", "wh"],
         "name": "Wood Hammer",
         "level": 5,
         "cd": 6,
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "aliases": ["s22", "split"],
+        "aliases": ["s22", "split", "ps"],
         "name": "Pain Split",
         "level": 7,
         "cd": 10,

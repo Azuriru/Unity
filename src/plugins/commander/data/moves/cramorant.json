@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "whirl", "pool", "wp"],
         "name": "Whirlpool",
         "level": 1,
         "cd": 5,
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "fd", "dance"],
         "name": "Feather Dance",
         "level": 1,
         "cd": 8,

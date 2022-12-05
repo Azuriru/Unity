@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "pocketsand", "sand"],
         "name": "Sand Attack",
         "level": 1,
         "cd": 6,
@@ -8,7 +8,7 @@
         "desc": "Garchomp hurls sand toward a designated area; reducing enemy visibility by 50% and slowing them by 20% for 2s. Garchomp's movement speed is increased by 30% for 2s and auto attack speed is increased by 30% for 3s if an enemy is hit."
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "bd"],
         "name": "Bulldoze",
         "level": 1,
         "cd": 5,
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "aliases": ["s12", "drush", "rush"],
+        "aliases": ["s12", "drush", "rush", "dr"],
         "name": "Dragon Rush",
         "level": 5,
         "cd": 6,
@@ -123,7 +123,7 @@
         ]
     },
     {
-        "aliases": ["s22", "dclaw", "claw"],
+        "aliases": ["s22", "dclaw", "claw", "dc"],
         "name": "Dragon Claw",
         "level": 7,
         "cd": 5,

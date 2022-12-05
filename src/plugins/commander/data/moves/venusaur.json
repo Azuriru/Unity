@@ -1,6 +1,6 @@
 [
     {
-        "aliases": ["s01"],
+        "aliases": ["s01", "seed"],
         "name": "Seed Bomb",
         "level": 1,
         "cd": 6,
@@ -75,7 +75,7 @@
         ]
     },
     {
-        "aliases": ["s12", "drain"],
+        "aliases": ["s12", "drain", "gd"],
         "name": "Giga Drain",
         "level": 5,
         "cd": 7,

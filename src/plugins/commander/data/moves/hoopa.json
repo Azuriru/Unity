@@ -145,7 +145,7 @@
         ]
     },
     {
-        "aliases": ["s22", "sball", "ball"],
+        "aliases": ["s22", "sball", "ball", "sb"],
         "name": "Shadow Ball",
         "level": 6,
         "cd": 4.5,
@@ -200,7 +200,7 @@
         ]
     },
     {
-        "aliases": ["s32"],
+        "aliases": ["s32", "psy", "pb"],
         "name": "Psybeam",
         "level": 9,
         "cd": 9,

@@ -85,7 +85,7 @@
         ]
     },
     {
-        "aliases": ["s12", "tornado", "torn", "nado"],
+        "aliases": ["s12", "tornado", "torn", "nado", "lt"],
         "name": "Leaf Tornado",
         "level": 4,
         "cd": 9,
@@ -115,7 +115,7 @@
         ]
     },
     {
-        "aliases": ["s21", "guard"],
+        "aliases": ["s21", "guard", "cg"],
         "name": "Cotton Guard",
         "level": 6,
         "cd": 9,
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "aliases": ["s22", "spore"],
+        "aliases": ["s22", "spore", "cs"],
         "name": "Cotton Spore",
         "level": 6,
         "cd": 6,

@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "razor"],
+        "aliases": ["s11", "razor", "rl"],
         "name": "Razor Leaf",
         "level": 7,
         "cd": 10,
@@ -85,7 +85,7 @@
         ]
     },
     {
-        "aliases": ["s12", "ss", "shackle"],
+        "aliases": ["s12", "ss", "shackle", "arrow"],
         "name": "Spirit Shackle",
         "level": 7,
         "cd": 8.5,

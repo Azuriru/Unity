@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "dc"],
         "name": "Defense Curl",
         "level": 1,
         "cd": 8,
@@ -68,7 +68,7 @@
         ]
     },
     {
-        "aliases": ["s21", "slap"],
+        "aliases": ["s21", "slap", "ds"],
         "name": "Double Slap",
         "level": 6,
         "cd": 5,
@@ -93,7 +93,7 @@
         ]
     },
     {
-        "aliases": ["s22", "gleam"],
+        "aliases": ["s22", "gleam", "dg"],
         "name": "Dazzling Gleam",
         "level": 6,
         "cd": 4,

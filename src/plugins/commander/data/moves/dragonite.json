@@ -20,7 +20,7 @@
         ]
     },
     {
-        "aliases": ["s02"],
+        "aliases": ["s02", "db"],
         "name": "Dragon Breath",
         "level": 1,
         "cd": 7.5,
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "dd"],
+        "aliases": ["s11", "dd", "dance"],
         "name": "Dragon Dance",
         "level": 5,
         "cd": 5.5,
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "aliases": ["s12", "espeed"],
+        "aliases": ["s12", "espeed", "es"],
         "name": "Extreme Speed",
         "level": 5,
         "cd": 7,
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "aliases": ["s21", "beam"],
+        "aliases": ["s21", "beam", "hb"],
         "name": "Hyper Beam",
         "level": 8,
         "cd": 8,

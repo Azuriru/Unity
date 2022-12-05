@@ -86,7 +86,7 @@
         ]
     },
     {
-        "aliases": ["s12", "blaze", "kick"],
+        "aliases": ["s12", "blaze", "kick", "bk"],
         "name": "Blaze Kick",
         "level": 7,
         "cd": 8,

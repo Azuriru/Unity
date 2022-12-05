@@ -40,7 +40,7 @@
         ]
     },
     {
-        "aliases": ["s11", "crash"],
+        "aliases": ["s11", "crash", "ic"],
         "name": "Icicle Crash",
         "level": 5,
         "cd": 8,
@@ -85,7 +85,7 @@
         ]
     },
     {
-        "aliases": ["s12", "fang"],
+        "aliases": ["s12", "fang", "if"],
         "name": "Ice Fang",
         "level": 5,
         "cd": 6,
@@ -120,7 +120,7 @@
         ]
     },
     {
-        "aliases": ["s21", "horsepower", "hh"],
+        "aliases": ["s21", "horsepower", "hh", "hhp"],
         "name": "High Horsepower",
         "level": 7,
         "cd": 8,

@@ -113,7 +113,7 @@
         ]
     },
     {
-        "aliases": ["s22", "chop"],
+        "aliases": ["s22", "chop", "cc"],
         "name": "Cross Chop",
         "level": 7,
         "cd": 6,

@@ -28,7 +28,7 @@
         "desc": "Snorlax falls asleep for 3s, becoming unstoppable, and healing 3 times for 8% Max HP. While asleep, enemies cannot pass through Snorlax’s hitbox."
     },
     {
-        "aliases": ["s11"],
+        "aliases": ["s11", "slam"],
         "name": "Heavy Slam",
         "level": 5,
         "cd": 7,
