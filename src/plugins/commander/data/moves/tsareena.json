@@ -285,7 +285,7 @@
         "level": 6,
         "cd": 8,
         "type": "dash",
-        "description": "Tsareena slides in the designated direction; dealing damage to enemies hit. This is followed by an attack in the opposite direction, dealing damage and shoving enemies hit. \n\nQueenly Majesty Effect: Grants Tsareena a shield for 3s when this move is used.",
+        "desc": "Tsareena slides in the designated direction; dealing damage to enemies hit. This is followed by an attack in the opposite direction, dealing damage and shoving enemies hit. \n\nQueenly Majesty Effect: Grants Tsareena a shield for 3s when this move is used.",
         "fields": [
             {
                 "title": "Damage (2x)",
