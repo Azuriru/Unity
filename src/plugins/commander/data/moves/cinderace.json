@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 6,
         "type": "sure-hit",
-        "desc": "Cinderace shoots out a small flame, damaging and applying burn to hit enemies. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
+        "desc": "Cinderace shoots out a small flame, damaging and applying burn to hit enemies. The burn deals damage every second for 3s and reduces enemy Attack and Sp. Attack by 5% for 2s.",
         "fields": [
             {
                 "title": "Damage",
@@ -56,7 +56,7 @@
         "level": 7,
         "cd": 5,
         "type": "ranged",
-        "desc": "Cinderace kicks a ball of flame in a designated direction, burning and damaging enemies hit. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
+        "desc": "Cinderace kicks a ball of flame in a designated direction, burning and damaging enemies hit. The burn deals damage every second for 3s and reduces enemy Attack and Sp. Attack by 5% for 2s.",
         "fields": [
             {
                 "title": "Damage",
@@ -91,7 +91,7 @@
         "level": 7,
         "cd": 8,
         "type": "sure-hit",
-        "desc": "Perform a fiery flying kick, jumping towards a designated enemy; shoving and burning them. Cinderace can land in a targeted direction after this move hits. In addition, Cinderace is immune to hindrances during this move and is always a critical-hit. The burn lasts 3s and reduces enemy Attack and Sp. Attack by 5%.",
+        "desc": "Perform a fiery flying kick, jumping towards a designated enemy; shoving and burning them. Cinderace can land in a targeted direction after this move hits. In addition, Cinderace is immune to hindrances during this move and is always a critical-hit. The burn deals damage every second for 3s and reduces enemy Attack and Sp. Attack by 5% for 2s.",
         "fields": [
             {
                 "title": "Damage",
