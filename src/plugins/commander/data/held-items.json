@@ -62,7 +62,7 @@
                 "increment": 2.8
             }
         ],
-        "description": "Gain a shield against Sp. Attack damage while out of combat for 9%/12%/15% max HP. (7s after leaving combat)",
+        "description": "Gain a shield against Sp. Attack damage while out of combat for 9%/12%/15% max HP (OoC is 5s after leaving combat). This shield must be fully broken before receiving another from Assault Vest.",
         "passive": {
             "stat": "Max HP",
             "levels": [
@@ -286,7 +286,7 @@
                 "initial_diff": 0
             }
         ],
-        "description": "Increases movement speed while out of combat by 10%/15%/20%. (7s after leaving combat)",
+        "description": "Increases movement speed while out of combat by 10%/15%/20%. (OoC is 5s after leaving combat)",
         "passive": {
             "stat": "Speed",
             "levels": [
@@ -345,7 +345,7 @@
         ],
         "name": "Leftovers",
         "bonus": [
-            "HP +240",
+            "HP +360",
             "HP/5s +9"
         ],
         "stats": [
@@ -370,7 +370,7 @@
                 "initial_diff": 0
             }
         ],
-        "description": "Recovers health over time while out of combat by 1%/1.5%/2% HP/s. (7s after leaving combat)",
+        "description": "Recovers health over time while out of combat by 1%/1.5%/2% HP/s (OoC is 5s after leaving combat).",
         "passive": {
             "stat": "Max HP/s",
             "levels": [
