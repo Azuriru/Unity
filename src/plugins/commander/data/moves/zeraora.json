@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 6,
         "type": "dash",
-        "desc": "Zeraora quickly dashes forward, increasing auto attack speed for a short duration."
+        "desc": "Zeraora quickly dashes forward, increasing auto attack speed for 45% for 3s."
     },
     {
         "aliases": ["s02"],
@@ -13,7 +13,7 @@
         "level": 1,
         "cd": 8.5,
         "type": "melee",
-        "desc": "Zeraora charges toward an enemy and attacks them with multiple swipes, ending with an interrupt that knocks the enemy into the air.",
+        "desc": "Zeraora charges toward an enemy and attacks them with multiple swipes, ending with an interrupt that knocks the enemy into the air for 0.5s.",
         "fields": [
             {
                 "title": "Damage - Per Hit (3 Hits)",
@@ -33,7 +33,7 @@
         "level": 6,
         "cd": 8,
         "type": "dash",
-        "desc": "Zeraora charges forward, damaging enemies in the path and increasing their auto attack speed by 45% for 3s. Activating this ability again within 3s will teleport Zeraora to their original location, dealing damage to enemies in the path back.",
+        "desc": "Zeraora charges forward, damaging enemies in the path and increasing Zeraora's auto attack speed by 45% for 3s. Activating this ability again within 3s will teleport Zeraora to their original location, dealing damage to enemies in the path back.",
         "fields": [
             {
                 "title": "Damage - Initial Dash",
@@ -88,7 +88,7 @@
         "level": 6,
         "cd": 10,
         "type": "dash",
-        "desc": "Zeraora leaps in a selected direction, damaging all enemies in their path and briefly becoming unstoppable. If an auto attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing additional damage to the target. Holds 3 uses in reserve - after the first use the next use must be executed within 4s or this move goes on cooldown. The second use resets this timer.",
+        "desc": "Zeraora leaps in a selected direction, damaging all enemies in their path and becomes unstoppable for 0.2s. If an auto attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing additional damage to the target. Holds 3 uses in reserve - after the first use the next use must be executed within 4s or this move goes on cooldown. The second use resets this timer.",
         "fields": [
             {
                 "title": "Damage - Jump",
@@ -123,7 +123,7 @@
         "level": 8,
         "cd": 10,
         "type": "area",
-        "desc": "Zeraora emits an electric aura, damaging all enemies within the aura over 2s and granting a shield to Zeraora for 3s when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora when the move ends, damaging and stunning them.",
+        "desc": "Zeraora emits an electric aura, damaging all enemies within the aura every 0.3s for 1.5s (6 ticks) followed after 0.4s by a final tick and granting a shield to Zeraora for 3s when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora with the final tick, damaging them with an extra tick of damage and stunning them for 1s.",
         "fields": [
             {
                 "title": "Damage - Per Tick (6 Ticks)",
@@ -147,9 +147,9 @@
             },
             {
                 "title": "Damage - Pull",
-                "value": "37% Atk + 2 x (Level - 1) + 110",
+                "value": "41% Atk + 2 x (Level - 1) + 110",
                 "calc_variables": {
-                    "atk_modifier": 0.37,
+                    "atk_modifier": 0.41,
                     "lvl_modifier": 2,
                     "addend": 110
                 },
@@ -167,7 +167,7 @@
             },
             {
                 "title": "Level 14",
-                "value": "Enemies hit are slowed by 25% for 2s.",
+                "value": "Enemies hit are slowed by 25% for 1s, refreshing every tick.",
                 "type": "data"
             }
         ]
@@ -178,7 +178,7 @@
         "level": 8,
         "cd": 9,
         "type": "melee",
-        "desc": "Zeraora charges towards an enemy, damaging them and switching to the nearest enemy if the initial target's HP drops to zero. Hitting enemies with abilities or boosted attacks previously within a set time provides up to 3 stacks, each stack adding an additional hit to Wild Charge (capped at 6 attacks). The first hit deals full damage and subsequent hits deal half damage. Zeraora is untargetable for the duration of this move. \n\nZeraora takes 1% remaining HP (per hit) as physical damage upon use. The first hit deals 2 instances of recoil damage and subsequent hits deal only 1.",
+        "desc": "Zeraora charges towards an enemy, damaging them multiple times and switching to the nearest enemy if the initial target's HP drops to zero before all hits are used. Initially Wild Charge has 3 hits, but hitting any enemies with abilities or boosted attacks previously within 5s provides up to 3 stacks, each stack adding an additional hit to Wild Charge (capped at 6 hits). Stacks have to be consumed within 5s. The first hit deals full damage and subsequent hits deal half damage. Zeraora is untargetable for the duration of this move (1.2s at 0 stacks, 1.5s at 1 stack, 1.8s at 2 stacks and 2s at 3 stacks).\n\nZeraora takes 1% remaining HP (per hit) as physical damage upon use. The first hit deals 2 instances of recoil damage and subsequent hits deal only 1.",
         "fields": [
             {
                 "title": "Damage",
@@ -199,6 +199,16 @@
                 "title": "Level 14",
                 "value": "Deals damage to nearby enemies when it hits.",
                 "type": "data"
+            },
+            {
+                "title": "Damage - nearby enemies (up to 6 hits)",
+                "value": "74.5% Atk + 6 x (Level - 1) + 250",
+                "calc_variables":{
+                    "atk_modifier": 0.745,
+                    "lvl_modifier": 6,
+                    "addend": 250
+                },
+                "type": "inline"
             }
         ]
     },
@@ -208,7 +218,7 @@
         "level": 9,
         "cd": 112,
         "type": "sure-hit",
-        "desc": "Launches a bolt of lightning that travels towards the target enemy; dealing damage and knocking up enemies hit along the path and then once again in an area when reaching the target, knocking all enemies hit into the air. Creates a temporary area of electricity centered on the initial target that paralyzes enemies caught within, increasing Zeraora's auto attack range and auto attack damage by 20% while inside the area.",
+        "desc": "Become unstoppable for .5s and launch a bolt of lightning that travels towards the target enemy; dealing damage and knocking up enemies hit along the path for 0.5s and then once again in an area when reaching the target, knocking all enemies hit into the air. Creates an area of electricity for 5s centered on the initial target that paralyzes enemies caught within, increasing Zeraora's auto attack range and auto attack damage by 20% while inside the area.",
         "fields": [
             {
                 "title": "Damage - Trail",
