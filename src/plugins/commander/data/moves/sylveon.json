@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 7,
         "type": "dash",
-        "desc": "Create four small flames while leaping in the designated direction. These flames shoot towards enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move by 1s but not lower than 2s. After the first flame hits, subsequent flames on the same target deal 25% damage. Wild Pokémon will only be prioritized if no enemy players are in range.",
+        "desc": "Create four small flames while leaping in the designated direction. These flames shoot towards enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move by 15% of the current cooldown. After the first flame hits, subsequent flames on the same target deal 25% damage. Wild Pokémon will only be prioritized if no enemy players are in range.",
         "fields": [
             {
                 "title": "Damage - First Hit",
