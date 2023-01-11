@@ -5,7 +5,7 @@
         "level": 1,
         "cd": 5,
         "type": "area",
-        "desc": "Ninetales attacks with a chilly gust of powdery snow; dealing damage to enemies and and slowing them by 50% for 1s.",
+        "desc": "Ninetales attacks with a chilly gust of powdery snow; dealing damage to enemies and slowing them by 50% for 1s.",
         "fields": [
             {
                 "title": "Damage",
