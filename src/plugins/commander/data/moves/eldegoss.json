@@ -170,7 +170,7 @@
         "level": 9,
         "cd": 100,
         "type": "area",
-        "desc": "Float into the air for 3s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius.",
+        "desc": "Float into the air for 3.5s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3.5s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius.",
         "fields": [
             {
                 "title": "Damage",
