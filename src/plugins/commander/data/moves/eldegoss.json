@@ -45,7 +45,7 @@
         "level": 4,
         "cd": 5,
         "type": "ranged",
-        "desc": "Eldegoss throws a puff of pollen, which attaches to any Pokémon that touches it. After 2s, the puff will explode, damaging enemies and healing allies around it.",
+        "desc": "Eldegoss throws a puff of pollen. This puff attaches to any Pokémon that touches it within 0.5s of landing on the ground or directly to a Pokémon as aimed by Eldegoss. If attached the puff will explode after 2s, damaging enemies and healing allies around it. If the puff has not been attached to any Pokémon within the landing pick up window, the puff detonates after 1s.",
         "fields": [
             {
                 "title": "Damage",
@@ -69,7 +69,7 @@
             },
             {
                 "title": "Level 11",
-                "value": "If attached to an enemy, the puff will deal damage over time. If attached to an ally, it will reduce the damage they receive by 20% for 2s.",
+                "value": "If attached to an ally or Eldegoss, it will reduce the damage they receive by 20% for 2s. If attached directly to an enemy, the puff will deal damage over time. Enemies in contact with the small puff while attached to allies also take the damage over time.",
                 "type": "data"
             },
             {
@@ -90,7 +90,7 @@
         "level": 4,
         "cd": 9,
         "type": "ranged",
-        "desc": "Eldegoss conjures a tornado full of leaves; which damages enemies and creates a gust of wind that increases the movement speed of allies that touch it by 55% for 1.5s. When the tornado reaches max distance, it damages enemies near it a second time.",
+        "desc": "Eldegoss conjures a tornado full of leaves launching it in a designated direction. The tornado damages enemies and creates a path of wind that increases the movement speed of allies that touch it by 55% for 1.5s, refreshing as long as they are on the path. When the tornado reaches max distance, the path damages enemies on the path a second time. The haste path lasts for 4s.",
         "fields": [
             {
                 "title": "Damage - First Hit",
@@ -118,7 +118,7 @@
         "aliases": ["s21", "guard", "cg"],
         "name": "Cotton Guard",
         "level": 6,
-        "cd": 9,
+        "cd": 10.5,
         "type": "buff",
         "desc": "Eldegoss creates barriers out of cotton; granting Eldegoss and all nearby allies a shield for 3s. When the shield expires, it restores HP equal to 15% of the remaining shield value.",
         "fields": [
@@ -134,7 +134,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Also increases Eldegoss's movement speed by 30% for 2s.",
+                "value": "Also increases allies and Eldegoss's movement speed by 30% for 2s.",
                 "type": "data"
             }
         ]
@@ -145,7 +145,7 @@
         "level": 6,
         "cd": 6,
         "type": "area",
-        "desc": "Eldegoss channels for 2s, gathering spores while increasing its movement speed by 30% for 2s. At the end of the channel the spores are released; damaging and throwing nearby enemies into the air for .5s, then slowing their movement speed by 30% for 2s when they land.",
+        "desc": "Eldegoss channels for 2s, gathering spores while increasing its movement speed by 30% for 2s. At the end of the channel the spores are released; damaging and throwing nearby enemies into the air for 0.5s, then slowing their movement speed by 30% for 2s when they land. \n\nThe 2s channel can be finished prematurely by using Cotton Cloud Crash.",
         "fields": [
             {
                 "title": "Damage",
@@ -170,7 +170,7 @@
         "level": 9,
         "cd": 100,
         "type": "area",
-        "desc": "Float into the air for 3.5s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3.5s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius.",
+        "desc": "Float into the air for 3s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius.",
         "fields": [
             {
                 "title": "Damage",

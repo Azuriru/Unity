@@ -31,9 +31,9 @@
         "aliases": ["s11", "shock", "ps"],
         "name": "Psyshock",
         "level": 5,
-        "cd": 10,
+        "cd": 11,
         "type": "area",
-        "desc": "Gardevoir channels three attacks at the targeted area; damaging enemies. Gardevoir's moves' cooldowns is reduced by 15% each time it hits an enemy.",
+        "desc": "Gardevoir channels three attacks at the targeted area; damaging enemies. Gardevoir's moves' cooldowns are reduced by 15% each time Psyshock hits an enemy.",
         "fields": [
             {
                 "title": "Damage",
@@ -111,7 +111,7 @@
         "aliases": ["s21", "p"],
         "name": "Psychic",
         "level": 7,
-        "cd": 6,
+        "cd": 7.5,
         "type": "ranged",
         "desc": "Gardevoir fires a blast; damaging enemies in an area on impact. The blast creates a lingering field that damages and slows enemies by 50% for 1s. Each time Psychic deals damage it reduces the target’s Special Defense by 20% for 4s, up to 60%.",
         "fields": [

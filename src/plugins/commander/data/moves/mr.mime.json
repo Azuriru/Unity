@@ -158,7 +158,7 @@
         "level": 6,
         "cd": 4,
         "type": "debuff",
-        "desc": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 15% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s. \n\nIf the linked target is an ally, this move increases their movement speed by 15%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 8%, decreases the amount of damage they deal by 15% and deals damage over time to them. Power Swap can be cleansed.",
+        "desc": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 8% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s. \n\nIf the linked target is an ally, this move increases their movement speed by 8%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 8%, decreases the amount of damage they deal by 8% and deals damage over time to them. Power Swap can be cleansed.",
         "fields": [
             {
                 "title": "Damage - per Tick",
@@ -182,7 +182,7 @@
             },
             {
                 "title": "Level 13",
-                "value": "Increases the amount of damage dealt by allies to 20% and further strengthens the debuff to enemies, making them deal 20% less damage.",
+                "value": "Increases the amount of damage dealt by allies to 20% and decreases the amount of damage dealt by enemies to 12%.",
                 "type": "data"
             }
         ]

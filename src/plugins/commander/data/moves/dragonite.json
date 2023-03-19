@@ -140,7 +140,7 @@
         "level": 8,
         "cd": 8,
         "type": "melee",
-        "desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack he used. Additionally, Dragonite gains a buff for 5.5s, increasing auto attack speed by 30% for 5.5s, converting all of their attacks into melee Boosted Attacks, and alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is stunned for .7s.",
+        "desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack that was used. Additionally, Dragonite gains a buff for 5.5s, increasing auto attack speed by 30% for 5.5s, converting all attacks during the duration of Outrage into melee Boosted Attacks, and alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is stunned for .7s.",
         "fields": [
             {
                 "title": "Damage - Stomp",
@@ -149,6 +149,16 @@
                     "atk_modifier": 1.76,
                     "lvl_modifier": 7,
                     "addend": 330
+                },
+                "type": "inline"
+            },
+            {
+                "title": "Damage - Boosteds",
+                "value": "150% Atk + 0 x (Level - 1) + 0",
+                "calc_variables": {
+                    "atk_modifier": 1.5,
+                    "lvl_modifier": 0,
+                    "addend": 0
                 },
                 "type": "inline"
             },
@@ -163,9 +173,9 @@
         "aliases": ["u", "unite"],
         "name": "Draco Impact",
         "level": 9,
-        "cd": 134,
+        "cd": 112,
         "type": "dash",
-        "desc": "Briefly fly up in the air before crashing down with several comets on a designated area, dealing damage and throwing enemies in the area. The farther Dragonite flies, the more the Unite gauge is consumed (50% at min distance and 100% at max). Dragonite is unstoppable while using this move.",
+        "desc": "Briefly fly up in the air, becoming untargetable, before crashing down, approximately 2s after activating, with several comets on a designated area, dealing damage and throwing enemies in the area for 0.5s. The farther Dragonite flies, the more the Unite gauge is consumed (50% at min distance and 100% at max). Dragonite is unstoppable while using this move.",
         "fields": [
             {
                 "title": "Damage",

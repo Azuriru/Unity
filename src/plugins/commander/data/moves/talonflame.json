@@ -148,7 +148,7 @@
         "aliases": ["s22", "brave", "bird", "bb"],
         "name": "Brave Bird",
         "level": 7,
-        "cd": 10,
+        "cd": 8.5,
         "type": "dash",
         "desc": "Talonflame dives at the targeted area; taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted attack on an enemy hit by Brave Bird within 4s, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird.",
         "fields": [

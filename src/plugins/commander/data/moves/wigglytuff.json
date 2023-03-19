@@ -33,7 +33,7 @@
         "level": 4,
         "cd": 10,
         "type": "hindrance",
-        "desc": "Wigglytuff gains a 25% max HP shield for 1s, becomes unstoppable for 1.2s and rolls forward, damaging and throwing enemies hit in the air for .5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam.",
+        "desc": "Wigglytuff gains a 25% max HP shield for 2.5s and rolls forwards. Wigglytuff becomes unstoppable for the duration of the roll, damaging and throwing Pokémon hit in the air for 0.5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, and Dazzling Gleam. Also, the shield refreshes duration each time an obstacle is hit.",
         "fields": [
             {
                 "title": "Damage - Per Hit",
@@ -131,9 +131,9 @@
         "aliases": ["u", "unite"],
         "name": "Starlight Recital",
         "level": 8,
-        "cd": 112,
+        "cd": 89,
         "type": "buff",
-        "desc": "Begin performing a recital and become unstoppable for 3s, granting Wigglytuff and nearby allies a shield for 2.5s as well as removing all status conditions from the affected allies and granting them immunity to hindrances for as long as the shield is active.",
+        "desc": "Begin performing a recital and become unstoppable for 3s, granting Wigglytuff and nearby allies a shield for 2.5s as well as removing all status conditions from Wigglytuff and the affected allies and granting them immunity to hindrances for as long as the shield is active.",
         "fields": [
             {
                 "title": "Shield",
