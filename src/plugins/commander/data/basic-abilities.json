@@ -133,9 +133,9 @@
             "fields": [
                 {
                     "title": "Damage - Basic (4 Hits)",
-                    "value": "25% Atk",
+                    "value": "27.5% Atk",
                     "variables": {
-                        "atk_modifier": 0.25
+                        "atk_modifier": 0.275
                     },
                     "type": "inline-percentage"
                 },

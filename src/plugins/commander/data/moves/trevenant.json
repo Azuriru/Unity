@@ -58,7 +58,7 @@
         "aliases": ["s11", "hammer", "wh"],
         "name": "Wood Hammer",
         "level": 5,
-        "cd": 5,
+        "cd": 7,
         "type": "hindrance",
         "desc": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for 0.5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act. The lower Trevenant's HP, the longer the enemy will be left unable to act. Every time this move is used, it consumes 5% of Trevenant's current HP.",
         "fields": [
@@ -190,7 +190,7 @@
         "level": 7,
         "cd": 10,
         "type": "sure-hit",
-        "desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a percentage of damage that Trevenant would take is mitigated and instead redirected to the linked enemy as True damage. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. If Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP every 0.5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed by 45% for 2s.",
+        "desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a percentage of damage that Trevenant would take is mitigated and instead redirected to the linked enemy as True damage. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. If Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP every 0.5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed by 35% for 2s decaying by 7.5% per half second.",
         "fields": [
             {
                 "title": "Damage - per conditional tick",

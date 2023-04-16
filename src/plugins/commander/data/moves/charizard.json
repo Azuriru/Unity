@@ -243,7 +243,7 @@
         "aliases": ["u", "unite"],
         "name": "Seismic Slam",
         "level": 9,
-        "cd": 123,
+        "cd": 112,
         "type": "sure-hit",
         "desc": "Grab an enemy and slam it onto the ground, damaging the target and nearby enemies and deal additional damage based on their max HP. Then, fly up into the air moving freely over obstacles for 7.5s. While this move is active, auto attacks apply a burn to the target which lasts for 1s, dealing 2 instances of damage and is refreshed by each instance of damage from auto attacks. When dealing damage with auto attacks to an enemy (not from burn or additional damage), recover HP equal to 80% of the damage dealt.",
         "fields": [
